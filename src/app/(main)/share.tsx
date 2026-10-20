@@ -44,8 +44,8 @@ export default function ShareScreen() {
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
   const r = useReading();
-  const people = peopleStore.use();
-  const prefs = prefsStore.use();
+  const people = peopleStore.useValue();
+  const prefs = prefsStore.useValue();
   const [format, setFormat] = useState<ShareFormat>('story');
   const [message, setMessage] = useState<string | null>(null);
   const ref = useRef<ComponentRef<typeof View>>(null);

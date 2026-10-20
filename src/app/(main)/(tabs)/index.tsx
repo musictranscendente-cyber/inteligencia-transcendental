@@ -35,8 +35,8 @@ export default function TodayScreen() {
   const lang = useLang();
   const { colors } = useTheme();
   const reading = useReading();
-  const prefs = prefsStore.use();
-  const streak = streakStore.use();
+  const prefs = prefsStore.useValue();
+  const streak = streakStore.useValue();
   const today = new Date();
   const key = dayKey(today);
 

@@ -19,7 +19,7 @@ export default function OracleScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const premium = usePremium();
-  const history = historyStore.use();
+  const history = historyStore.useValue();
 
   const item = (key: SpreadKey, color: string, delay: number) => (
     <Animated.View key={key} entering={FadeInDown.delay(delay).duration(400)}>

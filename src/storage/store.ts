@@ -27,9 +27,9 @@ export function createStore<T>(key: string, initial: T) {
     listeners.add(l);
     return () => listeners.delete(l);
   };
-  const use = () => useSyncExternalStore(subscribe, get, get);
+  const useValue = () => useSyncExternalStore(subscribe, get, get);
   allStores.add(reset);
-  return { get, set, use, reset };
+  return { get, set, useValue, reset };
 }
 
 const allStores = new Set<() => void>();

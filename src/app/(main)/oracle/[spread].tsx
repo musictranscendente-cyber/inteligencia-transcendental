@@ -31,7 +31,7 @@ export default function SpreadScreen() {
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
   const premium = usePremium();
-  const prefs = prefsStore.use();
+  const prefs = prefsStore.useValue();
   const [phase, setPhase] = useState<Phase>('intro');
   const [question, setQuestion] = useState('');
   const [fan, setFan] = useState<Drawn[]>([]);

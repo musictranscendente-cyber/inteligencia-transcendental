@@ -24,7 +24,7 @@ export default function AstrologyScreen() {
   const lang = useLang();
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
-  const prefs = prefsStore.use();
+  const prefs = prefsStore.useValue();
   const [selected, setSelected] = useState<PointKey | null>('sun');
   const r = useReading();
   if (!r) return null;

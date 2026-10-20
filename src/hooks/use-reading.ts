@@ -11,7 +11,7 @@ export function toPersonInput(p: { fullName: string; birthDate: string; birthTim
 /** Leitura completa da pessoa cadastrada (calculada uma vez por dia e por perfil). */
 export function useReading(): Reading | null {
   const profile = useProfile();
-  const { houseSystem } = prefsStore.use();
+  const { houseSystem } = prefsStore.useValue();
   const day = new Date().toDateString();
   return useMemo(
     () => (profile ? buildReading(toPersonInput(profile), houseSystem) : null),
@@ -21,6 +21,6 @@ export function useReading(): Reading | null {
 }
 
 export function useReadingOf(p: Parameters<typeof toPersonInput>[0] | null | undefined): Reading | null {
-  const { houseSystem } = prefsStore.use();
+  const { houseSystem } = prefsStore.useValue();
   return useMemo(() => (p ? buildReading(toPersonInput(p), houseSystem) : null), [p, houseSystem]);
 }

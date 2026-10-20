@@ -22,7 +22,7 @@ export default function EntryScreen() {
   const { t, i18n } = useTranslation();
   const lang = useLang();
   const { colors } = useTheme();
-  const e = historyStore.use().find((h) => h.id === id);
+  const e = historyStore.useValue().find((h) => h.id === id);
   if (!e) return <Screen title={t('oracle.history')}><AppText muted>{t('oracle.historyEmpty')}</AppText></Screen>;
 
   if (e.kind === 'iching') {

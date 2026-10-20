@@ -30,7 +30,7 @@ export default function SynthesisScreen() {
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
   const r = useReading();
-  const saved = synthesisStore.use();
+  const saved = synthesisStore.useValue();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(false);
 

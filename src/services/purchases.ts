@@ -79,6 +79,6 @@ export async function restore() {
 
 /** Recursos pagos liberados? */
 export function usePremium() {
-  const { premium } = subscriptionStore.use();
+  const { premium } = subscriptionStore.useValue();
   return premium || !paywallEnabled();
 }

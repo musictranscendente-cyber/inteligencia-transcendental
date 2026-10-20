@@ -21,7 +21,7 @@ export default function WelcomeScreen() {
   const lang = useLang();
   const { colors } = useTheme();
   const r = useReading();
-  const prefs = prefsStore.use();
+  const prefs = prefsStore.useValue();
   if (!r) return null;
   const a = MAJOR_ARCANA[r.arcana][lang];
   const next = () => (paywallEnabled() ? router.replace('/paywall') : router.back());

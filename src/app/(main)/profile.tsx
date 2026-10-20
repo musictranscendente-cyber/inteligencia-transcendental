@@ -31,7 +31,7 @@ export default function ProfileScreen() {
   const insets = useSafeAreaInsets();
   const profile = useProfile();
   const settings = useSettings();
-  const prefs = prefsStore.use();
+  const prefs = prefsStore.useValue();
   const premium = usePremium();
   const lang = langOf(i18n.language);
 

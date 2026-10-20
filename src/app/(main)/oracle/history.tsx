@@ -21,7 +21,7 @@ export function entrySummary(e: HistoryEntry, lang: ReturnType<typeof useLang>) 
 export default function HistoryScreen() {
   const { t, i18n } = useTranslation();
   const lang = useLang();
-  const history = historyStore.use();
+  const history = historyStore.useValue();
   return (
     <Screen title={t('oracle.history')}>
       {history.length === 0 ? <AppText muted>{t('oracle.historyEmpty')}</AppText> : null}

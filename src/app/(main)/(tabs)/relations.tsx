@@ -21,7 +21,7 @@ export default function RelationsScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const premium = usePremium();
-  const people = peopleStore.use();
+  const people = peopleStore.useValue();
   const me = useReading();
   const c = colors.technique.oracles;
   const canAdd = premium || people.length < 1;

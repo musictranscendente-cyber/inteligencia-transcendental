@@ -28,8 +28,8 @@ export default function WrappedScreen() {
   const { colors } = useTheme();
   const { width, height } = useWindowDimensions();
   const r = useReading();
-  const history = historyStore.use();
-  const streak = streakStore.use();
+  const history = historyStore.useValue();
+  const streak = streakStore.useValue();
   const [page, setPage] = useState(0);
   if (!r) return null;
   const d = wrappedData(r, history, streak);

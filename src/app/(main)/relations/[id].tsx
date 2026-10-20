@@ -29,7 +29,7 @@ export default function PersonScreen() {
   const lang = useLang();
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
-  const people = peopleStore.use();
+  const people = peopleStore.useValue();
   const person = people.find((p) => p.id === id);
   const me = useReading();
   const other = useMemo(() => (person ? buildReading(toPersonInput(person)) : null), [person]);

@@ -30,7 +30,6 @@ export default function AskScreen() {
   const [question, setQuestion] = useState('');
   const [cards, setCards] = useState<Drawn[] | null>(null);
   const [answer, setAnswer] = useState<string | null>(null);
-  const [offline, setOffline] = useState(false);
   const [busy, setBusy] = useState(false);
   const positions = t('oracle.positions.ask', { returnObjects: true }) as string[];
   const c = colors.gold;
@@ -53,7 +52,6 @@ export default function AskScreen() {
     setBusy(true);
     const name = firstName(r.person.fullName);
     let text: string;
-    let isOffline = false;
     try {
       if (!aiEnabled()) throw new Error('offline');
       const res = await aiOracle({
@@ -67,10 +65,8 @@ export default function AskScreen() {
       text = res.answer;
     } catch {
       text = localAnswer(drawn, positions, lang, name);
-      isOffline = true;
     }
     setAnswer(text);
-    setOffline(isOffline);
     setBusy(false);
     addHistory({ kind: 'ask', spread: 'ask', question: question.trim(), cards: drawn.map((d) => ({ id: d.id, reversed: d.reversed })), answer: text });
   };
@@ -102,7 +98,7 @@ export default function AskScreen() {
             ))}
           </View>
           <GlassCard accent={c} style={styles.gap}>
-            <SectionTitle>{offline ? t('oracle.offlineAnswer') : t('oracle.interpretation')}</SectionTitle>
+            <SectionTitle>{t('oracle.interpretation')}</SectionTitle>
             {busy ? (
               <View style={styles.busy}>
                 <ActivityIndicator color={c} />

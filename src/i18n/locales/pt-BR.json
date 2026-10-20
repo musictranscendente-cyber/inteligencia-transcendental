@@ -387,5 +387,271 @@
     "uranus": "Urano",
     "neptune": "Netuno",
     "pluto": "Plutão"
+  },
+  "oracle": {
+    "title": "Oráculo",
+    "tarot": "Tarô",
+    "lenormand": "Baralho Cigano",
+    "iching": "I Ching",
+    "runes": "Runas",
+    "ask": "Pergunte ao Oráculo",
+    "askHint": "Escreva sua pergunta: o app tira as cartas e a IA interpreta com o seu mapa.",
+    "history": "Histórico",
+    "historyEmpty": "Suas leituras aparecem aqui.",
+    "spreads": {
+      "yesno": "Sim ou Não",
+      "three": "Passado, presente e futuro",
+      "love": "Amor",
+      "work": "Trabalho",
+      "celtic": "Cruz Celta",
+      "len3": "Cigano · 3 cartas",
+      "len9": "Cigano · 9 cartas",
+      "rune1": "Uma runa",
+      "rune3": "Três runas",
+      "iching": "Jogar as moedas"
+    },
+    "positions": {
+      "yesno": [
+        "Resposta"
+      ],
+      "three": [
+        "Passado",
+        "Presente",
+        "Futuro"
+      ],
+      "love": [
+        "Você",
+        "A outra pessoa",
+        "A relação",
+        "Conselho"
+      ],
+      "work": [
+        "Situação atual",
+        "Obstáculo",
+        "Potencial",
+        "Conselho"
+      ],
+      "celtic": [
+        "Presente",
+        "Desafio",
+        "Base",
+        "Passado",
+        "Objetivo",
+        "Futuro próximo",
+        "Você",
+        "Ambiente",
+        "Esperanças e medos",
+        "Resultado"
+      ],
+      "len3": [
+        "Situação",
+        "Desenvolvimento",
+        "Desfecho"
+      ],
+      "len9": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "Centro",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "rune1": [
+        "Conselho"
+      ],
+      "rune3": [
+        "Passado",
+        "Presente",
+        "Caminho"
+      ],
+      "ask": [
+        "O que pesa",
+        "O que ajuda",
+        "Para onde vai"
+      ]
+    },
+    "questionPlaceholder": "Sua pergunta (opcional)",
+    "askPlaceholder": "Escreva sua pergunta…",
+    "shuffle": "Embaralhar",
+    "shuffling": "Embaralhando…",
+    "pick": "Toque para escolher {{n}} carta(s)",
+    "picked": "{{done}} de {{n}}",
+    "revealAll": "Virar todas",
+    "tapToFlip": "Toque nas cartas para virar",
+    "answer": "Resposta: {{answer}}",
+    "again": "Nova leitura",
+    "reversals": "Cartas invertidas",
+    "saved": "Leitura salva no histórico.",
+    "freeLimit": "No plano grátis você tem 1 tiragem de tarô por dia. Volte amanhã ou desbloqueie leituras ilimitadas.",
+    "toss": "Jogar as moedas",
+    "tossN": "Lançamento {{n}} de 6",
+    "line": "Linha {{n}}",
+    "changing": "Linhas mutantes: {{lines}}",
+    "noChanging": "Sem linhas mutantes: a situação é estável.",
+    "becomes": "Transforma-se em",
+    "hexagram": "Hexagrama {{n}}",
+    "interpretation": "Interpretação",
+    "interpreting": "O oráculo está lendo as cartas…",
+    "offlineAnswer": "Leitura offline",
+    "askCta": "Consultar o oráculo",
+    "symmetric": "simétrica",
+    "kinds": {
+      "tarot": "Tarô",
+      "lenormand": "Cigano",
+      "iching": "I Ching",
+      "runes": "Runas",
+      "ask": "Oráculo IA"
+    }
+  },
+  "rel": {
+    "title": "Relações",
+    "add": "Adicionar pessoa",
+    "empty": "Cadastre quem você ama e descubra a compatibilidade de vocês.",
+    "types": {
+      "partner": "Parceiro(a)",
+      "child": "Filho(a)",
+      "friend": "Amigo(a)",
+      "partnerBiz": "Sócio(a)",
+      "family": "Família",
+      "other": "Outro"
+    },
+    "relation": "Relação",
+    "overall": "Compatibilidade geral",
+    "radar": {
+      "love": "Amor",
+      "communication": "Comunicação",
+      "values": "Valores",
+      "energy": "Energia",
+      "longTerm": "Longo prazo"
+    },
+    "unites": "O que une vocês",
+    "clashes": "Onde podem se desentender",
+    "tips": "Como se entender melhor",
+    "biwheel": "Bi-roda",
+    "parts": "Por técnica",
+    "synastry": "Sinastria",
+    "numerology": "Numerologia",
+    "hd": "Desenho Humano",
+    "chinese": "Chinês",
+    "hdChannels": "{{n}} canais formados juntos",
+    "freeLimit": "No plano grátis você pode cadastrar 1 pessoa e ver só a nota geral.",
+    "deleteConfirm": "Apagar {{name}}?",
+    "names": "Numerologia de nomes",
+    "namesHint": "Compare opções de nome de bebê, empresa, casa ou telefone.",
+    "nameType": {
+      "baby": "Bebê",
+      "company": "Empresa",
+      "house": "Casa",
+      "phone": "Telefone"
+    },
+    "option": "Opção {{n}}",
+    "addOption": "Adicionar opção",
+    "vibration": "Vibração {{n}}",
+    "harmony": "Harmonia com seu Destino: {{score}}%",
+    "form": "Dados da pessoa",
+    "noTimeOk": "Sem hora? Tudo bem, a leitura fica aproximada.",
+    "saveP": "Salvar pessoa",
+    "shareCompat": "Compartilhar nossa compatibilidade"
+  },
+  "cyc": {
+    "title": "Ciclos e Previsões",
+    "calendar": "Calendário pessoal",
+    "love": "Amor",
+    "work": "Trabalho",
+    "decisions": "Decisões",
+    "best": "Melhores dias: {{days}}",
+    "weekdays": [
+      "D",
+      "S",
+      "T",
+      "Q",
+      "Q",
+      "S",
+      "S"
+    ],
+    "year": "Seu ano",
+    "timeline": "Próximos 12 meses",
+    "forecast": "Previsão do ano",
+    "life": "Ciclos da vida",
+    "lifeHint": "Faixas de 7 anos (setênios); linhas douradas marcam o início de cada ciclo de 9 anos.",
+    "septenio": "Setênio {{n}}: {{title}}",
+    "wrapped": "Sua retrospectiva",
+    "wrappedHint": "Seu ano em telas para compartilhar.",
+    "prevMonth": "Mês anterior",
+    "nextMonth": "Próximo mês",
+    "retro": "{{planet}} retrógrado",
+    "eclipseSolar": "Eclipse solar",
+    "eclipseLunar": "Eclipse lunar",
+    "until": "até {{date}}",
+    "peak": "auge em {{date}}",
+    "chineseYear": "Ano chinês: {{animal}} de {{element}}",
+    "yearArcana": "Arcano do ano: {{name}}"
+  },
+  "paywall": {
+    "title": "Desbloqueie seu mapa completo",
+    "subtitle": "Todas as leituras, sem limites.",
+    "benefits": [
+      "Síntese Transcendental com IA",
+      "Todas as leituras completas",
+      "Relações ilimitadas e compatibilidade detalhada",
+      "Ciclos, previsões e retrospectiva",
+      "Todos os oráculos sem limite"
+    ],
+    "weekly": "Semanal",
+    "monthly": "Mensal",
+    "annual": "Anual",
+    "mostChosen": "Mais escolhido",
+    "trial": "3 dias grátis",
+    "subscribe": "Assinar",
+    "continueFree": "Continuar grátis",
+    "restore": "Restaurar compras",
+    "lockedTitle": "Conteúdo completo",
+    "unlock": "Desbloquear",
+    "synthesisReady": "Sua Síntese está pronta — desbloqueie para ler",
+    "notConfigured": "Assinaturas ainda não configuradas: neste modo de testes tudo está liberado.",
+    "active": "Assinatura ativa",
+    "terms": "A assinatura renova automaticamente e pode ser cancelada a qualquer momento na loja.",
+    "error": "Não foi possível concluir a compra."
+  },
+  "share": {
+    "title": "Compartilhar",
+    "story": "Stories 9:16",
+    "feed": "Feed 1:1",
+    "save": "Salvar na galeria",
+    "send": "Compartilhar",
+    "saved": "Imagem salva na galeria.",
+    "noPermission": "Sem permissão para salvar fotos.",
+    "download": "Baixe o app",
+    "myArcana": "Meu arcano",
+    "myDestiny": "Meu número de destino",
+    "myBig3": "Meu Big 3",
+    "myDay": "Minha energia do dia",
+    "ourCompat": "Nossa compatibilidade",
+    "myBodygraph": "Meu Desenho Humano",
+    "mySynthesis": "Minha Síntese"
+  },
+  "lib": {
+    "title": "Biblioteca",
+    "what": "O que é",
+    "origin": "De onde vem",
+    "howToRead": "Como ler",
+    "glossary": "Glossário",
+    "disclaimer": "Conteúdo para autoconhecimento e entretenimento. Não substitui orientação profissional."
+  },
+  "settings": {
+    "readings": "Leituras",
+    "reversals": "Usar cartas invertidas",
+    "notifications": "Lembrete diário",
+    "notifyTime": "Horário do lembrete",
+    "library": "Biblioteca",
+    "subscription": "Assinatura",
+    "privacy": "Privacidade",
+    "privacyText": "Seus dados de nascimento ficam só neste celular. Para a IA enviamos apenas os resultados calculados e seu primeiro nome — nunca data, hora ou local de nascimento. Você pode apagar tudo a qualquer momento.",
+    "meditationCta": "Abrir app de meditação",
+    "on": "Ligado",
+    "off": "Desligado"
   }
 }

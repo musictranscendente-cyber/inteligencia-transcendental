@@ -387,5 +387,271 @@
     "uranus": "Uranus",
     "neptune": "Neptune",
     "pluto": "Pluto"
+  },
+  "oracle": {
+    "title": "Oracle",
+    "tarot": "Tarot",
+    "lenormand": "Lenormand",
+    "iching": "I Ching",
+    "runes": "Runes",
+    "ask": "Ask the Oracle",
+    "askHint": "Write your question: the app draws the cards and the AI interprets them with your chart.",
+    "history": "History",
+    "historyEmpty": "Your readings will appear here.",
+    "spreads": {
+      "yesno": "Yes or No",
+      "three": "Past, present and future",
+      "love": "Love",
+      "work": "Work",
+      "celtic": "Celtic Cross",
+      "len3": "Lenormand · 3 cards",
+      "len9": "Lenormand · 9 cards",
+      "rune1": "One rune",
+      "rune3": "Three runes",
+      "iching": "Toss the coins"
+    },
+    "positions": {
+      "yesno": [
+        "Answer"
+      ],
+      "three": [
+        "Past",
+        "Present",
+        "Future"
+      ],
+      "love": [
+        "You",
+        "The other person",
+        "The relationship",
+        "Advice"
+      ],
+      "work": [
+        "Current situation",
+        "Obstacle",
+        "Potential",
+        "Advice"
+      ],
+      "celtic": [
+        "Present",
+        "Challenge",
+        "Foundation",
+        "Past",
+        "Goal",
+        "Near future",
+        "You",
+        "Environment",
+        "Hopes and fears",
+        "Outcome"
+      ],
+      "len3": [
+        "Situation",
+        "Development",
+        "Outcome"
+      ],
+      "len9": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "Center",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "rune1": [
+        "Advice"
+      ],
+      "rune3": [
+        "Past",
+        "Present",
+        "Path"
+      ],
+      "ask": [
+        "What weighs",
+        "What helps",
+        "Where it’s going"
+      ]
+    },
+    "questionPlaceholder": "Your question (optional)",
+    "askPlaceholder": "Write your question…",
+    "shuffle": "Shuffle",
+    "shuffling": "Shuffling…",
+    "pick": "Tap to choose {{n}} card(s)",
+    "picked": "{{done}} of {{n}}",
+    "revealAll": "Turn all",
+    "tapToFlip": "Tap the cards to turn them",
+    "answer": "Answer: {{answer}}",
+    "again": "New reading",
+    "reversals": "Reversed cards",
+    "saved": "Reading saved to history.",
+    "freeLimit": "On the free plan you get 1 tarot reading per day. Come back tomorrow or unlock unlimited readings.",
+    "toss": "Toss the coins",
+    "tossN": "Toss {{n}} of 6",
+    "line": "Line {{n}}",
+    "changing": "Changing lines: {{lines}}",
+    "noChanging": "No changing lines: the situation is stable.",
+    "becomes": "Turns into",
+    "hexagram": "Hexagram {{n}}",
+    "interpretation": "Interpretation",
+    "interpreting": "The oracle is reading the cards…",
+    "offlineAnswer": "Offline reading",
+    "askCta": "Consult the oracle",
+    "symmetric": "symmetric",
+    "kinds": {
+      "tarot": "Tarot",
+      "lenormand": "Lenormand",
+      "iching": "I Ching",
+      "runes": "Runes",
+      "ask": "AI Oracle"
+    }
+  },
+  "rel": {
+    "title": "Relations",
+    "add": "Add person",
+    "empty": "Add the people you love and discover your compatibility.",
+    "types": {
+      "partner": "Partner",
+      "child": "Child",
+      "friend": "Friend",
+      "partnerBiz": "Business partner",
+      "family": "Family",
+      "other": "Other"
+    },
+    "relation": "Relation",
+    "overall": "Overall compatibility",
+    "radar": {
+      "love": "Love",
+      "communication": "Communication",
+      "values": "Values",
+      "energy": "Energy",
+      "longTerm": "Long term"
+    },
+    "unites": "What unites you",
+    "clashes": "Where you may clash",
+    "tips": "How to understand each other",
+    "biwheel": "Bi-wheel",
+    "parts": "By technique",
+    "synastry": "Synastry",
+    "numerology": "Numerology",
+    "hd": "Human Design",
+    "chinese": "Chinese",
+    "hdChannels": "{{n}} channels formed together",
+    "freeLimit": "On the free plan you can add 1 person and see only the overall score.",
+    "deleteConfirm": "Delete {{name}}?",
+    "names": "Name numerology",
+    "namesHint": "Compare name options for a baby, company, house or phone.",
+    "nameType": {
+      "baby": "Baby",
+      "company": "Company",
+      "house": "House",
+      "phone": "Phone"
+    },
+    "option": "Option {{n}}",
+    "addOption": "Add option",
+    "vibration": "Vibration {{n}}",
+    "harmony": "Harmony with your Destiny: {{score}}%",
+    "form": "Person’s details",
+    "noTimeOk": "No time? That’s fine, the reading will be approximate.",
+    "saveP": "Save person",
+    "shareCompat": "Share our compatibility"
+  },
+  "cyc": {
+    "title": "Cycles & Forecasts",
+    "calendar": "Personal calendar",
+    "love": "Love",
+    "work": "Work",
+    "decisions": "Decisions",
+    "best": "Best days: {{days}}",
+    "weekdays": [
+      "S",
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S"
+    ],
+    "year": "Your year",
+    "timeline": "Next 12 months",
+    "forecast": "Year forecast",
+    "life": "Life cycles",
+    "lifeHint": "7-year bands (septenaries); gold lines mark the start of each 9-year cycle.",
+    "septenio": "Septenary {{n}}: {{title}}",
+    "wrapped": "Your year in review",
+    "wrappedHint": "Your year in shareable screens.",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "retro": "{{planet}} retrograde",
+    "eclipseSolar": "Solar eclipse",
+    "eclipseLunar": "Lunar eclipse",
+    "until": "until {{date}}",
+    "peak": "peak on {{date}}",
+    "chineseYear": "Chinese year: {{element}} {{animal}}",
+    "yearArcana": "Arcana of the year: {{name}}"
+  },
+  "paywall": {
+    "title": "Unlock your full map",
+    "subtitle": "Every reading, no limits.",
+    "benefits": [
+      "Transcendental Synthesis with AI",
+      "All full readings",
+      "Unlimited relations and detailed compatibility",
+      "Cycles, forecasts and year in review",
+      "All oracles without limits"
+    ],
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "mostChosen": "Most chosen",
+    "trial": "3-day free trial",
+    "subscribe": "Subscribe",
+    "continueFree": "Continue for free",
+    "restore": "Restore purchases",
+    "lockedTitle": "Full content",
+    "unlock": "Unlock",
+    "synthesisReady": "Your Synthesis is ready — unlock to read it",
+    "notConfigured": "Subscriptions not configured yet: in this test mode everything is unlocked.",
+    "active": "Subscription active",
+    "terms": "The subscription renews automatically and can be cancelled anytime in the store.",
+    "error": "Couldn’t complete the purchase."
+  },
+  "share": {
+    "title": "Share",
+    "story": "Stories 9:16",
+    "feed": "Feed 1:1",
+    "save": "Save to gallery",
+    "send": "Share",
+    "saved": "Image saved to gallery.",
+    "noPermission": "No permission to save photos.",
+    "download": "Get the app",
+    "myArcana": "My arcana",
+    "myDestiny": "My destiny number",
+    "myBig3": "My Big 3",
+    "myDay": "My energy today",
+    "ourCompat": "Our compatibility",
+    "myBodygraph": "My Human Design",
+    "mySynthesis": "My Synthesis"
+  },
+  "lib": {
+    "title": "Library",
+    "what": "What it is",
+    "origin": "Where it comes from",
+    "howToRead": "How to read it",
+    "glossary": "Glossary",
+    "disclaimer": "Content for self-knowledge and entertainment. It does not replace professional advice."
+  },
+  "settings": {
+    "readings": "Readings",
+    "reversals": "Use reversed cards",
+    "notifications": "Daily reminder",
+    "notifyTime": "Reminder time",
+    "library": "Library",
+    "subscription": "Subscription",
+    "privacy": "Privacy",
+    "privacyText": "Your birth details stay only on this phone. For the AI we send only the calculated results and your first name — never your birth date, time or place. You can delete everything at any time.",
+    "meditationCta": "Open meditation app",
+    "on": "On",
+    "off": "Off"
   }
 }

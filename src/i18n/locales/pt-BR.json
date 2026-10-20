@@ -653,5 +653,32 @@
     "meditationCta": "Abrir app de meditação",
     "on": "Ligado",
     "off": "Desligado"
+  },
+  "wrap": {
+    "intro": "Seu ano, {{name}}",
+    "range": "{{from}} → {{to}}",
+    "pyTitle": "Você viveu um Ano Pessoal {{n}}",
+    "arcTitle": "Seu arcano do ano foi",
+    "readingsTitle": "Você consultou o oráculo",
+    "readings": "{{n}} vezes",
+    "topCard": "Carta que mais apareceu: {{card}}",
+    "noReadings": "Que tal começar a conversar com o oráculo?",
+    "streakTitle": "Você voltou {{n}} dias",
+    "streakBest": "Maior sequência: {{n}} dias",
+    "traitTitle": "Sua marca registrada",
+    "chineseTitle": "No zodíaco chinês, foi o ano do",
+    "nextTitle": "O próximo ano é um Ano Pessoal {{n}}",
+    "outro": "Obrigado por se conhecer com a gente",
+    "swipe": "Deslize para ver mais",
+    "birthdayBanner": "Feliz aniversário! Sua retrospectiva está pronta."
+  },
+  "welcome": {
+    "title": "Bem-vindo ao seu mapa",
+    "arcana": "Seu arcano pessoal é {{name}}",
+    "share": "Compartilhar meu arcano",
+    "notify": "Quer receber sua energia do dia toda manhã?",
+    "notifyCta": "Ativar lembrete diário",
+    "notifyDone": "Lembrete ativado ✓",
+    "continue": "Continuar"
   }
 }

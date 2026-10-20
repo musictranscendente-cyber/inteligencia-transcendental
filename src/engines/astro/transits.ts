@@ -48,7 +48,8 @@ export function timeline(chart: NatalChart, from: Date, days = 365): TimelineEve
   // Aspectos exatos de planetas lentos (orbe de 1°) a pontos sensíveis.
   type Open = { start: Date; peak: Date; best: number };
   const open = new Map<string, Open>();
-  for (let i = 0; i <= days; i++) {
+  // Planetas lentos andam menos de 0,25°/dia: amostrar a cada 2 dias basta para um orbe de 1°.
+  for (let i = 0; i <= days; i += 2) {
     const d = new Date(from.getTime() + i * day);
     for (const planet of SLOW) {
       const lon = longitude(planet, d);

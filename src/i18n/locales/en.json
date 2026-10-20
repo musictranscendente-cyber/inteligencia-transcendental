@@ -653,5 +653,32 @@
     "meditationCta": "Open meditation app",
     "on": "On",
     "off": "Off"
+  },
+  "wrap": {
+    "intro": "Your year, {{name}}",
+    "range": "{{from}} → {{to}}",
+    "pyTitle": "You lived a Personal Year {{n}}",
+    "arcTitle": "Your arcana of the year was",
+    "readingsTitle": "You consulted the oracle",
+    "readings": "{{n}} times",
+    "topCard": "Most frequent card: {{card}}",
+    "noReadings": "How about starting a conversation with the oracle?",
+    "streakTitle": "You came back {{n}} days",
+    "streakBest": "Longest streak: {{n}} days",
+    "traitTitle": "Your signature",
+    "chineseTitle": "In the Chinese zodiac, it was the year of the",
+    "nextTitle": "Next year is a Personal Year {{n}}",
+    "outro": "Thank you for knowing yourself with us",
+    "swipe": "Swipe to see more",
+    "birthdayBanner": "Happy birthday! Your year in review is ready."
+  },
+  "welcome": {
+    "title": "Welcome to your map",
+    "arcana": "Your personal arcana is {{name}}",
+    "share": "Share my arcana",
+    "notify": "Want your energy of the day every morning?",
+    "notifyCta": "Turn on daily reminder",
+    "notifyDone": "Reminder on ✓",
+    "continue": "Continue"
   }
 }

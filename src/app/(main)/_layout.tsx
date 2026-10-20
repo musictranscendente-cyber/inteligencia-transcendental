@@ -1,4 +1,4 @@
-import { Stack } from 'expo-router';
+import { router, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -6,9 +6,18 @@ import { langOf } from '@/content/types';
 import { scheduleDaily } from '@/services/notifications';
 import { initPurchases } from '@/services/purchases';
 import { touchStreak } from '@/storage/app-data';
+import { kv } from '@/storage/kv';
 
 export default function MainLayout() {
   const { t, i18n } = useTranslation();
+
+  // Logo após o cadastro, mostra a tela de boas-vindas uma única vez.
+  useEffect(() => {
+    if (kv.getString('onboarding.welcome')) {
+      kv.remove('onboarding.welcome');
+      setTimeout(() => router.push('/welcome'), 300);
+    }
+  }, []);
 
   useEffect(() => {
     touchStreak();

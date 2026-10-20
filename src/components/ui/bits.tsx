@@ -66,9 +66,10 @@ export function ScoreBars({ label, value, color }: { label: string; value: numbe
 /** Número que "conta" até o valor final, dentro de um anel. */
 export function NumberRing({ value, label, color, size = 84 }: { value: number; label?: string; color: string; size?: number }) {
   const reduce = useReducedMotion();
-  const [shown, setShown] = useState(reduce ? value : 0);
+  const [counted, setShown] = useState(0);
+  const shown = reduce ? value : counted;
   useEffect(() => {
-    if (reduce) return setShown(value);
+    if (reduce) return;
     let i = 0;
     const steps = Math.min(value, 12);
     const id = setInterval(() => {

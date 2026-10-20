@@ -24,6 +24,7 @@ import { angelForDate } from '@/engines/angels';
 import { dailyEnergy } from '@/engines/daily';
 import { firstName } from '@/engines/reading';
 import { cardOfDay, dayKey, dayLine } from '@/features/today/daily-picks';
+import { isBirthday } from '@/features/wrapped/data';
 import { useReading } from '@/hooks/use-reading';
 import { enableNotifications } from '@/services/notifications';
 import { prefsStore, streakStore } from '@/storage/app-data';
@@ -56,6 +57,9 @@ export default function TodayScreen() {
     <View style={styles.flex}>
       <ScreenHeader kicker={t('screens.today.greeting', { name })} title={t('tabs.today')} />
       <ScrollView contentContainerStyle={styles.content}>
+        {isBirthday(reading.person.birthDate) ? (
+          <Button title={t('wrap.birthdayBanner')} onPress={() => router.push('/wrapped')} />
+        ) : null}
         <Animated.View entering={FadeInDown.duration(500)}>
           <GlassCard accent={colors.gold} style={styles.gap}>
             <AppText variant="label" gold>{t('today.energyKicker')}</AppText>

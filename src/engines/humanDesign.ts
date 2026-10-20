@@ -123,7 +123,12 @@ export function analyzeGates(gates: Iterable<number>) {
     const seen = new Set<CenterKey>([from]);
     const stack = [from];
     while (stack.length) {
-      for (const n of adj.get(stack.pop()!) ?? []) if (!seen.has(n)) (seen.add(n), stack.push(n));
+      for (const n of adj.get(stack.pop()!) ?? []) {
+        if (!seen.has(n)) {
+          seen.add(n);
+          stack.push(n);
+        }
+      }
     }
     return seen;
   };

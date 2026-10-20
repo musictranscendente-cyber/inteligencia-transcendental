@@ -15,6 +15,7 @@ if (Platform.OS !== 'web') {
 export async function requestNotifications(): Promise<boolean> {
   if (Platform.OS === 'web') return false;
   if (Platform.OS === 'android') {
+    // eslint-disable-next-line import/namespace -- o enum existe; o lint não acompanha a reexportação
     await Notifications.setNotificationChannelAsync('daily', { name: 'Diário', importance: Notifications.AndroidImportance.DEFAULT });
   }
   const current = await Notifications.getPermissionsAsync();

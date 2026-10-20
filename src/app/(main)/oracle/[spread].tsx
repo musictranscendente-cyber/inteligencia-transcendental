@@ -1,5 +1,5 @@
 import { router, useLocalSearchParams } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, TextInput, useWindowDimensions, View } from 'react-native';
 import Animated, { FadeIn, FadeInDown, useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
 import { useTranslation } from 'react-i18next';
@@ -37,7 +37,7 @@ export default function SpreadScreen() {
   const [fan, setFan] = useState<Drawn[]>([]);
   const [picked, setPicked] = useState<number[]>([]);
   const [flipped, setFlipped] = useState<boolean[]>([]);
-  const [saved, setSaved] = useState(false);
+  const saved = useRef(false);
 
   const color = cfg.deck === 'tarot' ? colors.technique.tarot : cfg.deck === 'lenormand' ? colors.technique.oracles : colors.technique.humanDesign;
   const positions = t(`oracle.positions.${spread}`, { returnObjects: true }) as string[];
@@ -53,7 +53,7 @@ export default function SpreadScreen() {
     setFan(draw(deckOf(cfg.deck), Math.min(24, deckOf(cfg.deck).length), { reversals }));
     setPicked([]);
     setFlipped(Array(cfg.count).fill(false));
-    setSaved(false);
+    saved.current = false;
     setPhase('shuffling');
     wobble.set(withRepeat(withSequence(withTiming(1, { duration: 140 }), withTiming(-1, { duration: 140 })), 4, true, () => {}));
     setTimeout(() => {
@@ -70,11 +70,11 @@ export default function SpreadScreen() {
   };
 
   useEffect(() => {
-    if (phase !== 'reading' || !allFlipped || saved) return;
+    if (phase !== 'reading' || !allFlipped || saved.current) return;
     const kind: HistoryKind = cfg.deck === 'tarot' ? 'tarot' : cfg.deck === 'lenormand' ? 'lenormand' : 'runes';
     addHistory({ kind, spread, question: question.trim() || undefined, cards: cards.map((c) => ({ id: c.id, reversed: c.reversed })), answer: spread === 'yesno' ? yesNo(String(cards[0].id), cards[0].reversed) : undefined });
     if (cfg.deck === 'tarot') countUsage('tarot');
-    setSaved(true);
+    saved.current = true;
   }, [phase, allFlipped]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const slotW = cfg.count > 4 ? Math.min(78, (width - 2 * spacing.lg - 3 * spacing.sm) / 4) : Math.min(120, (width - 2 * spacing.lg - (cfg.count - 1) * spacing.md) / cfg.count);

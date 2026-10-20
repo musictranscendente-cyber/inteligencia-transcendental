@@ -69,6 +69,34 @@ Depois de mudar o `.env`, pare o servidor (Ctrl+C) e rode `npx expo start -c`.
 Siga [backend/README.md](backend/README.md). Em resumo: conta grátis na Cloudflare + chave da Anthropic,
 quatro comandos, e cole o endereço em `EXPO_PUBLIC_AI_URL`.
 
+## 3b. APK no celular, com atualização automática
+
+Uma vez só (crie antes uma conta grátis em https://expo.dev):
+
+```
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
+git pull
+npm install
+npx eas-cli@latest login
+npx eas-cli@latest init
+npx eas-cli@latest update:configure
+git add .
+git commit -m "Liga o app ao EAS"
+git push
+npx eas-cli@latest build --platform android --profile preview
+```
+
+No último comando, responda **Y** quando ele perguntar sobre a chave (keystore). Em uns 15 minutos aparece
+um link: abra no celular, baixe e instale o APK (o Android pede para permitir "instalar apps desconhecidos").
+
+Para as atualizações chegarem sozinhas: em https://expo.dev → Account settings → Access tokens, crie um token;
+no GitHub, Settings → Secrets and variables → Actions → New repository secret, nome `EXPO_TOKEN`, cole o token.
+A partir daí, cada push no `main` publica uma atualização (workflow "Atualizar app (APK)") e o app mostra
+"Atualização disponível" ao abrir.
+
+Mudanças nativas (biblioteca nativa nova, ícone, permissões) não chegam por atualização: aumente `version`
+no `app.json` e gere um APK novo em Actions → "Gerar APK" → Run workflow.
+
 ## 4. Assinaturas (RevenueCat) e notificações de verdade — build de desenvolvimento
 
 Compras não funcionam no Expo Go. Para testá-las, gere um APK de desenvolvimento com o EAS (grátis):

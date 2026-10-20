@@ -1,0 +1,22 @@
+name: Gerar APK
+
+# Gera um APK novo no EAS. Rode à mão (Actions → Gerar APK → Run workflow) só quando
+# entrar algo nativo novo (biblioteca nativa, ícone, permissões) ou mudar a versão do app.
+# O primeiro APK precisa ser gerado no computador, para criar a chave de assinatura.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx eas-cli@latest build --platform android --profile preview --non-interactive --no-wait
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}

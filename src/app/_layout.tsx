@@ -14,6 +14,7 @@ import { View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { StarField } from '@/components/star-field';
+import { useUpdatePrompt } from '@/hooks/use-update-prompt';
 import { useProfile } from '@/storage/profile';
 import { useTheme } from '@/theme';
 export { ErrorScreen as ErrorBoundary } from '@/components/error-screen';
@@ -31,6 +32,7 @@ export default function RootLayout() {
   const ready = fontsLoaded || !!fontError;
   const profile = useProfile();
   const { name, colors } = useTheme();
+  useUpdatePrompt();
 
   useEffect(() => {
     if (ready) SplashScreen.hideAsync();

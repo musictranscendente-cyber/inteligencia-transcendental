@@ -686,5 +686,11 @@
     "hint": "Tire um print desta tela e envie para o suporte. Seus dados continuam salvos.",
     "retry": "Tentar de novo",
     "home": "Voltar ao início"
+  },
+  "updates": {
+    "title": "Atualização disponível",
+    "message": "Uma versão nova do app foi baixada. Quer reiniciar agora para usar?",
+    "later": "Depois",
+    "now": "Atualizar agora"
   }
 }

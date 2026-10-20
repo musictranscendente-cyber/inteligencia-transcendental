@@ -686,5 +686,11 @@
     "hint": "Haz una captura de esta pantalla y envíala a soporte. Tus datos siguen guardados.",
     "retry": "Intentar de nuevo",
     "home": "Volver al inicio"
+  },
+  "updates": {
+    "title": "Actualización disponible",
+    "message": "Se descargó una versión nueva de la app. ¿Quieres reiniciar ahora para usarla?",
+    "later": "Después",
+    "now": "Actualizar ahora"
   }
 }

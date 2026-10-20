@@ -73,6 +73,9 @@
       "baseUrl": "/inteligencia-transcendental"
     },
     "description": "Numerologia, tarô, astrologia, Desenho Humano e mais, cruzados numa só leitura sobre você.",
-    "extra": {}
+    "extra": {},
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
   }
 }

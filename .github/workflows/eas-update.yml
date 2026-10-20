@@ -1,0 +1,42 @@
+name: Atualizar app (APK)
+
+# A cada push no main, publica uma atualização que o APK instalado baixa sozinho
+# e mostra o aviso "Atualização disponível".
+# Precisa do segredo EXPO_TOKEN (Settings → Secrets and variables → Actions) e do
+# projeto já ligado ao EAS (npx eas-cli init). Sem isso, o passo é pulado.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: eas-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ready
+        run: |
+          if [ -z "$EXPO_TOKEN" ]; then echo "Sem EXPO_TOKEN: pulando."; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if ! grep -q '"projectId"' app.json; then echo "Projeto ainda não ligado ao EAS: pulando."; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "ok=true" >> "$GITHUB_OUTPUT"
+      - if: steps.ready.outputs.ok == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.ready.outputs.ok == 'true'
+        run: npm ci
+      - if: steps.ready.outputs.ok == 'true'
+        run: npm test
+      - if: steps.ready.outputs.ok == 'true'
+        run: npx eas-cli@latest update --branch preview --platform android --message "$(git log -1 --pretty=%s)" --non-interactive
+        env:
+          EXPO_PUBLIC_AI_URL: ${{ vars.EXPO_PUBLIC_AI_URL }}
+          EXPO_PUBLIC_SHARE_URL: ${{ vars.EXPO_PUBLIC_SHARE_URL }}

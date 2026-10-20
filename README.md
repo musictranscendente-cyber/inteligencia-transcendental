@@ -17,10 +17,17 @@ Ative uma vez em **Settings → Pages → Source: GitHub Actions**. No celular, 
 
 1. Instale o **Node.js LTS** (nodejs.org) no computador e o app **Expo Go** (Play Store) no celular.
 2. Computador e celular na **mesma rede Wi-Fi**.
-3. No terminal:
+3. No terminal, baixe o projeto (só na primeira vez):
 
 ```
-cd C:\Users\luciv\Projetos\Rift-Rumble-\inteligencia-transcendental
+cd C:\Users\luciv\Projetos
+git clone https://github.com/musictranscendente-cyber/inteligencia-transcendental.git
+```
+
+   E rode:
+
+```
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
 npm install
 npx expo start
 ```
@@ -30,7 +37,7 @@ npx expo start
 Se não conectar (rede da empresa, roteador bloqueando), use:
 
 ```
-cd C:\Users\luciv\Projetos\Rift-Rumble-\inteligencia-transcendental
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
 npx expo start --tunnel
 ```
 
@@ -42,7 +49,7 @@ textos offline até você publicar o servidor de IA (passo 3).
 Copie `.env.example` para `.env` e preencha só o que for usar:
 
 ```
-cd C:\Users\luciv\Projetos\Rift-Rumble-\inteligencia-transcendental
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
 copy .env.example .env
 notepad .env
 ```
@@ -67,7 +74,7 @@ quatro comandos, e cole o endereço em `EXPO_PUBLIC_AI_URL`.
 Compras não funcionam no Expo Go. Para testá-las, gere um APK de desenvolvimento com o EAS (grátis):
 
 ```
-cd C:\Users\luciv\Projetos\Rift-Rumble-\inteligencia-transcendental
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
 npx eas-cli@latest login
 npx eas-cli@latest build:configure
 npx eas-cli@latest build --profile development --platform android
@@ -81,7 +88,7 @@ No RevenueCat: crie o projeto, ligue ao app da Play Store, crie o direito `premi
 ## 5. Publicar na Play Store
 
 ```
-cd C:\Users\luciv\Projetos\Rift-Rumble-\inteligencia-transcendental
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
 npx eas-cli@latest build --profile production --platform android
 npx eas-cli@latest submit --platform android
 ```

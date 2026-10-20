@@ -13,7 +13,7 @@ primeiro nome — nunca data, hora ou local de nascimento.
 Você precisa de uma conta grátis na Cloudflare e de uma chave da API da Anthropic (console.anthropic.com).
 
 ```
-cd C:\Users\luciv\Projetos\Rift-Rumble-\inteligencia-transcendental\backend
+cd C:\Users\luciv\Projetos\inteligencia-transcendental\backend
 npm install
 npx wrangler login
 npx wrangler kv namespace create CACHE
@@ -22,7 +22,7 @@ npx wrangler kv namespace create CACHE
 Copie o `id` que apareceu e cole no lugar de `COLE_AQUI_O_ID_DO_KV` em `wrangler.toml`. Depois:
 
 ```
-cd C:\Users\luciv\Projetos\Rift-Rumble-\inteligencia-transcendental\backend
+cd C:\Users\luciv\Projetos\inteligencia-transcendental\backend
 npx wrangler secret put ANTHROPIC_API_KEY
 npx wrangler deploy
 ```

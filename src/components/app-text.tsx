@@ -5,9 +5,9 @@ import { fonts, useTheme } from '@/theme';
 type Variant = 'display' | 'title' | 'subtitle' | 'body' | 'bodyStrong' | 'caption' | 'label';
 
 const variants = {
-  display: { fontFamily: fonts.title, fontSize: 40, lineHeight: 44 },
-  title: { fontFamily: fonts.title, fontSize: 30, lineHeight: 36 },
-  subtitle: { fontFamily: fonts.titleMedium, fontSize: 21, lineHeight: 27 },
+  display: { fontFamily: fonts.title, fontSize: 40, lineHeight: 44, fontVariant: ['lining-nums'] as const },
+  title: { fontFamily: fonts.title, fontSize: 30, lineHeight: 36, fontVariant: ['lining-nums'] as const },
+  subtitle: { fontFamily: fonts.titleMedium, fontSize: 21, lineHeight: 27, fontVariant: ['lining-nums'] as const },
   body: { fontFamily: fonts.body, fontSize: 16, lineHeight: 24 },
   bodyStrong: { fontFamily: fonts.bodySemiBold, fontSize: 16, lineHeight: 24 },
   caption: { fontFamily: fonts.body, fontSize: 13, lineHeight: 18 },

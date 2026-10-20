@@ -50,14 +50,16 @@ export default function CyclesScreen() {
   const metricColor = { love: colors.technique.oracles, work: colors.technique.astrology, decisions: colors.technique.numerology }[metric];
   const values = cal.map((d) => d[metric]);
   const best = cal.filter((d) => d[metric] >= 5).map((d) => d.date.getDate());
-  const bestDays = (best.length ? best : cal.filter((d) => d[metric] >= 4).map((d) => d.date.getDate())).slice(0, 8);
+  const bestDays = (best.length >= 3 ? best : cal.filter((d) => d[metric] >= 4).map((d) => d.date.getDate())).slice(0, 8);
   const py = r.personal.year;
   const life = lifePosition(r.person.birthDate);
   const birthYear = parseDate(r.person.birthDate).year;
   const nineAges = nineYearStarts(r.person.birthDate).map((y) => y - birthYear);
   const sept = SEPTENIOS[lang][Math.min(life.septenio, 12)];
   const sun = pointOf(r.chart, 'sun')!;
-  const sr = solarReturn(sun.lon, r.person.birthDate, now.getFullYear());
+  const srThis = solarReturn(sun.lon, r.person.birthDate, now.getFullYear());
+  // A próxima revolução solar (se a deste ano já passou, mostra a do ano que vem).
+  const sr = srThis && srThis < now ? solarReturn(sun.lon, r.person.birthDate, now.getFullYear() + 1) : srThis;
   const cn = chineseSign(`${now.getFullYear()}-06-01`);
   const themes = TRANSIT_THEMES[lang];
   const planet = (k: string) => PLANETS_TEXT[k as keyof typeof PLANETS_TEXT][lang].name;

@@ -359,7 +359,6 @@
       "now": "Seu momento atual"
     },
     "convergence": "Onde as técnicas concordam",
-    "convergenceLine": "{{count}} técnicas apontam {{trait}}",
     "regenerate": "Atualizar com IA",
     "generating": "Escrevendo sua síntese…",
     "aiNote": "Escrita por IA a partir dos seus resultados.",
@@ -371,7 +370,9 @@
       "astrology": "Astrologia",
       "humanDesign": "Desenho Humano",
       "chinese": "Chinês"
-    }
+    },
+    "convergenceLine_one": "{{count}} técnica aponta {{trait}}",
+    "convergenceLine_other": "{{count}} técnicas apontam {{trait}}"
   },
   "hdPlanets": {
     "sun": "Sol",

@@ -68,12 +68,13 @@ function Edge({ edge, progress, range, color }: { edge: [Point, Point]; progress
 }
 
 /** Logo do app: uma constelação que se desenha ponto a ponto. */
-export function ConstellationLogo({ size = 180, duration = 2600, onDone }: { size?: number; duration?: number; onDone?: () => void }) {
+export function ConstellationLogo({ size = 180, duration = 2600, onDone, still = false }: { size?: number; duration?: number; onDone?: () => void; still?: boolean }) {
   const { colors } = useTheme();
   const reduceMotion = useReducedMotion();
-  const progress = useSharedValue(0);
+  const progress = useSharedValue(still ? 1 : 0);
 
   useEffect(() => {
+    if (still) return;
     if (reduceMotion) {
       progress.set(1);
       onDone?.();

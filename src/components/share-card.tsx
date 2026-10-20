@@ -36,7 +36,7 @@ export function ShareCard({ ref, format, color, art, kicker, title, phrase, foot
         <AppText center style={{ fontFamily: fonts.title, fontSize: story ? 40 : 30, lineHeight: story ? 46 : 34 }}>{title}</AppText>
         <AppText center muted style={{ fontSize: story ? 17 : 14, lineHeight: story ? 25 : 20 }}>{phrase}</AppText>
         <View style={styles.footer}>
-          <ConstellationLogo size={story ? 46 : 32} duration={1} />
+          <ConstellationLogo size={story ? 46 : 32} still />
           <View>
             <AppText variant="bodyStrong" gold>{appName}</AppText>
             <AppText variant="caption" muted>{footer}</AppText>

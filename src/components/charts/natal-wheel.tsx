@@ -22,18 +22,18 @@ type Props = {
 
 const ASPECT_COLORS = { trine: '#5FE0B8', sextile: '#7FB3FF', square: '#FF6B6B', opposition: '#FF9F6B', conjunction: '#D9B56A' } as const;
 
-/** Afasta glifos muito próximos para não se sobreporem. */
+/** Afasta glifos muito próximos para não se sobreporem (reordena a cada passada). */
 function spread(points: { key: PointKey; lon: number }[], minGap: number) {
-  const sorted = [...points].sort((a, b) => a.lon - b.lon).map((p) => ({ ...p, pos: p.lon }));
-  for (let iter = 0; iter < 30; iter++) {
+  const items = points.map((p) => ({ key: p.key, pos: p.lon }));
+  for (let iter = 0; iter < 80 && items.length > 1; iter++) {
+    items.sort((a, b) => a.pos - b.pos);
     let moved = false;
-    for (let i = 0; i < sorted.length; i++) {
-      const a = sorted[i];
-      const b = sorted[(i + 1) % sorted.length];
-      if (sorted.length < 2) break;
+    for (let i = 0; i < items.length; i++) {
+      const a = items[i];
+      const b = items[(i + 1) % items.length];
       const gap = norm360(b.pos - a.pos);
       if (gap < minGap) {
-        const push = (minGap - gap) / 2;
+        const push = (minGap - gap) / 2 + 0.01;
         a.pos = norm360(a.pos - push);
         b.pos = norm360(b.pos + push);
         moved = true;
@@ -41,7 +41,7 @@ function spread(points: { key: PointKey; lon: number }[], minGap: number) {
     }
     if (!moved) break;
   }
-  return new Map(sorted.map((p) => [p.key, p.pos]));
+  return new Map(items.map((p) => [p.key, p.pos]));
 }
 
 export function NatalWheel({ points, cusps, aspects, size, selected, onSelect, outer, outerColor }: Props) {
@@ -67,7 +67,7 @@ export function NatalWheel({ points, cusps, aspects, size, selected, onSelect, o
   const rPlanets = rSignInner - 20;
   const rAspects = rSignInner - 40;
   const planets = points.filter((p) => p.key !== 'asc' && p.key !== 'mc');
-  const pos = spread(planets, 8);
+  const pos = spread(planets, 10);
   const outerPos = outer ? spread(outer.filter((p) => p.key !== 'asc' && p.key !== 'mc'), 8) : null;
   const byKey = new Map(points.map((p) => [p.key, p]));
 

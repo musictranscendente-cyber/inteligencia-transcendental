@@ -1,0 +1,159 @@
+{
+  "app": {
+    "name": "Inteligência Transcendental",
+    "tagline": "Todas as formas de se conhecer, num só lugar."
+  },
+  "common": {
+    "continue": "Continuar",
+    "back": "Voltar",
+    "edit": "Editar",
+    "cancel": "Cancelar",
+    "comingSoon": "Em breve",
+    "step": "Passo {{current}} de {{total}}",
+    "dateLong": "{{day}} de {{month}} de {{year}}"
+  },
+  "months": [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro"
+  ],
+  "onboarding": {
+    "welcome": {
+      "title": "Inteligência Transcendental",
+      "subtitle": "Numerologia, tarô, astrologia e muito mais — cruzados numa só leitura sobre você.",
+      "start": "Começar"
+    },
+    "language": {
+      "title": "Em qual idioma?",
+      "subtitle": "Você pode trocar depois no seu perfil."
+    },
+    "name": {
+      "title": "Qual é o seu nome completo?",
+      "hint": "Usado na numerologia — use o nome do registro, como está na certidão de nascimento.",
+      "placeholder": "Nome completo",
+      "error": "Digite nome e sobrenome."
+    },
+    "date": {
+      "title": "Quando você nasceu?",
+      "hint": "A data revela seu número de destino, seu arcano e seu signo.",
+      "day": "Dia",
+      "month": "Mês",
+      "year": "Ano"
+    },
+    "time": {
+      "title": "Que horas você nasceu?",
+      "hint": "A hora define seu ascendente e as casas do mapa. Se puder, confira na certidão.",
+      "hour": "Hora",
+      "minute": "Minuto",
+      "unknown": "Não sei a hora",
+      "unknownTitle": "Tudo bem! Sem a hora:",
+      "unknownItems": [
+        "Ascendente e casas astrológicas ficam ocultos.",
+        "O signo da Lua pode ficar aproximado.",
+        "O Desenho Humano exato fica indisponível.",
+        "Numerologia, arcano e signo solar continuam exatos."
+      ],
+      "unknownFooter": "Você pode adicionar a hora depois, no seu perfil."
+    },
+    "place": {
+      "title": "Onde você nasceu?",
+      "hint": "A cidade define o fuso horário e a posição do céu no seu nascimento.",
+      "placeholder": "Digite a cidade",
+      "tip": "Dica: use \"Cidade, UF\" ou \"Cidade, País\" para filtrar.",
+      "noResults": "Nenhuma cidade encontrada. Tente uma cidade maior próxima de onde você nasceu.",
+      "selected": "Cidade escolhida"
+    },
+    "review": {
+      "title": "Confira seus dados",
+      "subtitle": "Eles ficam guardados só neste celular.",
+      "name": "Nome",
+      "date": "Nascimento",
+      "time": "Hora",
+      "timeUnknown": "Não informada",
+      "place": "Cidade",
+      "timezone": "Fuso no nascimento: {{offset}}",
+      "dstShift": "Esse horário não existiu por causa do horário de verão; ajustamos para {{time}}.",
+      "confirm": "Revelar meu mapa"
+    },
+    "reveal": {
+      "building": "Alinhando as estrelas…",
+      "title": "Seu Mapa Transcendental",
+      "subtitle": "{{name}}, seu céu está registrado.",
+      "next": "Na próxima etapa, aqui viram três cartas: seu número de destino, seu arcano pessoal e seus signos solar e lunar.",
+      "enter": "Entrar no app",
+      "cards": [
+        "Número de destino",
+        "Arcano pessoal",
+        "Sol e Lua"
+      ]
+    }
+  },
+  "tabs": {
+    "today": "Hoje",
+    "myMap": "Meu Mapa",
+    "relations": "Relações",
+    "oracle": "Oráculo",
+    "cycles": "Ciclos"
+  },
+  "screens": {
+    "today": {
+      "greeting": "Olá, {{name}}",
+      "title": "A energia do seu dia",
+      "description": "Aqui vai aparecer, todos os dias, a energia do dia, a carta do dia, a lua de hoje e seus números pessoais."
+    },
+    "myMap": {
+      "title": "Meu Mapa",
+      "description": "Um painel com todas as técnicas — numerologia, arcano, astrologia e mais — e, no topo, a sua Síntese Transcendental."
+    },
+    "relations": {
+      "title": "Relações",
+      "description": "Cadastre quem você ama e veja a compatibilidade de vocês em várias técnicas ao mesmo tempo."
+    },
+    "oracle": {
+      "title": "Oráculo",
+      "description": "Tarô, baralho cigano, I Ching e runas — com animações e histórico das suas leituras."
+    },
+    "cycles": {
+      "title": "Ciclos e Previsões",
+      "description": "Seu calendário pessoal, o tema do seu ano e os grandes ciclos da sua vida."
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "birthData": "Dados de nascimento",
+    "appearance": "Aparência",
+    "theme": {
+      "dark": "Cosmos (escuro)",
+      "light": "Papel (claro)",
+      "system": "Igual ao celular"
+    },
+    "language": "Idioma",
+    "more": "Em breve aqui",
+    "moreItems": [
+      "Assinatura",
+      "Notificações",
+      "Biblioteca",
+      "Privacidade"
+    ],
+    "meditation": "Procurando meditações e práticas? Conheça nosso app de meditação.",
+    "erase": "Apagar todos os meus dados",
+    "eraseTitle": "Apagar tudo?",
+    "eraseMessage": "Seu perfil, preferências e histórico serão apagados deste celular. Não dá para desfazer.",
+    "eraseConfirm": "Apagar",
+    "privacy": "Seus dados de nascimento ficam só neste celular.",
+    "disclaimer": "Conteúdo para autoconhecimento e entretenimento."
+  },
+  "a11y": {
+    "openProfile": "Abrir perfil",
+    "selected": "selecionado"
+  }
+}

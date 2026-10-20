@@ -1,0 +1,159 @@
+{
+  "app": {
+    "name": "Transcendental Intelligence",
+    "tagline": "Every way to know yourself, in one place."
+  },
+  "common": {
+    "continue": "Continue",
+    "back": "Back",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "comingSoon": "Coming soon",
+    "step": "Step {{current}} of {{total}}",
+    "dateLong": "{{month}} {{day}}, {{year}}"
+  },
+  "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "onboarding": {
+    "welcome": {
+      "title": "Transcendental Intelligence",
+      "subtitle": "Numerology, tarot, astrology and more — woven into one reading about you.",
+      "start": "Begin"
+    },
+    "language": {
+      "title": "Which language?",
+      "subtitle": "You can change it later in your profile."
+    },
+    "name": {
+      "title": "What is your full name?",
+      "hint": "Used in numerology — use your legal name, exactly as on your birth certificate.",
+      "placeholder": "Full name",
+      "error": "Type your first and last name."
+    },
+    "date": {
+      "title": "When were you born?",
+      "hint": "Your date reveals your destiny number, your arcana and your sign.",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year"
+    },
+    "time": {
+      "title": "What time were you born?",
+      "hint": "The time sets your rising sign and the houses of your chart. Check your birth certificate if you can.",
+      "hour": "Hour",
+      "minute": "Minute",
+      "unknown": "I don't know the time",
+      "unknownTitle": "That's okay! Without the time:",
+      "unknownItems": [
+        "Rising sign and astrological houses stay hidden.",
+        "Your Moon sign may be approximate.",
+        "An exact Human Design chart is unavailable.",
+        "Numerology, arcana and Sun sign stay exact."
+      ],
+      "unknownFooter": "You can add the time later in your profile."
+    },
+    "place": {
+      "title": "Where were you born?",
+      "hint": "The city sets the time zone and the position of the sky when you were born.",
+      "placeholder": "Type your city",
+      "tip": "Tip: use \"City, State\" or \"City, Country\" to filter.",
+      "noResults": "No city found. Try a larger city near where you were born.",
+      "selected": "Selected city"
+    },
+    "review": {
+      "title": "Check your details",
+      "subtitle": "They are stored only on this phone.",
+      "name": "Name",
+      "date": "Born",
+      "time": "Time",
+      "timeUnknown": "Not provided",
+      "place": "City",
+      "timezone": "Time zone at birth: {{offset}}",
+      "dstShift": "That time didn't exist because of daylight saving; we adjusted it to {{time}}.",
+      "confirm": "Reveal my chart"
+    },
+    "reveal": {
+      "building": "Aligning the stars…",
+      "title": "Your Transcendental Map",
+      "subtitle": "{{name}}, your sky is recorded.",
+      "next": "In the next step, three cards will flip here: your destiny number, your personal arcana and your Sun and Moon signs.",
+      "enter": "Enter the app",
+      "cards": [
+        "Destiny number",
+        "Personal arcana",
+        "Sun & Moon"
+      ]
+    }
+  },
+  "tabs": {
+    "today": "Today",
+    "myMap": "My Map",
+    "relations": "Relations",
+    "oracle": "Oracle",
+    "cycles": "Cycles"
+  },
+  "screens": {
+    "today": {
+      "greeting": "Hello, {{name}}",
+      "title": "Your energy today",
+      "description": "Every day you'll find here the energy of the day, the card of the day, today's moon and your personal numbers."
+    },
+    "myMap": {
+      "title": "My Map",
+      "description": "A dashboard with every technique — numerology, arcana, astrology and more — topped by your Transcendental Synthesis."
+    },
+    "relations": {
+      "title": "Relations",
+      "description": "Add the people you love and see your compatibility across several techniques at once."
+    },
+    "oracle": {
+      "title": "Oracle",
+      "description": "Tarot, Lenormand, I Ching and runes — with animations and a history of your readings."
+    },
+    "cycles": {
+      "title": "Cycles & Forecasts",
+      "description": "Your personal calendar, the theme of your year and the great cycles of your life."
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "birthData": "Birth details",
+    "appearance": "Appearance",
+    "theme": {
+      "dark": "Cosmos (dark)",
+      "light": "Paper (light)",
+      "system": "Match my phone"
+    },
+    "language": "Language",
+    "more": "Coming soon here",
+    "moreItems": [
+      "Subscription",
+      "Notifications",
+      "Library",
+      "Privacy"
+    ],
+    "meditation": "Looking for meditations and practices? Meet our meditation app.",
+    "erase": "Delete all my data",
+    "eraseTitle": "Delete everything?",
+    "eraseMessage": "Your profile, preferences and history will be removed from this phone. This can't be undone.",
+    "eraseConfirm": "Delete",
+    "privacy": "Your birth details stay only on this phone.",
+    "disclaimer": "Content for self-knowledge and entertainment."
+  },
+  "a11y": {
+    "openProfile": "Open profile",
+    "selected": "selected"
+  }
+}

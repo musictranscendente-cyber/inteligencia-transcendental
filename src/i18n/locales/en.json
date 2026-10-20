@@ -10,7 +10,20 @@
     "cancel": "Cancel",
     "comingSoon": "Coming soon",
     "step": "Step {{current}} of {{total}}",
-    "dateLong": "{{month}} {{day}}, {{year}}"
+    "dateLong": "{{month}} {{day}}, {{year}}",
+    "readMore": "Read more",
+    "share": "Share",
+    "save": "Save",
+    "delete": "Delete",
+    "add": "Add",
+    "close": "Close",
+    "seeAll": "See all",
+    "yes": "Yes",
+    "no": "No",
+    "maybe": "Maybe",
+    "approximate": "approximate",
+    "today": "Today",
+    "open": "Open"
   },
   "months": [
     "January",
@@ -155,5 +168,46 @@
   "a11y": {
     "openProfile": "Open profile",
     "selected": "selected"
+  },
+  "today": {
+    "energyKicker": "Energy of the day",
+    "love": "Love",
+    "work": "Work",
+    "energy": "Energy",
+    "cardOfDay": "Card of the day",
+    "tapToReveal": "Tap to reveal",
+    "reversed": "reversed",
+    "angelOfDay": "Angel of the day",
+    "moonToday": "Today’s Moon",
+    "moonIn": "Moon in {{sign}}",
+    "illumination": "{{pct}}% illuminated",
+    "numbersOfDay": "Numbers of the day",
+    "personalDay": "Personal day",
+    "personalMonth": "Personal month",
+    "personalYear": "Personal year",
+    "streak_other": "{{count}} days in a row",
+    "streakBest": "Best: {{best}}",
+    "shareDay": "Share my day",
+    "notifyCta": "Get my energy every day",
+    "notifyOn": "Daily reminder on at {{time}}",
+    "meditationBanner": "For meditations and practices, meet our meditation app",
+    "streak_one": "{{count}} day in a row"
+  },
+  "map": {
+    "title": "My Map",
+    "synthesis": "Transcendental Synthesis",
+    "synthesisHint": "Every technique woven into one reading about you.",
+    "open": "Open",
+    "noTime": "No birth time: some readings are approximate.",
+    "techniques": {
+      "numerology": "Numerology",
+      "arcana": "Personal Arcana",
+      "astrology": "Astrology",
+      "humanDesign": "Human Design",
+      "chinese": "Chinese Astrology",
+      "angel": "Kabbalistic Angel",
+      "chakras": "Chakras & Crystals",
+      "cartography": "Astrocartography"
+    }
   }
 }

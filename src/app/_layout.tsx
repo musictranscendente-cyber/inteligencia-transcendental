@@ -57,8 +57,7 @@ export default function RootLayout() {
         <StatusBar style={name === 'dark' ? 'light' : 'dark'} />
         <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: 'transparent' }, animation: 'fade' }}>
           <Stack.Protected guard={!!profile}>
-            <Stack.Screen name="(tabs)" />
-            <Stack.Screen name="profile" options={{ animation: 'slide_from_bottom' }} />
+            <Stack.Screen name="(main)" />
           </Stack.Protected>
           <Stack.Protected guard={!profile}>
             <Stack.Screen name="onboarding" />

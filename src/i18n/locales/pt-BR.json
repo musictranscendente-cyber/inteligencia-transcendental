@@ -10,7 +10,20 @@
     "cancel": "Cancelar",
     "comingSoon": "Em breve",
     "step": "Passo {{current}} de {{total}}",
-    "dateLong": "{{day}} de {{month}} de {{year}}"
+    "dateLong": "{{day}} de {{month}} de {{year}}",
+    "readMore": "Ler mais",
+    "share": "Compartilhar",
+    "save": "Salvar",
+    "delete": "Apagar",
+    "add": "Adicionar",
+    "close": "Fechar",
+    "seeAll": "Ver tudo",
+    "yes": "Sim",
+    "no": "Não",
+    "maybe": "Talvez",
+    "approximate": "aproximado",
+    "today": "Hoje",
+    "open": "Abrir"
   },
   "months": [
     "Janeiro",
@@ -155,5 +168,46 @@
   "a11y": {
     "openProfile": "Abrir perfil",
     "selected": "selecionado"
+  },
+  "today": {
+    "energyKicker": "Energia do dia",
+    "love": "Amor",
+    "work": "Trabalho",
+    "energy": "Energia",
+    "cardOfDay": "Carta do dia",
+    "tapToReveal": "Toque para revelar",
+    "reversed": "invertida",
+    "angelOfDay": "Anjo do dia",
+    "moonToday": "Lua de hoje",
+    "moonIn": "Lua em {{sign}}",
+    "illumination": "{{pct}}% iluminada",
+    "numbersOfDay": "Números do dia",
+    "personalDay": "Dia pessoal",
+    "personalMonth": "Mês pessoal",
+    "personalYear": "Ano pessoal",
+    "streak_other": "{{count}} dias seguidos",
+    "streakBest": "Recorde: {{best}}",
+    "shareDay": "Compartilhar meu dia",
+    "notifyCta": "Receber minha energia todo dia",
+    "notifyOn": "Lembrete diário ativado às {{time}}",
+    "meditationBanner": "Para meditações e práticas, conheça nosso app de meditação",
+    "streak_one": "{{count}} dia seguido"
+  },
+  "map": {
+    "title": "Meu Mapa",
+    "synthesis": "Síntese Transcendental",
+    "synthesisHint": "Todas as técnicas cruzadas numa leitura só sobre você.",
+    "open": "Abrir",
+    "noTime": "Sem hora de nascimento: algumas leituras ficam aproximadas.",
+    "techniques": {
+      "numerology": "Numerologia",
+      "arcana": "Arcano Pessoal",
+      "astrology": "Astrologia",
+      "humanDesign": "Desenho Humano",
+      "chinese": "Astrologia Chinesa",
+      "angel": "Anjo Cabalístico",
+      "chakras": "Chakras e Cristais",
+      "cartography": "Astrocartografia"
+    }
   }
 }

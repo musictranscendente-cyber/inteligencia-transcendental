@@ -10,7 +10,20 @@
     "cancel": "Cancelar",
     "comingSoon": "Muy pronto",
     "step": "Paso {{current}} de {{total}}",
-    "dateLong": "{{day}} de {{month}} de {{year}}"
+    "dateLong": "{{day}} de {{month}} de {{year}}",
+    "readMore": "Leer más",
+    "share": "Compartir",
+    "save": "Guardar",
+    "delete": "Borrar",
+    "add": "Añadir",
+    "close": "Cerrar",
+    "seeAll": "Ver todo",
+    "yes": "Sí",
+    "no": "No",
+    "maybe": "Tal vez",
+    "approximate": "aproximado",
+    "today": "Hoy",
+    "open": "Abrir"
   },
   "months": [
     "Enero",
@@ -155,5 +168,46 @@
   "a11y": {
     "openProfile": "Abrir perfil",
     "selected": "seleccionado"
+  },
+  "today": {
+    "energyKicker": "Energía del día",
+    "love": "Amor",
+    "work": "Trabajo",
+    "energy": "Energía",
+    "cardOfDay": "Carta del día",
+    "tapToReveal": "Toca para revelar",
+    "reversed": "invertida",
+    "angelOfDay": "Ángel del día",
+    "moonToday": "Luna de hoy",
+    "moonIn": "Luna en {{sign}}",
+    "illumination": "{{pct}}% iluminada",
+    "numbersOfDay": "Números del día",
+    "personalDay": "Día personal",
+    "personalMonth": "Mes personal",
+    "personalYear": "Año personal",
+    "streak_other": "{{count}} días seguidos",
+    "streakBest": "Récord: {{best}}",
+    "shareDay": "Compartir mi día",
+    "notifyCta": "Recibir mi energía cada día",
+    "notifyOn": "Recordatorio diario activado a las {{time}}",
+    "meditationBanner": "Para meditaciones y prácticas, conoce nuestra app de meditación",
+    "streak_one": "{{count}} día seguido"
+  },
+  "map": {
+    "title": "Mi Mapa",
+    "synthesis": "Síntesis Trascendental",
+    "synthesisHint": "Todas las técnicas cruzadas en una sola lectura sobre ti.",
+    "open": "Abrir",
+    "noTime": "Sin hora de nacimiento: algunas lecturas son aproximadas.",
+    "techniques": {
+      "numerology": "Numerología",
+      "arcana": "Arcano Personal",
+      "astrology": "Astrología",
+      "humanDesign": "Diseño Humano",
+      "chinese": "Astrología China",
+      "angel": "Ángel Cabalístico",
+      "chakras": "Chakras y Cristales",
+      "cartography": "Astrocartografía"
+    }
   }
 }

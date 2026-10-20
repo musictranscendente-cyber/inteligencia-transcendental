@@ -11,7 +11,6 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.transcendental.inteligencia",
-      "buildNumber": "1",
       "infoPlist": {
         "NSPhotoLibraryAddUsageDescription": "Salvar os cards que você quiser compartilhar."
       }
@@ -25,7 +24,6 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "versionCode": 1,
       "permissions": [
         "POST_NOTIFICATIONS",
         "android.permission.READ_EXTERNAL_STORAGE",

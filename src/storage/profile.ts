@@ -3,6 +3,7 @@ import { useSyncExternalStore } from 'react';
 import type { BirthPlace } from '@/lib/birth';
 import { resolveBirth } from '@/lib/birth';
 import { KEYS, kv } from './kv';
+import { resetAllStores } from './store';
 
 export type Profile = {
   fullName: string;
@@ -54,6 +55,7 @@ export function saveProfile(input: ProfileInput): Profile {
 /** Apaga todos os dados do app (perfil, preferências, histórico). */
 export function eraseAllData() {
   kv.clearAll();
+  resetAllStores();
   cached = null;
   emit();
 }

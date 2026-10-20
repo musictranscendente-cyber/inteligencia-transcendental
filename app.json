@@ -32,7 +32,11 @@
     },
     "web": {
       "output": "single",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "Inteligência Transcendental",
+      "shortName": "Transcendental",
+      "themeColor": "#0B0A1A",
+      "backgroundColor": "#0B0A1A"
     },
     "plugins": [
       "expo-router",
@@ -65,7 +69,8 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
+      "reactCompiler": true,
+      "baseUrl": "/inteligencia-transcendental"
     },
     "description": "Numerologia, tarô, astrologia, Desenho Humano e mais, cruzados numa só leitura sobre você.",
     "extra": {}

@@ -6,6 +6,13 @@ Feito com **Expo + React Native + TypeScript + Expo Router**. Idiomas: PT-BR, EN
 
 > Os comandos abaixo são para o **Windows** (Prompt de Comando ou PowerShell). Sempre rode o `cd` antes.
 
+## 0. Abrir direto pelo link (GitHub Pages), sem instalar nada
+
+A cada envio para o branch `main`, o GitHub publica o app como site em
+`https://musictranscendente-cyber.github.io/inteligencia-transcendental/`.
+Ative uma vez em **Settings → Pages → Source: GitHub Actions**. No celular, abra o link no Chrome e toque em
+**⋮ → Adicionar à tela inicial**. No site, os dados ficam salvos no navegador; lembretes diários e compras só no app instalado.
+
 ## 1. Testar no celular Android (Expo Go) — o jeito mais rápido
 
 1. Instale o **Node.js LTS** (nodejs.org) no computador e o app **Expo Go** (Play Store) no celular.

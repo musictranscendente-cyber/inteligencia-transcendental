@@ -681,5 +681,11 @@
     "notifyCta": "Ativar lembrete diário",
     "notifyDone": "Lembrete ativado ✓",
     "continue": "Continuar"
+  },
+  "error": {
+    "title": "Algo deu errado nesta tela",
+    "hint": "Tire um print desta tela e envie para o suporte. Seus dados continuam salvos.",
+    "retry": "Tentar de novo",
+    "home": "Voltar ao início"
   }
 }

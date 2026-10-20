@@ -16,6 +16,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StarField } from '@/components/star-field';
 import { useProfile } from '@/storage/profile';
 import { useTheme } from '@/theme';
+export { ErrorScreen as ErrorBoundary } from '@/components/error-screen';
 
 SplashScreen.preventAutoHideAsync();
 

@@ -7,6 +7,7 @@ import { scheduleDaily } from '@/services/notifications';
 import { initPurchases } from '@/services/purchases';
 import { touchStreak } from '@/storage/app-data';
 import { kv } from '@/storage/kv';
+export { ErrorScreen as ErrorBoundary } from '@/components/error-screen';
 
 export default function MainLayout() {
   const { t, i18n } = useTranslation();

@@ -681,5 +681,11 @@
     "notifyCta": "Turn on daily reminder",
     "notifyDone": "Reminder on ✓",
     "continue": "Continue"
+  },
+  "error": {
+    "title": "Something went wrong on this screen",
+    "hint": "Take a screenshot of this screen and send it to support. Your data is still saved.",
+    "retry": "Try again",
+    "home": "Back to home"
   }
 }

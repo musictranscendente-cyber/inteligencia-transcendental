@@ -681,5 +681,11 @@
     "notifyCta": "Activar recordatorio diario",
     "notifyDone": "Recordatorio activado ✓",
     "continue": "Continuar"
+  },
+  "error": {
+    "title": "Algo salió mal en esta pantalla",
+    "hint": "Haz una captura de esta pantalla y envíala a soporte. Tus datos siguen guardados.",
+    "retry": "Intentar de nuevo",
+    "home": "Volver al inicio"
   }
 }

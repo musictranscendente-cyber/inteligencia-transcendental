@@ -1,0 +1,19 @@
+{
+  "name": "Inteligência Transcendental",
+  "short_name": "Transcendental",
+  "description": "Numerologia, tarô, astrologia, Desenho Humano e mais, cruzados numa só leitura sobre você.",
+  "id": "/inteligencia-transcendental/",
+  "start_url": "/inteligencia-transcendental/",
+  "scope": "/inteligencia-transcendental/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "pt-BR",
+  "background_color": "#0B0A1A",
+  "theme_color": "#0B0A1A",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

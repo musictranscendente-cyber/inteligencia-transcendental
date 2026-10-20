@@ -27,7 +27,20 @@
       "predictiveBackGestureEnabled": false,
       "versionCode": 1,
       "permissions": [
-        "POST_NOTIFICATIONS"
+        "POST_NOTIFICATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "POST_NOTIFICATIONS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
       ]
     },
     "web": {
@@ -73,9 +86,22 @@
       "baseUrl": "/inteligencia-transcendental"
     },
     "description": "Numerologia, tarô, astrologia, Desenho Humano e mais, cruzados numa só leitura sobre você.",
-    "extra": {},
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "877edd5d-8937-4e19-87ac-c69eb85589bd"
+      }
+    },
     "runtimeVersion": {
       "policy": "appVersion"
+    },
+    "owner": "transcendente",
+    "updates": {
+      "url": "https://u.expo.dev/877edd5d-8937-4e19-87ac-c69eb85589bd"
     }
   }
 }

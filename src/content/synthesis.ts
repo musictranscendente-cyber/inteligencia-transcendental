@@ -16,7 +16,7 @@ import type { Lang } from './types';
 
 export const SYNTHESIS_SECTIONS = ['who', 'gifts', 'challenges', 'love', 'work', 'now'] as const;
 export type SynthesisSection = (typeof SYNTHESIS_SECTIONS)[number];
-export type Synthesis = { sections: Record<SynthesisSection, string>; convergences: Convergence[]; source: 'local' | 'ai'; personalYear: number; createdAt: string };
+export type Synthesis = { sections: Record<SynthesisSection, string>; convergences: Convergence[]; source: 'local' | 'ai'; personalYear: number; createdAt: string; lang?: Lang };
 
 const num = (n: number) => NUMBERS[n] ?? NUMBERS[reduce(n, false)];
 

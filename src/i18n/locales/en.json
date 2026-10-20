@@ -163,7 +163,8 @@
     "eraseMessage": "Your profile, preferences and history will be removed from this phone. This can't be undone.",
     "eraseConfirm": "Delete",
     "privacy": "Your birth details stay only on this phone.",
-    "disclaimer": "Content for self-knowledge and entertainment."
+    "disclaimer": "Content for self-knowledge and entertainment.",
+    "edit": "Edit my details"
   },
   "a11y": {
     "openProfile": "Open profile",
@@ -209,5 +210,182 @@
       "chakras": "Chakras & Crystals",
       "cartography": "Astrocartography"
     }
+  },
+  "num": {
+    "destiny": "Destiny",
+    "expression": "Expression",
+    "soul": "Soul Urge",
+    "personality": "Personality",
+    "mission": "Mission",
+    "birthday": "Birthday",
+    "destinyHint": "Your life’s great path (from the date).",
+    "expressionHint": "Your talents (from the full name).",
+    "soulHint": "What moves your heart (from the vowels).",
+    "personalityHint": "How others see you (from the consonants).",
+    "missionHint": "What you came to achieve (Destiny + Expression).",
+    "pyramid": "Your core numbers",
+    "grid": "Name grid",
+    "gridHint": "Each dot is a letter of your name with that value. Empty squares are karmic lessons.",
+    "debts": "Karmic debts",
+    "lessons": "Karmic lessons",
+    "none": "None",
+    "pinnacles": "Turning points (pinnacles)",
+    "cycles": "Life cycles",
+    "challenges": "Challenges",
+    "challengeMain": "Main challenge",
+    "nineYear": "9-year cycle",
+    "youAreHere": "you are here",
+    "ages": "ages {{from}}–{{to}}",
+    "agesFrom": "from age {{from}}",
+    "cycleNames": [
+      "Formation",
+      "Production",
+      "Harvest"
+    ]
+  },
+  "arc": {
+    "birth": "Birth arcana",
+    "year": "Arcana of {{year}}",
+    "journey": "The Fool’s journey",
+    "journeyHint": "The 22 arcana are stages of a journey. Highlighted: yours; gold ring: this year’s.",
+    "upright": "Upright",
+    "reversed": "Reversed",
+    "asPersonal": "As personal arcana"
+  },
+  "astro": {
+    "big3": "Your Big 3",
+    "sun": "Sun",
+    "moon": "Moon",
+    "asc": "Ascendant",
+    "wheel": "Natal chart",
+    "wheelHint": "Tap a planet to see its meaning.",
+    "planets": "Planets",
+    "inHouse": "house {{n}}",
+    "retro": "retrograde",
+    "aspects": "Aspects",
+    "aspectGrid": "Aspect grid",
+    "elements": "Elements",
+    "modalities": "Modalities",
+    "dominant": "Dominant: {{name}}",
+    "transits": "Today’s transits",
+    "noTransits": "No major transits today.",
+    "solarReturn": "Solar return {{year}}",
+    "solarReturnAt": "The Sun returns to its natal position on {{date}}.",
+    "houses": "Houses",
+    "houseSystem": "House system",
+    "placidus": "Placidus",
+    "whole": "Whole sign",
+    "porphyry": "Placidus doesn’t work near the poles; we use Porphyry.",
+    "noTime": "Without the birth time, the ascendant and houses are hidden and the Moon may vary a few degrees.",
+    "transitLine": "Transiting {{planet}} {{aspect}} {{natal}}",
+    "planetIn": "{{planet}} in {{sign}}"
+  },
+  "hd": {
+    "type": "Type",
+    "strategy": "Strategy",
+    "signature": "Signature",
+    "notSelf": "Warning sign",
+    "authority": "Authority",
+    "profile": "Profile",
+    "definition": "Definition",
+    "cross": "Incarnation Cross",
+    "centers": "Centers",
+    "centerHint": "Tap a center to see its explanation.",
+    "defined": "Defined",
+    "open": "Open",
+    "channels": "Channels",
+    "gates": "Active gates",
+    "personality": "Personality (conscious)",
+    "design": "Design (unconscious)",
+    "noTime": "Human Design needs the exact birth time. Add it in your profile to see your chart.",
+    "gate": "Gate {{n}}"
+  },
+  "cn": {
+    "animal": "Your animal",
+    "yin": "Yin",
+    "yang": "Yang",
+    "wheel": "Wheel of the 12 animals",
+    "pillars": "The four pillars (Ba Zi)",
+    "pillarNames": [
+      "Year",
+      "Month",
+      "Day",
+      "Hour"
+    ],
+    "balance": "Balance of the 5 elements",
+    "dayMaster": "Day Master",
+    "noHour": "no hour",
+    "yearOf": "Year of the {{element}} {{animal}}"
+  },
+  "ang": {
+    "title": "Your angel",
+    "number": "Angel no. {{n}}",
+    "choir": "Choir",
+    "psalm": "Psalm",
+    "regency": "Hour of rulership",
+    "period": "Period"
+  },
+  "chk": {
+    "focus": "Focus chakra",
+    "support": "Supporting chakra",
+    "crystals": "Crystals",
+    "why": "Suggested by the element least present in your chart ({{element}}) and your Destiny {{n}}.",
+    "disclaimer": "Symbolic associations, for inspiration."
+  },
+  "carto": {
+    "title": "Astrocartography",
+    "hint": "Where in the world each planet in your chart is strongest. Solid: Midheaven; dashed: Imum Coeli; dotted: Ascendant/Descendant.",
+    "love": "Love",
+    "money": "Money",
+    "career": "Career",
+    "best": "Best cities for {{cat}}",
+    "none": "No major city near this category’s lines.",
+    "km": "{{km}} km from {{planet}}’s {{line}} line",
+    "lines": {
+      "mc": "MC",
+      "ic": "IC",
+      "asc": "ASC",
+      "dsc": "DSC"
+    }
+  },
+  "syn": {
+    "title": "Transcendental Synthesis",
+    "sections": {
+      "who": "Who you are",
+      "gifts": "Your gifts",
+      "challenges": "Your challenges",
+      "love": "Love and relationships",
+      "work": "Work and purpose",
+      "now": "Your current moment"
+    },
+    "convergence": "Where the techniques agree",
+    "convergenceLine": "{{count}} techniques point to {{trait}}",
+    "regenerate": "Refresh with AI",
+    "generating": "Writing your synthesis…",
+    "aiNote": "Written by AI from your results.",
+    "localNote": "Built from each technique’s texts.",
+    "aiError": "Couldn’t reach the AI right now. Showing the offline version.",
+    "techniques": {
+      "numerology": "Numerology",
+      "tarot": "Tarot",
+      "astrology": "Astrology",
+      "humanDesign": "Human Design",
+      "chinese": "Chinese"
+    }
+  },
+  "hdPlanets": {
+    "sun": "Sun",
+    "earth": "Earth",
+    "moon": "Moon",
+    "northNode": "N. Node",
+    "southNode": "S. Node",
+    "mercury": "Mercury",
+    "venus": "Venus",
+    "mars": "Mars",
+    "jupiter": "Jupiter",
+    "saturn": "Saturn",
+    "uranus": "Uranus",
+    "neptune": "Neptune",
+    "pluto": "Pluto"
   }
 }

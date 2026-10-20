@@ -163,7 +163,8 @@
     "eraseMessage": "Tu perfil, preferencias e historial se borrarán de este teléfono. No se puede deshacer.",
     "eraseConfirm": "Borrar",
     "privacy": "Tus datos de nacimiento se quedan solo en este teléfono.",
-    "disclaimer": "Contenido para autoconocimiento y entretenimiento."
+    "disclaimer": "Contenido para autoconocimiento y entretenimiento.",
+    "edit": "Editar mis datos"
   },
   "a11y": {
     "openProfile": "Abrir perfil",
@@ -209,5 +210,182 @@
       "chakras": "Chakras y Cristales",
       "cartography": "Astrocartografía"
     }
+  },
+  "num": {
+    "destiny": "Destino",
+    "expression": "Expresión",
+    "soul": "Motivación",
+    "personality": "Impresión",
+    "mission": "Misión",
+    "birthday": "Día de nacimiento",
+    "destinyHint": "El gran camino de tu vida (por la fecha).",
+    "expressionHint": "Tus talentos (por el nombre completo).",
+    "soulHint": "Lo que mueve tu corazón (por las vocales).",
+    "personalityHint": "Cómo te ven los demás (por las consonantes).",
+    "missionHint": "Lo que viniste a realizar (Destino + Expresión).",
+    "pyramid": "Tus números principales",
+    "grid": "Cuadrícula del nombre",
+    "gridHint": "Cada punto es una letra de tu nombre con ese valor. Las casillas vacías son lecciones kármicas.",
+    "debts": "Deudas kármicas",
+    "lessons": "Lecciones kármicas",
+    "none": "Ninguna",
+    "pinnacles": "Momentos decisivos (pináculos)",
+    "cycles": "Ciclos de vida",
+    "challenges": "Desafíos",
+    "challengeMain": "Desafío principal",
+    "nineYear": "Ciclo de 9 años",
+    "youAreHere": "estás aquí",
+    "ages": "{{from}}–{{to}} años",
+    "agesFrom": "desde los {{from}} años",
+    "cycleNames": [
+      "Formación",
+      "Producción",
+      "Cosecha"
+    ]
+  },
+  "arc": {
+    "birth": "Arcano de nacimiento",
+    "year": "Arcano del año {{year}}",
+    "journey": "El viaje del Loco",
+    "journeyHint": "Los 22 arcanos son etapas de un viaje. Destacado: el tuyo; con borde dorado: el del año.",
+    "upright": "Derecha",
+    "reversed": "Invertida",
+    "asPersonal": "Como arcano personal"
+  },
+  "astro": {
+    "big3": "Tu Big 3",
+    "sun": "Sol",
+    "moon": "Luna",
+    "asc": "Ascendente",
+    "wheel": "Carta natal",
+    "wheelHint": "Toca un planeta para ver su significado.",
+    "planets": "Planetas",
+    "inHouse": "casa {{n}}",
+    "retro": "retrógrado",
+    "aspects": "Aspectos",
+    "aspectGrid": "Cuadrícula de aspectos",
+    "elements": "Elementos",
+    "modalities": "Modalidades",
+    "dominant": "Predomina: {{name}}",
+    "transits": "Tránsitos de hoy",
+    "noTransits": "Sin tránsitos destacados hoy.",
+    "solarReturn": "Revolución solar {{year}}",
+    "solarReturnAt": "El Sol vuelve a su posición natal el {{date}}.",
+    "houses": "Casas",
+    "houseSystem": "Sistema de casas",
+    "placidus": "Placidus",
+    "whole": "Signos enteros",
+    "porphyry": "Cerca de los polos Placidus no funciona; usamos Porfirio.",
+    "noTime": "Sin la hora de nacimiento, el ascendente y las casas quedan ocultos y la Luna puede variar unos grados.",
+    "transitLine": "{{planet}} en tránsito {{aspect}} {{natal}}",
+    "planetIn": "{{planet}} en {{sign}}"
+  },
+  "hd": {
+    "type": "Tipo",
+    "strategy": "Estrategia",
+    "signature": "Firma",
+    "notSelf": "Señal de alerta",
+    "authority": "Autoridad",
+    "profile": "Perfil",
+    "definition": "Definición",
+    "cross": "Cruz de Encarnación",
+    "centers": "Centros",
+    "centerHint": "Toca un centro para ver la explicación.",
+    "defined": "Definido",
+    "open": "Abierto",
+    "channels": "Canales",
+    "gates": "Puertas activas",
+    "personality": "Personalidad (consciente)",
+    "design": "Diseño (inconsciente)",
+    "noTime": "El Diseño Humano necesita la hora exacta de nacimiento. Añádela en tu perfil para ver tu carta.",
+    "gate": "Puerta {{n}}"
+  },
+  "cn": {
+    "animal": "Tu animal",
+    "yin": "Yin",
+    "yang": "Yang",
+    "wheel": "Rueda de los 12 animales",
+    "pillars": "Los cuatro pilares (Ba Zi)",
+    "pillarNames": [
+      "Año",
+      "Mes",
+      "Día",
+      "Hora"
+    ],
+    "balance": "Equilibrio de los 5 elementos",
+    "dayMaster": "Maestro del Día",
+    "noHour": "sin hora",
+    "yearOf": "Año del {{animal}} de {{element}}"
+  },
+  "ang": {
+    "title": "Tu ángel",
+    "number": "Ángel nº {{n}}",
+    "choir": "Coro",
+    "psalm": "Salmo",
+    "regency": "Horario de regencia",
+    "period": "Período"
+  },
+  "chk": {
+    "focus": "Chakra en foco",
+    "support": "Chakra de apoyo",
+    "crystals": "Cristales",
+    "why": "Sugerido por el elemento que menos aparece en tu carta ({{element}}) y por tu Destino {{n}}.",
+    "disclaimer": "Asociaciones simbólicas, para inspiración."
+  },
+  "carto": {
+    "title": "Astrocartografía",
+    "hint": "Dónde en el mundo cada planeta de tu carta es más fuerte. Línea llena: Medio Cielo; discontinua: Fondo del Cielo; punteada: Ascendente/Descendente.",
+    "love": "Amor",
+    "money": "Dinero",
+    "career": "Carrera",
+    "best": "Mejores ciudades para {{cat}}",
+    "none": "Ninguna gran ciudad cerca de las líneas de esta categoría.",
+    "km": "a {{km}} km de la línea {{line}} de {{planet}}",
+    "lines": {
+      "mc": "MC",
+      "ic": "IC",
+      "asc": "ASC",
+      "dsc": "DSC"
+    }
+  },
+  "syn": {
+    "title": "Síntesis Trascendental",
+    "sections": {
+      "who": "Quién eres",
+      "gifts": "Tus dones",
+      "challenges": "Tus desafíos",
+      "love": "Amor y relaciones",
+      "work": "Trabajo y propósito",
+      "now": "Tu momento actual"
+    },
+    "convergence": "Dónde coinciden las técnicas",
+    "convergenceLine": "{{count}} técnicas apuntan a {{trait}}",
+    "regenerate": "Actualizar con IA",
+    "generating": "Escribiendo tu síntesis…",
+    "aiNote": "Escrita por IA a partir de tus resultados.",
+    "localNote": "Construida con los textos de cada técnica.",
+    "aiError": "No fue posible hablar con la IA ahora. Mostrando la versión offline.",
+    "techniques": {
+      "numerology": "Numerología",
+      "tarot": "Tarot",
+      "astrology": "Astrología",
+      "humanDesign": "Diseño Humano",
+      "chinese": "Chino"
+    }
+  },
+  "hdPlanets": {
+    "sun": "Sol",
+    "earth": "Tierra",
+    "moon": "Luna",
+    "northNode": "Nodo N",
+    "southNode": "Nodo S",
+    "mercury": "Mercurio",
+    "venus": "Venus",
+    "mars": "Marte",
+    "jupiter": "Júpiter",
+    "saturn": "Saturno",
+    "uranus": "Urano",
+    "neptune": "Neptuno",
+    "pluto": "Plutón"
   }
 }

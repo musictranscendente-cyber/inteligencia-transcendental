@@ -124,3 +124,38 @@ export function SparkIcon(p: IconProps) {
     </Base>
   );
 }
+
+export function ShareIcon(p: IconProps) {
+  return (
+    <Base {...p}>
+      <Path d="M12 15V3.5M7.5 8L12 3.5 16.5 8" />
+      <Path d="M8 11H6.5A1.5 1.5 0 0 0 5 12.5v6A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5v-6a1.5 1.5 0 0 0-1.5-1.5H16" />
+    </Base>
+  );
+}
+
+export function LockIcon(p: IconProps) {
+  return (
+    <Base {...p}>
+      <Path d="M7 11h10a1.5 1.5 0 0 1 1.5 1.5v6A1.5 1.5 0 0 1 17 20H7a1.5 1.5 0 0 1-1.5-1.5v-6A1.5 1.5 0 0 1 7 11z" />
+      <Path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3" />
+    </Base>
+  );
+}
+
+export function PlusIcon(p: IconProps) {
+  return (
+    <Base {...p}>
+      <Path d="M12 5v14M5 12h14" />
+    </Base>
+  );
+}
+
+export function BookIcon(p: IconProps) {
+  return (
+    <Base {...p}>
+      <Path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5z" />
+      <Path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5z" />
+    </Base>
+  );
+}

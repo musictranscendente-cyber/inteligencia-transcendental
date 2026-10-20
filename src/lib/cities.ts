@@ -116,3 +116,9 @@ export function placeSubtitle(place: BirthPlace, lang: LanguageIndex) {
   const country = countryName(place.countryCode, lang);
   return place.state ? `${place.state}, ${country}` : country;
 }
+
+/** As N cidades mais populosas (para a astrocartografia). */
+export function topCities(n = 900) {
+  const { data: d } = load();
+  return d.cities.slice(0, n).map((row) => ({ name: row[0], countryCode: row[1], lat: row[3], lon: row[4] }));
+}

@@ -10,9 +10,12 @@ import { Screen } from '@/components/ui/screen';
 import { ICHING } from '@/content/oracles';
 import { useLang } from '@/content/types';
 import { hexagramLines } from '@/engines/divination';
+import { firstName } from '@/engines/reading';
 import { Face } from '@/features/oracle/faces';
 import { cardMeaning, cardName } from '@/features/oracle/interpret';
+import { readIChingText, readSpread } from '@/features/oracle/reader';
 import { SPREADS, isSpread } from '@/features/oracle/spreads';
+import { useReading } from '@/hooks/use-reading';
 import { formatDate } from '@/lib/format';
 import { historyStore } from '@/storage/app-data';
 import { spacing, useTheme } from '@/theme';
@@ -22,12 +25,16 @@ export default function EntryScreen() {
   const { t, i18n } = useTranslation();
   const lang = useLang();
   const { colors } = useTheme();
+  const r = useReading();
+  const name = r ? firstName(r.person.fullName) : '';
+  const year = r?.personal.year;
   const e = historyStore.useValue().find((h) => h.id === id);
   if (!e) return <Screen title={t('oracle.history')}><AppText muted>{t('oracle.historyEmpty')}</AppText></Screen>;
 
   if (e.kind === 'iching') {
     return (
       <Screen title={t('oracle.iching')} kicker={formatDate(new Date(e.date), i18n.language, true)}>
+        {e.question ? <AppText variant="subtitle" center>{`“${e.question}”`}</AppText> : null}
         {e.cards.map((c, i) => (
           <GlassCard key={i} style={[styles.gap, styles.center]}>
             <Hexagram lines={hexagramLines(Number(c.id))} color={colors.gold} width={100} />
@@ -35,6 +42,20 @@ export default function EntryScreen() {
             <AppText center>{ICHING[Number(c.id) - 1].judgement[lang]}</AppText>
           </GlassCard>
         ))}
+        {e.lines ? (
+          <GlassCard accent={colors.gold} style={styles.gap}>
+            <SectionTitle>{t('oracle.interpretation')}</SectionTitle>
+            {readIChingText({
+              hexagram: Number(e.cards[0].id),
+              transformed: e.cards[1] ? Number(e.cards[1].id) : null,
+              changing: e.lines.map((l, i) => (l === 6 || l === 9 ? i + 1 : 0)).filter(Boolean),
+              question: e.question ?? '',
+              lang,
+              firstName: name,
+              personalYear: year,
+            }).map((p, i) => <AppText key={i}>{p}</AppText>)}
+          </GlassCard>
+        ) : null}
       </Screen>
     );
   }
@@ -65,6 +86,14 @@ export default function EntryScreen() {
         </GlassCard>
       ) : null}
       {e.answer && e.spread === 'yesno' ? <AppText variant="title" center color={color}>{t(`common.${e.answer}`)}</AppText> : null}
+      {e.kind !== 'ask' && isSpread(e.spread) ? (
+        <GlassCard accent={color} style={styles.gap}>
+          <SectionTitle color={color}>{t('oracle.interpretation')}</SectionTitle>
+          {readSpread({ deck, spread: e.spread, cards: e.cards.map((c) => ({ id: c.id, reversed: !!c.reversed })), question: e.question ?? '', lang, firstName: name, personalYear: year }).map((p, i) => (
+            <AppText key={i}>{p}</AppText>
+          ))}
+        </GlassCard>
+      ) : null}
     </Screen>
   );
 }

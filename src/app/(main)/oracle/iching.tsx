@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, TextInput, View } from 'react-native';
 import Animated, { FadeIn, FadeInUp, useAnimatedStyle, useSharedValue, withSequence, withTiming } from 'react-native-reanimated';
 import Svg, { Circle, Text as SvgText } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
@@ -14,9 +14,12 @@ import { Screen } from '@/components/ui/screen';
 import { ICHING } from '@/content/oracles';
 import { useLang } from '@/content/types';
 import { hexagramLines, readIChing, type Line } from '@/engines/divination';
+import { firstName } from '@/engines/reading';
+import { readIChingText } from '@/features/oracle/reader';
+import { useReading } from '@/hooks/use-reading';
 import { usePremium } from '@/services/purchases';
 import { addHistory } from '@/storage/app-data';
-import { spacing, useTheme } from '@/theme';
+import { fonts, noOutline, radius, spacing, useTheme } from '@/theme';
 
 function Coin({ heads, color }: { heads: boolean; color: string }) {
   return (
@@ -33,6 +36,8 @@ export default function IChingScreen() {
   const lang = useLang();
   const { colors } = useTheme();
   const premium = usePremium();
+  const r = useReading();
+  const [question, setQuestion] = useState('');
   const [lines, setLines] = useState<Line[]>([]);
   const [coins, setCoins] = useState<boolean[]>([true, false, true]);
   const spin = useSharedValue(0);
@@ -42,7 +47,7 @@ export default function IChingScreen() {
   const reading = done ? readIChing(lines) : null;
 
   useEffect(() => {
-    if (reading) addHistory({ kind: 'iching', spread: 'iching', cards: [{ id: reading.hexagram }, ...(reading.transformed ? [{ id: reading.transformed }] : [])], lines });
+    if (reading) addHistory({ kind: 'iching', spread: 'iching', question: question.trim() || undefined, cards: [{ id: reading.hexagram }, ...(reading.transformed ? [{ id: reading.transformed }] : [])], lines });
   }, [done]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!premium) {
@@ -69,6 +74,19 @@ export default function IChingScreen() {
 
   return (
     <Screen title={t('oracle.iching')} accent={c}>
+      {lines.length === 0 ? (
+        <TextInput
+          value={question}
+          onChangeText={setQuestion}
+          placeholder={t('oracle.questionPlaceholder')}
+          placeholderTextColor={colors.textMuted}
+          multiline
+          maxFontSizeMultiplier={1.6}
+          style={[styles.input, noOutline, { color: colors.text, borderColor: c, backgroundColor: colors.surfaceGlass }]}
+        />
+      ) : question.trim() ? (
+        <AppText variant="subtitle" center>{`“${question.trim()}”`}</AppText>
+      ) : null}
       <GlassCard style={[styles.gap, styles.center]}>
         <Animated.View style={[styles.coins, spinStyle]}>
           {coins.map((h, i) => <Coin key={i} heads={h} color={c} />)}
@@ -107,6 +125,12 @@ export default function IChingScreen() {
               <AppText center>{ICHING[reading.transformed - 1].judgement[lang]}</AppText>
             </GlassCard>
           ) : null}
+          <GlassCard accent={c} style={styles.gap}>
+            <SectionTitle>{t('oracle.interpretation')}</SectionTitle>
+            {readIChingText({ ...reading, question, lang, firstName: r ? firstName(r.person.fullName) : '', personalYear: r?.personal.year }).map((p, i) => (
+              <AppText key={i}>{p}</AppText>
+            ))}
+          </GlassCard>
           <Button variant="secondary" title={t('oracle.again')} onPress={() => setLines([])} />
         </Animated.View>
       ) : null}
@@ -119,4 +143,5 @@ const styles = StyleSheet.create({
   center: { alignItems: 'center' },
   coins: { flexDirection: 'row', gap: spacing.md, marginTop: spacing.lg },
   built: { alignItems: 'center', gap: 2, flexDirection: 'column-reverse' },
+  input: { minHeight: 70, borderWidth: 1, borderRadius: radius.card, padding: spacing.md, fontFamily: fonts.body, fontSize: 16, textAlignVertical: 'top' },
 });

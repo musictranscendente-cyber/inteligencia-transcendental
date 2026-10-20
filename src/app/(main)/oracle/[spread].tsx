@@ -13,9 +13,12 @@ import { Screen } from '@/components/ui/screen';
 import { yesNo } from '@/content/tarot';
 import { useLang } from '@/content/types';
 import { draw, shuffle } from '@/engines/divination';
+import { firstName } from '@/engines/reading';
 import { Back, Face, ASPECT } from '@/features/oracle/faces';
-import { cardMeaning, cardName, type Drawn } from '@/features/oracle/interpret';
+import type { Drawn } from '@/features/oracle/interpret';
+import { readSpread } from '@/features/oracle/reader';
 import { deckOf, isSpread, SPREADS, type SpreadKey } from '@/features/oracle/spreads';
+import { useReading } from '@/hooks/use-reading';
 import { usePremium } from '@/services/purchases';
 import { addHistory, countUsage, prefsStore, todayUsage, type HistoryKind } from '@/storage/app-data';
 import { fonts, noOutline, radius, spacing, useTheme } from '@/theme';
@@ -31,6 +34,7 @@ export default function SpreadScreen() {
   const { colors } = useTheme();
   const { width } = useWindowDimensions();
   const premium = usePremium();
+  const r = useReading();
   const prefs = prefsStore.useValue();
   const [phase, setPhase] = useState<Phase>('intro');
   const [question, setQuestion] = useState('');
@@ -180,13 +184,12 @@ export default function SpreadScreen() {
                   <AppText style={styles.answer} color={color}>{t(`common.${yesNo(String(cards[0].id), cards[0].reversed)}`)}</AppText>
                 </GlassCard>
               ) : null}
-              {cards.map((c, i) => (
-                <GlassCard key={i} style={styles.small}>
-                  <SectionTitle color={color}>{positions[i]}</SectionTitle>
-                  <AppText variant="subtitle">{`${cardName(cfg.deck, c.id, lang)}${c.reversed && cfg.deck === 'tarot' ? ` · ${t('today.reversed')}` : ''}`}</AppText>
-                  <AppText>{cardMeaning(cfg.deck, c, lang)}</AppText>
-                </GlassCard>
-              ))}
+              <GlassCard accent={color} style={styles.gap}>
+                <SectionTitle color={color}>{t('oracle.interpretation')}</SectionTitle>
+                {readSpread({ deck: cfg.deck, spread, cards, question, lang, firstName: r ? firstName(r.person.fullName) : '', personalYear: r?.personal.year }).map((p, i) => (
+                  <AppText key={i}>{p}</AppText>
+                ))}
+              </GlassCard>
               <AppText variant="caption" muted center>{t('oracle.saved')}</AppText>
               <Button variant="secondary" title={t('oracle.again')} onPress={() => setPhase('intro')} />
             </Animated.View>
@@ -199,7 +202,6 @@ export default function SpreadScreen() {
 
 const styles = StyleSheet.create({
   gap: { gap: spacing.md },
-  small: { gap: spacing.xs },
   center: { alignItems: 'center', gap: spacing.md },
   row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   input: { minHeight: 70, borderWidth: 1, borderRadius: radius.card, padding: spacing.md, fontFamily: fonts.body, fontSize: 16, textAlignVertical: 'top' },

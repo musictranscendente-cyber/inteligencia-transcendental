@@ -44,7 +44,7 @@ const ORACLE_SCHEMA = {
   type: 'object',
   additionalProperties: false,
   required: ['answer'],
-  properties: { answer: { type: 'string', description: 'Interpretation in 2–4 short paragraphs separated by blank lines.' } },
+  properties: { answer: { type: 'string', description: 'Conversational interpretation in 3–5 short paragraphs separated by blank lines.' } },
 };
 
 const RELATION_SCHEMA = {
@@ -141,7 +141,7 @@ export default {
         const question = String(body.question ?? '').slice(0, 400);
         result = await generate(
           env,
-          `Interpret a tarot reading for ${name} in ${LANG_NAME[lang]}.\nQuestion: "${question}"\nCards drawn (with positions and base meanings): ${JSON.stringify(body.cards).slice(0, 2000)}\nPerson's calculated profile, to personalize the reading: ${JSON.stringify(body.profile).slice(0, 4000)}\nAnswer the question through the cards, end with practical advice, and remind gently that the choice is theirs.`,
+          `Interpret a tarot reading for ${name} in ${LANG_NAME[lang]}.\nQuestion: "${question}"\nCards drawn (with positions and base meanings): ${JSON.stringify(body.cards).slice(0, 2000)}\nPerson's calculated profile, to personalize the reading: ${JSON.stringify(body.profile).slice(0, 4000)}\nWrite as a warm, wise person talking directly to ${name} (second person, natural spoken language, no lists, no headings). Start by addressing the question itself, using its specific details. Weave the cards together (how each one relates to the others and to the question) instead of describing them one by one in isolation. If the question can be answered yes or no, give a clear, honest answer. Bring in one or two details of the profile only when they genuinely relate to the question. End with concrete, practical advice for the next few days and gently remind that the choice is theirs.`,
           ORACLE_SCHEMA,
           2000
         );

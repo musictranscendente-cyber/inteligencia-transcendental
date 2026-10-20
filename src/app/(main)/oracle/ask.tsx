@@ -13,7 +13,8 @@ import { Screen } from '@/components/ui/screen';
 import { useLang } from '@/content/types';
 import { draw, TAROT_DECK } from '@/engines/divination';
 import { firstName } from '@/engines/reading';
-import { cardMeaning, cardName, localAnswer, type Drawn } from '@/features/oracle/interpret';
+import { cardMeaning, cardName, type Drawn } from '@/features/oracle/interpret';
+import { readSpread } from '@/features/oracle/reader';
 import { readingSummary } from '@/features/summary';
 import { useReading } from '@/hooks/use-reading';
 import { aiEnabled, aiOracle } from '@/services/ai';
@@ -64,7 +65,7 @@ export default function AskScreen() {
       });
       text = res.answer;
     } catch {
-      text = localAnswer(drawn, positions, lang, name);
+      text = readSpread({ deck: 'tarot', spread: 'ask', cards: drawn, question, lang, firstName: name, personalYear: r.personal.year }).join('\n\n');
     }
     setAnswer(text);
     setBusy(false);

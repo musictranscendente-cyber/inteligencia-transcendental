@@ -10,7 +10,11 @@
     "backgroundColor": "#0B0A1A",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.transcendental.inteligencia"
+      "bundleIdentifier": "com.transcendental.inteligencia",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryAddUsageDescription": "Salvar os cards que você quiser compartilhar."
+      }
     },
     "android": {
       "package": "com.transcendental.inteligencia",
@@ -20,7 +24,11 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "versionCode": 1,
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
     },
     "web": {
       "output": "single",
@@ -39,11 +47,27 @@
       "expo-localization",
       "expo-sqlite",
       "expo-font",
-      "expo-sharing"
+      "expo-sharing",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Salvar os cards que você quiser compartilhar.",
+          "savePhotosPermission": "Salvar os cards que você quiser compartilhar.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#D9B56A"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "description": "Numerologia, tarô, astrologia, Desenho Humano e mais, cruzados numa só leitura sobre você.",
+    "extra": {}
   }
 }

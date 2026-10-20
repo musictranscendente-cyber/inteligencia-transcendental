@@ -1,0 +1,12 @@
+name = "inteligencia-transcendental-ai"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+DAILY_LIMIT = "20"
+
+# Crie o KV com: npx wrangler kv namespace create CACHE  — e cole o id abaixo.
+[[kv_namespaces]]
+binding = "CACHE"
+id = "COLE_AQUI_O_ID_DO_KV"

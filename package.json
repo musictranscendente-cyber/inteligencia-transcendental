@@ -9,6 +9,7 @@
     "astronomy-engine": "^2.1.19",
     "expo": "~58.0.16",
     "expo-constants": "~58.0.12",
+    "expo-dev-client": "~58.0.14",
     "expo-font": "~58.0.9",
     "expo-haptics": "~58.0.7",
     "expo-image": "~58.0.16",

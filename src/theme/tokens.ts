@@ -68,3 +68,10 @@ export const fonts = {
 
 /** Remove o contorno de foco do navegador (só afeta a pré-visualização web). */
 export const noOutline = { outlineStyle: 'none' } as object;
+
+/** Aplica transparência a uma cor `#RRGGBB` (outras cores voltam como estão). */
+export function withAlpha(color: string, alpha: number) {
+  if (!/^#[0-9a-f]{6}$/i.test(color)) return color;
+  const a = Math.round(Math.max(0, Math.min(1, alpha)) * 255).toString(16).padStart(2, '0');
+  return `${color}${a}`;
+}

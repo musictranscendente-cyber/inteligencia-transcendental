@@ -159,3 +159,11 @@ export function BookIcon(p: IconProps) {
     </Base>
   );
 }
+
+export function ChevronIcon(p: IconProps) {
+  return (
+    <Base {...p}>
+      <Path d="M9.5 6l6 6-6 6" />
+    </Base>
+  );
+}

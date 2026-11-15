@@ -31,7 +31,7 @@ function Tile({ title, phrase, color, href, art, delay }: { title: string; phras
       <Pressable onPress={() => router.push(href)} accessibilityRole="button" style={({ pressed }) => [styles.flex, { opacity: pressed ? 0.8 : 1 }]}>
         <GlassCard accent={color} style={styles.tile}>
           <View style={styles.art}>{art}</View>
-          <AppText variant="label" color={color}>{title}</AppText>
+          <AppText variant="label" color={color} style={styles.tileTitle}>{title}</AppText>
           <AppText variant="caption" muted numberOfLines={3}>{phrase}</AppText>
         </GlassCard>
       </Pressable>
@@ -106,7 +106,8 @@ const styles = StyleSheet.create({
   dots: { gap: 2, marginTop: spacing.xs },
   grid: { flexDirection: 'row', flexWrap: 'wrap', marginHorizontal: -spacing.xs },
   tileWrap: { width: '50%', padding: spacing.xs },
-  tile: { gap: spacing.sm, minHeight: 200, padding: spacing.md },
+  tile: { flex: 1, gap: spacing.sm, minHeight: 200, padding: spacing.md },
+  tileTitle: { fontSize: 11, letterSpacing: 0.8 },
   art: { height: 84, alignItems: 'center', justifyContent: 'center' },
   chakraDots: { gap: 4, alignItems: 'center' },
   chakraDot: { width: 10, height: 10, borderRadius: radius.pill },

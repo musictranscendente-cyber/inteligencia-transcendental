@@ -9,3 +9,15 @@ export function formatDate(d: Date, language: string, withTime = false) {
 export function formatMonth(d: Date, language: string) {
   return DateTime.fromJSDate(d).setLocale(language).toFormat('LLLL yyyy');
 }
+
+/** Dia da semana e data por extenso: "sábado, 15 de novembro". */
+export function formatWeekday(d: Date, language: string) {
+  const s = DateTime.fromJSDate(d).setLocale(language).toLocaleString({ weekday: 'long', day: 'numeric', month: 'long' });
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/** Minutos desde a meia-noite em "HH:mm". */
+export function formatMinutes(total: number) {
+  const m = total % (24 * 60);
+  return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+}

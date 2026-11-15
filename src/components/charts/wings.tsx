@@ -6,7 +6,7 @@ const FEATHERS = 'M90 44C108 32 128 24 150 16M94 47C110 40 126 36 146 37M98 50C1
 /** Asas em traço fino para o cartão do anjo. */
 export function Wings({ width = 160, color }: { width?: number; color: string }) {
   return (
-    <Svg width={width} height={width * 0.5} viewBox="0 0 160 80" accessibilityElementsHidden>
+    <Svg width={width} height={width * 0.5} viewBox="0 0 160 80">
       <G stroke={color} strokeWidth={1.1} fill="none" strokeLinecap="round" strokeLinejoin="round">
         <Path d={WING} fill={color} fillOpacity={0.08} />
         <Path d={FEATHERS} strokeOpacity={0.7} />

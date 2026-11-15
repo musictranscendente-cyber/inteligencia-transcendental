@@ -8,7 +8,7 @@ import { AppText } from '@/components/app-text';
 import { Button } from '@/components/button';
 import { GlassCard } from '@/components/glass-card';
 import { TarotFace } from '@/components/tarot-face';
-import { SectionTitle } from '@/components/ui/bits';
+import { Pill, SectionTitle } from '@/components/ui/bits';
 import { Screen } from '@/components/ui/screen';
 import { useLang } from '@/content/types';
 import { draw, TAROT_DECK } from '@/engines/divination';
@@ -85,6 +85,13 @@ export default function AskScreen() {
         maxFontSizeMultiplier={1.6}
         style={[styles.input, noOutline, { color: colors.text, borderColor: c, backgroundColor: colors.surfaceGlass }]}
       />
+      {!cards && !question ? (
+        <View style={styles.suggestions}>
+          {(t('oracle.suggestions', { returnObjects: true }) as string[]).map((q) => (
+            <Pill key={q} label={q} active={false} color={c} onPress={() => setQuestion(q)} />
+          ))}
+        </View>
+      ) : null}
       <Button title={t('oracle.askCta')} onPress={ask} disabled={question.trim().length < 3 || busy} />
 
       {cards ? (
@@ -116,6 +123,7 @@ export default function AskScreen() {
 }
 
 const styles = StyleSheet.create({
+  suggestions: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   gap: { gap: spacing.md },
   input: { minHeight: 90, borderWidth: 1, borderRadius: radius.card, padding: spacing.md, fontFamily: fonts.body, fontSize: 16, textAlignVertical: 'top' },
   cards: { flexDirection: 'row', justifyContent: 'space-between' },

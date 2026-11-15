@@ -70,6 +70,7 @@
           "color": "#D9B56A"
         }
       ],
+      "@react-native-google-signin/google-signin",
       "./plugins/with-gradle-memory"
     ],
     "experiments": {

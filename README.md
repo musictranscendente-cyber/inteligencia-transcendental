@@ -113,6 +113,43 @@ Instale o APK do link que aparece e rode `npx expo start --dev-client`.
 No RevenueCat: crie o projeto, ligue ao app da Play Store, crie o direito `premium`, os produtos
 (mensal, anual e vitalício) e uma *offering* padrão com esses pacotes. O paywall lê a offering sozinho.
 
+## 4b. Login com Google
+
+O botão "Continuar com Google" aparece no cadastro e no Perfil assim que o Client ID estiver configurado.
+Ele não funciona no Expo Go nem no site: só no APK.
+
+1. Entre em **console.cloud.google.com**, crie um projeto e configure a **Tela de consentimento OAuth**
+   (tipo Externo, nome do app e seu e-mail).
+2. Em **Credenciais → Criar credenciais → ID do cliente OAuth**, crie um do tipo **Aplicativo da Web**.
+   Copie o ID (termina em `.apps.googleusercontent.com`).
+3. Crie outro do tipo **Android**: pacote `com.transcendental.inteligencia` e a impressão digital **SHA-1** da chave
+   do app. Para ver a SHA-1, rode o comando abaixo e escolha o perfil de build:
+
+```
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
+npx eas-cli@latest credentials -p android
+```
+
+   Quando publicar na Play Store, crie mais um cliente Android com a SHA-1 que aparece em
+   **Play Console → Integridade do app → Assinatura de apps**.
+4. Cadastre o ID do passo 2 no EAS (o `.env` não vai para o build na nuvem). Rode uma vez para cada ambiente:
+
+```
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
+npx eas-cli@latest env:create --name EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID --value COLE_O_ID_AQUI --environment preview --visibility plaintext
+npx eas-cli@latest env:create --name EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID --value COLE_O_ID_AQUI --environment production --visibility plaintext
+```
+
+5. Gere um APK novo (o login usa código nativo, então não chega por atualização automática):
+
+```
+cd C:\Users\luciv\Projetos\inteligencia-transcendental
+npx eas-cli@latest build --platform android --profile preview
+```
+
+Com o RevenueCat ligado, a conta Google também identifica a assinatura: quem entrar com a mesma conta em outro
+celular recupera o plano.
+
 ## 5. Publicar na Play Store
 
 ```

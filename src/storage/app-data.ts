@@ -78,3 +78,7 @@ export function countUsage(kind: 'tarot' | 'oracle') {
 }
 
 export const subscriptionStore = createStore<{ premium: boolean; plan: string | null; checkedAt: string | null }>('subscription.v1', { premium: false, plan: null, checkedAt: null });
+
+/** Conta Google conectada (só dados públicos do perfil; nenhum token fica salvo). */
+export type Account = { provider: 'google'; id: string; name: string | null; email: string; photo: string | null };
+export const accountStore = createStore<Account | null>('account.v1', null);

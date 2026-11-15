@@ -8,5 +8,8 @@ export const CONFIG = {
   revenueCatIosKey: process.env.EXPO_PUBLIC_REVENUECAT_IOS_KEY ?? '',
   entitlement: process.env.EXPO_PUBLIC_REVENUECAT_ENTITLEMENT ?? 'premium',
   shareUrl: process.env.EXPO_PUBLIC_SHARE_URL ?? 'inteligenciatranscendental.app',
+  /** Client ID do tipo "Aplicativo da Web" no Google Cloud (usado pelo login com Google). */
+  googleWebClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID ?? '',
+  googleIosClientId: process.env.EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID ?? '',
   meditationAppUrl: process.env.EXPO_PUBLIC_MEDITATION_APP_URL ?? '',
 };

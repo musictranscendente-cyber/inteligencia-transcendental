@@ -548,7 +548,14 @@
       "iching": "I Ching",
       "runes": "Runas",
       "ask": "Oráculo IA"
-    }
+    },
+    "suggestions": [
+      "¿Qué necesito saber sobre mi amor ahora?",
+      "¿Cuál es el mejor camino en mi carrera?",
+      "¿Qué está trabando mis finanzas?",
+      "¿Qué energía debo cultivar esta semana?",
+      "¿Esta persona es buena para mí?"
+    ]
   },
   "rel": {
     "title": "Relaciones",
@@ -658,7 +665,16 @@
     "notConfigured": "Suscripciones aún no configuradas: en este modo de pruebas todo está liberado.",
     "active": "Suscripción activa",
     "terms": "La suscripción se renueva automáticamente y puede cancelarse en cualquier momento en la tienda.",
-    "error": "No fue posible completar la compra."
+    "error": "No fue posible completar la compra.",
+    "heroTitle": "{{name}}, tu carta completa está lista",
+    "save": "Ahorra {{pct}}%",
+    "perMonth": "{{price}}/mes",
+    "startTrial": "Empezar {{days}} días gratis",
+    "timelineToday": "Hoy",
+    "timelineTodayText": "Todo liberado: Síntesis con IA, previsiones y oráculos sin límite.",
+    "timelineEnd": "Día {{day}}",
+    "timelineEndText": "Empieza la suscripción. Cancela antes y no pagas nada.",
+    "cancelAnytime": "Sin compromiso: cancela cuando quieras en la tienda."
   },
   "share": {
     "title": "Compartir",
@@ -742,5 +758,14 @@
     "message": "Se descargó una versión nueva de la app. ¿Quieres reiniciar ahora para usarla?",
     "later": "Después",
     "now": "Actualizar ahora"
+  },
+  "auth": {
+    "continueGoogle": "Continuar con Google",
+    "account": "Cuenta",
+    "signedInAs": "Conectado como {{email}}",
+    "signOut": "Cerrar sesión",
+    "hint": "Entra con tu cuenta de Google para mantener tu suscripción en cualquier celular.",
+    "error": "No se pudo entrar con Google. Inténtalo de nuevo.",
+    "welcome": "¡Hola, {{name}}! Ahora solo faltan tus datos de nacimiento."
   }
 }

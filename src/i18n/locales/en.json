@@ -548,7 +548,14 @@
       "iching": "I Ching",
       "runes": "Runes",
       "ask": "AI Oracle"
-    }
+    },
+    "suggestions": [
+      "What do I need to know about my love life now?",
+      "What is the best path in my career?",
+      "What is blocking my finances?",
+      "What energy should I nurture this week?",
+      "Is this person good for me?"
+    ]
   },
   "rel": {
     "title": "Relations",
@@ -658,7 +665,16 @@
     "notConfigured": "Subscriptions not configured yet: in this test mode everything is unlocked.",
     "active": "Subscription active",
     "terms": "The subscription renews automatically and can be cancelled anytime in the store.",
-    "error": "Couldn’t complete the purchase."
+    "error": "Couldn’t complete the purchase.",
+    "heroTitle": "{{name}}, your full chart is ready",
+    "save": "Save {{pct}}%",
+    "perMonth": "{{price}}/month",
+    "startTrial": "Start {{days}}-day free trial",
+    "timelineToday": "Today",
+    "timelineTodayText": "Everything unlocked: AI Synthesis, forecasts and unlimited oracles.",
+    "timelineEnd": "Day {{day}}",
+    "timelineEndText": "Your subscription starts. Cancel before then and pay nothing.",
+    "cancelAnytime": "No commitment: cancel anytime in the store."
   },
   "share": {
     "title": "Share",
@@ -742,5 +758,14 @@
     "message": "A new version of the app has been downloaded. Restart now to use it?",
     "later": "Later",
     "now": "Update now"
+  },
+  "auth": {
+    "continueGoogle": "Continue with Google",
+    "account": "Account",
+    "signedInAs": "Signed in as {{email}}",
+    "signOut": "Sign out",
+    "hint": "Sign in with your Google account to keep your subscription on any phone.",
+    "error": "Could not sign in with Google. Please try again.",
+    "welcome": "Hi, {{name}}! Now we just need your birth details."
   }
 }

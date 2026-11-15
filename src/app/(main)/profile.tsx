@@ -1,4 +1,6 @@
 import { router } from 'expo-router';
+import { Image } from 'expo-image';
+import { useState } from 'react';
 import { Alert, Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
@@ -6,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { AppText } from '@/components/app-text';
 import { Button } from '@/components/button';
 import { GlassCard } from '@/components/glass-card';
+import { GoogleButton } from '@/components/google-button';
 import { BackIcon } from '@/components/icons';
 import { OptionRow } from '@/components/option-row';
 import { Pill, RowCard } from '@/components/ui/bits';
@@ -14,10 +17,11 @@ import { deviceLanguage, LANGUAGES, languageIndex } from '@/i18n';
 import { formatLongDate } from '@/i18n/format';
 import { formatOffset } from '@/lib/birth';
 import { placeSubtitle } from '@/lib/cities';
+import { googleEnabled, signOut } from '@/services/auth';
 import { CONFIG } from '@/services/config';
 import { disableNotifications, enableNotifications, scheduleDaily } from '@/services/notifications';
 import { paywallEnabled, usePremium } from '@/services/purchases';
-import { prefsStore } from '@/storage/app-data';
+import { accountStore, prefsStore } from '@/storage/app-data';
 import { eraseAllData, useProfile } from '@/storage/profile';
 import { reloadSettings, setLanguagePreference, setThemePreference, useSettings, type ThemePreference } from '@/storage/settings';
 import { radius, spacing, useTheme } from '@/theme';
@@ -33,10 +37,13 @@ export default function ProfileScreen() {
   const settings = useSettings();
   const prefs = prefsStore.useValue();
   const premium = usePremium();
+  const account = accountStore.useValue();
+  const [authError, setAuthError] = useState(false);
   const lang = langOf(i18n.language);
 
   const erase = () => {
     const run = () => {
+      signOut().catch(() => {});
       eraseAllData();
       reloadSettings();
       i18n.changeLanguage(deviceLanguage());
@@ -66,6 +73,31 @@ export default function ProfileScreen() {
       </View>
 
       <ScrollView contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + spacing.xl }]}>
+        {account || googleEnabled() ? (
+          <Section title={t('auth.account')}>
+            <GlassCard style={styles.account}>
+              {account ? (
+                <>
+                  <View style={styles.row}>
+                    {account.photo ? <Image source={{ uri: account.photo }} style={styles.avatar} /> : null}
+                    <View style={styles.flex}>
+                      {account.name ? <AppText variant="bodyStrong">{account.name}</AppText> : null}
+                      <AppText variant="caption" muted>{t('auth.signedInAs', { email: account.email })}</AppText>
+                    </View>
+                  </View>
+                  <Button variant="ghost" title={t('auth.signOut')} onPress={() => signOut()} />
+                </>
+              ) : (
+                <>
+                  <AppText muted>{t('auth.hint')}</AppText>
+                  <GoogleButton onResult={(r) => setAuthError(!r.ok && r.reason === 'error')} />
+                  {authError ? <AppText variant="caption" color={colors.danger}>{t('auth.error')}</AppText> : null}
+                </>
+              )}
+            </GlassCard>
+          </Section>
+        ) : null}
+
         <Section title={t('profile.birthData')}>
           <GlassCard style={styles.gapSm}>
             <AppText variant="subtitle">{profile.fullName}</AppText>
@@ -186,6 +218,8 @@ const styles = StyleSheet.create({
   content: { padding: spacing.lg, gap: spacing.lg },
   section: { gap: spacing.sm },
   gapSm: { gap: spacing.xs },
+  account: { gap: spacing.md },
+  avatar: { width: 44, height: 44, borderRadius: 22 },
   row: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   pills: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   banner: { borderWidth: 1, borderStyle: 'dashed', borderRadius: radius.card, padding: spacing.md, gap: 4 },

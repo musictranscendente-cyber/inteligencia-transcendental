@@ -1,13 +1,14 @@
 name: Atualizar app (APK)
 
-# A cada push no main, publica uma atualização que o APK instalado baixa sozinho
-# e mostra o aviso "Atualização disponível".
+# A cada push no main ou num branch de trabalho do Claude (claude/...), publica uma
+# atualização que o APK instalado baixa sozinho e mostra o aviso "Atualização disponível".
+# Assim, nada precisa ser rodado no computador: o Claude envia o código e o celular atualiza.
 # Precisa do segredo EXPO_TOKEN (Settings → Secrets and variables → Actions) e do
 # projeto já ligado ao EAS (npx eas-cli init). Sem isso, o passo é pulado.
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'claude/**']
   workflow_dispatch:
 
 concurrency:
@@ -23,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: ready
         run: |
-          if [ -z "$EXPO_TOKEN" ]; then echo "Sem EXPO_TOKEN: pulando."; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ -z "$EXPO_TOKEN" ]; then echo "::warning::Falta o segredo EXPO_TOKEN no GitHub: a atualização não foi publicada."; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           if ! grep -q '"projectId"' app.json; then echo "Projeto ainda não ligado ao EAS: pulando."; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           echo "ok=true" >> "$GITHUB_OUTPUT"
       - if: steps.ready.outputs.ok == 'true'
@@ -36,7 +37,7 @@ jobs:
       - if: steps.ready.outputs.ok == 'true'
         run: npm test
       - if: steps.ready.outputs.ok == 'true'
-        run: npx eas-cli@latest update --branch preview --platform android --message "$(git log -1 --pretty=%s)" --non-interactive
+        run: npx eas-cli@latest update --branch preview --environment preview --platform android --message "$(git log -1 --pretty=%s)" --non-interactive
         env:
           EXPO_PUBLIC_AI_URL: ${{ vars.EXPO_PUBLIC_AI_URL }}
           EXPO_PUBLIC_SHARE_URL: ${{ vars.EXPO_PUBLIC_SHARE_URL }}

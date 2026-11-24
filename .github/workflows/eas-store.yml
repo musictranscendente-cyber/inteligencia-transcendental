@@ -1,0 +1,25 @@
+name: Gerar versão para a Play Store
+
+# Gera o pacote da loja (AAB, perfil production) no EAS. Rode à mão:
+# Actions → Gerar versão para a Play Store → Run workflow (escolha o branch).
+# O número da versão (versionCode) sobe sozinho a cada build.
+# Quando terminar, baixe o .aab em expo.dev (Builds) e envie na Play Console.
+# Precisa do segredo EXPO_TOKEN.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npx eas-cli@latest build --platform android --profile production --non-interactive --no-wait
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}

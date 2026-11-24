@@ -1,7 +1,8 @@
 name: Atualizar app (APK)
 
-# A cada push no main ou num branch de trabalho do Claude (claude/...), publica uma
-# atualização que o APK instalado baixa sozinho e mostra o aviso "Atualização disponível".
+# A cada push publica uma atualização que o app instalado baixa sozinho e mostra o aviso
+# "Atualização disponível": o main vai para o canal production (app da Play Store) e os
+# branches de trabalho do Claude (claude/...) vão para o canal preview (APK de teste).
 # Assim, nada precisa ser rodado no computador: o Claude envia o código e o celular atualiza.
 # Precisa do segredo EXPO_TOKEN (Settings → Secrets and variables → Actions) e do
 # projeto já ligado ao EAS (npx eas-cli init). Sem isso, o passo é pulado.
@@ -37,7 +38,9 @@ jobs:
       - if: steps.ready.outputs.ok == 'true'
         run: npm test
       - if: steps.ready.outputs.ok == 'true'
-        run: npx eas-cli@latest update --branch preview --environment preview --platform android --message "$(git log -1 --pretty=%s)" --non-interactive
+        run: npx eas-cli@latest update --branch "$CHANNEL" --environment "$CHANNEL" --platform android --message "$(git log -1 --pretty=%s)" --non-interactive
         env:
+          # O main atualiza quem instalou pela Play Store; os outros branches, só o APK de teste.
+          CHANNEL: ${{ github.ref_name == 'main' && 'production' || 'preview' }}
           EXPO_PUBLIC_AI_URL: ${{ vars.EXPO_PUBLIC_AI_URL }}
           EXPO_PUBLIC_SHARE_URL: ${{ vars.EXPO_PUBLIC_SHARE_URL }}

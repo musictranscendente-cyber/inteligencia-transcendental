@@ -40,6 +40,304 @@
   "name": "Acqua",
   "text": "Emozione, intuizione ed empatia. Molta acqua porta sensibilità; poca chiede di ascoltare di più il cuore."
  },
+ "HOUSES_TEXT": [
+  {
+   "name": "Casa 1",
+   "theme": "identità, aspetto e inizi"
+  },
+  {
+   "name": "Casa 2",
+   "theme": "denaro, valori e risorse"
+  },
+  {
+   "name": "Casa 3",
+   "theme": "comunicazione, apprendimento e fratelli"
+  },
+  {
+   "name": "Casa 4",
+   "theme": "casa, famiglia e radici"
+  },
+  {
+   "name": "Casa 5",
+   "theme": "creatività, romanticismo e piacere"
+  },
+  {
+   "name": "Casa 6",
+   "theme": "routine, lavoro quotidiano e benessere"
+  },
+  {
+   "name": "Casa 7",
+   "theme": "collaborazioni e relazioni"
+  },
+  {
+   "name": "Casa 8",
+   "theme": "intimità, trasformazione e risorse condivise"
+  },
+  {
+   "name": "Casa 9",
+   "theme": "viaggi, filosofia e studi superiori"
+  },
+  {
+   "name": "Casa 10",
+   "theme": "carriera, reputazione e vocazione"
+  },
+  {
+   "name": "Casa 11",
+   "theme": "amici, gruppi e sogni"
+  },
+  {
+   "name": "Casa 12",
+   "theme": "inconscio, spiritualità e ritiro"
+  }
+ ],
+ "LIBRARY.angel": {
+  "title": "Angelo cabalistico",
+  "what": "Nella tradizione cabalistica, 72 angeli derivano dal nome sacro (Shem HaMephorash). Ognuno governa un periodo di circa 5 giorni dell’anno e 20 minuti di ogni giornata.",
+  "origin": "Viene dalla Cabala ebraica medievale ed è stata resa popolare in Occidente dalle tradizioni esoteriche rinascimentali e moderne.",
+  "howToRead": "Il tuo angelo di nascita indica qualità da coltivare. Il suo salmo è tradizionalmente usato come ispirazione, e la sua ora di reggenza come momento simbolico di connessione.",
+  "glossary": [
+   [
+    "Shem HaMephorash",
+    "Il «nome esplicito» in 72 parti da cui derivano gli angeli."
+   ],
+   [
+    "Coro",
+    "Un gruppo di 8 angeli (Serafini, Cherubini…)."
+   ],
+   [
+    "Reggenza",
+    "I 20 minuti della giornata governati da ogni angelo."
+   ]
+  ]
+ },
+ "LIBRARY.astrology": {
+  "title": "Astrologia",
+  "what": "Una lettura simbolica della posizione dei pianeti al momento della tua nascita, vista dal luogo in cui sei nato/a. Il tema natale mostra il tuo «cielo personale».",
+  "origin": "Nata in Mesopotamia, sviluppata da Greci, Arabi ed Europei, è arrivata fino a noi come linguaggio di simboli.",
+  "howToRead": "Inizia dai Big 3: Sole (essenza), Luna (emozioni) e Ascendente (come ti presenti). Poi guarda il segno e la casa di ogni pianeta, e gli aspetti tra loro.",
+  "glossary": [
+   [
+    "Segno",
+    "Una delle 12 divisioni dello zodiaco; lo «stile»."
+   ],
+   [
+    "Pianeta",
+    "Una funzione della personalità; il «cosa»."
+   ],
+   [
+    "Casa",
+    "Un’area della vita; il «dove»."
+   ],
+   [
+    "Aspetto",
+    "L’angolo tra due pianeti; «come dialogano»."
+   ],
+   [
+    "Ascendente",
+    "Il segno che sorgeva all’orizzonte est alla tua nascita."
+   ],
+   [
+    "Transito",
+    "Un pianeta attuale che tocca un punto del tuo tema."
+   ],
+   [
+    "Rivoluzione solare",
+    "Il tema del momento in cui il Sole torna alla sua posizione natale, a ogni compleanno."
+   ]
+  ]
+ },
+ "LIBRARY.chakras": {
+  "title": "Chakra e cristalli",
+  "what": "Nella tradizione indiana, i chakra sono sette centri energetici simbolici lungo la colonna. I cristalli servono da promemoria visivo delle qualità di ciascuno.",
+  "origin": "I chakra vengono dai testi tantrici e dallo yoga indiano; il legame con i cristalli è una tradizione moderna.",
+  "howToRead": "L’app suggerisce un chakra di focus in base all’elemento meno presente nel tuo tema e un chakra di supporto in base al tuo Destino. È un invito simbolico, non una pratica di salute.",
+  "glossary": [
+   [
+    "Chakra",
+    "«Ruota» in sanscrito: un centro energetico simbolico."
+   ],
+   [
+    "Cristallo",
+    "Una pietra usata come simbolo e promemoria di una qualità."
+   ]
+  ]
+ },
+ "LIBRARY.chinese": {
+  "title": "Astrologia cinese e Ba Zi",
+  "what": "Lo zodiaco cinese associa ogni anno a uno dei 12 animali e a uno dei 5 elementi. Il Ba Zi («otto caratteri») usa quattro pilastri — anno, mese, giorno e ora — per un ritratto più completo.",
+  "origin": "Un’antica tradizione cinese, legata al calendario lunisolare e alla teoria dei cinque elementi (Wu Xing).",
+  "howToRead": "L’animale dell’anno mostra il tuo temperamento sociale. Nel Ba Zi, il tronco del pilastro del giorno è il Maestro del giorno (la tua essenza), e l’equilibrio degli elementi mostra cosa abbonda e cosa manca.",
+  "glossary": [
+   [
+    "Capodanno cinese",
+    "Inizio dell’anno lunare, tra il 21 gennaio e il 20 febbraio."
+   ],
+   [
+    "Tronco celeste",
+    "Uno dei 10 simboli legati agli elementi."
+   ],
+   [
+    "Ramo terrestre",
+    "Uno dei 12 simboli legati agli animali."
+   ],
+   [
+    "Maestro del giorno",
+    "L’elemento centrale del tuo Ba Zi."
+   ],
+   [
+    "Li Chun",
+    "Inizio della primavera (~4 febbraio), quando cambia l’anno del Ba Zi."
+   ]
+  ]
+ },
+ "LIBRARY.humanDesign": {
+  "title": "Design Umano",
+  "what": "Un sistema che unisce astrologia, I Ching, Cabala e chakra in una mappa del corpo (bodygraph) con 9 centri. Mostra il tuo tipo di energia e come prendere decisioni allineate.",
+  "origin": "È stato presentato da Ra Uru Hu nel 1987 e si è diffuso nel mondo negli ultimi decenni.",
+  "howToRead": "Inizia da Tipo e Strategia (come agire). Poi l’Autorità (come decidere). I centri colorati sono definiti (costanti); quelli bianchi sono aperti (dove impari dagli altri).",
+  "glossary": [
+   [
+    "Tipo",
+    "Manifestatore, Generatore, Generatore Manifestante, Proiettore o Riflettore."
+   ],
+   [
+    "Strategia",
+    "Il modo di agire che riduce la resistenza."
+   ],
+   [
+    "Autorità",
+    "Il tuo modo affidabile di prendere decisioni."
+   ],
+   [
+    "Profilo",
+    "Una combinazione di due linee che descrive il tuo ruolo."
+   ],
+   [
+    "Porta",
+    "Uno dei 64 punti attivati dai pianeti."
+   ],
+   [
+    "Canale",
+    "Un collegamento tra due porte che definisce due centri."
+   ],
+   [
+    "Design",
+    "Posizioni di 88° di Sole prima della nascita (il lato inconscio)."
+   ]
+  ]
+ },
+ "LIBRARY.iching": {
+  "title": "I Ching",
+  "what": "Il «Libro dei Mutamenti»: 64 esagrammi formati da linee intere (yang) e spezzate (yin) che descrivono situazioni e come agire in esse.",
+  "origin": "Uno dei testi più antichi della Cina, con oltre 3.000 anni, commentato da Confucio e dalla tradizione taoista.",
+  "howToRead": "Lancia tre monete sei volte, dal basso verso l’alto. Le linee mutevoli (6 o 9) mostrano ciò che cambia e formano un secondo esagramma: la direzione della situazione.",
+  "glossary": [
+   [
+    "Esagramma",
+    "Figura di 6 linee; ce ne sono 64."
+   ],
+   [
+    "Trigramma",
+    "Metà di un esagramma (3 linee); ce ne sono 8."
+   ],
+   [
+    "Linea mutevole",
+    "Una linea 6 o 9 che si trasforma nel suo opposto."
+   ]
+  ]
+ },
+ "LIBRARY.lenormand": {
+  "title": "Lenormand",
+  "what": "Un mazzo di 36 carte con immagini della vita quotidiana (casa, nave, cuore…). È diretto e pratico: le carte si leggono in combinazione.",
+  "origin": "Prende il nome dalla cartomante francese Marie-Anne Lenormand (XIX secolo) ed è molto popolare in Brasile come «mazzo zingaro».",
+  "howToRead": "Leggi le carte a coppie e in sequenza: la prima indica l’argomento, la successiva lo precisa. Nella stesa di 9 carte, il centro è la questione principale.",
+  "glossary": [
+   [
+    "Uomo / Donna",
+    "Carte che rappresentano chi consulta."
+   ],
+   [
+    "Combinazione",
+    "Leggere due carte insieme come un’unica frase."
+   ]
+  ]
+ },
+ "LIBRARY.numerology": {
+  "title": "Numerologia",
+  "what": "Lo studio simbolico dei numeri ricavati dal tuo nome e dalla tua data di nascita. Ogni numero da 1 a 9 (e i maestri 11, 22 e 33) rappresenta un archetipo di qualità e lezioni.",
+  "origin": "La numerologia pitagorica risale alle scuole di Pitagora, nell’antica Grecia, che vedevano nei numeri l’armonia dell’universo. La versione moderna si è diffusa nel XX secolo.",
+  "howToRead": "Inizia dal Destino (data di nascita): è il cammino principale. L’Espressione (nome completo) mostra i tuoi talenti; l’Anima (vocali), ciò che muove il tuo cuore; la Personalità (consonanti), come ti vedono gli altri. L’Anno personale mostra il tema del momento.",
+  "glossary": [
+   [
+    "Destino",
+    "Somma della data di nascita; il grande cammino della vita."
+   ],
+   [
+    "Espressione",
+    "Somma di tutte le lettere del nome; i tuoi talenti."
+   ],
+   [
+    "Anima",
+    "Somma delle vocali; i desideri del cuore."
+   ],
+   [
+    "Numero maestro",
+    "11, 22 o 33: vibrazioni intense che non si riducono."
+   ],
+   [
+    "Debito karmico",
+    "13, 14, 16 o 19 durante un calcolo: una lezione che chiede attenzione."
+   ],
+   [
+    "Lezione karmica",
+    "Un numero assente nel nome: una qualità da sviluppare."
+   ],
+   [
+    "Pinnacolo",
+    "Una grande fase della vita con un tema proprio."
+   ]
+  ]
+ },
+ "LIBRARY.runes": {
+  "title": "Rune",
+  "what": "Un antico alfabeto nordico (Futhark) di 24 simboli, ognuno con un significato legato alla natura e alla vita quotidiana.",
+  "origin": "Usate dai popoli germanici e nordici tra il II e l’VIII secolo, come scrittura e come simbolo.",
+  "howToRead": "Estrai una runa per un consiglio rapido o tre per passato, presente e cammino. Le rune rovesciate chiedono attenzione; alcune sono simmetriche e non si rovesciano.",
+  "glossary": [
+   [
+    "Futhark",
+    "Il nome dell’alfabeto, dalle sue prime 6 rune."
+   ],
+   [
+    "Ætt",
+    "Ciascuno dei 3 gruppi di 8 rune."
+   ]
+  ]
+ },
+ "LIBRARY.tarot": {
+  "title": "Tarocchi e Arcano personale",
+  "what": "I tarocchi sono un mazzo di 78 carte: 22 arcani maggiori (i grandi temi della vita) e 56 arcani minori (le situazioni quotidiane). Il tuo arcano personale è la carta legata alla tua data di nascita.",
+  "origin": "Le carte sono nate nell’Italia del XV secolo come gioco e, dal XVIII secolo, sono diventate uno strumento simbolico di riflessione.",
+  "howToRead": "In una stesa, ogni posizione ha un significato (passato, presente, futuro…). Leggi la carta in quella posizione, nota se è rovesciata e cerca la storia che le carte raccontano insieme.",
+  "glossary": [
+   [
+    "Arcani maggiori",
+    "Le 22 carte dei grandi temi, dal Matto al Mondo."
+   ],
+   [
+    "Arcani minori",
+    "Le 56 carte di Bastoni, Coppe, Spade e Denari."
+   ],
+   [
+    "Carta rovesciata",
+    "Energia bloccata, interiore o eccessiva."
+   ],
+   [
+    "Stesa",
+    "Una disposizione di carte per rispondere a una domanda."
+   ]
+  ]
+ },
  "MAJOR_ARCANA.0": {
   "name": "Il Matto",
   "keywords": [

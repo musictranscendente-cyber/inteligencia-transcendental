@@ -40,6 +40,304 @@
   "name": "Wasser",
   "text": "Gefühl, Intuition und Empathie. Viel Wasser bringt Feingefühl; wenig verlangt, mehr auf das Herz zu hören."
  },
+ "HOUSES_TEXT": [
+  {
+   "name": "1. Haus",
+   "theme": "Identität, Erscheinung und Anfänge"
+  },
+  {
+   "name": "2. Haus",
+   "theme": "Geld, Werte und Ressourcen"
+  },
+  {
+   "name": "3. Haus",
+   "theme": "Kommunikation, Lernen und Geschwister"
+  },
+  {
+   "name": "4. Haus",
+   "theme": "Zuhause, Familie und Wurzeln"
+  },
+  {
+   "name": "5. Haus",
+   "theme": "Kreativität, Romantik und Vergnügen"
+  },
+  {
+   "name": "6. Haus",
+   "theme": "Alltag, tägliche Arbeit und Wohlbefinden"
+  },
+  {
+   "name": "7. Haus",
+   "theme": "Partnerschaften und Beziehungen"
+  },
+  {
+   "name": "8. Haus",
+   "theme": "Intimität, Verwandlung und geteilte Ressourcen"
+  },
+  {
+   "name": "9. Haus",
+   "theme": "Reisen, Philosophie und höhere Bildung"
+  },
+  {
+   "name": "10. Haus",
+   "theme": "Karriere, Ansehen und Berufung"
+  },
+  {
+   "name": "11. Haus",
+   "theme": "Freunde, Gruppen und Träume"
+  },
+  {
+   "name": "12. Haus",
+   "theme": "das Unbewusste, Spiritualität und Rückzug"
+  }
+ ],
+ "LIBRARY.angel": {
+  "title": "Kabbalistischer Engel",
+  "what": "In der kabbalistischen Tradition gehen 72 Engel aus dem heiligen Namen (Shem HaMephorash) hervor. Jeder herrscht über etwa 5 Tage des Jahres und 20 Minuten jedes Tages.",
+  "origin": "Sie stammt aus der mittelalterlichen jüdischen Kabbala und wurde im Westen durch esoterische Traditionen der Renaissance und der Moderne bekannt.",
+  "howToRead": "Dein Geburtsengel zeigt Eigenschaften, die du pflegen kannst. Sein Psalm dient traditionell als Inspiration, seine Herrschaftsstunde als symbolischer Moment der Verbindung.",
+  "glossary": [
+   [
+    "Shem HaMephorash",
+    "Der „ausdrückliche Name“ aus 72 Teilen, aus dem die Engel hervorgehen."
+   ],
+   [
+    "Chor",
+    "Eine Gruppe von 8 Engeln (Seraphim, Cherubim…)."
+   ],
+   [
+    "Herrschaft",
+    "Die 20 Minuten des Tages, über die jeder Engel herrscht."
+   ]
+  ]
+ },
+ "LIBRARY.astrology": {
+  "title": "Astrologie",
+  "what": "Eine symbolische Deutung der Planetenstände im Moment deiner Geburt, gesehen von deinem Geburtsort aus. Das Geburtshoroskop zeigt deinen „persönlichen Himmel“.",
+  "origin": "In Mesopotamien entstanden und von Griechen, Arabern und Europäern weiterentwickelt, ist sie als Sprache der Symbole zu uns gekommen.",
+  "howToRead": "Beginne mit den Big 3: Sonne (Wesen), Mond (Gefühle) und Aszendent (wie du auftrittst). Schau dann Zeichen und Haus jedes Planeten an und die Aspekte zwischen ihnen.",
+  "glossary": [
+   [
+    "Zeichen",
+    "Einer der 12 Abschnitte des Tierkreises; der „Stil“."
+   ],
+   [
+    "Planet",
+    "Eine Funktion der Persönlichkeit; das „Was“."
+   ],
+   [
+    "Haus",
+    "Ein Lebensbereich; das „Wo“."
+   ],
+   [
+    "Aspekt",
+    "Der Winkel zwischen zwei Planeten; „wie sie miteinander sprechen“."
+   ],
+   [
+    "Aszendent",
+    "Das Zeichen, das bei deiner Geburt am Osthorizont aufstieg."
+   ],
+   [
+    "Transit",
+    "Ein aktueller Planet, der einen Punkt deines Horoskops berührt."
+   ],
+   [
+    "Solar",
+    "Das Horoskop des Moments, in dem die Sonne an jedem Geburtstag an ihre Geburtsposition zurückkehrt."
+   ]
+  ]
+ },
+ "LIBRARY.chakras": {
+  "title": "Chakren und Kristalle",
+  "what": "In der indischen Tradition sind Chakren sieben symbolische Energiezentren entlang der Wirbelsäule. Kristalle dienen als sichtbare Erinnerung an die Eigenschaften jedes Chakras.",
+  "origin": "Die Chakren stammen aus tantrischen Texten und dem indischen Yoga; die Verbindung mit Kristallen ist eine moderne Tradition.",
+  "howToRead": "Die App schlägt ein Fokus-Chakra nach dem schwächsten Element deines Horoskops und ein unterstützendes Chakra nach deinem Schicksal vor. Es ist eine symbolische Einladung, keine Gesundheitspraxis.",
+  "glossary": [
+   [
+    "Chakra",
+    "„Rad“ auf Sanskrit: ein symbolisches Energiezentrum."
+   ],
+   [
+    "Kristall",
+    "Ein Stein, der als Symbol und Erinnerung an eine Eigenschaft dient."
+   ]
+  ]
+ },
+ "LIBRARY.chinese": {
+  "title": "Chinesische Astrologie und Ba Zi",
+  "what": "Der chinesische Tierkreis verbindet jedes Jahr mit einem von 12 Tieren und einem der 5 Elemente. Ba Zi („acht Zeichen“) nutzt vier Säulen — Jahr, Monat, Tag und Stunde — für ein vollständigeres Bild.",
+  "origin": "Eine alte chinesische Tradition, verbunden mit dem lunisolaren Kalender und der Lehre der fünf Elemente (Wu Xing).",
+  "howToRead": "Das Jahrestier zeigt dein soziales Temperament. Im Ba Zi ist der Stamm der Tagessäule der Tagesmeister (dein Wesen), und das Gleichgewicht der Elemente zeigt, was reichlich vorhanden ist und was fehlt.",
+  "glossary": [
+   [
+    "Chinesisches Neujahr",
+    "Beginn des Mondjahres, zwischen dem 21. Januar und dem 20. Februar."
+   ],
+   [
+    "Himmelsstamm",
+    "Eines von 10 Symbolen, die mit den Elementen verbunden sind."
+   ],
+   [
+    "Erdzweig",
+    "Eines von 12 Symbolen, die mit den Tieren verbunden sind."
+   ],
+   [
+    "Tagesmeister",
+    "Das zentrale Element deines Ba Zi."
+   ],
+   [
+    "Li Chun",
+    "Frühlingsbeginn (~4. Februar), an dem das Ba-Zi-Jahr wechselt."
+   ]
+  ]
+ },
+ "LIBRARY.humanDesign": {
+  "title": "Human Design",
+  "what": "Ein System, das Astrologie, I Ging, Kabbala und Chakren in einer Körperkarte (Bodygraph) mit 9 Zentren verbindet. Es zeigt deinen Energietyp und wie du stimmige Entscheidungen triffst.",
+  "origin": "Es wurde 1987 von Ra Uru Hu vorgestellt und hat sich in den letzten Jahrzehnten weltweit verbreitet.",
+  "howToRead": "Beginne mit Typ und Strategie (wie du handelst). Dann die Autorität (wie du entscheidest). Farbige Zentren sind definiert (beständig); weiße sind offen (wo du von anderen lernst).",
+  "glossary": [
+   [
+    "Typ",
+    "Manifestor, Generator, Manifestierender Generator, Projektor oder Reflektor."
+   ],
+   [
+    "Strategie",
+    "Die Art zu handeln, die Widerstand verringert."
+   ],
+   [
+    "Autorität",
+    "Deine verlässliche Art, Entscheidungen zu treffen."
+   ],
+   [
+    "Profil",
+    "Eine Kombination aus zwei Linien, die deine Rolle beschreibt."
+   ],
+   [
+    "Tor",
+    "Einer von 64 Punkten, die von den Planeten aktiviert werden."
+   ],
+   [
+    "Kanal",
+    "Eine Verbindung zwischen zwei Toren, die zwei Zentren definiert."
+   ],
+   [
+    "Design",
+    "Positionen 88° Sonnenbogen vor der Geburt (die unbewusste Seite)."
+   ]
+  ]
+ },
+ "LIBRARY.iching": {
+  "title": "I Ging",
+  "what": "Das „Buch der Wandlungen“: 64 Hexagramme aus durchgehenden (Yang) und gebrochenen (Yin) Linien, die Situationen beschreiben und wie man in ihnen handelt.",
+  "origin": "Einer der ältesten Texte Chinas, über 3.000 Jahre alt, kommentiert von Konfuzius und der taoistischen Tradition.",
+  "howToRead": "Wirf sechsmal drei Münzen, von unten nach oben. Wandelnde Linien (6 oder 9) zeigen, was sich verändert, und bilden ein zweites Hexagramm: wohin die Lage führt.",
+  "glossary": [
+   [
+    "Hexagramm",
+    "Eine Figur aus 6 Linien; es gibt 64."
+   ],
+   [
+    "Trigramm",
+    "Ein halbes Hexagramm (3 Linien); es gibt 8."
+   ],
+   [
+    "Wandelnde Linie",
+    "Eine 6 oder 9, die sich in ihr Gegenteil verwandelt."
+   ]
+  ]
+ },
+ "LIBRARY.lenormand": {
+  "title": "Lenormand",
+  "what": "Ein Deck aus 36 Karten mit Alltagsbildern (Haus, Schiff, Herz…). Es ist direkt und praktisch: Die Karten werden in Kombination gelesen.",
+  "origin": "Benannt nach der französischen Kartenlegerin Marie-Anne Lenormand (19. Jahrhundert); in Brasilien als „Zigeunerdeck“ sehr beliebt.",
+  "howToRead": "Lies die Karten paarweise und in Folgen: Die erste gibt das Thema vor, die nächste beschreibt es genauer. In der Legung mit 9 Karten ist die Mitte das Hauptthema.",
+  "glossary": [
+   [
+    "Herr / Dame",
+    "Karten, die die fragende Person darstellen."
+   ],
+   [
+    "Kombination",
+    "Zwei Karten zusammen wie einen Satz lesen."
+   ]
+  ]
+ },
+ "LIBRARY.numerology": {
+  "title": "Numerologie",
+  "what": "Die symbolische Lehre der Zahlen aus deinem Namen und Geburtsdatum. Jede Zahl von 1 bis 9 (und die Meisterzahlen 11, 22 und 33) steht für einen Archetyp aus Eigenschaften und Lektionen.",
+  "origin": "Die pythagoreische Numerologie geht auf die Schulen des Pythagoras im alten Griechenland zurück, die in den Zahlen die Harmonie des Universums sahen. Die moderne Form wurde im 20. Jahrhundert populär.",
+  "howToRead": "Beginne mit dem Schicksal (Geburtsdatum): Es ist der Hauptweg. Der Ausdruck (voller Name) zeigt deine Talente; der Seelenwunsch (Vokale), was dein Herz bewegt; die Persönlichkeit (Konsonanten), wie andere dich sehen. Das Persönliche Jahr zeigt das Thema des Moments.",
+  "glossary": [
+   [
+    "Schicksal",
+    "Summe des Geburtsdatums; der große Lebensweg."
+   ],
+   [
+    "Ausdruck",
+    "Summe aller Buchstaben des Namens; deine Talente."
+   ],
+   [
+    "Seelenwunsch",
+    "Summe der Vokale; die Wünsche des Herzens."
+   ],
+   [
+    "Meisterzahl",
+    "11, 22 oder 33: intensive Schwingungen, die nicht reduziert werden."
+   ],
+   [
+    "Karmische Schuld",
+    "13, 14, 16 oder 19 im Lauf einer Rechnung: eine Lektion, die Aufmerksamkeit verlangt."
+   ],
+   [
+    "Karmische Lektion",
+    "Eine im Namen fehlende Zahl: eine Eigenschaft, die du entwickeln darfst."
+   ],
+   [
+    "Höhepunkt",
+    "Eine große Lebensphase mit eigenem Thema."
+   ]
+  ]
+ },
+ "LIBRARY.runes": {
+  "title": "Runen",
+  "what": "Ein altes nordisches Alphabet (Futhark) aus 24 Zeichen, jedes mit einer Bedeutung, die mit Natur und Alltag verbunden ist.",
+  "origin": "Von germanischen und nordischen Völkern zwischen dem 2. und 8. Jahrhundert als Schrift und Symbol genutzt.",
+  "howToRead": "Zieh eine Rune für einen schnellen Rat oder drei für Vergangenheit, Gegenwart und Weg. Umgekehrte Runen verlangen Aufmerksamkeit; manche sind symmetrisch und kehren sich nicht um.",
+  "glossary": [
+   [
+    "Futhark",
+    "Der Name des Alphabets, nach seinen ersten 6 Runen."
+   ],
+   [
+    "Ætt",
+    "Jede der 3 Gruppen von 8 Runen."
+   ]
+  ]
+ },
+ "LIBRARY.tarot": {
+  "title": "Tarot und persönliches Arkanum",
+  "what": "Das Tarot ist ein Deck aus 78 Karten: 22 Große Arkana (die großen Lebensthemen) und 56 Kleine Arkana (Alltagssituationen). Dein persönliches Arkanum ist die Karte, die mit deinem Geburtsdatum verbunden ist.",
+  "origin": "Die Karten entstanden im 15. Jahrhundert in Italien als Spiel und wurden ab dem 18. Jahrhundert zu einem symbolischen Werkzeug der Reflexion.",
+  "howToRead": "In einer Legung hat jede Position eine Bedeutung (Vergangenheit, Gegenwart, Zukunft…). Lies die Karte in ihrer Position, achte darauf, ob sie umgekehrt liegt, und suche die Geschichte, die die Karten gemeinsam erzählen.",
+  "glossary": [
+   [
+    "Große Arkana",
+    "Die 22 Karten der großen Themen, vom Narren bis zur Welt."
+   ],
+   [
+    "Kleine Arkana",
+    "Die 56 Karten der Stäbe, Kelche, Schwerter und Münzen."
+   ],
+   [
+    "Umgekehrte Karte",
+    "Blockierte, nach innen gerichtete oder übermäßige Energie."
+   ],
+   [
+    "Legung",
+    "Eine Anordnung von Karten, um eine Frage zu beantworten."
+   ]
+  ]
+ },
  "MAJOR_ARCANA.0": {
   "name": "Der Narr",
   "keywords": [

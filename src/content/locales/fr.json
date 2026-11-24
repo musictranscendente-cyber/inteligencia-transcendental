@@ -40,6 +40,304 @@
   "name": "Eau",
   "text": "Émotion, intuition et empathie. Beaucoup d’eau apporte la sensibilité ; peu demande d’écouter davantage le cœur."
  },
+ "HOUSES_TEXT": [
+  {
+   "name": "Maison 1",
+   "theme": "identité, apparence et commencements"
+  },
+  {
+   "name": "Maison 2",
+   "theme": "argent, valeurs et ressources"
+  },
+  {
+   "name": "Maison 3",
+   "theme": "communication, apprentissage et fratrie"
+  },
+  {
+   "name": "Maison 4",
+   "theme": "foyer, famille et racines"
+  },
+  {
+   "name": "Maison 5",
+   "theme": "créativité, romance et plaisir"
+  },
+  {
+   "name": "Maison 6",
+   "theme": "routine, travail quotidien et bien-être"
+  },
+  {
+   "name": "Maison 7",
+   "theme": "partenariats et relations"
+  },
+  {
+   "name": "Maison 8",
+   "theme": "intimité, transformation et ressources partagées"
+  },
+  {
+   "name": "Maison 9",
+   "theme": "voyages, philosophie et études supérieures"
+  },
+  {
+   "name": "Maison 10",
+   "theme": "carrière, réputation et vocation"
+  },
+  {
+   "name": "Maison 11",
+   "theme": "amis, groupes et rêves"
+  },
+  {
+   "name": "Maison 12",
+   "theme": "inconscient, spiritualité et retraite"
+  }
+ ],
+ "LIBRARY.angel": {
+  "title": "Ange kabbalistique",
+  "what": "Dans la tradition kabbalistique, 72 anges proviennent du nom sacré (Shem HaMephorash). Chacun gouverne une période d’environ 5 jours de l’année et 20 minutes de chaque journée.",
+  "origin": "Elle vient de la Kabbale juive médiévale et a été popularisée en Occident par les traditions ésotériques de la Renaissance et modernes.",
+  "howToRead": "Ton ange de naissance indique des qualités à cultiver. Son psaume est traditionnellement utilisé comme inspiration, et son heure de gouvernance comme un moment symbolique de connexion.",
+  "glossary": [
+   [
+    "Shem HaMephorash",
+    "Le « nom explicite » en 72 parties dont viennent les anges."
+   ],
+   [
+    "Chœur",
+    "Un groupe de 8 anges (Séraphins, Chérubins…)."
+   ],
+   [
+    "Gouvernance",
+    "Les 20 minutes de la journée gouvernées par chaque ange."
+   ]
+  ]
+ },
+ "LIBRARY.astrology": {
+  "title": "Astrologie",
+  "what": "Une lecture symbolique de la position des planètes au moment de ta naissance, vue depuis ton lieu de naissance. Le thème natal montre ton « ciel personnel ».",
+  "origin": "Née en Mésopotamie, développée par les Grecs, les Arabes et les Européens, elle nous est parvenue comme un langage de symboles.",
+  "howToRead": "Commence par le Big 3 : Soleil (essence), Lune (émotions) et Ascendant (ta façon de te présenter). Regarde ensuite le signe et la maison de chaque planète, et les aspects entre elles.",
+  "glossary": [
+   [
+    "Signe",
+    "L’une des 12 divisions du zodiaque ; le « style »."
+   ],
+   [
+    "Planète",
+    "Une fonction de la personnalité ; le « quoi »."
+   ],
+   [
+    "Maison",
+    "Un domaine de vie ; le « où »."
+   ],
+   [
+    "Aspect",
+    "L’angle entre deux planètes ; « comment elles dialoguent »."
+   ],
+   [
+    "Ascendant",
+    "Le signe qui se levait à l’horizon est à ta naissance."
+   ],
+   [
+    "Transit",
+    "Une planète actuelle qui touche un point de ton thème."
+   ],
+   [
+    "Révolution solaire",
+    "Le thème du moment où le Soleil revient à sa position natale, à chaque anniversaire."
+   ]
+  ]
+ },
+ "LIBRARY.chakras": {
+  "title": "Chakras et cristaux",
+  "what": "Dans la tradition indienne, les chakras sont sept centres d’énergie symboliques le long de la colonne. Les cristaux servent de rappels visuels des qualités de chacun.",
+  "origin": "Les chakras viennent des textes tantriques et du yoga indien ; le lien avec les cristaux est une tradition moderne.",
+  "howToRead": "L’app propose un chakra de focus selon l’élément le moins présent de ton thème et un chakra de soutien selon ton Destin. C’est une invitation symbolique, pas une pratique de santé.",
+  "glossary": [
+   [
+    "Chakra",
+    "« Roue » en sanskrit : un centre d’énergie symbolique."
+   ],
+   [
+    "Cristal",
+    "Une pierre utilisée comme symbole et rappel d’une qualité."
+   ]
+  ]
+ },
+ "LIBRARY.chinese": {
+  "title": "Astrologie chinoise et Ba Zi",
+  "what": "Le zodiaque chinois associe chaque année à l’un des 12 animaux et à l’un des 5 éléments. Le Ba Zi (« huit caractères ») utilise quatre piliers — année, mois, jour et heure — pour un portrait plus complet.",
+  "origin": "Une tradition chinoise ancienne, liée au calendrier luni-solaire et à la théorie des cinq éléments (Wu Xing).",
+  "howToRead": "L’animal de l’année montre ton tempérament social. Dans le Ba Zi, le tronc du pilier du jour est le Maître du jour (ton essence), et l’équilibre des éléments montre ce qui abonde et ce qui manque.",
+  "glossary": [
+   [
+    "Nouvel An chinois",
+    "Début de l’année lunaire, entre le 21 janvier et le 20 février."
+   ],
+   [
+    "Tronc céleste",
+    "L’un des 10 symboles liés aux éléments."
+   ],
+   [
+    "Branche terrestre",
+    "L’un des 12 symboles liés aux animaux."
+   ],
+   [
+    "Maître du jour",
+    "L’élément central de ton Ba Zi."
+   ],
+   [
+    "Li Chun",
+    "Début du printemps (~4 février), quand l’année du Ba Zi change."
+   ]
+  ]
+ },
+ "LIBRARY.humanDesign": {
+  "title": "Design Humain",
+  "what": "Un système qui combine astrologie, Yi King, Kabbale et chakras dans une carte du corps (bodygraph) à 9 centres. Il montre ton type d’énergie et comment prendre des décisions alignées.",
+  "origin": "Il a été présenté par Ra Uru Hu en 1987 et s’est répandu dans le monde au cours des dernières décennies.",
+  "howToRead": "Commence par le Type et la Stratégie (comment agir). Puis l’Autorité (comment décider). Les centres colorés sont définis (constants) ; les blancs sont ouverts (là où tu apprends des autres).",
+  "glossary": [
+   [
+    "Type",
+    "Manifesteur, Générateur, Générateur-Manifesteur, Projecteur ou Réflecteur."
+   ],
+   [
+    "Stratégie",
+    "La façon d’agir qui réduit la résistance."
+   ],
+   [
+    "Autorité",
+    "Ta façon fiable de prendre des décisions."
+   ],
+   [
+    "Profil",
+    "Une combinaison de deux lignes qui décrit ton rôle."
+   ],
+   [
+    "Porte",
+    "L’un des 64 points activés par les planètes."
+   ],
+   [
+    "Canal",
+    "Un lien entre deux portes qui définit deux centres."
+   ],
+   [
+    "Design",
+    "Positions 88° de Soleil avant la naissance (le côté inconscient)."
+   ]
+  ]
+ },
+ "LIBRARY.iching": {
+  "title": "Yi King",
+  "what": "Le « Livre des Mutations » : 64 hexagrammes formés de traits pleins (yang) et brisés (yin) qui décrivent des situations et la façon d’y agir.",
+  "origin": "L’un des plus anciens textes de Chine, vieux de plus de 3 000 ans, commenté par Confucius et la tradition taoïste.",
+  "howToRead": "Lance trois pièces six fois, de bas en haut. Les traits mutables (6 ou 9) montrent ce qui change et forment un second hexagramme : la direction de la situation.",
+  "glossary": [
+   [
+    "Hexagramme",
+    "Figure de 6 traits ; il y en a 64."
+   ],
+   [
+    "Trigramme",
+    "La moitié d’un hexagramme (3 traits) ; il y en a 8."
+   ],
+   [
+    "Trait mutable",
+    "Un trait 6 ou 9 qui se change en son contraire."
+   ]
+  ]
+ },
+ "LIBRARY.lenormand": {
+  "title": "Lenormand",
+  "what": "Un jeu de 36 cartes aux images du quotidien (maison, bateau, cœur…). Il est direct et pratique : les cartes se lisent en combinaison.",
+  "origin": "Il porte le nom de la cartomancienne française Marie-Anne Lenormand (XIXe siècle) et est très populaire au Brésil sous le nom de « jeu gitan ».",
+  "howToRead": "Lis les cartes par paires et en séquence : la première donne le sujet, la suivante le précise. Dans le tirage de 9 cartes, le centre est la question principale.",
+  "glossary": [
+   [
+    "Homme / Femme",
+    "Cartes qui représentent la personne qui consulte."
+   ],
+   [
+    "Combinaison",
+    "Lire deux cartes ensemble comme une seule phrase."
+   ]
+  ]
+ },
+ "LIBRARY.numerology": {
+  "title": "Numérologie",
+  "what": "L’étude symbolique des nombres tirés de ton nom et de ta date de naissance. Chaque nombre de 1 à 9 (et les maîtres 11, 22 et 33) représente un archétype de qualités et de leçons.",
+  "origin": "La numérologie pythagoricienne remonte aux écoles de Pythagore, dans la Grèce antique, qui voyaient dans les nombres l’harmonie de l’univers. La version moderne s’est popularisée au XXe siècle.",
+  "howToRead": "Commence par le Destin (date de naissance) : c’est le chemin principal. L’Expression (nom complet) montre tes talents ; l’Élan de l’âme (voyelles), ce qui fait vibrer ton cœur ; la Personnalité (consonnes), comment les autres te voient. L’Année personnelle montre le thème du moment.",
+  "glossary": [
+   [
+    "Destin",
+    "Somme de la date de naissance ; le grand chemin de la vie."
+   ],
+   [
+    "Expression",
+    "Somme de toutes les lettres du nom ; tes talents."
+   ],
+   [
+    "Élan de l’âme",
+    "Somme des voyelles ; les désirs du cœur."
+   ],
+   [
+    "Nombre maître",
+    "11, 22 ou 33 : vibrations intenses qui ne se réduisent pas."
+   ],
+   [
+    "Dette karmique",
+    "13, 14, 16 ou 19 au cours d’un calcul : une leçon qui demande de l’attention."
+   ],
+   [
+    "Leçon karmique",
+    "Un nombre absent du nom : une qualité à développer."
+   ],
+   [
+    "Pinacle",
+    "Une grande phase de la vie avec son propre thème."
+   ]
+  ]
+ },
+ "LIBRARY.runes": {
+  "title": "Runes",
+  "what": "Un ancien alphabet nordique (Futhark) de 24 symboles, chacun avec un sens lié à la nature et au quotidien.",
+  "origin": "Utilisées par les peuples germaniques et nordiques entre le IIe et le VIIIe siècle, comme écriture et comme symbole.",
+  "howToRead": "Tire une rune pour un conseil rapide ou trois pour le passé, le présent et le chemin. Les runes inversées demandent de l’attention ; certaines sont symétriques et ne s’inversent pas.",
+  "glossary": [
+   [
+    "Futhark",
+    "Le nom de l’alphabet, d’après ses 6 premières runes."
+   ],
+   [
+    "Ætt",
+    "Chacun des 3 groupes de 8 runes."
+   ]
+  ]
+ },
+ "LIBRARY.tarot": {
+  "title": "Tarot et Arcane personnel",
+  "what": "Le tarot est un jeu de 78 cartes : 22 arcanes majeurs (les grands thèmes de la vie) et 56 arcanes mineurs (les situations du quotidien). Ton arcane personnel est la carte liée à ta date de naissance.",
+  "origin": "Les cartes sont apparues en Italie au XVe siècle comme jeu et, à partir du XVIIIe siècle, sont devenues un outil symbolique de réflexion.",
+  "howToRead": "Dans un tirage, chaque position a un sens (passé, présent, futur…). Lis la carte dans cette position, remarque si elle est inversée et cherche l’histoire que les cartes racontent ensemble.",
+  "glossary": [
+   [
+    "Arcanes majeurs",
+    "Les 22 cartes des grands thèmes, du Mat au Monde."
+   ],
+   [
+    "Arcanes mineurs",
+    "Les 56 cartes de Bâtons, Coupes, Épées et Deniers."
+   ],
+   [
+    "Carte inversée",
+    "Énergie bloquée, intérieure ou excessive."
+   ],
+   [
+    "Tirage",
+    "Une disposition de cartes pour répondre à une question."
+   ]
+  ]
+ },
  "MAJOR_ARCANA.0": {
   "name": "Le Mat",
   "keywords": [

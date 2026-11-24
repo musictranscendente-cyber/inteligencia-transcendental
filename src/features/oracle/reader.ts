@@ -100,7 +100,7 @@ function minorArticle(rank: number, lang: Lang) {
   if (lang === 'en') return 'the';
   if (lang === 'pt') return rank === 13 ? 'a' : 'o';
   if (lang === 'fr') return rank === 1 ? 'l’' : rank === 13 ? 'la' : 'le';
-  if (lang === 'it') return rank === 1 ? 'l’' : rank === 13 ? 'la' : 'il';
+  if (lang === 'it') return rank === 1 || rank === 8 ? 'l’' : rank === 13 ? 'la' : 'il';
   // Alemão: As, Bube, Ritter, Königin, König; os números são femininos ("die Zehn").
   if (lang === 'de') return rank === 1 ? 'das' : rank === 11 || rank === 12 || rank === 14 ? 'der' : 'die';
   return rank === 13 || rank === 11 ? 'la' : 'el';

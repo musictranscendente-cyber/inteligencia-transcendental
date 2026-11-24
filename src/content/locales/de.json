@@ -602,6 +602,238 @@
   "reversed": "Zu viel Rückzug oder Flucht vor der Innenschau. Bring Alleinsein und Gesellschaft ins Gleichgewicht.",
   "personal": "Als persönliches Arkanum zeigt der Eremit eine nachdenkliche, weise und unabhängige Seele. Du findest Antworten auf eigene Faust. Deine Herausforderung ist, dich nicht zu verschließen und dein Licht andere leiten zu lassen."
  },
+ "MINOR_MEANINGS.cups": [
+  [
+   "Eine neue Liebe oder emotionale Öffnung.",
+   "Blockierte Gefühle oder Bedürftigkeit; kümmere dich um dein Herz."
+  ],
+  [
+   "Verbindung, Partnerschaft und gegenseitige Zuneigung.",
+   "Missklang oder Ungleichgewicht in der Beziehung."
+  ],
+  [
+   "Freundschaft, Feiern und geteilte Freude.",
+   "Übermaß oder Klatsch in der Gruppe."
+  ],
+  [
+   "Langeweile oder Innenschau; achte darauf, was dir angeboten wird.",
+   "Neues Interesse erwacht nach der Teilnahmslosigkeit."
+  ],
+  [
+   "Trauer über einen Verlust; einige Kelche stehen noch.",
+   "Annahme und emotionaler Neubeginn."
+  ],
+  [
+   "Nostalgie, süße Erinnerungen und Unschuld.",
+   "In der Vergangenheit festhängen; lebe die Gegenwart."
+  ],
+  [
+   "Viele Möglichkeiten und Fantasien; wähle mit beiden Füßen auf dem Boden.",
+   "Klarheit nach der Verwirrung."
+  ],
+  [
+   "Zurücklassen, was nicht mehr nährt.",
+   "Angst zu gehen oder Rückkehr zu dem, was vorbei ist."
+  ],
+  [
+   "Zufriedenheit und erfüllte Wünsche.",
+   "Oberflächliche Zufriedenheit oder Übermaß."
+  ],
+  [
+   "Harmonie in der Familie und emotionales Glück.",
+   "Spannungen zu Hause oder idealisierte Erwartungen."
+  ],
+  [
+   "Eine liebevolle Nachricht, Feingefühl und Kreativität.",
+   "Emotionale Unreife oder Unsicherheit."
+  ],
+  [
+   "Ein romantischer Antrag, eine Einladung und Charme.",
+   "Leere Versprechen oder Idealisierung."
+  ],
+  [
+   "Empathie, Intuition und Fürsorge.",
+   "Übersensibilität oder emotionale Abhängigkeit."
+  ],
+  [
+   "Emotionales Gleichgewicht und Weisheit des Herzens.",
+   "Unterdrückte Gefühle oder Manipulation."
+  ]
+ ],
+ "MINOR_MEANINGS.pentacles": [
+  [
+   "Eine konkrete neue Chance: Arbeit, Geld oder Wohlbefinden im Alltag.",
+   "Eine verpasste oder schlecht geplante Chance."
+  ],
+  [
+   "Mehrere Anforderungen flexibel jonglieren.",
+   "Überlastung und Unordnung."
+  ],
+  [
+   "Teamarbeit und Anerkennung von Können.",
+   "Fehlende Zusammenarbeit oder schlampige Arbeit."
+  ],
+  [
+   "Sicherheit und Sparen; Vorsicht vor Anhaften.",
+   "Großzügigkeit oder unkontrollierte Ausgaben."
+  ],
+  [
+   "Eine Zeit des Mangels; bitte um Hilfe und nimm sie an.",
+   "Erholung nach einer engen Phase."
+  ],
+  [
+   "Großzügigkeit, fairer Austausch und Unterstützung.",
+   "Schulden oder Hilfe mit Bedingungen."
+  ],
+  [
+   "Geduld: Die Ernte wächst.",
+   "Ungeduld mit langsamen Ergebnissen."
+  ],
+  [
+   "Hingabe, Lernen und Verfeinerung.",
+   "Perfektionismus oder zielloses Arbeiten."
+  ],
+  [
+   "Unabhängigkeit und verdienter Komfort.",
+   "Finanzielle Abhängigkeit oder Überarbeitung."
+  ],
+  [
+   "Erbe, Familie und dauerhafter Wohlstand.",
+   "Erbstreit oder Unbeständigkeit."
+  ],
+  [
+   "Lernen, neue Fähigkeiten und praktische Chancen.",
+   "Aufschieben oder fehlender Fokus."
+  ],
+  [
+   "Ausdauer, Methode und Verlässlichkeit.",
+   "Stillstand oder sinnlose Routine."
+  ],
+  [
+   "Praktische Fürsorge, Fülle und Großzügigkeit.",
+   "Ungleichgewicht zwischen Arbeit und Privatleben."
+  ],
+  [
+   "Materieller Erfolg und beständige Führung.",
+   "Materialismus oder Sturheit."
+  ]
+ ],
+ "MINOR_MEANINGS.swords": [
+  [
+   "Geistige Klarheit und eine Wahrheit, die den Zweifel durchschneidet.",
+   "Verwirrung oder Worte als Waffen."
+  ],
+  [
+   "Patt: eine aus Angst aufgeschobene Entscheidung.",
+   "Die Entscheidung wird unausweichlich; sieh die Fakten an."
+  ],
+  [
+   "Seelischer Schmerz, der anerkannt werden will.",
+   "Heilung und Vergebung beginnen."
+  ],
+  [
+   "Ruhe und geistige Erholung.",
+   "Unruhe; kehr langsam zum Handeln zurück."
+  ],
+  [
+   "Ein Konflikt, den niemand wirklich gewinnt.",
+   "Versöhnung oder den Kampf hinter dir lassen."
+  ],
+  [
+   "Übergang in ruhigere Gewässer.",
+   "Widerstand, weiterzugehen."
+  ],
+  [
+   "Strategie und Diskretion; Vorsicht vor Abkürzungen.",
+   "Wahrheiten kommen ans Licht."
+  ],
+  [
+   "Sich von einschränkenden Gedanken gefangen fühlen.",
+   "Befreiung: Die Fesseln waren schwächer, als sie schienen."
+  ],
+  [
+   "Angst und Sorgen, die nachts wachsen.",
+   "Erleichterung; die Angst war größer als das Problem."
+  ],
+  [
+   "Ein schmerzhaftes Ende eines Zyklus; die Morgendämmerung naht.",
+   "Erholung und Lernen nach dem Fall."
+  ],
+  [
+   "Geistige Neugier und Wachsamkeit.",
+   "Klatsch oder vorschnelles Urteilen."
+  ],
+  [
+   "Schnelles, direktes Handeln, um Ideen zu verteidigen.",
+   "Unbesonnenheit und harte Worte."
+  ],
+  [
+   "Ehrlichkeit, Unabhängigkeit und Klarheit.",
+   "Kälte oder Bitterkeit."
+  ],
+  [
+   "Geistige Autorität und gerechte Entscheidungen.",
+   "Starrheit oder Machtmissbrauch durch Worte."
+  ]
+ ],
+ "MINOR_MEANINGS.wands": [
+  [
+   "Ein Funke Inspiration: Beginne etwas Neues mit Begeisterung.",
+   "Ideen ohne Tat oder blockierte Energie; warte auf den richtigen Moment."
+  ],
+  [
+   "Vorausplanen und wählen, wo du wachsen willst.",
+   "Angst, die Komfortzone zu verlassen, oder vage Pläne."
+  ],
+  [
+   "Weiter Blick und Wachstum: Deine Mühe beginnt sich auszuzahlen.",
+   "Verzögerungen oder zu hohe Erwartungen; passe den Plan an."
+  ],
+  [
+   "Feier, Zuhause und gemeinsame Erfolge.",
+   "Unruhe zu Hause oder eine verschobene Feier."
+  ],
+  [
+   "Wettbewerb und aufeinanderprallende Ideen, die dich wachsen lassen.",
+   "Vermiedene Konflikte oder sinnloser Streit."
+  ],
+  [
+   "Sieg und öffentliche Anerkennung.",
+   "Verletzter Stolz oder fehlende Anerkennung."
+  ],
+  [
+   "Standhaft deine Position halten.",
+   "Müde vom Kämpfen oder überfordert."
+  ],
+  [
+   "Schnelle Bewegung, Neuigkeiten und Fortschritt.",
+   "Hast, Verzögerungen oder verwirrende Botschaften."
+  ],
+  [
+   "Durchhaltevermögen: Du bist nah am Ziel.",
+   "Erschöpfung oder übertriebenes Misstrauen."
+  ],
+  [
+   "Zu viele Verantwortungen auf deinen Schultern.",
+   "Lernen zu delegieren und Last abzugeben."
+  ],
+  [
+   "Neugier, neue Ideen und jugendliche Begeisterung.",
+   "Fehlender Fokus oder Neuigkeiten, die sich nicht erfüllen."
+  ],
+  [
+   "Mutiges Handeln, Abenteuer und Leidenschaft.",
+   "Impulsivität und Hast stehen im Weg."
+  ],
+  [
+   "Selbstvertrauen, Charisma und Wärme.",
+   "Unsicherheit oder versteckte Eifersucht."
+  ],
+  [
+   "Visionäre, unternehmerische Führung.",
+   "Autoritarismus oder unrealistische Erwartungen."
+  ]
+ ],
  "MODALITIES_TEXT.cardinal": {
   "name": "Kardinal",
   "text": "Du neigst dazu, Dinge anzustoßen, zu führen und in Bewegung zu bringen."
@@ -846,6 +1078,22 @@
   "name": "Venus",
   "function": "wie du liebst, was du schätzt und was du schön findest"
  },
+ "RANKS": [
+  "Ass",
+  "Zwei",
+  "Drei",
+  "Vier",
+  "Fünf",
+  "Sechs",
+  "Sieben",
+  "Acht",
+  "Neun",
+  "Zehn",
+  "Bube",
+  "Ritter",
+  "Königin",
+  "König"
+ ],
  "SIGNS_TEXT.aquarius": {
   "name": "Wassermann",
   "keywords": [
@@ -1013,5 +1261,17 @@
  "SIGN_STYLE.sagittarius": "optimistisch, frei und auf Sinnsuche",
  "SIGN_STYLE.scorpio": "intensiv, tief und strategisch",
  "SIGN_STYLE.taurus": "ruhig, beständig und mit sinnlichem Genuss",
- "SIGN_STYLE.virgo": "detailgenau, methodisch und praktisch"
+ "SIGN_STYLE.virgo": "detailgenau, methodisch und praktisch",
+ "SUIT_NAMES": {
+  "wands": "Stäbe",
+  "cups": "Kelche",
+  "swords": "Schwerter",
+  "pentacles": "Münzen"
+ },
+ "SUIT_THEME": {
+  "wands": "Tatkraft und Leidenschaft",
+  "cups": "Gefühle und Zuneigung",
+  "swords": "Verstand und Entscheidungen",
+  "pentacles": "Körper, Arbeit und Geld"
+ }
 }

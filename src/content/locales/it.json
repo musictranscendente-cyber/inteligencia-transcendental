@@ -602,6 +602,238 @@
   "reversed": "Isolamento eccessivo o fuga dall’introspezione. Bilancia solitudine e compagnia.",
   "personal": "Come arcano personale, l’Eremita indica un’anima riflessiva, saggia e indipendente. Trovi le risposte da solo/a. La tua sfida è non chiuderti e lasciare che la tua luce guidi gli altri."
  },
+ "MINOR_MEANINGS.cups": [
+  [
+   "Un nuovo amore o un’apertura emotiva.",
+   "Emozioni bloccate o carenza affettiva; prenditi cura del cuore."
+  ],
+  [
+   "Connessione, intesa e affetto reciproco.",
+   "Disaccordo o squilibrio nella relazione."
+  ],
+  [
+   "Amicizia, festa e gioia condivisa.",
+   "Eccessi o pettegolezzi nel gruppo."
+  ],
+  [
+   "Noia o introspezione; nota ciò che ti viene offerto.",
+   "Un nuovo interesse si risveglia dopo l’apatia."
+  ],
+  [
+   "Dolore per una perdita; alcune coppe sono ancora in piedi.",
+   "Accettazione e nuovo inizio emotivo."
+  ],
+  [
+   "Nostalgia, ricordi dolci e innocenza.",
+   "Bloccato/a nel passato; vivi il presente."
+  ],
+  [
+   "Tante opzioni e fantasie; scegli con i piedi per terra.",
+   "Chiarezza dopo la confusione."
+  ],
+  [
+   "Lasciare indietro ciò che non nutre più.",
+   "Paura di andare o ritorno a ciò che è finito."
+  ],
+  [
+   "Soddisfazione e desideri realizzati.",
+   "Contentezza superficiale o eccessi."
+  ],
+  [
+   "Armonia familiare e felicità emotiva.",
+   "Tensioni in casa o aspettative idealizzate."
+  ],
+  [
+   "Un messaggio affettuoso, sensibilità e creatività.",
+   "Immaturità emotiva o insicurezza."
+  ],
+  [
+   "Una proposta romantica, un invito e fascino.",
+   "Promesse vuote o idealizzazione."
+  ],
+  [
+   "Empatia, intuizione e cura.",
+   "Ipersensibilità o dipendenza emotiva."
+  ],
+  [
+   "Equilibrio emotivo e saggezza del cuore.",
+   "Emozioni represse o manipolazione."
+  ]
+ ],
+ "MINOR_MEANINGS.pentacles": [
+  [
+   "Una nuova opportunità concreta: lavoro, denaro o benessere quotidiano.",
+   "Un’opportunità persa o mal pianificata."
+  ],
+  [
+   "Destreggiarsi tra varie richieste con flessibilità.",
+   "Sovraccarico e disorganizzazione."
+  ],
+  [
+   "Lavoro di squadra e riconoscimento delle capacità.",
+   "Mancanza di collaborazione o lavoro approssimativo."
+  ],
+  [
+   "Sicurezza e risparmio; attenzione all’attaccamento.",
+   "Generosità o spese fuori controllo."
+  ],
+  [
+   "Un periodo di scarsità; chiedi e accetta aiuto.",
+   "Ripresa dopo un momento difficile."
+  ],
+  [
+   "Generosità, scambio equo e sostegno.",
+   "Debiti o aiuto con secondi fini."
+  ],
+  [
+   "Pazienza: il raccolto sta crescendo.",
+   "Impazienza con risultati lenti."
+  ],
+  [
+   "Dedizione, apprendimento e perfezionamento.",
+   "Perfezionismo o lavoro senza scopo."
+  ],
+  [
+   "Indipendenza e comfort meritato.",
+   "Dipendenza economica o troppo lavoro."
+  ],
+  [
+   "Eredità, famiglia e prosperità duratura.",
+   "Dispute sull’eredità o instabilità."
+  ],
+  [
+   "Studio, nuove competenze e opportunità pratiche.",
+   "Procrastinazione o mancanza di concentrazione."
+  ],
+  [
+   "Perseveranza, metodo e affidabilità.",
+   "Stagnazione o routine senza senso."
+  ],
+  [
+   "Cura concreta, abbondanza e generosità.",
+   "Squilibrio tra lavoro e vita personale."
+  ],
+  [
+   "Successo materiale e leadership stabile.",
+   "Materialismo o testardaggine."
+  ]
+ ],
+ "MINOR_MEANINGS.swords": [
+  [
+   "Chiarezza mentale e una verità che taglia il dubbio.",
+   "Confusione o parole usate come armi."
+  ],
+  [
+   "Stallo: una decisione rimandata per paura.",
+   "La decisione diventa inevitabile; guarda i fatti."
+  ],
+  [
+   "Un dolore emotivo che chiede di essere riconosciuto.",
+   "Guarigione e perdono che iniziano."
+  ],
+  [
+   "Riposo e recupero mentale.",
+   "Irrequietezza; torna all’azione con calma."
+  ],
+  [
+   "Un conflitto che nessuno vince davvero.",
+   "Riconciliazione o uscita dal combattimento."
+  ],
+  [
+   "Transizione verso acque più calme.",
+   "Resistenza ad andare avanti."
+  ],
+  [
+   "Strategia e discrezione; attenzione alle scorciatoie.",
+   "Verità che vengono a galla."
+  ],
+  [
+   "Sentirsi intrappolati da pensieri limitanti.",
+   "Liberazione: i legami erano più deboli di quanto sembrassero."
+  ],
+  [
+   "Ansia e preoccupazioni che crescono di notte.",
+   "Sollievo; la paura era più grande del problema."
+  ],
+  [
+   "Una fine di ciclo dolorosa; l’alba sta arrivando.",
+   "Ripresa e apprendimento dopo la caduta."
+  ],
+  [
+   "Curiosità mentale e vigilanza.",
+   "Pettegolezzi o giudizi affrettati."
+  ],
+  [
+   "Azione rapida e diretta per difendere le idee.",
+   "Avventatezza e parole dure."
+  ],
+  [
+   "Onestà, indipendenza e chiarezza.",
+   "Freddezza o amarezza."
+  ],
+  [
+   "Autorità intellettuale e decisioni giuste.",
+   "Rigidità o abuso di potere con le parole."
+  ]
+ ],
+ "MINOR_MEANINGS.wands": [
+  [
+   "Una scintilla d’ispirazione: inizia qualcosa di nuovo con entusiasmo.",
+   "Idee senza azione o energia bloccata; aspetta il momento giusto."
+  ],
+  [
+   "Pianificare e scegliere dove espanderti.",
+   "Paura di uscire dalla zona di comfort o piani vaghi."
+  ],
+  [
+   "Visione ampia ed espansione: i tuoi sforzi cominciano a dare frutto.",
+   "Ritardi o aspettative troppo alte; aggiusta il piano."
+  ],
+  [
+   "Festa, casa e successi condivisi.",
+   "Instabilità in casa o una festa rimandata."
+  ],
+  [
+   "Competizione e idee che si scontrano e ti fanno crescere.",
+   "Conflitti evitati o litigi inutili."
+  ],
+  [
+   "Vittoria e riconoscimento pubblico.",
+   "Orgoglio ferito o mancanza di riconoscimento."
+  ],
+  [
+   "Difendere la tua posizione con fermezza.",
+   "Stanchezza di lottare o sensazione di essere sopraffatto/a."
+  ],
+  [
+   "Movimento rapido, notizie e progressi.",
+   "Fretta, ritardi o messaggi confusi."
+  ],
+  [
+   "Resilienza: sei vicino/a al traguardo.",
+   "Esaurimento o diffidenza eccessiva."
+  ],
+  [
+   "Troppe responsabilità sulle spalle.",
+   "Imparare a delegare e alleggerire il peso."
+  ],
+  [
+   "Curiosità, idee nuove ed entusiasmo giovanile.",
+   "Mancanza di concentrazione o notizie che non si concretizzano."
+  ],
+  [
+   "Azione audace, avventura e passione.",
+   "Impulsività e fretta che ostacolano."
+  ],
+  [
+   "Fiducia, carisma e calore.",
+   "Insicurezza o gelosia mascherata."
+  ],
+  [
+   "Leadership visionaria e intraprendente.",
+   "Autoritarismo o aspettative irrealistiche."
+  ]
+ ],
  "MODALITIES_TEXT.cardinal": {
   "name": "Cardinale",
   "text": "Tendi ad avviare, guidare e mettere le cose in moto."
@@ -846,6 +1078,22 @@
   "name": "Venere",
   "function": "come ami, cosa apprezzi e cosa trovi bello"
  },
+ "RANKS": [
+  "Asso",
+  "Due",
+  "Tre",
+  "Quattro",
+  "Cinque",
+  "Sei",
+  "Sette",
+  "Otto",
+  "Nove",
+  "Dieci",
+  "Fante",
+  "Cavaliere",
+  "Regina",
+  "Re"
+ ],
  "SIGNS_TEXT.aquarius": {
   "name": "Acquario",
   "keywords": [
@@ -1013,5 +1261,17 @@
  "SIGN_STYLE.sagittarius": "con ottimismo, libertà e ricerca di senso",
  "SIGN_STYLE.scorpio": "con intensità, profondità e strategia",
  "SIGN_STYLE.taurus": "con calma, costanza e piacere dei sensi",
- "SIGN_STYLE.virgo": "con attenzione ai dettagli, metodo e senso pratico"
+ "SIGN_STYLE.virgo": "con attenzione ai dettagli, metodo e senso pratico",
+ "SUIT_NAMES": {
+  "wands": "Bastoni",
+  "cups": "Coppe",
+  "swords": "Spade",
+  "pentacles": "Denari"
+ },
+ "SUIT_THEME": {
+  "wands": "azione e passione",
+  "cups": "emozioni e affetti",
+  "swords": "mente e decisioni",
+  "pentacles": "corpo, lavoro e denaro"
+ }
 }

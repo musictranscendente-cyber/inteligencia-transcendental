@@ -1,1 +1,446 @@
-{}
+{
+ "MAJOR_ARCANA.0": {
+  "name": "Il Matto",
+  "keywords": [
+   "inizio",
+   "libertà",
+   "fede"
+  ],
+  "summary": "Salta con fiducia: il cammino appare mentre cammini.",
+  "upright": "Nuovi inizi, spontaneità e fiducia nell’ignoto. Un’avventura ti chiama, e la leggerezza è il tuo miglior bagaglio.",
+  "reversed": "Impulsività o paura del rischio. Guarda dove metti i piedi prima di saltare, oppure nota cosa ti trattiene.",
+  "personal": "Come arcano personale, il Matto parla di un’anima libera, curiosa e originale. Tendi a imparare dall’esperienza e a reinventarti molte volte. La tua sfida è dare una direzione alla tua libertà senza perdere la meraviglia."
+ },
+ "MAJOR_ARCANA.1": {
+  "name": "Il Mago",
+  "keywords": [
+   "potere personale",
+   "abilità",
+   "manifestazione"
+  ],
+  "summary": "Hai gli strumenti: ora è il momento di usarli.",
+  "upright": "Talento, concentrazione e capacità di trasformare le idee in realtà. Tutto ciò che ti serve è già sul tavolo.",
+  "reversed": "Energia dispersa, dubbio sul proprio talento o abilità usata per ingannare. Allinea intenzione e azione.",
+  "personal": "Come arcano personale, il Mago rivela una persona ingegnosa, comunicativa e abile. Impari in fretta e fai accadere le cose. La tua sfida è usare questo potere con integrità e costanza."
+ },
+ "MAJOR_ARCANA.10": {
+  "name": "La Ruota della Fortuna",
+  "keywords": [
+   "cicli",
+   "cambiamento",
+   "destino"
+  ],
+  "summary": "La ruota gira: adattati e cavalca il movimento.",
+  "upright": "Cambiamento, opportunità e nuovi cicli. Ciò che era fermo comincia a muoversi.",
+  "reversed": "Resistenza al cambiamento o sensazione di sfortuna. Anche i cicli difficili passano.",
+  "personal": "Come arcano personale, la Ruota rivela una vita fatta di molti cicli e svolte. Ti reinventi e trovi opportunità nel cambiamento. La tua sfida è fidarti del movimento senza volerlo controllare."
+ },
+ "MAJOR_ARCANA.11": {
+  "name": "La Forza",
+  "keywords": [
+   "coraggio",
+   "padronanza interiore",
+   "compassione"
+  ],
+  "summary": "La vera forza è dolce e ferma allo stesso tempo.",
+  "upright": "Coraggio, pazienza e padronanza emotiva. Vinci con la calma, non con la forza.",
+  "reversed": "Insicurezza, scatti o pressione su te stesso/a. Sii gentile con le tue paure.",
+  "personal": "Come arcano personale, la Forza mostra qualcuno coraggioso, resiliente e magnetico, capace di trasformare gli istinti in energia creativa. La tua sfida è non confondere la forza con il controllo."
+ },
+ "MAJOR_ARCANA.12": {
+  "name": "L’Appeso",
+  "keywords": [
+   "pausa",
+   "nuova prospettiva",
+   "resa"
+  ],
+  "summary": "Fermati, cambia angolo e guarda ciò che ti sfuggiva.",
+  "upright": "Attesa produttiva, sacrificio consapevole e cambio di prospettiva. Non tutto si risolve agendo.",
+  "reversed": "Stallo, vittimismo o resistenza a lasciar andare. A volte la via d’uscita è l’accettazione.",
+  "personal": "Come arcano personale, l’Appeso indica qualcuno che vede il mondo in modo unico, con sensibilità e generosità. La tua sfida è non sacrificarti troppo."
+ },
+ "MAJOR_ARCANA.13": {
+  "name": "La Morte",
+  "keywords": [
+   "trasformazione",
+   "fine di un ciclo",
+   "rinnovamento"
+  ],
+  "summary": "Qualcosa finisce perché qualcosa di meglio possa iniziare.",
+  "upright": "Trasformazione profonda e chiusure necessarie. Non parla di morte fisica: parla di rinascita.",
+  "reversed": "Attaccamento a ciò che è finito. Resistere alla fine prolunga solo la transizione.",
+  "personal": "Come arcano personale, la carta 13 rivela qualcuno con un grande potere di trasformazione, che esce più forte dalle crisi. Vai in profondità. La tua sfida è lasciar andare con leggerezza."
+ },
+ "MAJOR_ARCANA.14": {
+  "name": "La Temperanza",
+  "keywords": [
+   "equilibrio",
+   "pazienza",
+   "integrazione"
+  ],
+  "summary": "La giusta misura trasforma tutto.",
+  "upright": "Moderazione, armonia e guarigione emotiva. Mescola gli opposti con calma e trova la via di mezzo.",
+  "reversed": "Eccessi, fretta o squilibrio. Torna al tuo ritmo.",
+  "personal": "Come arcano personale, la Temperanza mostra qualcuno conciliante, paziente e capace di armonizzare persone e situazioni. La tua sfida è non annullarti per mantenere la pace."
+ },
+ "MAJOR_ARCANA.15": {
+  "name": "Il Diavolo",
+  "keywords": [
+   "desiderio",
+   "attaccamento",
+   "potere"
+  ],
+  "summary": "Guarda in faccia ciò che ti trattiene.",
+  "upright": "Desideri intensi, ambizione e attaccamenti. Riconosci ciò che ti controlla per riprenderti la scelta.",
+  "reversed": "Liberazione da schemi, abitudini o relazioni che pesavano. Le catene erano allentate.",
+  "personal": "Come arcano personale, il Diavolo rivela qualcuno magnetico, ambizioso e intenso, con una grande forza materiale e creativa. La tua sfida è usare questo potere senza esserne dominato/a."
+ },
+ "MAJOR_ARCANA.16": {
+  "name": "La Torre",
+  "keywords": [
+   "sconvolgimento",
+   "rivelazione",
+   "liberazione"
+  ],
+  "summary": "Ciò che crolla fa spazio alla verità.",
+  "upright": "Cambiamento improvviso, rivelazioni e caduta di strutture fragili. A volte doloroso, ma liberatorio.",
+  "reversed": "Evitare un cambiamento inevitabile, o ricostruire dopo la caduta. Accetta e ricomincia.",
+  "personal": "Come arcano personale, la Torre indica qualcuno venuto a rompere schemi e portare verità alla luce. Vivi svolte che lasciano il segno. La tua sfida è costruire su fondamenta autentiche."
+ },
+ "MAJOR_ARCANA.17": {
+  "name": "La Stella",
+  "keywords": [
+   "speranza",
+   "ispirazione",
+   "guarigione"
+  ],
+  "summary": "Dopo la tempesta, la luce torna a guidare.",
+  "upright": "Speranza, rinnovamento e fiducia nel futuro. Un tempo per tornare a sognare e ritrovare il tuo scopo.",
+  "reversed": "Scoraggiamento o sfiducia. La tua luce non si è spenta: aspetta che tu alzi lo sguardo.",
+  "personal": "Come arcano personale, la Stella rivela una persona che ispira, sensibile e generosa, che illumina gli altri. La tua sfida è credere in te con la stessa fede che riponi nel mondo."
+ },
+ "MAJOR_ARCANA.18": {
+  "name": "La Luna",
+  "keywords": [
+   "intuizione",
+   "sogni",
+   "incertezza"
+  ],
+  "summary": "Non tutto è ciò che sembra: fidati del tuo istinto.",
+  "upright": "Immaginazione, sogni e sentieri nebbiosi. Segui l’intuizione, ma verifica i fatti.",
+  "reversed": "La confusione si dirada o le paure vengono affrontate. La chiarezza sta tornando.",
+  "personal": "Come arcano personale, la Luna indica qualcuno molto intuitivo, fantasioso e sensibile all’invisibile, con talento artistico. La tua sfida è non perderti nelle tue fantasie e paure."
+ },
+ "MAJOR_ARCANA.19": {
+  "name": "Il Sole",
+  "keywords": [
+   "gioia",
+   "successo",
+   "vitalità"
+  ],
+  "summary": "Splendi: oggi la vita è dalla tua parte.",
+  "upright": "Gioia, chiarezza, successo e calore. Uno dei segni migliori dei tarocchi.",
+  "reversed": "Splendore momentaneamente offuscato, o ottimismo esagerato. Il sole è sempre lì.",
+  "personal": "Come arcano personale, il Sole rivela qualcuno radioso, creativo e generoso, che scalda naturalmente l’ambiente. La tua sfida è brillare senza bisogno di pubblico."
+ },
+ "MAJOR_ARCANA.2": {
+  "name": "La Papessa",
+  "keywords": [
+   "intuizione",
+   "mistero",
+   "saggezza interiore"
+  ],
+  "summary": "La risposta è nel silenzio, non nel rumore.",
+  "upright": "Intuizione, conoscenza nascosta e pazienza. Osserva prima di agire; non tutto deve essere detto adesso.",
+  "reversed": "Distacco dall’intuizione, segreti o riservatezza eccessiva. Ascolta di nuovo la tua voce interiore.",
+  "personal": "Come arcano personale, la Papessa indica una persona intuitiva, riservata e profonda, attratta dallo studio e dai misteri. La tua sfida è fidarti di ciò che sai e condividere la tua saggezza."
+ },
+ "MAJOR_ARCANA.20": {
+  "name": "Il Giudizio",
+  "keywords": [
+   "risveglio",
+   "chiamata",
+   "rinascita"
+  ],
+  "summary": "Una chiamata interiore aspetta la tua risposta.",
+  "upright": "Rinnovamento, valutazione onesta e scopo. È tempo di ascoltare la chiamata e fare un nuovo passo.",
+  "reversed": "Autocritica severa o paura del cambiamento. Perdona il passato per andare avanti.",
+  "personal": "Come arcano personale, il Giudizio indica qualcuno con senso di missione, capace di risvegliare se stesso e gli altri. La tua sfida è non giudicare con durezza, nemmeno te stesso/a."
+ },
+ "MAJOR_ARCANA.21": {
+  "name": "Il Mondo",
+  "keywords": [
+   "realizzazione",
+   "completezza",
+   "compimento"
+  ],
+  "summary": "Un ciclo si completa: celebra il viaggio.",
+  "upright": "Realizzazione, integrazione e senso di missione compiuta. Si aprono porte verso un nuovo livello.",
+  "reversed": "Manca ancora qualcosa per chiudere il ciclo. Concludi con amore prima di iniziarne un altro.",
+  "personal": "Come arcano personale, il Mondo rivela qualcuno completo, versatile e aperto al mondo, che si sente a casa ovunque. La tua sfida è accettare che il viaggio non finisce mai davvero."
+ },
+ "MAJOR_ARCANA.3": {
+  "name": "L’Imperatrice",
+  "keywords": [
+   "abbondanza",
+   "creatività",
+   "cura"
+  ],
+  "summary": "Tutto ciò che coltivi con amore fiorisce.",
+  "upright": "Idee fertili, bellezza, piacere e crescita. Un tempo per creare, nutrire e godere.",
+  "reversed": "Blocco creativo, trascuratezza verso di sé o dipendenza. Torna a prenderti cura di te con tenerezza.",
+  "personal": "Come arcano personale, l’Imperatrice rivela una persona creativa, affettuosa e capace di far crescere le cose. Hai spesso senso estetico e magnetismo. La tua sfida è nutrire senza soffocare."
+ },
+ "MAJOR_ARCANA.4": {
+  "name": "L’Imperatore",
+  "keywords": [
+   "struttura",
+   "autorità",
+   "stabilità"
+  ],
+  "summary": "Organizza il tuo regno: la struttura libera.",
+  "upright": "Leadership, ordine e protezione. Stabilisci regole chiare e assumiti la responsabilità delle tue decisioni.",
+  "reversed": "Rigidità, autoritarismo o mancanza di limiti. Bilancia fermezza e flessibilità.",
+  "personal": "Come arcano personale, l’Imperatore mostra qualcuno chiamato a guidare, organizzare e proteggere. Trasmetti sicurezza. La tua sfida è esercitare l’autorità con ascolto e apertura."
+ },
+ "MAJOR_ARCANA.5": {
+  "name": "Il Papa",
+  "keywords": [
+   "insegnamento",
+   "tradizione",
+   "guida"
+  ],
+  "summary": "Cerca, o offri, un buon consiglio.",
+  "upright": "Saggezza, valori, maestri e strade tradizionali. Imparare da chi è passato prima aiuta molto.",
+  "reversed": "Dogmatismo o ribellione senza scopo. Metti in discussione le regole, ma con uno scopo.",
+  "personal": "Come arcano personale, il Papa indica qualcuno chiamato a insegnare, consigliare e trasmettere valori. Cerchi un senso in tutto. La tua sfida è guidare senza imporre verità."
+ },
+ "MAJOR_ARCANA.6": {
+  "name": "Gli Amanti",
+  "keywords": [
+   "scelta",
+   "amore",
+   "allineamento"
+  ],
+  "summary": "Scegli con un cuore allineato ai tuoi valori.",
+  "upright": "Unione, scelte importanti e armonia. Si avvicina una decisione del cuore.",
+  "reversed": "Indecisione, disallineamento o una relazione squilibrata. Torna ai tuoi valori per scegliere.",
+  "personal": "Come arcano personale, gli Amanti rivelano qualcuno sensibile alle relazioni, alla bellezza e alle scelte significative. Vivi l’amore con intensità. La tua sfida è decidere senza paura di perdere."
+ },
+ "MAJOR_ARCANA.7": {
+  "name": "Il Carro",
+  "keywords": [
+   "vittoria",
+   "direzione",
+   "determinazione"
+  ],
+  "summary": "Tieni le redini: la vittoria arriva con la concentrazione.",
+  "upright": "Progresso, conquista e forza di volontà. Puoi guidare forze opposte verso il tuo obiettivo.",
+  "reversed": "Direzione persa, fretta o forze in conflitto. Fermati, correggi la rotta e riparti.",
+  "personal": "Come arcano personale, il Carro mostra qualcuno determinato, competitivo e orientato agli obiettivi. Superi gli ostacoli con grinta. La tua sfida è sapere dove vuoi andare prima di accelerare."
+ },
+ "MAJOR_ARCANA.8": {
+  "name": "La Giustizia",
+  "keywords": [
+   "equilibrio",
+   "verità",
+   "responsabilità"
+  ],
+  "summary": "Ciò che è giusto trova il suo posto.",
+  "upright": "Chiarezza, decisioni etiche e conseguenze. Sii onesto/a con te stesso/a e con gli altri.",
+  "reversed": "Ingiustizia, autoinganno o decisioni rimandate. Guarda i fatti con coraggio.",
+  "personal": "Come arcano personale, la Giustizia rivela qualcuno con un forte senso etico, razionale ed equilibrato. Difendi ciò che è giusto. La tua sfida è unire giustizia e compassione, anche verso te stesso/a."
+ },
+ "MAJOR_ARCANA.9": {
+  "name": "L’Eremita",
+  "keywords": [
+   "introspezione",
+   "ricerca",
+   "luce interiore"
+  ],
+  "summary": "Ritirati per vedere più chiaramente.",
+  "upright": "Pausa, riflessione e ricerca di senso. La tua lanterna illumina il prossimo passo, non tutto il cammino.",
+  "reversed": "Isolamento eccessivo o fuga dall’introspezione. Bilancia solitudine e compagnia.",
+  "personal": "Come arcano personale, l’Eremita indica un’anima riflessiva, saggia e indipendente. Trovi le risposte da solo/a. La tua sfida è non chiuderti e lasciare che la tua luce guidi gli altri."
+ },
+ "NUMBERS.1": {
+  "title": "Il Pioniere",
+  "keywords": [
+   "iniziativa",
+   "coraggio",
+   "indipendenza"
+  ],
+  "summary": "Sei nato/a per aprire strade e fare il primo passo.",
+  "text": "L’1 è l’energia degli inizi. Chi ha un 1 forte tende a fidarsi delle proprie idee, a decidere in fretta e ad amare guidare. Brilli quando hai autonomia e un obiettivo chiaro davanti.",
+  "deep": "La lezione dell’1 è guidare senza isolarti. La tua forza cresce quando ispiri invece di imporre, e quando accetti aiuto senza sentire di perdere la tua indipendenza. Iniziare è il tuo dono; concludere con pazienza è il tuo allenamento.",
+  "gifts": "Iniziativa, coraggio, originalità e capacità di decidere.",
+  "challenges": "Impazienza, testardaggine e difficoltà a chiedere aiuto.",
+  "love": "In amore tendi a essere intenso/a e diretto/a. Hai bisogno di qualcuno che ammiri la tua autonomia e ti inviti anche a rallentare.",
+  "work": "Rendi al meglio in ruoli di guida, nell’imprenditoria o in progetti che puoi costruire da zero."
+ },
+ "NUMBERS.11": {
+  "title": "Il Visionario",
+  "keywords": [
+   "intuizione",
+   "ispirazione",
+   "sensibilità"
+  ],
+  "summary": "Numero maestro: senti l’invisibile e ispiri gli altri.",
+  "text": "L’11 è un numero maestro, una versione intensificata del 2. Tendi ad avere un’intuizione forte, ideali alti e una sensibilità che coglie le cose prima degli altri. Spesso fai da ponte tra il pratico e l’ispirazione.",
+  "deep": "L’intensità dell’11 ti chiede di prenderti cura del tuo sistema nervoso: routine rilassanti aiutano a incanalare tanta percezione. Non vivrai sempre nella vibrazione maestra, e va bene così. Nei giorni normali, l’energia del 2 (collaborazione e pazienza) è il tuo terreno.",
+  "gifts": "Intuizione, carisma che ispira, idealismo e sensibilità artistica.",
+  "challenges": "Ansia, nervosismo e pressione di essere all’altezza dei tuoi ideali.",
+  "love": "In amore cerchi una connessione quasi spirituale. Hai bisogno di qualcuno stabile che accolga la tua sensibilità.",
+  "work": "Rendi al meglio nelle arti, nella consulenza, nell’insegnamento, nella spiritualità, nell’innovazione e nei ruoli che ispirano le persone."
+ },
+ "NUMBERS.2": {
+  "title": "Il Diplomatico",
+  "keywords": [
+   "collaborazione",
+   "sensibilità",
+   "cooperazione"
+  ],
+  "summary": "La tua forza sta nell’unire le persone e sentire il non detto.",
+  "text": "Il 2 è l’energia della collaborazione. Sai leggere l’atmosfera di una stanza, ascoltare con attenzione e trovare il punto di equilibrio tra parti diverse. Lavori meglio in coppia che da solo/a.",
+  "deep": "La sfida del 2 è non perderti negli altri. La tua gentilezza è potente quando è accompagnata da limiti chiari. Imparare a dire ciò che senti, anche quando è scomodo, trasforma la sensibilità in saggezza.",
+  "gifts": "Empatia, tatto, pazienza e talento per la mediazione.",
+  "challenges": "Insicurezza, bisogno di approvazione e paura del conflitto.",
+  "love": "In amore sei devoto/a e attento/a ai dettagli. Fiorisci con qualcuno che apprezza la dolcezza e ricambia le attenzioni.",
+  "work": "Brilli nel lavoro di squadra, nella mediazione, nell’assistenza, nella terapia, nelle arti collaborative e nei ruoli di consulenza."
+ },
+ "NUMBERS.22": {
+  "title": "Il Maestro Costruttore",
+  "keywords": [
+   "visione",
+   "realizzazione",
+   "eredità"
+  ],
+  "summary": "Numero maestro: puoi costruire qualcosa che dura per generazioni.",
+  "text": "Il 22 è un numero maestro, un 4 amplificato. Unisce la visione del sognatore alla disciplina del costruttore. Tendi a pensare in grande e hai una vera capacità di realizzare progetti ambiziosi.",
+  "deep": "Il peso del 22 è l’aspettativa: tanto potenziale può creare pressione interiore. Dividi i grandi sogni in passi realizzabili e festeggia ognuno. Nei giorni normali, l’energia del 4 (metodo e pazienza) è ciò che sostiene la tua eredità.",
+  "gifts": "Visione pratica, leadership, capacità organizzativa su larga scala.",
+  "challenges": "Pressione interiore, rigidità e paura di non realizzare il tuo potenziale.",
+  "love": "In amore cerchi un partner di vita e di progetti, con valori solidi e uno sguardo verso il futuro.",
+  "work": "Rendi al meglio nelle grandi imprese, nell’architettura, nella politica, nelle istituzioni e nei progetti con impatto collettivo."
+ },
+ "NUMBERS.3": {
+  "title": "Il Comunicatore",
+  "keywords": [
+   "espressione",
+   "gioia",
+   "creatività"
+  ],
+  "summary": "Sei venuto/a per esprimerti, creare e diffondere leggerezza.",
+  "text": "Il 3 è l’energia dell’espressione. Parole, arte, umorismo e legami sociali scorrono con facilità. Ispiri gli altri quando ti permetti di essere spontaneo/a e di condividere le tue idee.",
+  "deep": "L’ombra del 3 è disperdere l’energia su troppi fronti. Quando scegli pochi progetti e li porti a termine, il tuo talento acquista profondità. La tua gioia è una medicina, per gli altri e per te.",
+  "gifts": "Comunicazione, creatività, ottimismo e carisma.",
+  "challenges": "Dispersione, superficialità e sensibilità alle critiche.",
+  "love": "In amore cerchi leggerezza, conversazione e divertimento. Hai bisogno di qualcuno che rida con te e ammiri il tuo modo di esprimerti.",
+  "work": "Vai bene nella comunicazione, nelle arti, nell’insegnamento, nelle vendite, nel marketing, negli eventi e in tutto ciò che significa creare e parlare."
+ },
+ "NUMBERS.33": {
+  "title": "Il Maestro Insegnante",
+  "keywords": [
+   "compassione",
+   "guarigione emotiva",
+   "servizio"
+  ],
+  "summary": "Numero maestro: il tuo amore ha il potere di trasformare le persone.",
+  "text": "Il 33 è il numero maestro più raro, un 6 intensificato. Rappresenta la cura su larga scala: insegnare, accogliere ed elevare gli altri con l’esempio. Tendi a sentire il dolore del mondo e a voler fare qualcosa.",
+  "deep": "La sfida del 33 è non confondere l’amore con il sacrificio. Ispiri di più quando ti prendi cura di te con la stessa tenerezza che offri. Nei giorni normali, l’energia del 6 (casa, bellezza e responsabilità) è la tua base.",
+  "gifts": "Compassione profonda, dono per l’insegnamento, creatività e generosità.",
+  "challenges": "Abnegazione, senso di colpa e difficoltà a porre limiti.",
+  "love": "In amore sei devoto/a e premuroso/a. Hai bisogno di reciprocità per non esaurirti.",
+  "work": "Rendi al meglio nell’insegnamento, nella terapia, nelle arti, nel lavoro sociale e in ogni missione di cura collettiva."
+ },
+ "NUMBERS.4": {
+  "title": "Il Costruttore",
+  "keywords": [
+   "struttura",
+   "disciplina",
+   "fiducia"
+  ],
+  "summary": "Trasformi i sogni in cose solide, mattone dopo mattone.",
+  "text": "Il 4 è l’energia della costruzione. Tendi a essere organizzato/a, leale e perseverante, e le persone si fidano di te perché mantieni la parola. Il tuo ritmo è costante, e questo ti porta lontano.",
+  "deep": "La lezione del 4 è essere fermo/a senza diventare rigido/a. La vita cambia, e la struttura più forte è quella che sa adattarsi. Fare spazio al riposo e all’imprevisto rende il tuo lavoro ancora più duraturo.",
+  "gifts": "Organizzazione, responsabilità, concentrazione e lealtà.",
+  "challenges": "Rigidità, eccesso di controllo e resistenza al cambiamento.",
+  "love": "In amore sei stabile e protettivo/a. Dai valore all’impegno e mostri affetto con azioni concrete.",
+  "work": "Rendi al meglio nella gestione, nell’ingegneria, nella finanza, nei processi, nell’edilizia e in ogni campo che richiede metodo."
+ },
+ "NUMBERS.5": {
+  "title": "L’Avventuriero",
+  "keywords": [
+   "libertà",
+   "cambiamento",
+   "curiosità"
+  ],
+  "summary": "Hai bisogno di movimento: la vita è il tuo grande viaggio.",
+  "text": "Il 5 è l’energia della libertà. Curiosità, adattabilità e voglia di fare esperienza guidano le tue scelte. Impari vivendo e porti novità a chi ti sta intorno.",
+  "deep": "La sfida del 5 è trasformare la libertà in direzione. Cambiare per cambiare stanca; cambiare con uno scopo libera. Quando scegli impegni che ti espandono invece di imprigionarti, trovi una libertà più profonda.",
+  "gifts": "Versatilità, coraggio, comunicazione e magnetismo.",
+  "challenges": "Irrequietezza, eccessi e difficoltà con la routine.",
+  "love": "In amore hai bisogno di spazio e novità. Fiorisci con un compagno di avventura, non con un carceriere.",
+  "work": "Rendi al meglio nei viaggi, nelle vendite, nella comunicazione, nella tecnologia, negli eventi e in ruoli dinamici e vari."
+ },
+ "NUMBERS.6": {
+  "title": "Il Custode",
+  "keywords": [
+   "amore",
+   "responsabilità",
+   "armonia"
+  ],
+  "summary": "Il tuo cuore nutre, protegge e rende bello tutto ciò che ti circonda.",
+  "text": "Il 6 è l’energia della cura. Famiglia, amicizie e comunità stanno al centro della tua vita. Hai un senso raffinato della bellezza e un talento naturale per creare case e spazi accoglienti.",
+  "deep": "La lezione del 6 è prenderti cura degli altri senza annullarti. Non devi portare il mondo sulle spalle per meritare amore. Quando includi te stesso/a tra le persone che proteggi, la tua cura diventa più leggera e generosa.",
+  "gifts": "Affetto, senso di giustizia, bellezza e dedizione.",
+  "challenges": "Perfezionismo, controllo per amore e sovraccarico.",
+  "love": "In amore sei romantico/a e leale. Cerchi una relazione stabile e bella, con progetti condivisi.",
+  "work": "Rendi al meglio nella salute, nell’educazione, nel design, nell’arredamento, nell’alimentazione, nella consulenza e nelle cause sociali."
+ },
+ "NUMBERS.7": {
+  "title": "Il Saggio",
+  "keywords": [
+   "introspezione",
+   "analisi",
+   "spiritualità"
+  ],
+  "summary": "Cerchi la verità dietro le apparenze.",
+  "text": "Il 7 è l’energia della ricerca interiore. Tendi a osservare prima di agire, a studiare a fondo e a fidarti della tua intuizione. Hai bisogno di silenzio e di tempo da solo/a per ricaricarti e dare senso al mondo.",
+  "deep": "La sfida del 7 è fidarsi senza dover capire tutto. La tua mente è acuta, ma la saggezza nasce anche dal cuore e dall’esperienza condivisa. Quando ti apri, la tua profondità diventa una luce per gli altri.",
+  "gifts": "Intelligenza, intuizione, profondità e spirito critico.",
+  "challenges": "Isolamento, diffidenza e autocritica eccessiva.",
+  "love": "In amore sei selettivo/a e profondo/a. Hai bisogno di qualcuno che rispetti il tuo spazio e ami le conversazioni significative.",
+  "work": "Rendi al meglio nella ricerca, nella scienza, nella tecnologia, nella filosofia, nella terapia, nella scrittura e nei campi specialistici."
+ },
+ "NUMBERS.8": {
+  "title": "Il Realizzatore",
+  "keywords": [
+   "potere",
+   "prosperità",
+   "ambizione"
+  ],
+  "summary": "Hai il talento di concretizzare grandi obiettivi.",
+  "text": "L’8 è l’energia della realizzazione. Visione strategica, senso degli affari e capacità di assumere grandi responsabilità ti vengono naturali. Sai trasformare l’impegno in risultati.",
+  "deep": "La lezione dell’8 è usare il potere con etica ed equilibrio. Il successo materiale è uno strumento, non la misura del tuo valore. Quando il tuo lavoro serve anche agli altri, la prosperità circola e dura.",
+  "gifts": "Leadership, efficienza, visione a lungo termine e resilienza.",
+  "challenges": "Autoritarismo, troppo lavoro e troppa attenzione al materiale.",
+  "love": "In amore sei protettivo/a e generoso/a. Ammiri partner forti e puoi imparare a mostrare la tua vulnerabilità.",
+  "work": "Rendi al meglio negli affari, nella finanza, nel diritto, nella gestione, nell’imprenditoria e nei ruoli di grande responsabilità."
+ },
+ "NUMBERS.9": {
+  "title": "L’Umanista",
+  "keywords": [
+   "compassione",
+   "generosità",
+   "saggezza"
+  ],
+  "summary": "Il tuo cuore è abbastanza grande da abbracciare il mondo.",
+  "text": "Il 9 è l’energia del compimento. Tendi ad avere una visione ampia, un’empatia profonda e il desiderio di contribuire a qualcosa di più grande di te. Spesso le persone vengono da te per un consiglio e un conforto.",
+  "deep": "La lezione del 9 è saper chiudere i cicli e lasciar andare ciò che ha fatto il suo tempo. La tua generosità è immensa; ricorda che dare include anche ricevere. Perdonando il passato, fai spazio al nuovo.",
+  "gifts": "Compassione, idealismo, creatività e visione universale.",
+  "challenges": "Difficoltà a lasciar andare, sacrificio eccessivo e malinconia.",
+  "love": "In amore sei romantico/a e generoso/a. Hai bisogno di qualcuno che condivida i tuoi valori e ideali.",
+  "work": "Rendi al meglio nelle cause sociali, nelle arti, nell’educazione, nella salute, nella spiritualità e nei lavori con uno scopo."
+ }
+}

@@ -1,1 +1,446 @@
-{}
+{
+ "MAJOR_ARCANA.0": {
+  "name": "Le Mat",
+  "keywords": [
+   "commencement",
+   "liberté",
+   "foi"
+  ],
+  "summary": "Saute avec confiance : le chemin apparaît en marchant.",
+  "upright": "Nouveaux départs, spontanéité et confiance dans l’inconnu. Une aventure t’appelle, et la légèreté est ton meilleur bagage.",
+  "reversed": "Impulsivité ou peur du risque. Regarde où tu poses le pied avant de sauter, ou observe ce qui te retient.",
+  "personal": "Comme arcane personnel, le Mat parle d’une âme libre, curieuse et originale. Tu as tendance à apprendre par l’expérience et à te réinventer souvent. Ton défi est de donner une direction à ta liberté sans perdre l’émerveillement."
+ },
+ "MAJOR_ARCANA.1": {
+  "name": "Le Bateleur",
+  "keywords": [
+   "pouvoir personnel",
+   "habileté",
+   "manifestation"
+  ],
+  "summary": "Tu as les outils : c’est le moment de t’en servir.",
+  "upright": "Talent, concentration et capacité à transformer les idées en réalité. Tout ce dont tu as besoin est déjà sur la table.",
+  "reversed": "Énergie dispersée, doute sur ton talent ou habileté utilisée pour tromper. Aligne intention et action.",
+  "personal": "Comme arcane personnel, le Bateleur révèle quelqu’un d’ingénieux, communicatif et habile. Tu apprends vite et fais bouger les choses. Ton défi est d’utiliser ce pouvoir avec intégrité et constance."
+ },
+ "MAJOR_ARCANA.10": {
+  "name": "La Roue de Fortune",
+  "keywords": [
+   "cycles",
+   "changement",
+   "destin"
+  ],
+  "summary": "La roue tourne : adapte-toi et profite du mouvement.",
+  "upright": "Changement, occasion et nouveaux cycles. Ce qui était bloqué se met à bouger.",
+  "reversed": "Résistance au changement ou impression de malchance. Les cycles difficiles passent aussi.",
+  "personal": "Comme arcane personnel, la Roue révèle une vie faite de nombreux cycles et rebondissements. Tu te réinventes et trouves des occasions dans le changement. Ton défi est de faire confiance au mouvement sans vouloir le contrôler."
+ },
+ "MAJOR_ARCANA.11": {
+  "name": "La Force",
+  "keywords": [
+   "courage",
+   "maîtrise intérieure",
+   "compassion"
+  ],
+  "summary": "La vraie force est douce et ferme à la fois.",
+  "upright": "Courage, patience et maîtrise émotionnelle. Tu gagnes par le calme, pas par la force.",
+  "reversed": "Insécurité, emportements ou pression sur toi-même. Sois bienveillant(e) avec tes peurs.",
+  "personal": "Comme arcane personnel, la Force montre quelqu’un de courageux, résilient et magnétique, capable de transformer ses instincts en énergie créative. Ton défi est de ne pas confondre force et contrôle."
+ },
+ "MAJOR_ARCANA.12": {
+  "name": "Le Pendu",
+  "keywords": [
+   "pause",
+   "nouveau regard",
+   "abandon"
+  ],
+  "summary": "Arrête-toi, change d’angle et vois ce qui t’échappait.",
+  "upright": "Attente productive, sacrifice conscient et changement de perspective. Tout ne se résout pas en agissant.",
+  "reversed": "Stagnation, posture de victime ou résistance à lâcher prise. Parfois, la sortie est l’acceptation.",
+  "personal": "Comme arcane personnel, le Pendu indique quelqu’un qui voit le monde d’une façon unique, avec sensibilité et générosité. Ton défi est de ne pas trop te sacrifier."
+ },
+ "MAJOR_ARCANA.13": {
+  "name": "L’Arcane sans nom",
+  "keywords": [
+   "transformation",
+   "fin de cycle",
+   "renouveau"
+  ],
+  "summary": "Quelque chose se termine pour que quelque chose de meilleur commence.",
+  "upright": "Transformation profonde et fins nécessaires. Elle ne parle pas de mort physique : elle parle de renaissance.",
+  "reversed": "Attachement à ce qui est fini. Résister à la fin ne fait que prolonger la transition.",
+  "personal": "Comme arcane personnel, la carte 13 révèle quelqu’un au grand pouvoir de transformation, qui sort plus fort des crises. Tu vas en profondeur. Ton défi est de lâcher prise avec légèreté."
+ },
+ "MAJOR_ARCANA.14": {
+  "name": "Tempérance",
+  "keywords": [
+   "équilibre",
+   "patience",
+   "intégration"
+  ],
+  "summary": "La juste mesure transforme tout.",
+  "upright": "Modération, harmonie et guérison émotionnelle. Mélange les opposés avec calme et trouve le juste milieu.",
+  "reversed": "Excès, précipitation ou déséquilibre. Reviens à ton propre rythme.",
+  "personal": "Comme arcane personnel, Tempérance montre quelqu’un de conciliant, patient et doué pour harmoniser les personnes et les situations. Ton défi est de ne pas t’effacer pour préserver la paix."
+ },
+ "MAJOR_ARCANA.15": {
+  "name": "Le Diable",
+  "keywords": [
+   "désir",
+   "attachement",
+   "pouvoir"
+  ],
+  "summary": "Regarde en face ce qui te retient.",
+  "upright": "Désirs intenses, ambition et attachements. Reconnais ce qui te contrôle pour retrouver le choix.",
+  "reversed": "Libération de schémas, d’habitudes ou de relations qui pesaient. Les chaînes étaient lâches.",
+  "personal": "Comme arcane personnel, le Diable révèle quelqu’un de magnétique, ambitieux et intense, avec une grande force matérielle et créative. Ton défi est d’utiliser ce pouvoir sans être dominé(e) par lui."
+ },
+ "MAJOR_ARCANA.16": {
+  "name": "La Maison Dieu",
+  "keywords": [
+   "bouleversement",
+   "révélation",
+   "libération"
+  ],
+  "summary": "Ce qui tombe fait place à la vérité.",
+  "upright": "Changement soudain, révélations et chute de structures fragiles. Parfois douloureux, mais libérateur.",
+  "reversed": "Éviter un changement inévitable, ou reconstruire après la chute. Accepte et recommence.",
+  "personal": "Comme arcane personnel, la Maison Dieu indique quelqu’un venu briser les schémas et mettre des vérités en lumière. Tu vis des tournants marquants. Ton défi est de bâtir sur des fondations authentiques."
+ },
+ "MAJOR_ARCANA.17": {
+  "name": "L’Étoile",
+  "keywords": [
+   "espoir",
+   "inspiration",
+   "guérison"
+  ],
+  "summary": "Après la tempête, la lumière guide à nouveau.",
+  "upright": "Espoir, renouveau et foi en l’avenir. Un temps pour rêver de nouveau et retrouver ton but.",
+  "reversed": "Découragement ou perte de foi. Ta lumière ne s’est pas éteinte : elle attend que tu lèves les yeux.",
+  "personal": "Comme arcane personnel, l’Étoile révèle une personne inspirante, sensible et généreuse, qui illumine les autres. Ton défi est de croire en toi avec la même foi que tu places dans le monde."
+ },
+ "MAJOR_ARCANA.18": {
+  "name": "La Lune",
+  "keywords": [
+   "intuition",
+   "rêves",
+   "incertitude"
+  ],
+  "summary": "Tout n’est pas ce qu’il paraît : fais confiance à ton instinct.",
+  "upright": "Imagination, rêves et chemins brumeux. Suis ton intuition, mais vérifie les faits.",
+  "reversed": "La confusion se dissipe ou les peurs sont affrontées. La clarté revient.",
+  "personal": "Comme arcane personnel, la Lune indique quelqu’un de très intuitif, imaginatif et sensible à l’invisible, avec un talent artistique. Ton défi est de ne pas te perdre dans tes propres fantasmes et peurs."
+ },
+ "MAJOR_ARCANA.19": {
+  "name": "Le Soleil",
+  "keywords": [
+   "joie",
+   "réussite",
+   "vitalité"
+  ],
+  "summary": "Brille : aujourd’hui, la vie est de ton côté.",
+  "upright": "Joie, clarté, réussite et chaleur. L’un des meilleurs signes du tarot.",
+  "reversed": "Éclat momentanément voilé, ou optimisme excessif. Le soleil est toujours là.",
+  "personal": "Comme arcane personnel, le Soleil révèle quelqu’un de rayonnant, créatif et généreux, qui réchauffe naturellement son entourage. Ton défi est de briller sans avoir besoin de public."
+ },
+ "MAJOR_ARCANA.2": {
+  "name": "La Papesse",
+  "keywords": [
+   "intuition",
+   "mystère",
+   "sagesse intérieure"
+  ],
+  "summary": "La réponse est dans le silence, pas dans le bruit.",
+  "upright": "Intuition, savoir caché et patience. Observe avant d’agir ; tout n’a pas besoin d’être dit maintenant.",
+  "reversed": "Déconnexion de l’intuition, secrets ou réserve excessive. Écoute à nouveau ta voix intérieure.",
+  "personal": "Comme arcane personnel, la Papesse indique une personne intuitive, réservée et profonde, attirée par l’étude et les mystères. Ton défi est de faire confiance à ce que tu sais et de partager ta sagesse."
+ },
+ "MAJOR_ARCANA.20": {
+  "name": "Le Jugement",
+  "keywords": [
+   "éveil",
+   "appel",
+   "renaissance"
+  ],
+  "summary": "Un appel intérieur attend ta réponse.",
+  "upright": "Renouveau, évaluation honnête et but. Il est temps d’entendre l’appel et de faire un nouveau pas.",
+  "reversed": "Autocritique sévère ou peur du changement. Pardonne au passé pour avancer.",
+  "personal": "Comme arcane personnel, le Jugement indique quelqu’un avec un sens de la mission, capable de s’éveiller et d’éveiller les autres. Ton défi est de ne pas juger durement, toi y compris."
+ },
+ "MAJOR_ARCANA.21": {
+  "name": "Le Monde",
+  "keywords": [
+   "accomplissement",
+   "plénitude",
+   "achèvement"
+  ],
+  "summary": "Un cycle s’achève : célèbre le voyage.",
+  "upright": "Réalisation, intégration et sentiment de mission accomplie. Des portes s’ouvrent vers un nouveau niveau.",
+  "reversed": "Il manque encore quelque chose pour fermer le cycle. Termine avec amour avant d’en commencer un autre.",
+  "personal": "Comme arcane personnel, le Monde révèle quelqu’un d’entier, polyvalent et ouvert au monde, qui se sent chez soi partout. Ton défi est d’accepter que le voyage ne se termine jamais vraiment."
+ },
+ "MAJOR_ARCANA.3": {
+  "name": "L’Impératrice",
+  "keywords": [
+   "abondance",
+   "créativité",
+   "soin"
+  ],
+  "summary": "Tout ce que tu cultives avec amour fleurit.",
+  "upright": "Idées fertiles, beauté, plaisir et croissance. Un temps pour créer, nourrir et profiter.",
+  "reversed": "Blocage créatif, négligence de soi ou dépendance. Recommence à prendre soin de toi avec tendresse.",
+  "personal": "Comme arcane personnel, l’Impératrice révèle quelqu’un de créatif, affectueux et doué pour faire grandir les choses. Tu as souvent le sens de l’esthétique et du magnétisme. Ton défi est de nourrir sans étouffer."
+ },
+ "MAJOR_ARCANA.4": {
+  "name": "L’Empereur",
+  "keywords": [
+   "structure",
+   "autorité",
+   "stabilité"
+  ],
+  "summary": "Organise ton royaume : la structure libère.",
+  "upright": "Leadership, ordre et protection. Fixe des règles claires et assume tes décisions.",
+  "reversed": "Rigidité, autoritarisme ou manque de limites. Équilibre fermeté et souplesse.",
+  "personal": "Comme arcane personnel, l’Empereur montre quelqu’un appelé à diriger, organiser et protéger. Tu inspires la sécurité. Ton défi est d’exercer l’autorité avec écoute et ouverture."
+ },
+ "MAJOR_ARCANA.5": {
+  "name": "Le Pape",
+  "keywords": [
+   "enseignement",
+   "tradition",
+   "conseil"
+  ],
+  "summary": "Cherche, ou offre, un bon conseil.",
+  "upright": "Sagesse, valeurs, mentors et chemins traditionnels. Apprendre de ceux qui sont passés avant aide beaucoup.",
+  "reversed": "Dogmatisme ou rébellion sans but. Questionne les règles, mais avec un objectif.",
+  "personal": "Comme arcane personnel, le Pape indique quelqu’un appelé à enseigner, conseiller et transmettre des valeurs. Tu cherches du sens en tout. Ton défi est de guider sans imposer de vérités."
+ },
+ "MAJOR_ARCANA.6": {
+  "name": "Les Amoureux",
+  "keywords": [
+   "choix",
+   "amour",
+   "alignement"
+  ],
+  "summary": "Choisis avec un cœur aligné sur tes valeurs.",
+  "upright": "Union, choix importants et harmonie. Une décision du cœur approche.",
+  "reversed": "Indécision, désalignement ou relation déséquilibrée. Reviens à tes valeurs pour choisir.",
+  "personal": "Comme arcane personnel, les Amoureux révèlent quelqu’un de sensible aux relations, à la beauté et aux choix qui ont du sens. Tu vis l’amour intensément. Ton défi est de décider sans peur de perdre."
+ },
+ "MAJOR_ARCANA.7": {
+  "name": "Le Chariot",
+  "keywords": [
+   "victoire",
+   "direction",
+   "détermination"
+  ],
+  "summary": "Tiens les rênes : la victoire vient avec la concentration.",
+  "upright": "Progrès, conquête et volonté. Tu peux diriger des forces opposées vers ton but.",
+  "reversed": "Direction perdue, précipitation ou forces en conflit. Arrête-toi, ajuste le cap et repars.",
+  "personal": "Comme arcane personnel, le Chariot montre quelqu’un de déterminé, compétitif et tourné vers ses objectifs. Tu surmontes les obstacles avec ténacité. Ton défi est de savoir où tu veux aller avant d’accélérer."
+ },
+ "MAJOR_ARCANA.8": {
+  "name": "La Justice",
+  "keywords": [
+   "équilibre",
+   "vérité",
+   "responsabilité"
+  ],
+  "summary": "Ce qui est juste trouve sa place.",
+  "upright": "Clarté, décisions éthiques et conséquences. Sois honnête avec toi-même et avec les autres.",
+  "reversed": "Injustice, illusion sur soi ou décisions repoussées. Regarde les faits avec courage.",
+  "personal": "Comme arcane personnel, la Justice révèle quelqu’un au sens éthique aigu, rationnel et équilibré. Tu défends ce qui est juste. Ton défi est d’unir justice et compassion, envers toi aussi."
+ },
+ "MAJOR_ARCANA.9": {
+  "name": "L’Ermite",
+  "keywords": [
+   "introspection",
+   "quête",
+   "lumière intérieure"
+  ],
+  "summary": "Retire-toi pour voir plus clair.",
+  "upright": "Pause, réflexion et quête de sens. Ta lanterne éclaire le prochain pas, pas tout le chemin.",
+  "reversed": "Isolement excessif ou fuite de l’introspection. Équilibre solitude et compagnie.",
+  "personal": "Comme arcane personnel, l’Ermite indique une âme réfléchie, sage et indépendante. Tu trouves tes réponses par toi-même. Ton défi est de ne pas te fermer et de laisser ta lumière guider les autres."
+ },
+ "NUMBERS.1": {
+  "title": "Le Pionnier",
+  "keywords": [
+   "initiative",
+   "courage",
+   "indépendance"
+  ],
+  "summary": "Tu es né(e) pour ouvrir des chemins et faire le premier pas.",
+  "text": "Le 1 est l’énergie des commencements. Les personnes avec un 1 fort ont tendance à faire confiance à leurs propres idées, à décider vite et à aimer diriger. Tu brilles quand tu as de l’autonomie et un objectif clair devant toi.",
+  "deep": "La leçon du 1 est de diriger sans s’isoler. Ta force grandit quand tu inspires au lieu d’imposer, et quand tu acceptes de l’aide sans avoir l’impression de perdre ton indépendance. Commencer est ton don ; finir avec patience est ton entraînement.",
+  "gifts": "Initiative, courage, originalité et capacité de décision.",
+  "challenges": "Impatience, entêtement et difficulté à demander de l’aide.",
+  "love": "En amour, tu as tendance à être intense et direct(e). Tu as besoin de quelqu’un qui admire ton autonomie et t’invite aussi à ralentir.",
+  "work": "Tu t’épanouis dans le leadership, l’entrepreneuriat ou les projets que tu peux bâtir de zéro."
+ },
+ "NUMBERS.11": {
+  "title": "Le Visionnaire",
+  "keywords": [
+   "intuition",
+   "inspiration",
+   "sensibilité"
+  ],
+  "summary": "Nombre maître : tu perçois l’invisible et inspires les autres.",
+  "text": "Le 11 est un nombre maître, une version intensifiée du 2. Tu as tendance à avoir une forte intuition, des idéaux élevés et une sensibilité qui perçoit les choses avant les autres. Tu sers souvent de pont entre le pratique et l’inspirant.",
+  "deep": "L’intensité du 11 te demande de prendre soin de ton système nerveux : des routines apaisantes aident à canaliser tant de perception. Tu ne vivras pas toujours dans la vibration maître, et c’est très bien. Les jours ordinaires, l’énergie du 2 (partenariat et patience) est ton sol.",
+  "gifts": "Intuition, charisme inspirant, idéalisme et sensibilité artistique.",
+  "challenges": "Anxiété, nervosité et pression d’être à la hauteur de tes propres idéaux.",
+  "love": "En amour, tu cherches une connexion presque spirituelle. Tu as besoin de quelqu’un de stable qui accueille ta sensibilité.",
+  "work": "Tu t’épanouis dans les arts, le conseil, l’enseignement, la spiritualité, l’innovation et les rôles qui inspirent les gens."
+ },
+ "NUMBERS.2": {
+  "title": "Le Diplomate",
+  "keywords": [
+   "partenariat",
+   "sensibilité",
+   "coopération"
+  ],
+  "summary": "Ta force est d’unir les gens et de sentir ce qui n’est pas dit.",
+  "text": "Le 2 est l’énergie du partenariat. Tu sais lire l’ambiance d’une pièce, écouter attentivement et trouver le point d’équilibre entre des côtés différents. Tu travailles mieux à deux que seul(e).",
+  "deep": "Le défi du 2 est de ne pas te perdre dans les autres. Ta gentillesse est puissante quand elle s’accompagne de limites claires. Apprendre à dire ce que tu ressens, même quand c’est inconfortable, transforme la sensibilité en sagesse.",
+  "gifts": "Empathie, tact, patience et talent de médiation.",
+  "challenges": "Insécurité, besoin d’approbation et peur du conflit.",
+  "love": "En amour, tu es dévoué(e) et attentif(ve) aux détails. Tu t’épanouis avec quelqu’un qui apprécie la douceur et te rend ton attention.",
+  "work": "Tu brilles en équipe, dans la médiation, le service client, la thérapie, les arts collaboratifs et le conseil."
+ },
+ "NUMBERS.22": {
+  "title": "Le Maître Bâtisseur",
+  "keywords": [
+   "vision",
+   "réalisation",
+   "héritage"
+  ],
+  "summary": "Nombre maître : tu peux construire quelque chose qui dure des générations.",
+  "text": "Le 22 est un nombre maître, un 4 amplifié. Il unit la vision du rêveur à la discipline du bâtisseur. Tu as tendance à voir grand et tu as une vraie capacité à faire aboutir des projets ambitieux.",
+  "deep": "Le poids du 22, c’est l’attente : tant de potentiel peut créer une pression intérieure. Découpe les grands rêves en étapes réalisables et célèbre chacune d’elles. Les jours ordinaires, l’énergie du 4 (méthode et patience) est ce qui soutient ton héritage.",
+  "gifts": "Vision pratique, leadership, capacité d’organisation à grande échelle.",
+  "challenges": "Pression intérieure, rigidité et peur de ne pas réaliser ton potentiel.",
+  "love": "En amour, tu cherches un(e) partenaire de vie et de projets, aux valeurs solides et tourné(e) vers l’avenir.",
+  "work": "Tu t’épanouis dans les grandes entreprises, l’architecture, la politique, les institutions et les projets à impact collectif."
+ },
+ "NUMBERS.3": {
+  "title": "Le Communicant",
+  "keywords": [
+   "expression",
+   "joie",
+   "créativité"
+  ],
+  "summary": "Tu es venu(e) pour t’exprimer, créer et répandre la légèreté.",
+  "text": "Le 3 est l’énergie de l’expression. Les mots, l’art, l’humour et les liens sociaux coulent avec facilité. Tu inspires les autres quand tu te permets d’être spontané(e) et de partager tes idées.",
+  "deep": "L’ombre du 3 est de disperser l’énergie sur trop de fronts. Quand tu choisis quelques projets et les mènes à terme, ton talent gagne en profondeur. Ta joie est un remède, pour les autres et pour toi.",
+  "gifts": "Communication, créativité, optimisme et charisme.",
+  "challenges": "Dispersion, superficialité et sensibilité à la critique.",
+  "love": "En amour, tu cherches la légèreté, la conversation et le plaisir. Tu as besoin de quelqu’un qui rit avec toi et admire ta façon de t’exprimer.",
+  "work": "Tu réussis dans la communication, les arts, l’enseignement, la vente, le marketing, l’événementiel et tout ce qui consiste à créer et à parler."
+ },
+ "NUMBERS.33": {
+  "title": "Le Maître Enseignant",
+  "keywords": [
+   "compassion",
+   "guérison émotionnelle",
+   "service"
+  ],
+  "summary": "Nombre maître : ton amour a le pouvoir de transformer les gens.",
+  "text": "Le 33 est le nombre maître le plus rare, un 6 intensifié. Il représente le soin à grande échelle : enseigner, accueillir et élever les autres par l’exemple. Tu as tendance à sentir la douleur du monde et à vouloir agir.",
+  "deep": "Le défi du 33 est de ne pas confondre amour et sacrifice. Tu inspires le plus quand tu prends soin de toi avec la même tendresse que tu offres. Les jours ordinaires, l’énergie du 6 (foyer, beauté et responsabilité) est ta base.",
+  "gifts": "Compassion profonde, don pour enseigner, créativité et générosité.",
+  "challenges": "Abnégation, culpabilité et difficulté à poser des limites.",
+  "love": "En amour, tu es dévoué(e) et protecteur(trice). Tu as besoin de réciprocité pour ne pas t’épuiser.",
+  "work": "Tu t’épanouis dans l’enseignement, la thérapie, les arts, le travail social et toute mission de soin collectif."
+ },
+ "NUMBERS.4": {
+  "title": "Le Bâtisseur",
+  "keywords": [
+   "structure",
+   "discipline",
+   "confiance"
+  ],
+  "summary": "Tu transformes les rêves en choses solides, brique après brique.",
+  "text": "Le 4 est l’énergie de la construction. Tu as tendance à être organisé(e), loyal(e) et persévérant(e), et les gens te font confiance parce que tu tiens parole. Ton rythme est régulier, et cela te mène loin.",
+  "deep": "La leçon du 4 est d’être ferme sans être rigide. La vie change, et la structure la plus solide est celle qui sait s’adapter. Faire de la place au repos et à l’imprévu rend ton travail encore plus durable.",
+  "gifts": "Organisation, responsabilité, concentration et loyauté.",
+  "challenges": "Rigidité, excès de contrôle et résistance au changement.",
+  "love": "En amour, tu es stable et protecteur(trice). Tu valorises l’engagement et montres ton affection par des actes concrets.",
+  "work": "Tu t’épanouis dans la gestion, l’ingénierie, la finance, les processus, la construction et tout domaine qui demande de la méthode."
+ },
+ "NUMBERS.5": {
+  "title": "L’Aventurier",
+  "keywords": [
+   "liberté",
+   "changement",
+   "curiosité"
+  ],
+  "summary": "Tu as besoin de mouvement : la vie est ton grand voyage.",
+  "text": "Le 5 est l’énergie de la liberté. La curiosité, l’adaptabilité et l’envie d’expérimenter guident tes choix. Tu apprends en vivant et apportes de la nouveauté à tout ton entourage.",
+  "deep": "Le défi du 5 est de transformer la liberté en direction. Changer pour changer fatigue ; changer avec un but libère. Quand tu choisis des engagements qui t’élargissent au lieu de t’enfermer, tu trouves une liberté plus profonde.",
+  "gifts": "Polyvalence, courage, communication et magnétisme.",
+  "challenges": "Agitation, excès et difficulté avec la routine.",
+  "love": "En amour, tu as besoin d’espace et de nouveauté. Tu t’épanouis avec un(e) partenaire d’aventure, pas avec un geôlier.",
+  "work": "Tu t’épanouis dans les voyages, la vente, la communication, la technologie, l’événementiel et les fonctions dynamiques et variées."
+ },
+ "NUMBERS.6": {
+  "title": "Le Gardien",
+  "keywords": [
+   "amour",
+   "responsabilité",
+   "harmonie"
+  ],
+  "summary": "Ton cœur nourrit, protège et embellit tout autour de toi.",
+  "text": "Le 6 est l’énergie du soin. La famille, les amitiés et la communauté sont au centre de ta vie. Tu as un sens raffiné de la beauté et un talent naturel pour créer des foyers et des lieux accueillants.",
+  "deep": "La leçon du 6 est de prendre soin sans t’effacer. Tu n’as pas besoin de porter le monde pour mériter l’amour. Quand tu t’inclus parmi les personnes que tu protèges, ton soin devient plus léger et plus généreux.",
+  "gifts": "Affection, sens de la justice, beauté et dévouement.",
+  "challenges": "Perfectionnisme, contrôle par amour et surcharge.",
+  "love": "En amour, tu es romantique et loyal(e). Tu cherches une relation stable et belle, avec des projets communs.",
+  "work": "Tu t’épanouis dans la santé, l’éducation, le design, la décoration, l’alimentation, le conseil et les causes sociales."
+ },
+ "NUMBERS.7": {
+  "title": "Le Sage",
+  "keywords": [
+   "introspection",
+   "analyse",
+   "spiritualité"
+  ],
+  "summary": "Tu cherches la vérité derrière les apparences.",
+  "text": "Le 7 est l’énergie de la quête intérieure. Tu as tendance à observer avant d’agir, à étudier en profondeur et à faire confiance à ton intuition. Tu as besoin de silence et de moments seul(e) pour te ressourcer et donner du sens au monde.",
+  "deep": "Le défi du 7 est de faire confiance sans avoir besoin de tout comprendre. Ton esprit est vif, mais la sagesse vient aussi du cœur et de l’expérience partagée. Quand tu t’ouvres, ta profondeur devient une lumière pour les autres.",
+  "gifts": "Intelligence, intuition, profondeur et esprit critique.",
+  "challenges": "Isolement, méfiance et autocritique excessive.",
+  "love": "En amour, tu es sélectif(ve) et profond(e). Tu as besoin de quelqu’un qui respecte ton espace et aime les conversations qui ont du sens.",
+  "work": "Tu t’épanouis dans la recherche, la science, la technologie, la philosophie, la thérapie, l’écriture et les domaines spécialisés."
+ },
+ "NUMBERS.8": {
+  "title": "Le Réalisateur",
+  "keywords": [
+   "pouvoir",
+   "prospérité",
+   "ambition"
+  ],
+  "summary": "Tu as le talent de concrétiser de grands objectifs.",
+  "text": "Le 8 est l’énergie de la réalisation. La vision stratégique, le sens des affaires et la capacité d’assumer de grandes responsabilités te viennent naturellement. Tu sais transformer l’effort en résultats.",
+  "deep": "La leçon du 8 est d’utiliser le pouvoir avec éthique et équilibre. Le succès matériel est un outil, pas la mesure de ta valeur. Quand ton travail sert aussi les autres, la prospérité circule et dure.",
+  "gifts": "Leadership, efficacité, vision à long terme et résilience.",
+  "challenges": "Autoritarisme, excès de travail et trop d’attention au matériel.",
+  "love": "En amour, tu es protecteur(trice) et généreux(se). Tu admires les partenaires forts et dois apprendre à montrer ta vulnérabilité.",
+  "work": "Tu t’épanouis dans les affaires, la finance, le droit, la gestion, l’entrepreneuriat et les postes à haute responsabilité."
+ },
+ "NUMBERS.9": {
+  "title": "L’Humaniste",
+  "keywords": [
+   "compassion",
+   "générosité",
+   "sagesse"
+  ],
+  "summary": "Ton cœur est assez grand pour embrasser le monde.",
+  "text": "Le 9 est l’énergie de l’accomplissement. Tu as tendance à avoir une vision large, une empathie profonde et le désir de contribuer à quelque chose de plus grand que toi. On vient souvent te demander conseil et réconfort.",
+  "deep": "La leçon du 9 est de savoir clore les cycles et laisser partir ce qui a rempli son rôle. Ta générosité est immense ; souviens-toi que donner inclut aussi recevoir. En pardonnant au passé, tu fais de la place au nouveau.",
+  "gifts": "Compassion, idéalisme, créativité et vision universelle.",
+  "challenges": "Difficulté à lâcher prise, sacrifice excessif et mélancolie.",
+  "love": "En amour, tu es romantique et généreux(se). Tu as besoin de quelqu’un qui partage tes valeurs et tes idéaux.",
+  "work": "Tu t’épanouis dans les causes sociales, les arts, l’éducation, la santé, la spiritualité et le travail porteur de sens."
+ }
+}

@@ -1,1 +1,446 @@
-{}
+{
+ "MAJOR_ARCANA.0": {
+  "name": "Der Narr",
+  "keywords": [
+   "Anfang",
+   "Freiheit",
+   "Vertrauen"
+  ],
+  "summary": "Spring mit Vertrauen: Der Weg zeigt sich beim Gehen.",
+  "upright": "Neuanfänge, Spontaneität und Vertrauen ins Unbekannte. Ein Abenteuer ruft, und Leichtigkeit ist dein bestes Gepäck.",
+  "reversed": "Impulsivität oder Angst vor Risiko. Schau, wohin du trittst, bevor du springst, oder bemerke, was dich zurückhält.",
+  "personal": "Als persönliches Arkanum spricht der Narr von einer freien, neugierigen und originellen Seele. Du lernst meist durch Erfahrung und erfindest dich oft neu. Deine Herausforderung ist, deiner Freiheit eine Richtung zu geben, ohne das Staunen zu verlieren."
+ },
+ "MAJOR_ARCANA.1": {
+  "name": "Der Magier",
+  "keywords": [
+   "persönliche Kraft",
+   "Geschick",
+   "Manifestation"
+  ],
+  "summary": "Du hast die Werkzeuge: Jetzt ist die Zeit, sie zu nutzen.",
+  "upright": "Talent, Fokus und die Fähigkeit, Ideen Wirklichkeit werden zu lassen. Alles, was du brauchst, liegt schon auf dem Tisch.",
+  "reversed": "Zerstreute Energie, Zweifel am eigenen Talent oder Geschick, das täuscht. Bring Absicht und Handeln in Einklang.",
+  "personal": "Als persönliches Arkanum zeigt der Magier jemanden Einfallsreichen, Kommunikativen und Geschickten. Du lernst schnell und bringst Dinge ins Rollen. Deine Herausforderung ist, diese Kraft mit Integrität und Beständigkeit zu nutzen."
+ },
+ "MAJOR_ARCANA.10": {
+  "name": "Das Rad des Schicksals",
+  "keywords": [
+   "Zyklen",
+   "Wandel",
+   "Schicksal"
+  ],
+  "summary": "Das Rad dreht sich: Pass dich an und nutze die Bewegung.",
+  "upright": "Wandel, Gelegenheit und neue Zyklen. Was festsaß, kommt in Bewegung.",
+  "reversed": "Widerstand gegen Veränderung oder das Gefühl, Pech zu haben. Auch schwere Zyklen gehen vorbei.",
+  "personal": "Als persönliches Arkanum zeigt das Rad ein Leben mit vielen Zyklen und Wendungen. Du erfindest dich neu und findest Chancen im Wandel. Deine Herausforderung ist, der Bewegung zu vertrauen, ohne sie kontrollieren zu wollen."
+ },
+ "MAJOR_ARCANA.11": {
+  "name": "Die Kraft",
+  "keywords": [
+   "Mut",
+   "innere Meisterschaft",
+   "Mitgefühl"
+  ],
+  "summary": "Wahre Stärke ist sanft und fest zugleich.",
+  "upright": "Mut, Geduld und emotionale Meisterschaft. Du gewinnst durch Ruhe, nicht durch Gewalt.",
+  "reversed": "Unsicherheit, Ausbrüche oder Druck auf dich selbst. Sei freundlich zu deinen eigenen Ängsten.",
+  "personal": "Als persönliches Arkanum zeigt die Kraft jemanden Mutigen, Widerstandsfähigen und Anziehenden, der Instinkte in schöpferische Energie verwandeln kann. Deine Herausforderung ist, Stärke nicht mit Kontrolle zu verwechseln."
+ },
+ "MAJOR_ARCANA.12": {
+  "name": "Der Gehängte",
+  "keywords": [
+   "Pause",
+   "neue Perspektive",
+   "Hingabe"
+  ],
+  "summary": "Halt an, wechsle den Blickwinkel und sieh, was dir entgangen ist.",
+  "upright": "Fruchtbares Warten, bewusstes Opfer und ein Wechsel der Perspektive. Nicht alles löst sich durch Handeln.",
+  "reversed": "Stillstand, Opferhaltung oder Widerstand gegen das Loslassen. Manchmal ist Annahme der Ausweg.",
+  "personal": "Als persönliches Arkanum zeigt der Gehängte jemanden, der die Welt auf einzigartige Weise sieht, mit Feingefühl und Hingabe. Deine Herausforderung ist, dich nicht zu sehr aufzuopfern."
+ },
+ "MAJOR_ARCANA.13": {
+  "name": "Der Tod",
+  "keywords": [
+   "Verwandlung",
+   "Ende eines Zyklus",
+   "Erneuerung"
+  ],
+  "summary": "Etwas endet, damit etwas Besseres beginnen kann.",
+  "upright": "Tiefe Verwandlung und notwendige Abschlüsse. Es geht nicht um den körperlichen Tod, sondern um Wiedergeburt.",
+  "reversed": "Festhalten an dem, was vorbei ist. Widerstand gegen das Ende verlängert nur den Übergang.",
+  "personal": "Als persönliches Arkanum zeigt die Karte 13 jemanden mit großer Wandlungskraft, der gestärkt aus Krisen hervorgeht. Du gehst in die Tiefe. Deine Herausforderung ist, leicht loszulassen."
+ },
+ "MAJOR_ARCANA.14": {
+  "name": "Die Mäßigkeit",
+  "keywords": [
+   "Gleichgewicht",
+   "Geduld",
+   "Integration"
+  ],
+  "summary": "Das rechte Maß verwandelt alles.",
+  "upright": "Maßhalten, Harmonie und emotionale Heilung. Verbinde Gegensätze in Ruhe und finde die Mitte.",
+  "reversed": "Übermaß, Hast oder Ungleichgewicht. Kehr zu deinem eigenen Rhythmus zurück.",
+  "personal": "Als persönliches Arkanum zeigt die Mäßigkeit jemanden Versöhnlichen, Geduldigen und Begabten darin, Menschen und Situationen in Einklang zu bringen. Deine Herausforderung ist, dich nicht auszulöschen, um den Frieden zu wahren."
+ },
+ "MAJOR_ARCANA.15": {
+  "name": "Der Teufel",
+  "keywords": [
+   "Begierde",
+   "Bindung",
+   "Macht"
+  ],
+  "summary": "Schau direkt auf das, was dich festhält.",
+  "upright": "Starke Begierden, Ehrgeiz und Bindungen. Erkenne, was dich steuert, um deine Wahl zurückzugewinnen.",
+  "reversed": "Befreiung von Mustern, Gewohnheiten oder Beziehungen, die belastet haben. Die Ketten waren locker.",
+  "personal": "Als persönliches Arkanum zeigt der Teufel jemanden Anziehenden, Ehrgeizigen und Intensiven, mit großer materieller und schöpferischer Kraft. Deine Herausforderung ist, diese Macht zu nutzen, ohne von ihr beherrscht zu werden."
+ },
+ "MAJOR_ARCANA.16": {
+  "name": "Der Turm",
+  "keywords": [
+   "Umbruch",
+   "Offenbarung",
+   "Befreiung"
+  ],
+  "summary": "Was fällt, macht Platz für die Wahrheit.",
+  "upright": "Plötzlicher Wandel, Offenbarungen und der Einsturz brüchiger Strukturen. Manchmal schmerzhaft, aber befreiend.",
+  "reversed": "Einer unvermeidlichen Veränderung ausweichen oder nach dem Fall neu aufbauen. Nimm es an und fang neu an.",
+  "personal": "Als persönliches Arkanum weist der Turm auf jemanden hin, der gekommen ist, um Muster zu brechen und Wahrheiten ans Licht zu bringen. Du erlebst prägende Wendepunkte. Deine Herausforderung ist, auf echtem Fundament zu bauen."
+ },
+ "MAJOR_ARCANA.17": {
+  "name": "Der Stern",
+  "keywords": [
+   "Hoffnung",
+   "Inspiration",
+   "Heilung"
+  ],
+  "summary": "Nach dem Sturm weist das Licht wieder den Weg.",
+  "upright": "Hoffnung, Erneuerung und Vertrauen in die Zukunft. Eine Zeit, wieder zu träumen und deinen Sinn wiederzufinden.",
+  "reversed": "Entmutigung oder Glaubensverlust. Dein Licht ist nicht erloschen: Es wartet darauf, dass du aufschaust.",
+  "personal": "Als persönliches Arkanum zeigt der Stern einen inspirierenden, feinfühligen und großzügigen Menschen, der andere zum Leuchten bringt. Deine Herausforderung ist, an dich mit demselben Vertrauen zu glauben, das du in die Welt setzt."
+ },
+ "MAJOR_ARCANA.18": {
+  "name": "Der Mond",
+  "keywords": [
+   "Intuition",
+   "Träume",
+   "Ungewissheit"
+  ],
+  "summary": "Nicht alles ist, wie es scheint: Vertrau deinem Instinkt.",
+  "upright": "Fantasie, Träume und neblige Wege. Folge deiner Intuition, aber prüfe die Fakten.",
+  "reversed": "Die Verwirrung lichtet sich oder Ängste werden angeschaut. Die Klarheit kehrt zurück.",
+  "personal": "Als persönliches Arkanum weist der Mond auf jemanden sehr Intuitiven, Fantasievollen und für das Unsichtbare Empfänglichen hin, mit künstlerischem Talent. Deine Herausforderung ist, dich nicht in eigenen Fantasien und Ängsten zu verlieren."
+ },
+ "MAJOR_ARCANA.19": {
+  "name": "Die Sonne",
+  "keywords": [
+   "Freude",
+   "Erfolg",
+   "Lebenskraft"
+  ],
+  "summary": "Strahle: Heute ist das Leben auf deiner Seite.",
+  "upright": "Freude, Klarheit, Erfolg und Wärme. Eines der besten Zeichen im Tarot.",
+  "reversed": "Glanz vorübergehend getrübt oder übertriebener Optimismus. Die Sonne ist trotzdem da.",
+  "personal": "Als persönliches Arkanum zeigt die Sonne jemanden Strahlenden, Kreativen und Großzügigen, der ganz natürlich Wärme verbreitet. Deine Herausforderung ist, zu leuchten, ohne Publikum zu brauchen."
+ },
+ "MAJOR_ARCANA.2": {
+  "name": "Die Hohepriesterin",
+  "keywords": [
+   "Intuition",
+   "Geheimnis",
+   "innere Weisheit"
+  ],
+  "summary": "Die Antwort liegt in der Stille, nicht im Lärm.",
+  "upright": "Intuition, verborgenes Wissen und Geduld. Beobachte, bevor du handelst; nicht alles muss jetzt gesagt werden.",
+  "reversed": "Abgeschnitten von der Intuition, Geheimnisse oder zu viel Zurückhaltung. Hör wieder auf deine innere Stimme.",
+  "personal": "Als persönliches Arkanum weist die Hohepriesterin auf einen intuitiven, zurückhaltenden und tiefen Menschen hin, der sich zu Studium und Geheimnissen hingezogen fühlt. Deine Herausforderung ist, dem zu vertrauen, was du weißt, und deine Weisheit zu teilen."
+ },
+ "MAJOR_ARCANA.20": {
+  "name": "Das Gericht",
+  "keywords": [
+   "Erwachen",
+   "Berufung",
+   "Wiedergeburt"
+  ],
+  "summary": "Ein innerer Ruf wartet auf deine Antwort.",
+  "upright": "Erneuerung, ehrliche Bilanz und Bestimmung. Zeit, den Ruf zu hören und einen neuen Schritt zu gehen.",
+  "reversed": "Harte Selbstkritik oder Angst vor Veränderung. Vergib der Vergangenheit, um weiterzugehen.",
+  "personal": "Als persönliches Arkanum zeigt das Gericht jemanden mit Sendungsbewusstsein, der sich und andere wecken kann. Deine Herausforderung ist, nicht hart zu urteilen, auch nicht über dich selbst."
+ },
+ "MAJOR_ARCANA.21": {
+  "name": "Die Welt",
+  "keywords": [
+   "Vollendung",
+   "Ganzheit",
+   "Abschluss"
+  ],
+  "summary": "Ein Zyklus schließt sich: Feiere die Reise.",
+  "upright": "Erfüllung, Integration und das Gefühl einer erfüllten Aufgabe. Türen öffnen sich zu einer neuen Stufe.",
+  "reversed": "Es fehlt noch etwas, um den Zyklus zu schließen. Beende ihn liebevoll, bevor du einen neuen beginnst.",
+  "personal": "Als persönliches Arkanum zeigt die Welt jemanden Ganzen, Vielseitigen und Weltoffenen, der sich überall zu Hause fühlt. Deine Herausforderung ist anzunehmen, dass die Reise nie wirklich endet."
+ },
+ "MAJOR_ARCANA.3": {
+  "name": "Die Herrscherin",
+  "keywords": [
+   "Fülle",
+   "Kreativität",
+   "Fürsorge"
+  ],
+  "summary": "Alles, was du mit Liebe pflegst, blüht auf.",
+  "upright": "Fruchtbare Ideen, Schönheit, Genuss und Wachstum. Eine Zeit zum Erschaffen, Nähren und Genießen.",
+  "reversed": "Kreative Blockade, Selbstvernachlässigung oder Abhängigkeit. Sorge wieder zärtlich für dich.",
+  "personal": "Als persönliches Arkanum zeigt die Herrscherin jemanden Kreativen, Liebevollen und Begabten darin, Dinge wachsen zu lassen. Du hast oft Sinn für Ästhetik und Ausstrahlung. Deine Herausforderung ist, zu nähren, ohne zu erdrücken."
+ },
+ "MAJOR_ARCANA.4": {
+  "name": "Der Herrscher",
+  "keywords": [
+   "Struktur",
+   "Autorität",
+   "Stabilität"
+  ],
+  "summary": "Ordne dein Reich: Struktur macht frei.",
+  "upright": "Führung, Ordnung und Schutz. Setz klare Regeln und übernimm Verantwortung für deine Entscheidungen.",
+  "reversed": "Starrheit, Autoritarismus oder fehlende Grenzen. Bring Festigkeit und Flexibilität ins Gleichgewicht.",
+  "personal": "Als persönliches Arkanum zeigt der Herrscher jemanden, der berufen ist zu führen, zu ordnen und zu schützen. Du vermittelst Sicherheit. Deine Herausforderung ist, Autorität mit Zuhören und Offenheit auszuüben."
+ },
+ "MAJOR_ARCANA.5": {
+  "name": "Der Hierophant",
+  "keywords": [
+   "Lehre",
+   "Tradition",
+   "Rat"
+  ],
+  "summary": "Such, oder gib, guten Rat.",
+  "upright": "Weisheit, Werte, Mentoren und überlieferte Wege. Von denen zu lernen, die vorausgegangen sind, hilft sehr.",
+  "reversed": "Dogmatismus oder ziellose Rebellion. Hinterfrage Regeln, aber mit einem Ziel.",
+  "personal": "Als persönliches Arkanum weist der Hierophant auf jemanden hin, der lehren, beraten und Werte weitergeben soll. Du suchst in allem einen Sinn. Deine Herausforderung ist, zu leiten, ohne Wahrheiten aufzuzwingen."
+ },
+ "MAJOR_ARCANA.6": {
+  "name": "Die Liebenden",
+  "keywords": [
+   "Wahl",
+   "Liebe",
+   "Einklang"
+  ],
+  "summary": "Wähle mit einem Herzen, das deinen Werten treu ist.",
+  "upright": "Verbindung, wichtige Entscheidungen und Harmonie. Eine Herzensentscheidung steht bevor.",
+  "reversed": "Unentschlossenheit, fehlender Einklang oder eine unausgewogene Beziehung. Kehr zu deinen Werten zurück, um zu wählen.",
+  "personal": "Als persönliches Arkanum zeigen die Liebenden jemanden, der feinfühlig ist für Beziehungen, Schönheit und bedeutsame Entscheidungen. Du lebst die Liebe intensiv. Deine Herausforderung ist, ohne Verlustangst zu entscheiden."
+ },
+ "MAJOR_ARCANA.7": {
+  "name": "Der Wagen",
+  "keywords": [
+   "Sieg",
+   "Richtung",
+   "Entschlossenheit"
+  ],
+  "summary": "Halt die Zügel: Der Sieg kommt mit Fokus.",
+  "upright": "Fortschritt, Eroberung und Willenskraft. Du kannst gegensätzliche Kräfte auf dein Ziel lenken.",
+  "reversed": "Verlorene Richtung, Hast oder widerstreitende Kräfte. Halt an, korrigiere den Kurs und fahr weiter.",
+  "personal": "Als persönliches Arkanum zeigt der Wagen jemanden Entschlossenen, Ehrgeizigen und Zielstrebigen. Du überwindest Hindernisse mit Biss. Deine Herausforderung ist zu wissen, wohin du willst, bevor du beschleunigst."
+ },
+ "MAJOR_ARCANA.8": {
+  "name": "Die Gerechtigkeit",
+  "keywords": [
+   "Gleichgewicht",
+   "Wahrheit",
+   "Verantwortung"
+  ],
+  "summary": "Was gerecht ist, findet seinen Platz.",
+  "upright": "Klarheit, ethische Entscheidungen und Konsequenzen. Sei ehrlich zu dir und zu anderen.",
+  "reversed": "Ungerechtigkeit, Selbsttäuschung oder aufgeschobene Entscheidungen. Sieh den Tatsachen mutig ins Auge.",
+  "personal": "Als persönliches Arkanum zeigt die Gerechtigkeit jemanden mit starkem ethischem Sinn, rational und ausgeglichen. Du trittst für das Richtige ein. Deine Herausforderung ist, Gerechtigkeit mit Mitgefühl zu verbinden, auch dir selbst gegenüber."
+ },
+ "MAJOR_ARCANA.9": {
+  "name": "Der Eremit",
+  "keywords": [
+   "Innenschau",
+   "Suche",
+   "inneres Licht"
+  ],
+  "summary": "Zieh dich zurück, um klarer zu sehen.",
+  "upright": "Pause, Besinnung und Sinnsuche. Deine Laterne erhellt den nächsten Schritt, nicht den ganzen Weg.",
+  "reversed": "Zu viel Rückzug oder Flucht vor der Innenschau. Bring Alleinsein und Gesellschaft ins Gleichgewicht.",
+  "personal": "Als persönliches Arkanum zeigt der Eremit eine nachdenkliche, weise und unabhängige Seele. Du findest Antworten auf eigene Faust. Deine Herausforderung ist, dich nicht zu verschließen und dein Licht andere leiten zu lassen."
+ },
+ "NUMBERS.1": {
+  "title": "Der Pionier",
+  "keywords": [
+   "Initiative",
+   "Mut",
+   "Unabhängigkeit"
+  ],
+  "summary": "Du bist geboren, um Wege zu öffnen und den ersten Schritt zu machen.",
+  "text": "Die 1 ist die Energie des Anfangs. Menschen mit einer starken 1 vertrauen meist ihren eigenen Ideen, entscheiden schnell und führen gern. Du strahlst, wenn du Freiraum und ein klares Ziel vor Augen hast.",
+  "deep": "Die Lektion der 1 ist, zu führen, ohne dich zu isolieren. Deine Kraft wächst, wenn du inspirierst statt durchzusetzen und Hilfe annimmst, ohne das Gefühl, deine Unabhängigkeit zu verlieren. Anfangen ist deine Gabe; geduldig abschließen ist deine Übung.",
+  "gifts": "Initiative, Mut, Originalität und Entschlusskraft.",
+  "challenges": "Ungeduld, Sturheit und Mühe, um Hilfe zu bitten.",
+  "love": "In der Liebe bist du oft intensiv und direkt. Du brauchst jemanden, der deine Unabhängigkeit bewundert und dich auch einlädt, langsamer zu werden.",
+  "work": "Du blühst auf in Führung, Unternehmertum oder Projekten, die du von Grund auf aufbauen kannst."
+ },
+ "NUMBERS.11": {
+  "title": "Der Visionär",
+  "keywords": [
+   "Intuition",
+   "Inspiration",
+   "Feingefühl"
+  ],
+  "summary": "Meisterzahl: Du spürst das Unsichtbare und inspirierst andere.",
+  "text": "Die 11 ist eine Meisterzahl, eine gesteigerte Form der 2. Du hast meist eine starke Intuition, hohe Ideale und ein Feingefühl, das Dinge vor anderen wahrnimmt. Oft bist du eine Brücke zwischen dem Praktischen und dem Inspirierenden.",
+  "deep": "Die Intensität der 11 bittet dich, auf dein Nervensystem zu achten: beruhigende Routinen helfen, so viel Wahrnehmung zu lenken. Du wirst nicht immer in der Meisterschwingung leben, und das ist in Ordnung. An gewöhnlichen Tagen ist die Energie der 2 (Partnerschaft und Geduld) dein Boden.",
+  "gifts": "Intuition, inspirierendes Charisma, Idealismus und künstlerisches Feingefühl.",
+  "challenges": "Angst, Nervosität und Druck, den eigenen Idealen gerecht zu werden.",
+  "love": "In der Liebe suchst du eine fast spirituelle Verbindung. Du brauchst jemanden Beständigen, der dein Feingefühl annimmt.",
+  "work": "Du blühst auf in Kunst, Beratung, Lehre, Spiritualität, Innovation und Rollen, die Menschen inspirieren."
+ },
+ "NUMBERS.2": {
+  "title": "Der Diplomat",
+  "keywords": [
+   "Partnerschaft",
+   "Feingefühl",
+   "Zusammenarbeit"
+  ],
+  "summary": "Deine Stärke liegt darin, Menschen zu verbinden und das Unausgesprochene zu spüren.",
+  "text": "Die 2 ist die Energie der Partnerschaft. Du liest die Stimmung im Raum, hörst genau zu und findest den Ausgleich zwischen verschiedenen Seiten. Zu zweit arbeitest du besser als allein.",
+  "deep": "Die Herausforderung der 2 ist, dich nicht in anderen zu verlieren. Deine Freundlichkeit ist stark, wenn sie mit klaren Grenzen einhergeht. Zu lernen, auszusprechen, was du fühlst, auch wenn es unbequem ist, verwandelt Feingefühl in Weisheit.",
+  "gifts": "Empathie, Taktgefühl, Geduld und Talent zur Vermittlung.",
+  "challenges": "Unsicherheit, Bedürfnis nach Bestätigung und Angst vor Konflikten.",
+  "love": "In der Liebe bist du hingebungsvoll und achtest auf Details. Du blühst auf mit jemandem, der Sanftheit schätzt und deine Fürsorge erwidert.",
+  "work": "Du glänzt im Team, in der Vermittlung, im Kundenservice, in der Therapie, in gemeinschaftlicher Kunst und in beratenden Rollen."
+ },
+ "NUMBERS.22": {
+  "title": "Der Meisterbaumeister",
+  "keywords": [
+   "Vision",
+   "Verwirklichung",
+   "Vermächtnis"
+  ],
+  "summary": "Meisterzahl: Du kannst etwas bauen, das Generationen überdauert.",
+  "text": "Die 22 ist eine Meisterzahl, eine verstärkte 4. Sie verbindet die Vision des Träumers mit der Disziplin des Baumeisters. Du denkst meist groß und hast eine echte Fähigkeit, ehrgeizige Projekte umzusetzen.",
+  "deep": "Das Gewicht der 22 ist die Erwartung: So viel Potenzial kann inneren Druck erzeugen. Teile große Träume in machbare Schritte und feiere jeden davon. An gewöhnlichen Tagen trägt die Energie der 4 (Methode und Geduld) dein Vermächtnis.",
+  "gifts": "Praktische Vision, Führung, Organisationstalent im großen Maßstab.",
+  "challenges": "Innerer Druck, Starrheit und Angst, das eigene Potenzial nicht zu erfüllen.",
+  "love": "In der Liebe suchst du einen Partner für Leben und Projekte, mit festen Werten und Blick in die Zukunft.",
+  "work": "Du blühst auf in großen Vorhaben, Architektur, Politik, Institutionen und Projekten mit gemeinschaftlicher Wirkung."
+ },
+ "NUMBERS.3": {
+  "title": "Der Kommunikator",
+  "keywords": [
+   "Ausdruck",
+   "Freude",
+   "Kreativität"
+  ],
+  "summary": "Du bist gekommen, um dich auszudrücken, zu erschaffen und Leichtigkeit zu verbreiten.",
+  "text": "Die 3 ist die Energie des Ausdrucks. Worte, Kunst, Humor und soziale Kontakte fließen dir leicht zu. Du inspirierst andere, wenn du dir erlaubst, spontan zu sein und deine Ideen zu teilen.",
+  "deep": "Der Schatten der 3 ist, Energie auf zu viele Fronten zu verteilen. Wenn du wenige Projekte wählst und sie zu Ende bringst, gewinnt dein Talent an Tiefe. Deine Freude ist Medizin, für andere und für dich.",
+  "gifts": "Kommunikation, Kreativität, Optimismus und Charisma.",
+  "challenges": "Zerstreutheit, Oberflächlichkeit und Empfindlichkeit gegenüber Kritik.",
+  "love": "In der Liebe suchst du Leichtigkeit, Gespräche und Spaß. Du brauchst jemanden, der mit dir lacht und deine Ausdruckskraft bewundert.",
+  "work": "Du bist gut in Kommunikation, Kunst, Lehre, Verkauf, Marketing, Events und allem, wo man gestaltet und spricht."
+ },
+ "NUMBERS.33": {
+  "title": "Der Meisterlehrer",
+  "keywords": [
+   "Mitgefühl",
+   "emotionale Heilung",
+   "Dienst"
+  ],
+  "summary": "Meisterzahl: Deine Liebe hat die Kraft, Menschen zu verwandeln.",
+  "text": "Die 33 ist die seltenste Meisterzahl, eine gesteigerte 6. Sie steht für Fürsorge im großen Maßstab: lehren, aufnehmen und andere durch das eigene Beispiel aufrichten. Du spürst oft den Schmerz der Welt und willst etwas dagegen tun.",
+  "deep": "Die Herausforderung der 33 ist, Liebe nicht mit Opfer zu verwechseln. Du inspirierst am meisten, wenn du für dich mit derselben Zärtlichkeit sorgst, die du anderen schenkst. An gewöhnlichen Tagen ist die Energie der 6 (Zuhause, Schönheit und Verantwortung) deine Basis.",
+  "gifts": "Tiefes Mitgefühl, Begabung zum Lehren, Kreativität und Großzügigkeit.",
+  "challenges": "Selbstaufopferung, Schuldgefühle und Mühe, Grenzen zu setzen.",
+  "love": "In der Liebe bist du hingebungsvoll und fürsorglich. Du brauchst Gegenseitigkeit, damit du nicht ausbrennst.",
+  "work": "Du blühst auf in Lehre, Therapie, Kunst, Sozialarbeit und jeder Mission gemeinschaftlicher Fürsorge."
+ },
+ "NUMBERS.4": {
+  "title": "Der Baumeister",
+  "keywords": [
+   "Struktur",
+   "Disziplin",
+   "Vertrauen"
+  ],
+  "summary": "Du verwandelst Träume in feste Dinge, Stein für Stein.",
+  "text": "Die 4 ist die Energie des Aufbauens. Du bist meist organisiert, loyal und beharrlich, und die Menschen vertrauen dir, weil du dein Wort hältst. Dein Tempo ist gleichmäßig, und das bringt dich weit.",
+  "deep": "Die Lektion der 4 ist, fest zu sein, ohne starr zu werden. Das Leben verändert sich, und die stärkste Struktur ist die, die sich anpassen kann. Raum für Ruhe und Unerwartetes macht deine Arbeit noch beständiger.",
+  "gifts": "Organisation, Verantwortung, Fokus und Loyalität.",
+  "challenges": "Starrheit, Kontrollbedürfnis und Widerstand gegen Veränderung.",
+  "love": "In der Liebe bist du beständig und beschützend. Du schätzt Verbindlichkeit und zeigst Zuneigung durch konkrete Taten.",
+  "work": "Du blühst auf in Management, Technik, Finanzen, Prozessen, Bauwesen und jedem Bereich, der Methode verlangt."
+ },
+ "NUMBERS.5": {
+  "title": "Der Abenteurer",
+  "keywords": [
+   "Freiheit",
+   "Wandel",
+   "Neugier"
+  ],
+  "summary": "Du brauchst Bewegung: Das Leben ist deine große Reise.",
+  "text": "Die 5 ist die Energie der Freiheit. Neugier, Anpassungsfähigkeit und Erlebnishunger leiten meist deine Entscheidungen. Du lernst durch das Leben selbst und bringst Neues zu allen um dich herum.",
+  "deep": "Die Herausforderung der 5 ist, Freiheit in Richtung zu verwandeln. Wandel um seiner selbst willen ermüdet; Wandel mit Ziel befreit. Wenn du Verpflichtungen wählst, die dich weiten statt einengen, findest du eine tiefere Freiheit.",
+  "gifts": "Vielseitigkeit, Mut, Kommunikation und Ausstrahlung.",
+  "challenges": "Unruhe, Maßlosigkeit und Mühe mit Routine.",
+  "love": "In der Liebe brauchst du Raum und Neues. Du blühst auf mit einem Abenteuerpartner, nicht mit einem Wächter.",
+  "work": "Du blühst auf in Reisen, Verkauf, Kommunikation, Technologie, Events und abwechslungsreichen, dynamischen Aufgaben."
+ },
+ "NUMBERS.6": {
+  "title": "Der Hüter",
+  "keywords": [
+   "Liebe",
+   "Verantwortung",
+   "Harmonie"
+  ],
+  "summary": "Dein Herz nährt, schützt und verschönert alles um dich herum.",
+  "text": "Die 6 ist die Energie der Fürsorge. Familie, Freundschaften und Gemeinschaft stehen meist im Mittelpunkt deines Lebens. Du hast einen feinen Sinn für Schönheit und ein natürliches Talent, einladende Räume und ein Zuhause zu schaffen.",
+  "deep": "Die Lektion der 6 ist, für andere zu sorgen, ohne dich selbst auszulöschen. Du musst nicht die Welt tragen, um Liebe zu verdienen. Wenn du dich selbst zu den Menschen zählst, die du beschützt, wird deine Fürsorge leichter und großzügiger.",
+  "gifts": "Zuneigung, Gerechtigkeitssinn, Schönheit und Hingabe.",
+  "challenges": "Perfektionismus, Kontrolle aus Liebe und Überlastung.",
+  "love": "In der Liebe bist du romantisch und treu. Du suchst eine stabile, schöne Beziehung mit gemeinsamen Plänen.",
+  "work": "Du blühst auf in Gesundheit, Bildung, Design, Innenarchitektur, Ernährung, Beratung und sozialen Anliegen."
+ },
+ "NUMBERS.7": {
+  "title": "Der Weise",
+  "keywords": [
+   "Innenschau",
+   "Analyse",
+   "Spiritualität"
+  ],
+  "summary": "Du suchst die Wahrheit hinter dem Schein.",
+  "text": "Die 7 ist die Energie der inneren Suche. Du beobachtest meist, bevor du handelst, studierst gründlich und vertraust deiner Intuition. Du brauchst Stille und Zeit für dich, um aufzutanken und der Welt einen Sinn zu geben.",
+  "deep": "Die Herausforderung der 7 ist, zu vertrauen, ohne alles verstehen zu müssen. Dein Verstand ist scharf, doch Weisheit kommt auch aus dem Herzen und aus geteilter Erfahrung. Wenn du dich öffnest, wird deine Tiefe zum Licht für andere.",
+  "gifts": "Intelligenz, Intuition, Tiefe und kritisches Denken.",
+  "challenges": "Rückzug, Misstrauen und übermäßige Selbstkritik.",
+  "love": "In der Liebe bist du wählerisch und tief. Du brauchst jemanden, der deinen Freiraum respektiert und bedeutungsvolle Gespräche mag.",
+  "work": "Du blühst auf in Forschung, Wissenschaft, Technologie, Philosophie, Therapie, Schreiben und Fachgebieten."
+ },
+ "NUMBERS.8": {
+  "title": "Der Macher",
+  "keywords": [
+   "Macht",
+   "Wohlstand",
+   "Ehrgeiz"
+  ],
+  "summary": "Du hast das Talent, große Ziele zu verwirklichen.",
+  "text": "Die 8 ist die Energie der Verwirklichung. Strategischer Blick, Geschäftssinn und die Fähigkeit, große Verantwortung zu tragen, liegen dir. Du weißt, wie man Einsatz in Ergebnisse verwandelt.",
+  "deep": "Die Lektion der 8 ist, Macht mit Ethik und Gleichgewicht zu nutzen. Materieller Erfolg ist ein Werkzeug, nicht das Maß deines Wertes. Wenn deine Arbeit auch anderen dient, fließt der Wohlstand und bleibt.",
+  "gifts": "Führung, Effizienz, Weitblick und Widerstandskraft.",
+  "challenges": "Autoritäres Verhalten, Überarbeitung und zu viel Fokus aufs Materielle.",
+  "love": "In der Liebe bist du beschützend und großzügig. Du bewunderst starke Partner und darfst lernen, Verletzlichkeit zu zeigen.",
+  "work": "Du blühst auf in Wirtschaft, Finanzen, Recht, Management, Unternehmertum und Positionen mit großer Verantwortung."
+ },
+ "NUMBERS.9": {
+  "title": "Der Humanist",
+  "keywords": [
+   "Mitgefühl",
+   "Großzügigkeit",
+   "Weisheit"
+  ],
+  "summary": "Dein Herz ist groß genug, um die Welt zu umarmen.",
+  "text": "Die 9 ist die Energie der Vollendung. Du hast meist einen weiten Blick, tiefe Empathie und den Wunsch, zu etwas Größerem beizutragen. Menschen kommen oft zu dir, um Rat und Trost zu finden.",
+  "deep": "Die Lektion der 9 ist, Zyklen abzuschließen und loszulassen, was seinen Zweck erfüllt hat. Deine Großzügigkeit ist riesig; denk daran, dass Geben auch Empfangen einschließt. Indem du der Vergangenheit vergibst, schaffst du Raum für Neues.",
+  "gifts": "Mitgefühl, Idealismus, Kreativität und ein universeller Blick.",
+  "challenges": "Mühe mit dem Loslassen, übermäßige Aufopferung und Melancholie.",
+  "love": "In der Liebe bist du romantisch und großzügig. Du brauchst jemanden, der deine Werte und Ideale teilt.",
+  "work": "Du blühst auf in sozialen Anliegen, Kunst, Bildung, Gesundheit, Spiritualität und sinnstiftender Arbeit."
+ }
+}

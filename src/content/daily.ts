@@ -1,9 +1,9 @@
-import type { L } from './types';
+import { localized, type L } from './types';
 
 type DayLine = { title: string; phrase: string };
 
 /** Três variações por dia pessoal; a escolha muda a cada dia. */
-export const DAY_LINES: Record<number, L<DayLine[]>> = {
+export const DAY_LINES = localized<Record<number, L<DayLine[]>>>('DAY_LINES', {
   1: {
     pt: [
       { title: 'Comece antes de estar pronto', phrase: 'Hoje a coragem vale mais que o plano perfeito.' },
@@ -157,10 +157,10 @@ export const DAY_LINES: Record<number, L<DayLine[]>> = {
       { title: 'Día de mirar el todo', phrase: 'La generosidad vuelve multiplicada.' },
     ],
   },
-};
+});
 
 /** Dicas da Lua por fase (0 = nova … 7 = minguante balsâmica). */
-export const MOON_PHASES: L<{ name: string; tip: string }[]> = {
+export const MOON_PHASES = localized<L<{ name: string; tip: string }[]>>('MOON_PHASES', {
   pt: [
     { name: 'Lua Nova', tip: 'Bom momento para intenções e começos silenciosos.' },
     { name: 'Lua Crescente', tip: 'Dê os primeiros passos do que você planejou.' },
@@ -191,10 +191,10 @@ export const MOON_PHASES: L<{ name: string; tip: string }[]> = {
     { name: 'Cuarto Menguante', tip: 'Hora de soltar, limpiar y reorganizar.' },
     { name: 'Luna Balsámica', tip: 'Descansa y prepara el terreno para el próximo ciclo.' },
   ],
-};
+});
 
 /** Notificações diárias intrigantes (o app escolhe uma por dia). */
-export const NOTIFICATION_LINES: L<string[]> = {
+export const NOTIFICATION_LINES = localized<L<string[]>>('NOTIFICATION_LINES', {
   pt: [
     'O céu de hoje tem um recado só para você.',
     'Sua carta do dia está virada, esperando você.',
@@ -222,4 +222,4 @@ export const NOTIFICATION_LINES: L<string[]> = {
     'Tu ángel del día ya llegó.',
     'Una pregunta para hoy: ¿qué vas a soltar?',
   ],
-};
+});

@@ -1,4 +1,4 @@
-import type { L } from './types';
+import { localized, type L } from './types';
 
 /** Atributos tradicionais de cada anjo (índice = número − 1). */
 const RAW: [string, string, string][] = [
@@ -76,9 +76,9 @@ const RAW: [string, string, string][] = [
   ['Conclusão de ciclos e novos começos.', 'Completing cycles and new beginnings.', 'Cierre de ciclos y nuevos comienzos.'],
 ];
 
-export const ANGEL_ATTRIBUTES: L<string>[] = RAW.map(([pt, en, es]) => ({ pt, en, es }));
+export const ANGEL_ATTRIBUTES = localized<L<string>[]>('ANGEL_ATTRIBUTES', RAW.map(([pt, en, es]) => ({ pt, en, es })));
 
-export const CHOIR_NAMES: Record<string, L<string>> = {
+export const CHOIR_NAMES = localized<Record<string, L<string>>>('CHOIR_NAMES', {
   Serafins: { pt: 'Serafins', en: 'Seraphim', es: 'Serafines' },
   Querubins: { pt: 'Querubins', en: 'Cherubim', es: 'Querubines' },
   Tronos: { pt: 'Tronos', en: 'Thrones', es: 'Tronos' },
@@ -88,4 +88,4 @@ export const CHOIR_NAMES: Record<string, L<string>> = {
   Principados: { pt: 'Principados', en: 'Principalities', es: 'Principados' },
   Arcanjos: { pt: 'Arcanjos', en: 'Archangels', es: 'Arcángeles' },
   Anjos: { pt: 'Anjos', en: 'Angels', es: 'Ángeles' },
-};
+});

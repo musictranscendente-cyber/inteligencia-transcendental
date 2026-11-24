@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
-import { CyclesIcon, MapIcon, OracleIcon, RelationsIcon, TodayIcon } from '@/components/icons';
+import { CyclesIcon, MapIcon, MenuIcon, OracleIcon, RelationsIcon, TodayIcon } from '@/components/icons';
 import { fonts, useTheme } from '@/theme';
 
 export default function TabsLayout() {
@@ -20,7 +20,7 @@ export default function TabsLayout() {
         animation: 'fade',
         tabBarActiveTintColor: colors.gold,
         tabBarInactiveTintColor: colors.textMuted,
-        tabBarLabelStyle: { fontFamily: fonts.bodyMedium, fontSize: 11 },
+        tabBarLabelStyle: { fontFamily: fonts.bodyMedium, fontSize: 10 },
         tabBarStyle: {
           backgroundColor: colors.background,
           borderTopColor: colors.border,
@@ -48,6 +48,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="cycles"
         options={{ title: t('tabs.cycles'), tabBarIcon: ({ color }) => <CyclesIcon color={color} /> }}
+      />
+      <Tabs.Screen
+        name="menu"
+        options={{ title: t('menu.tab'), tabBarIcon: ({ color }) => <MenuIcon color={color} /> }}
       />
     </Tabs>
   );

@@ -1,11 +1,11 @@
 /** Textos de aprofundamento da aba Hoje: dia pessoal, fases da Lua e áreas do dia. */
 import type { Area } from '@/engines/daily';
-import type { L } from './types';
+import { localized, type L } from './types';
 
 type DayText = { title: string; text: string; favors: string; avoid: string };
 
 /** O que cada dia pessoal (1 a 9) pede. */
-export const PERSONAL_DAY: Record<number, L<DayText>> = {
+export const PERSONAL_DAY = localized<Record<number, L<DayText>>>('PERSONAL_DAY', {
   1: {
     pt: { title: 'Dia de começos', text: 'O dia pessoal 1 abre um pequeno ciclo. A energia favorece iniciativa, decisões rápidas e assumir a frente do que é seu. O que você colocar em movimento hoje tende a ganhar impulso nos próximos dias.', favors: 'Iniciar projetos, se apresentar, tomar decisões, praticar algo novo.', avoid: 'Esperar a aprovação de todos ou adiar o primeiro passo.' },
     en: { title: 'A day of beginnings', text: 'Personal day 1 opens a small cycle. The energy favors initiative, quick decisions and leading what is yours. What you set in motion today tends to gain momentum in the days ahead.', favors: 'Starting projects, introducing yourself, deciding, trying something new.', avoid: 'Waiting for everyone’s approval or postponing the first step.' },
@@ -51,10 +51,10 @@ export const PERSONAL_DAY: Record<number, L<DayText>> = {
     en: { title: 'A day of closure', text: 'Personal day 9 closes the small cycle. It is time to complete, forgive, give and make room. What has served its purpose can leave with gratitude, so something new arrives on the next day 1.', favors: 'Finishing tasks, letting go, helping someone, giving thanks.', avoid: 'Starting big projects or clinging to what has ended.' },
     es: { title: 'Día de cierre', text: 'El día personal 9 cierra el pequeño ciclo. Es hora de concluir, perdonar, donar y abrir espacio. Lo que ya cumplió su papel puede irse con gratitud, para que algo nuevo llegue el próximo día 1.', favors: 'Terminar tareas, soltar, ayudar a alguien, agradecer.', avoid: 'Empezar grandes proyectos o aferrarte a lo que ya terminó.' },
   },
-};
+});
 
 /** Aprofundamento de cada fase da Lua (0 = nova … 7 = balsâmica). */
-export const MOON_PHASE_DEEP: L<{ text: string; ritual: string }[]> = {
+export const MOON_PHASE_DEEP = localized<L<{ text: string; ritual: string }[]>>('MOON_PHASE_DEEP', {
   pt: [
     { text: 'A Lua está entre a Terra e o Sol, invisível no céu. É o ponto zero do ciclo: energia voltada para dentro, ideal para silenciar, sentir e definir o que você quer cultivar nas próximas quatro semanas.', ritual: 'Escreva três intenções no presente, como se já fossem reais.' },
     { text: 'O primeiro fio de luz aparece. A intenção começa a ganhar forma, mas ainda é frágil: precisa de proteção, constância e pequenos passos diários.', ritual: 'Escolha uma ação de 10 minutos para começar hoje.' },
@@ -85,13 +85,13 @@ export const MOON_PHASE_DEEP: L<{ text: string; ritual: string }[]> = {
     { text: 'Media Luna iluminada, ahora menguante. Momento de crisis de conciencia: revisar hábitos, cortar excesos y reordenar prioridades antes del próximo ciclo.', ritual: 'Elige un hábito, objeto o compromiso para soltar.' },
     { text: 'El último hilo de luz antes de la Luna Nueva. Fase de descanso, entrega y sanación. El cuerpo y la mente piden pausa para que el próximo comienzo llegue limpio.', ritual: 'Acuéstate más temprano y haz una limpieza sencilla en casa.' },
   ],
-};
+});
 
 type Level = 'low' | 'mid' | 'high';
 export const levelOf = (score: number): Level => (score <= 2 ? 'low' : score >= 4 ? 'high' : 'mid');
 
 /** Conselho por área e intensidade da nota do dia. */
-export const AREA_ADVICE: Record<Area, L<Record<Level, string>>> = {
+export const AREA_ADVICE = localized<Record<Area, L<Record<Level, string>>>>('AREA_ADVICE', {
   love: {
     pt: { low: 'Afetos mais sensíveis hoje. Prefira gentileza a cobranças e deixe conversas difíceis para outro dia.', mid: 'Clima estável nas relações. Um gesto simples de atenção rende mais do que grandes declarações.', high: 'Coração aberto e magnético. Ótimo para encontros, reconciliações e dizer o que você sente.' },
     en: { low: 'Feelings are more sensitive today. Choose kindness over demands and leave hard talks for another day.', mid: 'Relationships feel steady. A simple act of attention goes further than grand declarations.', high: 'An open, magnetic heart. Great for dates, reconciliations and saying what you feel.' },
@@ -107,4 +107,4 @@ export const AREA_ADVICE: Record<Area, L<Record<Level, string>>> = {
     en: { low: 'Lower battery. Respect breaks, drink water and don’t compare yourself to others’ pace.', mid: 'Balanced energy. Alternate focus and rest to end the day well.', high: 'Vitality is high. Use it to exercise, clear pending tasks and face what you were putting off.' },
     es: { low: 'Batería más baja. Respeta las pausas, bebe agua y no te compares con el ritmo ajeno.', mid: 'Energía equilibrada. Alterna foco y descanso para llegar bien al final del día.', high: 'Vitalidad alta. Úsala para entrenar, resolver pendientes y enfrentar lo que venías posponiendo.' },
   },
-};
+});

@@ -14,8 +14,8 @@ export interface Env {
   DAILY_LIMIT?: string;
 }
 
-type Lang = 'pt' | 'en' | 'es';
-const LANG_NAME: Record<Lang, string> = { pt: 'Brazilian Portuguese', en: 'English', es: 'Spanish (neutral Latin American)' };
+type Lang = 'pt' | 'en' | 'es' | 'fr' | 'de' | 'it';
+const LANG_NAME: Record<Lang, string> = { pt: 'Brazilian Portuguese', en: 'English', es: 'Spanish (neutral Latin American)', fr: 'French (informal "tu")', de: 'German (informal "du")', it: 'Italian (informal "tu")' };
 
 const MODEL = 'claude-opus-5-5';
 
@@ -98,7 +98,7 @@ async function generate(env: Env, user: string, schema: Record<string, unknown>,
 }
 
 function isLang(x: unknown): x is Lang {
-  return x === 'pt' || x === 'en' || x === 'es';
+  return typeof x === 'string' && x in LANG_NAME;
 }
 
 export default {

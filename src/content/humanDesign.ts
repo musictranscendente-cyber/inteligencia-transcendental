@@ -1,9 +1,9 @@
 import type { CenterKey, CrossAngle, HDAuthority, HDDefinition, HDType } from '@/engines/humanDesign';
-import type { L } from './types';
+import { localized, type L } from './types';
 
 type TypeText = { name: string; summary: string; strategy: string; signature: string; notSelf: string; text: string };
 
-export const HD_TYPES: Record<HDType, L<TypeText>> = {
+export const HD_TYPES = localized<Record<HDType, L<TypeText>>>('HD_TYPES', {
   manifestor: {
     pt: { name: 'Manifestor', summary: 'Você veio para iniciar e abrir caminhos.', strategy: 'Informar antes de agir', signature: 'Paz', notSelf: 'Raiva', text: 'Manifestores (cerca de 9% das pessoas) têm energia para começar coisas sem esperar convite. Seu impacto é grande; por isso, avisar as pessoas antes de agir reduz resistências e traz a paz que você busca.' },
     en: { name: 'Manifestor', summary: 'You came to initiate and open paths.', strategy: 'Inform before acting', signature: 'Peace', notSelf: 'Anger', text: 'Manifestors (about 9% of people) have the energy to start things without waiting for an invitation. Your impact is big; informing people before you act reduces resistance and brings the peace you seek.' },
@@ -29,9 +29,9 @@ export const HD_TYPES: Record<HDType, L<TypeText>> = {
     en: { name: 'Reflector', summary: 'You are the community’s mirror: rare and sensitive.', strategy: 'Wait a lunar cycle (28 days) for big decisions', signature: 'Surprise', notSelf: 'Disappointment', text: 'Reflectors (about 1%) have all centers open. They absorb and reflect their environment, showing the health of the group. The right place and the right people make all the difference for you.' },
     es: { name: 'Reflector', summary: 'Eres el espejo de la comunidad: raro y sensible.', strategy: 'Esperar un ciclo lunar (28 días) para grandes decisiones', signature: 'Sorpresa', notSelf: 'Decepción', text: 'Los Reflectores (alrededor del 1%) tienen todos los centros abiertos. Absorben y reflejan su entorno, mostrando la salud del grupo. El lugar y las personas adecuadas lo cambian todo para ti.' },
   },
-};
+});
 
-export const HD_AUTHORITIES: Record<HDAuthority, L<{ name: string; text: string }>> = {
+export const HD_AUTHORITIES = localized<Record<HDAuthority, L<{ name: string; text: string }>>>('HD_AUTHORITIES', {
   emotional: { pt: { name: 'Emocional', text: 'Não decida no calor do momento. Espere a onda emocional passar e decida com clareza — o tempo é seu aliado.' }, en: { name: 'Emotional', text: 'Don’t decide in the heat of the moment. Let the emotional wave pass and decide with clarity — time is your ally.' }, es: { name: 'Emocional', text: 'No decidas en caliente. Espera que pase la ola emocional y decide con claridad: el tiempo es tu aliado.' } },
   sacral: { pt: { name: 'Sacral', text: 'Confie na resposta do corpo: um "uhum" de entusiasmo ou um "unh-unh" de recusa, no momento presente.' }, en: { name: 'Sacral', text: 'Trust your gut response: an enthusiastic "uh-huh" or a refusing "unh-unh", in the present moment.' }, es: { name: 'Sacral', text: 'Confía en la respuesta del cuerpo: un "ajá" de entusiasmo o un "aj-aj" de rechazo, en el momento presente.' } },
   splenic: { pt: { name: 'Esplênica', text: 'Sua intuição fala uma vez, baixinho, no instante. Escute esse primeiro sinal de segurança ou alerta.' }, en: { name: 'Splenic', text: 'Your intuition speaks once, softly, in the moment. Listen to that first signal of safety or warning.' }, es: { name: 'Esplénica', text: 'Tu intuición habla una vez, bajito, en el instante. Escucha esa primera señal de seguridad o alerta.' } },
@@ -40,9 +40,9 @@ export const HD_AUTHORITIES: Record<HDAuthority, L<{ name: string; text: string 
   selfProjected: { pt: { name: 'Autoprojetada', text: 'Fale em voz alta com pessoas de confiança e ouça a si mesmo: sua identidade revela a direção certa.' }, en: { name: 'Self-Projected', text: 'Talk out loud with trusted people and listen to yourself: your identity reveals the right direction.' }, es: { name: 'Autoproyectada', text: 'Habla en voz alta con personas de confianza y escúchate: tu identidad revela la dirección correcta.' } },
   mental: { pt: { name: 'Ambiental (mental)', text: 'Você não tem autoridade interna fixa: converse com pessoas diferentes e observe em que ambientes se sente bem.' }, en: { name: 'Environmental (mental)', text: 'You have no fixed inner authority: talk with different people and notice the environments where you feel good.' }, es: { name: 'Ambiental (mental)', text: 'No tienes autoridad interna fija: conversa con personas distintas y observa en qué ambientes te sientes bien.' } },
   lunar: { pt: { name: 'Lunar', text: 'Dê tempo ao tempo: observe como você se sente sobre a decisão ao longo de um ciclo inteiro da Lua.' }, en: { name: 'Lunar', text: 'Give it time: notice how you feel about the decision over a full lunar cycle.' }, es: { name: 'Lunar', text: 'Dale tiempo al tiempo: observa cómo te sientes con la decisión durante un ciclo lunar completo.' } },
-};
+});
 
-export const HD_LINES: L<{ name: string; text: string }[]> = {
+export const HD_LINES = localized<L<{ name: string; text: string }[]>>('HD_LINES', {
   pt: [
     { name: 'Investigador', text: 'precisa de bases sólidas e estudo para se sentir seguro' },
     { name: 'Eremita', text: 'tem dons naturais e precisa de tempo sozinho até ser chamado' },
@@ -67,11 +67,11 @@ export const HD_LINES: L<{ name: string; text: string }[]> = {
     { name: 'Hereje', text: 'es visto como quien trae soluciones prácticas a otros' },
     { name: 'Modelo', text: 'vive en tres fases y se vuelve ejemplo de sabiduría' },
   ],
-};
+});
 
 type CenterText = { name: string; theme: string; defined: string; open: string };
 
-export const HD_CENTERS: Record<CenterKey, L<CenterText>> = {
+export const HD_CENTERS = localized<Record<CenterKey, L<CenterText>>>('HD_CENTERS', {
   head: { pt: { name: 'Cabeça', theme: 'inspiração e perguntas', defined: 'Você tem um jeito constante de se inspirar e formular perguntas.', open: 'Você se inspira com as ideias dos outros; cuidado para não carregar perguntas que não são suas.' }, en: { name: 'Head', theme: 'inspiration and questions', defined: 'You have a consistent way of getting inspired and asking questions.', open: 'You are inspired by others’ ideas; take care not to carry questions that aren’t yours.' }, es: { name: 'Cabeza', theme: 'inspiración y preguntas', defined: 'Tienes una forma constante de inspirarte y formular preguntas.', open: 'Te inspiras con ideas ajenas; cuida no cargar preguntas que no son tuyas.' } },
   ajna: { pt: { name: 'Ajna', theme: 'mente e conceitos', defined: 'Sua forma de pensar é consistente e confiável.', open: 'Sua mente é flexível e enxerga vários pontos de vista; você não precisa ter certeza de tudo.' }, en: { name: 'Ajna', theme: 'mind and concepts', defined: 'Your way of thinking is consistent and reliable.', open: 'Your mind is flexible and sees many perspectives; you don’t need to be certain about everything.' }, es: { name: 'Ajna', theme: 'mente y conceptos', defined: 'Tu forma de pensar es constante y confiable.', open: 'Tu mente es flexible y ve muchos puntos de vista; no necesitas estar seguro de todo.' } },
   throat: { pt: { name: 'Garganta', theme: 'expressão e manifestação', defined: 'Você tem uma voz e um jeito de se expressar consistentes.', open: 'Sua expressão varia conforme o ambiente; não force para ser ouvido — o momento certo chega.' }, en: { name: 'Throat', theme: 'expression and manifestation', defined: 'You have a consistent voice and way of expressing yourself.', open: 'Your expression varies with your environment; don’t force being heard — the right moment comes.' }, es: { name: 'Garganta', theme: 'expresión y manifestación', defined: 'Tienes una voz y una forma de expresarte constantes.', open: 'Tu expresión varía según el ambiente; no fuerces ser escuchado: el momento justo llega.' } },
@@ -81,25 +81,25 @@ export const HD_CENTERS: Record<CenterKey, L<CenterText>> = {
   solarPlexus: { pt: { name: 'Plexo Solar', theme: 'emoções e ondas', defined: 'Você vive em ondas emocionais; clareza vem com o tempo.', open: 'Você sente as emoções dos outros intensamente; perceba o que é seu e o que é do ambiente.' }, en: { name: 'Solar Plexus', theme: 'emotions and waves', defined: 'You live in emotional waves; clarity comes with time.', open: 'You feel others’ emotions intensely; notice what is yours and what belongs to the environment.' }, es: { name: 'Plexo Solar', theme: 'emociones y olas', defined: 'Vives en olas emocionales; la claridad llega con el tiempo.', open: 'Sientes intensamente las emociones de otros; distingue lo tuyo de lo del ambiente.' } },
   spleen: { pt: { name: 'Baço', theme: 'intuição, saúde e segurança', defined: 'Sua intuição e seu senso de segurança são consistentes.', open: 'Você percebe bem a saúde dos ambientes; cuidado para não se apegar ao que já não faz bem.' }, en: { name: 'Spleen', theme: 'intuition, wellbeing and safety', defined: 'Your intuition and sense of safety are consistent.', open: 'You sense the wellbeing of environments; be careful not to cling to what no longer serves you.' }, es: { name: 'Bazo', theme: 'intuición, bienestar y seguridad', defined: 'Tu intuición y tu sentido de seguridad son constantes.', open: 'Percibes bien el bienestar de los ambientes; cuida no aferrarte a lo que ya no te hace bien.' } },
   root: { pt: { name: 'Raiz', theme: 'pressão e impulso', defined: 'Você lida com pressão de forma estável e tem ritmo próprio.', open: 'Você sente a pressão do mundo amplificada; não precisa resolver tudo com pressa.' }, en: { name: 'Root', theme: 'pressure and drive', defined: 'You handle pressure steadily and have your own rhythm.', open: 'You feel the world’s pressure amplified; you don’t need to rush to solve everything.' }, es: { name: 'Raíz', theme: 'presión e impulso', defined: 'Manejas la presión de forma estable y tienes tu propio ritmo.', open: 'Sientes la presión del mundo amplificada; no necesitas resolverlo todo con prisa.' } },
-};
+});
 
-export const HD_DEFINITIONS: Record<HDDefinition, L<string>> = {
+export const HD_DEFINITIONS = localized<Record<HDDefinition, L<string>>>('HD_DEFINITIONS', {
   none: { pt: 'Sem definição', en: 'No definition', es: 'Sin definición' },
   single: { pt: 'Definição única: você processa a vida de forma integrada e independente.', en: 'Single definition: you process life in an integrated, independent way.', es: 'Definición única: procesas la vida de forma integrada e independiente.' },
   split: { pt: 'Definição dividida: outras pessoas ajudam a conectar suas partes.', en: 'Split definition: other people help connect your parts.', es: 'Definición dividida: otras personas ayudan a conectar tus partes.' },
   tripleSplit: { pt: 'Tripla divisão: ambientes variados e muitas pessoas te fazem bem.', en: 'Triple split: varied environments and many people do you good.', es: 'Triple división: ambientes variados y muchas personas te hacen bien.' },
   quadrupleSplit: { pt: 'Quádrupla divisão: você precisa de tempo para integrar tudo.', en: 'Quadruple split: you need time to integrate everything.', es: 'Cuádruple división: necesitas tiempo para integrarlo todo.' },
-};
+});
 
-export const HD_CROSS_ANGLES: Record<CrossAngle, L<string>> = {
+export const HD_CROSS_ANGLES = localized<Record<CrossAngle, L<string>>>('HD_CROSS_ANGLES', {
   right: { pt: 'Ângulo Direito: seu propósito se cumpre principalmente pela sua própria jornada.', en: 'Right Angle: your purpose unfolds mainly through your own journey.', es: 'Ángulo Derecho: tu propósito se cumple sobre todo a través de tu propio camino.' },
   juxtaposition: { pt: 'Justaposição: seu propósito é um caminho fixo e muito específico.', en: 'Juxtaposition: your purpose is a fixed, very specific path.', es: 'Yuxtaposición: tu propósito es un camino fijo y muy específico.' },
   left: { pt: 'Ângulo Esquerdo: seu propósito se cumpre através dos encontros com outras pessoas.', en: 'Left Angle: your purpose unfolds through encounters with other people.', es: 'Ángulo Izquierdo: tu propósito se cumple a través de los encuentros con otras personas.' },
-};
+});
 
 /** Nome-chave de cada portão (1–64). */
-export const HD_GATES: L<string[]> = {
+export const HD_GATES = localized<L<string[]>>('HD_GATES', {
   pt: ['', 'Autoexpressão', 'Direção do Ser', 'Ordenação', 'Formulação', 'Ritmos Fixos', 'Atrito', 'O Papel do Ser', 'Contribuição', 'Foco', 'Comportamento do Ser', 'Ideias', 'Cautela', 'O Ouvinte', 'Habilidades de Poder', 'Extremos', 'Habilidades', 'Opiniões', 'Correção', 'Desejo', 'O Agora', 'O Caçador', 'Abertura', 'Assimilação', 'Racionalização', 'Espírito do Ser', 'O Egoísta', 'Cuidado', 'O Jogador', 'Perseverança', 'Reconhecimento dos Sentimentos', 'Influência', 'Continuidade', 'Privacidade', 'Poder', 'Mudança', 'Crise', 'Amizade', 'O Lutador', 'Provocação', 'Solitude', 'Contração', 'Crescimento', 'Insight', 'Alerta', 'O Reunidor', 'Determinação do Ser', 'Realização', 'Profundidade', 'Princípios', 'Valores', 'Choque', 'Quietude', 'Começos', 'Ambição', 'Espírito', 'Estímulo', 'Clareza Intuitiva', 'Vitalidade', 'Intimidade', 'Aceitação', 'Mistério', 'Detalhe', 'Dúvida', 'Confusão'],
   en: ['', 'Self-Expression', 'Direction of the Self', 'Ordering', 'Formulization', 'Fixed Rhythms', 'Friction', 'The Role of the Self', 'Contribution', 'Focus', 'Behavior of the Self', 'Ideas', 'Caution', 'The Listener', 'Power Skills', 'Extremes', 'Skills', 'Opinions', 'Correction', 'Wanting', 'The Now', 'The Hunter', 'Openness', 'Assimilation', 'Rationalization', 'Spirit of the Self', 'The Egoist', 'Caring', 'The Game Player', 'Perseverance', 'Recognition of Feelings', 'Influence', 'Continuity', 'Privacy', 'Power', 'Change', 'Crisis', 'Friendship', 'The Fighter', 'Provocation', 'Aloneness', 'Contraction', 'Growth', 'Insight', 'Alertness', 'The Gatherer', 'Determination of the Self', 'Realization', 'Depth', 'Principles', 'Values', 'Shock', 'Stillness', 'Beginnings', 'Ambition', 'Spirit', 'Stimulation', 'Intuitive Clarity', 'Vitality', 'Intimacy', 'Acceptance', 'Mystery', 'Detail', 'Doubt', 'Confusion'],
   es: ['', 'Autoexpresión', 'Dirección del Ser', 'Ordenamiento', 'Formulación', 'Ritmos Fijos', 'Fricción', 'El Rol del Ser', 'Contribución', 'Enfoque', 'Comportamiento del Ser', 'Ideas', 'Cautela', 'El Oyente', 'Habilidades de Poder', 'Extremos', 'Habilidades', 'Opiniones', 'Corrección', 'Deseo', 'El Ahora', 'El Cazador', 'Apertura', 'Asimilación', 'Racionalización', 'Espíritu del Ser', 'El Egoísta', 'Cuidado', 'El Jugador', 'Perseverancia', 'Reconocimiento de los Sentimientos', 'Influencia', 'Continuidad', 'Privacidad', 'Poder', 'Cambio', 'Crisis', 'Amistad', 'El Luchador', 'Provocación', 'Soledad', 'Contracción', 'Crecimiento', 'Insight', 'Alerta', 'El Reunidor', 'Determinación del Ser', 'Realización', 'Profundidad', 'Principios', 'Valores', 'Shock', 'Quietud', 'Comienzos', 'Ambición', 'Espíritu', 'Estímulo', 'Claridad Intuitiva', 'Vitalidad', 'Intimidad', 'Aceptación', 'Misterio', 'Detalle', 'Duda', 'Confusión'],
-};
+});

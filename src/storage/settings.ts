@@ -3,7 +3,7 @@ import { useSyncExternalStore } from 'react';
 import { KEYS, kv } from './kv';
 
 export type ThemePreference = 'dark' | 'light' | 'system';
-export type Language = 'pt-BR' | 'en' | 'es';
+export type Language = 'pt-BR' | 'en' | 'es' | 'fr' | 'de' | 'it';
 
 type Settings = {
   language: Language | null;

@@ -3,22 +3,29 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import { getSettings, type Language } from '@/storage/settings';
+import de from './locales/de.json';
 import en from './locales/en.json';
 import es from './locales/es.json';
+import fr from './locales/fr.json';
+import it from './locales/it.json';
 import ptBR from './locales/pt-BR.json';
 
-export const LANGUAGES: { code: Language; label: string }[] = [
-  { code: 'pt-BR', label: 'Português' },
-  { code: 'en', label: 'English' },
-  { code: 'es', label: 'Español' },
+/** Idiomas do app: nome no próprio idioma e, embaixo, em inglês. */
+export const LANGUAGES: { code: Language; label: string; english: string }[] = [
+  { code: 'pt-BR', label: 'Português', english: 'Portuguese' },
+  { code: 'en', label: 'English', english: 'English' },
+  { code: 'es', label: 'Español', english: 'Spanish' },
+  { code: 'fr', label: 'Français', english: 'French' },
+  { code: 'de', label: 'Deutsch', english: 'German' },
+  { code: 'it', label: 'Italiano', english: 'Italian' },
 ];
 
-/** Idioma do celular, reduzido aos três que o app suporta. */
+/** Idioma do celular, reduzido aos que o app suporta (inglês quando não houver). */
 export function deviceLanguage(): Language {
   for (const locale of getLocales()) {
     if (locale.languageCode === 'pt') return 'pt-BR';
-    if (locale.languageCode === 'es') return 'es';
-    if (locale.languageCode === 'en') return 'en';
+    const found = LANGUAGES.find((l) => l.code === locale.languageCode);
+    if (found) return found.code;
   }
   return 'en';
 }
@@ -36,6 +43,9 @@ i18n.use(initReactI18next).init({
     'pt-BR': { translation: ptBR },
     en: { translation: en },
     es: { translation: es },
+    fr: { translation: fr },
+    de: { translation: de },
+    it: { translation: it },
   },
   lng: getSettings().language ?? deviceLanguage(),
   fallbackLng: 'en',

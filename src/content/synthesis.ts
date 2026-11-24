@@ -22,7 +22,7 @@ const num = (n: number) => NUMBERS[n] ?? NUMBERS[reduce(n, false)];
 
 /** Junta frases de traços: "liderança, comunicação e cuidado". */
 export function joinList(items: string[], lang: Lang) {
-  const and = lang === 'en' ? 'and' : lang === 'es' ? 'y' : 'e';
+  const and = { pt: 'e', en: 'and', es: 'y', fr: 'et', de: 'und', it: 'e' }[lang];
   if (items.length <= 1) return items.join('');
   return `${items.slice(0, -1).join(', ')} ${and} ${items[items.length - 1]}`;
 }
@@ -56,7 +56,9 @@ export function localSynthesis(r: Reading, lang: Lang, firstName: string): Synth
   const authority = r.humanDesign ? HD_AUTHORITIES[r.humanDesign.authority][lang] : null;
   const el = dominant(r.chart.elements);
 
-  const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+  // Em alemão, substantivos começam com maiúscula: nada vai para minúscula.
+  const lower = (s: string) => (lang === 'de' ? s : s.charAt(0).toLowerCase() + s.slice(1));
+  const elName = (names: [string, string, string, string]) => names[['fire', 'earth', 'air', 'water'].indexOf(el)];
   const T: Record<Lang, Record<SynthesisSection, string>> = {
     pt: {
       who: `${firstName}, ${lower(destiny.summary)} Com Destino ${n.destiny} (${destiny.title}), Sol em ${sunText.name} e o arcano ${arcana.name}, sua essência combina ${joinList(labels, lang)}. ${sunText.sun}`,
@@ -81,6 +83,30 @@ export function localSynthesis(r: Reading, lang: Lang, firstName: string): Synth
       love: `${soul.love} Con Venus en ${SIGNS_TEXT[venus.sign][lang].name}, amas ${SIGN_STYLE[venus.sign][lang]}. ${moonText.moon}`,
       work: `${mission.work}${mc ? ` Tu Medio Cielo en ${SIGNS_TEXT[mc.sign][lang].name} apunta a una vocación vivida ${SIGN_STYLE[mc.sign][lang]}.` : ''}${hdType ? ` Como ${hdType.name}, tu estrategia es: ${hdType.strategy.toLowerCase()}.` : ''}${authority ? ` Para decidir, usa tu autoridad ${authority.name}: ${lower(authority.text)}` : ''}`,
       now: `${pyText.title} (Año Personal ${py}): ${lower(pyText.text)} Tu arcano del año es ${yearArcana.name}: ${lower(yearArcana.summary)} Atraviesas un pináculo ${pinnacle.number} (${pin.title}), y el elemento ${el === 'fire' ? 'fuego' : el === 'earth' ? 'tierra' : el === 'air' ? 'aire' : 'agua'} predomina en tu carta. En el zodíaco chino, el ${animal.name} recuerda: ${lower(animal.summary)}`,
+    },
+    fr: {
+      who: `${firstName}, ${lower(destiny.summary)} Avec un Destin ${n.destiny} (${destiny.title}), le Soleil en ${sunText.name} et l’arcane ${arcana.name}, ton essence réunit ${joinList(labels, lang)}. ${sunText.sun}`,
+      gifts: `${top.map((c) => TRAITS_TEXT[c.trait][lang].gift).join(' ')} Selon la numérologie, tes talents naturels sont : ${lower(expression.gifts)}`,
+      challenges: `${top.slice(0, 2).map((c) => TRAITS_TEXT[c.trait][lang].shadow).join(' ')} ${destiny.challenges}${n.karmicLessons.length ? ` Leçon à développer : ${lower(KARMIC_LESSON_TEXT[n.karmicLessons[0]][lang])}` : ''}`,
+      love: `${soul.love} Avec Vénus en ${SIGNS_TEXT[venus.sign][lang].name}, tu aimes ${SIGN_STYLE[venus.sign][lang]}. ${moonText.moon}`,
+      work: `${mission.work}${mc ? ` Ton Milieu du Ciel en ${SIGNS_TEXT[mc.sign][lang].name} indique une vocation vécue ${SIGN_STYLE[mc.sign][lang]}.` : ''}${hdType ? ` En tant que ${hdType.name}, ta stratégie est : ${hdType.strategy.toLowerCase()}.` : ''}${authority ? ` Pour décider, utilise ton autorité ${authority.name} : ${lower(authority.text)}` : ''}`,
+      now: `${pyText.title} (Année personnelle ${py}) : ${lower(pyText.text)} Ton arcane de l’année est ${yearArcana.name} : ${lower(yearArcana.summary)} Tu traverses un pinacle ${pinnacle.number} (${pin.title}), et l’élément ${elName(['feu', 'terre', 'air', 'eau'])} domine ta carte. Dans le zodiaque chinois, le signe ${animal.name} rappelle : ${lower(animal.summary)}`,
+    },
+    de: {
+      who: `${firstName}, ${destiny.summary} Mit Schicksalszahl ${n.destiny} (${destiny.title}), der Sonne in ${sunText.name} und dem Arkanum ${arcana.name} verbindet dein Wesen ${joinList(labels, lang)}. ${sunText.sun}`,
+      gifts: `${top.map((c) => TRAITS_TEXT[c.trait][lang].gift).join(' ')} Laut Numerologie sind deine natürlichen Talente: ${expression.gifts}`,
+      challenges: `${top.slice(0, 2).map((c) => TRAITS_TEXT[c.trait][lang].shadow).join(' ')} ${destiny.challenges}${n.karmicLessons.length ? ` Eine Lektion zum Entwickeln: ${KARMIC_LESSON_TEXT[n.karmicLessons[0]][lang]}` : ''}`,
+      love: `${soul.love} Mit Venus in ${SIGNS_TEXT[venus.sign][lang].name} liebst du ${SIGN_STYLE[venus.sign][lang]}. ${moonText.moon}`,
+      work: `${mission.work}${mc ? ` Dein Medium Coeli in ${SIGNS_TEXT[mc.sign][lang].name} weist auf eine Berufung, die ${SIGN_STYLE[mc.sign][lang]} gelebt wird.` : ''}${hdType ? ` Als ${hdType.name} lautet deine Strategie: ${hdType.strategy}.` : ''}${authority ? ` Für Entscheidungen nutze deine Autorität (${authority.name}): ${authority.text}` : ''}`,
+      now: `${pyText.title} (Persönliches Jahr ${py}): ${pyText.text} Dein Arkanum des Jahres ist ${yearArcana.name}: ${yearArcana.summary} Du durchläufst einen Höhepunkt ${pinnacle.number} (${pin.title}), und das Element ${elName(['Feuer', 'Erde', 'Luft', 'Wasser'])} dominiert dein Horoskop. Im chinesischen Tierkreis erinnert dich das Zeichen ${animal.name}: ${animal.summary}`,
+    },
+    it: {
+      who: `${firstName}, ${lower(destiny.summary)} Con Destino ${n.destiny} (${destiny.title}), Sole in ${sunText.name} e l’arcano ${arcana.name}, la tua essenza unisce ${joinList(labels, lang)}. ${sunText.sun}`,
+      gifts: `${top.map((c) => TRAITS_TEXT[c.trait][lang].gift).join(' ')} Secondo la numerologia, i tuoi talenti naturali sono: ${lower(expression.gifts)}`,
+      challenges: `${top.slice(0, 2).map((c) => TRAITS_TEXT[c.trait][lang].shadow).join(' ')} ${destiny.challenges}${n.karmicLessons.length ? ` Lezione da sviluppare: ${lower(KARMIC_LESSON_TEXT[n.karmicLessons[0]][lang])}` : ''}`,
+      love: `${soul.love} Con Venere in ${SIGNS_TEXT[venus.sign][lang].name}, ami ${SIGN_STYLE[venus.sign][lang]}. ${moonText.moon}`,
+      work: `${mission.work}${mc ? ` Il tuo Medio Cielo in ${SIGNS_TEXT[mc.sign][lang].name} indica una vocazione vissuta ${SIGN_STYLE[mc.sign][lang]}.` : ''}${hdType ? ` Come ${hdType.name}, la tua strategia è: ${hdType.strategy.toLowerCase()}.` : ''}${authority ? ` Per decidere, usa la tua autorità ${authority.name}: ${lower(authority.text)}` : ''}`,
+      now: `${pyText.title} (Anno personale ${py}): ${lower(pyText.text)} Il tuo arcano dell’anno è ${yearArcana.name}: ${lower(yearArcana.summary)} Attraversi un pinnacolo ${pinnacle.number} (${pin.title}), e l’elemento ${elName(['fuoco', 'terra', 'aria', 'acqua'])} domina la tua carta. Nello zodiaco cinese, il segno ${animal.name} ricorda: ${lower(animal.summary)}`,
     },
   };
 

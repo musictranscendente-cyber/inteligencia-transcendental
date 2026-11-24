@@ -1,12 +1,12 @@
 /** Política de privacidade e termos de uso (mostrados no app e publicados em public/privacy.html). */
-import type { L } from './types';
+import { localized, type L } from './types';
 
 export type LegalDoc = 'privacy' | 'terms';
 type Section = { title: string; text: string };
 
 export const LEGAL_UPDATED = '2026-11-22';
 
-export const LEGAL: Record<LegalDoc, L<Section[]>> = {
+export const LEGAL = localized<Record<LegalDoc, L<Section[]>>>('LEGAL', {
   privacy: {
     pt: [
       { title: 'Resumo', text: 'Seus dados de nascimento ficam no seu celular. Não vendemos dados e não usamos publicidade.' },
@@ -62,4 +62,4 @@ export const LEGAL: Record<LegalDoc, L<Section[]>> = {
       { title: 'Cambios', text: 'Podemos actualizar la app y estos términos. Los cambios importantes se avisarán en la propia app.' },
     ],
   },
-};
+});

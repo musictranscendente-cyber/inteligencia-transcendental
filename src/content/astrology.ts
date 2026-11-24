@@ -1,5 +1,5 @@
 import type { AspectKey, ElementKey, ModalityKey, PointKey, SignKey } from '@/engines/astro/chart';
-import type { L } from './types';
+import { localized, type L } from './types';
 
 export const SIGN_GLYPHS: Record<SignKey, string> = {
   aries: '♈', taurus: '♉', gemini: '♊', cancer: '♋', leo: '♌', virgo: '♍',
@@ -13,7 +13,7 @@ export const PLANET_GLYPHS: Record<PointKey, string> = {
 
 type SignText = { name: string; summary: string; text: string; keywords: string[]; sun: string; moon: string; asc: string };
 
-export const SIGNS_TEXT: Record<SignKey, L<SignText>> = {
+export const SIGNS_TEXT = localized<Record<SignKey, L<SignText>>>('SIGNS_TEXT', {
   aries: {
     pt: { name: 'Áries', keywords: ['coragem', 'iniciativa', 'impulso'], summary: 'O fogo que começa: direto, corajoso e pioneiro.', text: 'Áries abre o zodíaco com energia de largada. É o signo da ação, da coragem e da autenticidade sem rodeios.', sun: 'Sua essência é de pioneiro: você brilha quando toma a frente, decide rápido e enfrenta desafios de peito aberto.', moon: 'Suas emoções são rápidas e intensas. Você se sente bem quando pode agir, e precisa de espaço para desabafar sem filtros.', asc: 'Você chega chegando: as pessoas percebem você como alguém direto, enérgico e cheio de iniciativa.' },
     en: { name: 'Aries', keywords: ['courage', 'initiative', 'drive'], summary: 'The fire that starts: direct, brave and pioneering.', text: 'Aries opens the zodiac with starting-line energy. It is the sign of action, courage and straightforward authenticity.', sun: 'Your essence is that of a pioneer: you shine when you lead, decide quickly and face challenges head-on.', moon: 'Your emotions are fast and intense. You feel good when you can act, and you need room to vent without filters.', asc: 'You make an entrance: people see you as direct, energetic and full of initiative.' },
@@ -74,11 +74,11 @@ export const SIGNS_TEXT: Record<SignKey, L<SignText>> = {
     en: { name: 'Pisces', keywords: ['compassion', 'imagination', 'spirituality'], summary: 'Water without shores: sensitive, intuitive and dreamy.', text: 'Pisces closes the zodiac with empathy and imagination. It feels the whole and connects with the unseen.', sun: 'Your essence is compassionate and creative. You shine in art, care and anything that calls for sensitivity.', moon: 'You absorb the emotions around you. You need moments of retreat and boundaries so you don’t get lost.', asc: 'You convey sweetness and mystery. People see you as gentle, dreamy and welcoming.' },
     es: { name: 'Piscis', keywords: ['compasión', 'imaginación', 'espiritualidad'], summary: 'El agua sin orillas: sensible, intuitivo y soñador.', text: 'Piscis cierra el zodíaco con empatía e imaginación. Siente el todo y se conecta con lo invisible.', sun: 'Tu esencia es compasiva y creativa. Brillas en el arte, el cuidado y todo lo que pide sensibilidad.', moon: 'Absorbes las emociones a tu alrededor. Necesitas momentos de recogimiento y límites para no perderte.', asc: 'Transmites dulzura y misterio. La gente te percibe como amable, soñador y acogedor.' },
   },
-};
+});
 
 type PlanetText = { name: string; function: string };
 
-export const PLANETS_TEXT: Record<PointKey, L<PlanetText>> = {
+export const PLANETS_TEXT = localized<Record<PointKey, L<PlanetText>>>('PLANETS_TEXT', {
   sun: { pt: { name: 'Sol', function: 'sua essência, vitalidade e o que te faz brilhar' }, en: { name: 'Sun', function: 'your essence, vitality and what makes you shine' }, es: { name: 'Sol', function: 'tu esencia, vitalidad y lo que te hace brillar' } },
   moon: { pt: { name: 'Lua', function: 'suas emoções, necessidades e o que te dá segurança' }, en: { name: 'Moon', function: 'your emotions, needs and what makes you feel safe' }, es: { name: 'Luna', function: 'tus emociones, necesidades y lo que te da seguridad' } },
   mercury: { pt: { name: 'Mercúrio', function: 'seu jeito de pensar, aprender e se comunicar' }, en: { name: 'Mercury', function: 'how you think, learn and communicate' }, es: { name: 'Mercurio', function: 'tu forma de pensar, aprender y comunicarte' } },
@@ -92,10 +92,10 @@ export const PLANETS_TEXT: Record<PointKey, L<PlanetText>> = {
   node: { pt: { name: 'Nodo Norte', function: 'a direção de crescimento da sua alma nesta vida' }, en: { name: 'North Node', function: 'your soul’s direction of growth in this life' }, es: { name: 'Nodo Norte', function: 'la dirección de crecimiento de tu alma en esta vida' } },
   asc: { pt: { name: 'Ascendente', function: 'como você se apresenta e é visto à primeira vista' }, en: { name: 'Ascendant', function: 'how you present yourself and are first perceived' }, es: { name: 'Ascendente', function: 'cómo te presentas y te ven a primera vista' } },
   mc: { pt: { name: 'Meio do Céu', function: 'sua vocação, carreira e imagem pública' }, en: { name: 'Midheaven', function: 'your calling, career and public image' }, es: { name: 'Medio Cielo', function: 'tu vocación, carrera e imagen pública' } },
-};
+});
 
 /** Como cada signo "colore" um planeta: adjetivo/estilo curto. */
-export const SIGN_STYLE: Record<SignKey, L<string>> = {
+export const SIGN_STYLE = localized<Record<SignKey, L<string>>>('SIGN_STYLE', {
   aries: { pt: 'de forma direta, corajosa e impulsiva', en: 'in a direct, brave and impulsive way', es: 'de forma directa, valiente e impulsiva' },
   taurus: { pt: 'com calma, constância e prazer sensorial', en: 'with calm, steadiness and sensual pleasure', es: 'con calma, constancia y placer sensorial' },
   gemini: { pt: 'com curiosidade, leveza e muitas ideias', en: 'with curiosity, lightness and many ideas', es: 'con curiosidad, ligereza y muchas ideas' },
@@ -108,9 +108,9 @@ export const SIGN_STYLE: Record<SignKey, L<string>> = {
   capricorn: { pt: 'com seriedade, ambição e responsabilidade', en: 'with seriousness, ambition and responsibility', es: 'con seriedad, ambición y responsabilidad' },
   aquarius: { pt: 'de forma original, independente e inovadora', en: 'in an original, independent and innovative way', es: 'de forma original, independiente e innovadora' },
   pisces: { pt: 'com empatia, imaginação e intuição', en: 'with empathy, imagination and intuition', es: 'con empatía, imaginación e intuición' },
-};
+});
 
-export const HOUSES_TEXT: L<{ name: string; theme: string }[]> = {
+export const HOUSES_TEXT = localized<L<{ name: string; theme: string }[]>>('HOUSES_TEXT', {
   pt: [
     { name: 'Casa 1', theme: 'identidade, aparência e início' },
     { name: 'Casa 2', theme: 'dinheiro, valores e recursos' },
@@ -153,25 +153,25 @@ export const HOUSES_TEXT: L<{ name: string; theme: string }[]> = {
     { name: 'Casa 11', theme: 'amistades, grupos y sueños' },
     { name: 'Casa 12', theme: 'inconsciente, espiritualidad y recogimiento' },
   ],
-};
+});
 
-export const ASPECTS_TEXT: Record<AspectKey, L<{ name: string; symbol: string; meaning: string }>> = {
+export const ASPECTS_TEXT = localized<Record<AspectKey, L<{ name: string; symbol: string; meaning: string }>>>('ASPECTS_TEXT', {
   conjunction: { pt: { name: 'Conjunção', symbol: '☌', meaning: 'fundem suas energias e agem juntos' }, en: { name: 'Conjunction', symbol: '☌', meaning: 'merge their energies and act together' }, es: { name: 'Conjunción', symbol: '☌', meaning: 'funden sus energías y actúan juntos' } },
   opposition: { pt: { name: 'Oposição', symbol: '☍', meaning: 'puxam para lados opostos e pedem equilíbrio' }, en: { name: 'Opposition', symbol: '☍', meaning: 'pull in opposite directions and ask for balance' }, es: { name: 'Oposición', symbol: '☍', meaning: 'tiran hacia lados opuestos y piden equilibrio' } },
   trine: { pt: { name: 'Trígono', symbol: '△', meaning: 'fluem com facilidade e se apoiam' }, en: { name: 'Trine', symbol: '△', meaning: 'flow easily and support each other' }, es: { name: 'Trígono', symbol: '△', meaning: 'fluyen con facilidad y se apoyan' } },
   square: { pt: { name: 'Quadratura', symbol: '□', meaning: 'criam tensão que gera crescimento' }, en: { name: 'Square', symbol: '□', meaning: 'create tension that drives growth' }, es: { name: 'Cuadratura', symbol: '□', meaning: 'crean tensión que impulsa el crecimiento' } },
   sextile: { pt: { name: 'Sextil', symbol: '⚹', meaning: 'abrem oportunidades quando você age' }, en: { name: 'Sextile', symbol: '⚹', meaning: 'open opportunities when you take action' }, es: { name: 'Sextil', symbol: '⚹', meaning: 'abren oportunidades cuando actúas' } },
-};
+});
 
-export const ELEMENTS_TEXT: Record<ElementKey, L<{ name: string; text: string }>> = {
+export const ELEMENTS_TEXT = localized<Record<ElementKey, L<{ name: string; text: string }>>>('ELEMENTS_TEXT', {
   fire: { pt: { name: 'Fogo', text: 'Entusiasmo, coragem e iniciativa. Muito fogo traz paixão; pouco pede mais ousadia.' }, en: { name: 'Fire', text: 'Enthusiasm, courage and initiative. Lots of fire brings passion; little asks for more daring.' }, es: { name: 'Fuego', text: 'Entusiasmo, coraje e iniciativa. Mucho fuego trae pasión; poco pide más audacia.' } },
   earth: { pt: { name: 'Terra', text: 'Praticidade, constância e realização. Muita terra traz estabilidade; pouca pede mais chão.' }, en: { name: 'Earth', text: 'Practicality, steadiness and achievement. Lots of earth brings stability; little asks for more grounding.' }, es: { name: 'Tierra', text: 'Practicidad, constancia y realización. Mucha tierra trae estabilidad; poca pide más suelo.' } },
   air: { pt: { name: 'Ar', text: 'Ideias, comunicação e conexões. Muito ar traz agilidade mental; pouco pede mais diálogo.' }, en: { name: 'Air', text: 'Ideas, communication and connections. Lots of air brings mental agility; little asks for more dialogue.' }, es: { name: 'Aire', text: 'Ideas, comunicación y conexiones. Mucho aire trae agilidad mental; poco pide más diálogo.' } },
   water: { pt: { name: 'Água', text: 'Emoção, intuição e empatia. Muita água traz sensibilidade; pouca pede mais escuta do coração.' }, en: { name: 'Water', text: 'Emotion, intuition and empathy. Lots of water brings sensitivity; little asks to listen more to the heart.' }, es: { name: 'Agua', text: 'Emoción, intuición y empatía. Mucha agua trae sensibilidad; poca pide escuchar más al corazón.' } },
-};
+});
 
-export const MODALITIES_TEXT: Record<ModalityKey, L<{ name: string; text: string }>> = {
+export const MODALITIES_TEXT = localized<Record<ModalityKey, L<{ name: string; text: string }>>>('MODALITIES_TEXT', {
   cardinal: { pt: { name: 'Cardinal', text: 'Você tende a iniciar, liderar e colocar as coisas em movimento.' }, en: { name: 'Cardinal', text: 'You tend to initiate, lead and set things in motion.' }, es: { name: 'Cardinal', text: 'Tiendes a iniciar, liderar y poner las cosas en movimiento.' } },
   fixed: { pt: { name: 'Fixo', text: 'Você tende a sustentar, aprofundar e levar as coisas até o fim.' }, en: { name: 'Fixed', text: 'You tend to sustain, deepen and see things through.' }, es: { name: 'Fijo', text: 'Tiendes a sostener, profundizar y llevar las cosas hasta el final.' } },
   mutable: { pt: { name: 'Mutável', text: 'Você tende a se adaptar, transitar e conectar diferentes mundos.' }, en: { name: 'Mutable', text: 'You tend to adapt, move between and connect different worlds.' }, es: { name: 'Mutable', text: 'Tiendes a adaptarte, transitar y conectar mundos distintos.' } },
-};
+});

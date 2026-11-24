@@ -1,4 +1,4 @@
-import type { L } from './types';
+import { localized, type L } from './types';
 
 export type MajorCard = {
   name: string;
@@ -18,7 +18,7 @@ export const MAJOR_YES_NO: YesNo[] = [
   'no', 'no', 'yes', 'no', 'no', 'yes', 'maybe', 'yes', 'yes', 'yes',
 ];
 
-export const MAJOR_ARCANA: L<MajorCard>[] = [
+export const MAJOR_ARCANA = localized<L<MajorCard>[]>('MAJOR_ARCANA', [
   {
     pt: { name: 'O Louco', keywords: ['começo', 'liberdade', 'fé'], summary: 'Salte com fé: o caminho aparece enquanto você anda.', upright: 'Novos começos, espontaneidade e confiança no desconhecido. Uma aventura chama, e a leveza é sua melhor bagagem.', reversed: 'Impulsividade ou medo de arriscar. Vale olhar onde você pisa antes de saltar — ou perceber o que te prende.', personal: 'Como arcano pessoal, o Louco fala de uma alma livre, curiosa e original. Você tende a aprender pela experiência e a se renovar muitas vezes ao longo da vida. Seu desafio é dar direção à sua liberdade sem perder o encanto.' },
     en: { name: 'The Fool', keywords: ['beginning', 'freedom', 'faith'], summary: 'Leap with faith: the path appears as you walk.', upright: 'New beginnings, spontaneity and trust in the unknown. An adventure calls, and lightness is your best luggage.', reversed: 'Impulsiveness or fear of risk. Look where you step before leaping — or notice what is holding you back.', personal: 'As a personal arcana, the Fool speaks of a free, curious and original soul. You tend to learn through experience and reinvent yourself many times. Your challenge is to give direction to your freedom without losing the wonder.' },
@@ -129,4 +129,4 @@ export const MAJOR_ARCANA: L<MajorCard>[] = [
     en: { name: 'The World', keywords: ['achievement', 'wholeness', 'completion'], summary: 'A cycle completes: celebrate the journey.', upright: 'Accomplishment, integration and a sense of mission fulfilled. Doors open to a new level.', reversed: 'Something is still missing to close the cycle. Finish lovingly before starting another.', personal: 'As a personal arcana, the World reveals someone whole, versatile and globally minded, who tends to feel at home anywhere. Your challenge is to accept that the journey never truly ends.' },
     es: { name: 'El Mundo', keywords: ['realización', 'plenitud', 'conclusión'], summary: 'Un ciclo se completa: celebra el camino.', upright: 'Logro, integración y sensación de misión cumplida. Se abren puertas a un nuevo nivel.', reversed: 'Algo falta para cerrar el ciclo. Termina con cariño antes de empezar otro.', personal: 'Como arcano personal, el Mundo revela a alguien completo, versátil y con visión global, que tiende a sentirse en casa en cualquier lugar. Tu desafío es aceptar que el viaje nunca termina del todo.' },
   },
-];
+]);

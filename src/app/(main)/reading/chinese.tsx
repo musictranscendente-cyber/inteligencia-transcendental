@@ -8,14 +8,14 @@ import { SectionTitle, Tag } from '@/components/ui/bits';
 import { PremiumGate } from '@/components/ui/premium-gate';
 import { Screen } from '@/components/ui/screen';
 import { ANIMAL_EMOJI, ANIMALS_TEXT, DAY_MASTER_TEXT, FIVE_ELEMENTS_TEXT } from '@/content/chinese';
-import { useLang } from '@/content/types';
+import { useLang, type Lang } from '@/content/types';
 import { ANIMALS, BRANCH_ELEMENT, BRANCH_HANZI, BRANCHES, FIVE_ELEMENTS, STEM_HANZI, STEMS, stemElement, type Pillar } from '@/engines/chinese';
 import { useReading } from '@/hooks/use-reading';
 import { radius, spacing, useTheme } from '@/theme';
 
 const ELEMENT_COLORS = { wood: '#7BC47F', fire: '#FF7A59', earth: '#D9B56A', metal: '#C9CED6', water: '#6B8BFF' } as const;
 
-function PillarColumn({ label, pillar, lang, noHour }: { label: string; pillar: Pillar | null; lang: 'pt' | 'en' | 'es'; noHour: string }) {
+function PillarColumn({ label, pillar, lang, noHour }: { label: string; pillar: Pillar | null; lang: Lang; noHour: string }) {
   const { colors } = useTheme();
   if (!pillar) {
     return (

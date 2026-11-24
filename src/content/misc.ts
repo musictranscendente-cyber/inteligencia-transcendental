@@ -1,9 +1,9 @@
 import type { Trait } from '@/engines/traits';
-import type { L } from './types';
+import { localized, type L } from './types';
 
 export const CHAKRA_COLORS = ['#E5484D', '#F76B15', '#FFC53D', '#46A758', '#3E9BD6', '#6E56CF', '#C98FE5'];
 
-export const CHAKRAS: L<{ name: string; sanskrit: string; theme: string; text: string; crystals: string[] }>[] = [
+export const CHAKRAS = localized<L<{ name: string; sanskrit: string; theme: string; text: string; crystals: string[] }>[]>('CHAKRAS', [
   {
     pt: { name: 'Raiz', sanskrit: 'Muladhara', theme: 'segurança e enraizamento', text: 'Associado à sensação de chão, pertencimento e estabilidade material.', crystals: ['Hematita', 'Turmalina negra', 'Jaspe vermelho'] },
     en: { name: 'Root', sanskrit: 'Muladhara', theme: 'safety and grounding', text: 'Associated with a sense of ground, belonging and material stability.', crystals: ['Hematite', 'Black tourmaline', 'Red jasper'] },
@@ -39,9 +39,9 @@ export const CHAKRAS: L<{ name: string; sanskrit: string; theme: string; text: s
     en: { name: 'Crown', sanskrit: 'Sahasrara', theme: 'purpose and spirituality', text: 'Associated with a sense of purpose and connection to something greater.', crystals: ['Clear quartz', 'Selenite', 'Howlite'] },
     es: { name: 'Corona', sanskrit: 'Sahasrara', theme: 'propósito y espiritualidad', text: 'Asociado al sentido de propósito y la conexión con algo mayor.', crystals: ['Cuarzo transparente', 'Selenita', 'Howlita'] },
   },
-];
+]);
 
-export const TRAITS_TEXT: Record<Trait, L<{ label: string; gift: string; shadow: string }>> = {
+export const TRAITS_TEXT = localized<Record<Trait, L<{ label: string; gift: string; shadow: string }>>>('TRAITS_TEXT', {
   leadership: { pt: { label: 'liderança', gift: 'Você tende a assumir a frente e inspirar movimento.', shadow: 'Cuidado com a impaciência e com querer controlar tudo.' }, en: { label: 'leadership', gift: 'You tend to take the lead and inspire movement.', shadow: 'Watch out for impatience and wanting to control everything.' }, es: { label: 'liderazgo', gift: 'Tiendes a tomar la delantera e inspirar movimiento.', shadow: 'Cuidado con la impaciencia y con querer controlarlo todo.' } },
   sensitivity: { pt: { label: 'sensibilidade', gift: 'Você percebe nuances e sente o que os outros sentem.', shadow: 'Proteja sua energia: nem tudo que você sente é seu.' }, en: { label: 'sensitivity', gift: 'You notice nuances and feel what others feel.', shadow: 'Protect your energy: not everything you feel is yours.' }, es: { label: 'sensibilidad', gift: 'Percibes matices y sientes lo que otros sienten.', shadow: 'Protege tu energía: no todo lo que sientes es tuyo.' } },
   communication: { pt: { label: 'comunicação', gift: 'Palavras e ideias são suas grandes ferramentas.', shadow: 'Foco: escolha poucas ideias e leve-as até o fim.' }, en: { label: 'communication', gift: 'Words and ideas are your great tools.', shadow: 'Focus: choose a few ideas and see them through.' }, es: { label: 'comunicación', gift: 'Las palabras y las ideas son tus grandes herramientas.', shadow: 'Enfoque: elige pocas ideas y llévalas hasta el final.' } },
@@ -54,9 +54,9 @@ export const TRAITS_TEXT: Record<Trait, L<{ label: string; gift: string; shadow:
   creativity: { pt: { label: 'criatividade', gift: 'Você cria, inventa e transforma ideias em algo novo.', shadow: 'Termine o que começa para seu talento ganhar corpo.' }, en: { label: 'creativity', gift: 'You create, invent and turn ideas into something new.', shadow: 'Finish what you start so your talent takes shape.' }, es: { label: 'creatividad', gift: 'Creas, inventas y conviertes ideas en algo nuevo.', shadow: 'Termina lo que empiezas para que tu talento tome forma.' } },
   intuition: { pt: { label: 'intuição', gift: 'Você sabe antes de saber: seu faro é afiado.', shadow: 'Confirme com os fatos antes de decidir.' }, en: { label: 'intuition', gift: 'You know before you know: your instincts are sharp.', shadow: 'Check the facts before deciding.' }, es: { label: 'intuición', gift: 'Sabes antes de saber: tu olfato es agudo.', shadow: 'Confirma con los hechos antes de decidir.' } },
   harmony: { pt: { label: 'harmonia', gift: 'Você une pessoas e encontra o ponto de equilíbrio.', shadow: 'Paz verdadeira inclui dizer o que você sente.' }, en: { label: 'harmony', gift: 'You bring people together and find the balance point.', shadow: 'True peace includes saying what you feel.' }, es: { label: 'armonía', gift: 'Unes personas y encuentras el punto de equilibrio.', shadow: 'La paz verdadera incluye decir lo que sientes.' } },
-};
+});
 
-export const SEPTENIOS: L<{ title: string; text: string }[]> = {
+export const SEPTENIOS = localized<L<{ title: string; text: string }[]>>('SEPTENIOS', {
   pt: [
     { title: 'O corpo', text: 'Formação do corpo e da confiança no mundo.' },
     { title: 'Os sentimentos', text: 'Imaginação, afetos e descoberta do belo.' },
@@ -102,10 +102,10 @@ export const SEPTENIOS: L<{ title: string; text: string }[]> = {
     { title: 'La plenitud', text: 'Integración de toda la vida.' },
     { title: 'La luz', text: 'Presencia, memoria y bendición.' },
   ],
-};
+});
 
 /** Textos dos trânsitos lentos na linha do tempo ({planet} {aspect} {natal}). */
-export const TRANSIT_THEMES: L<Record<string, string>> = {
+export const TRANSIT_THEMES = localized<L<Record<string, string>>>('TRANSIT_THEMES', {
   pt: {
     jupiter: 'expansão, oportunidades e otimismo',
     saturn: 'amadurecimento, responsabilidade e estrutura',
@@ -151,10 +151,10 @@ export const TRANSIT_THEMES: L<Record<string, string>> = {
     lunarEclipse: 'Eclipse lunar: culminación y revelaciones emocionales.',
     sensitive: 'Toca un punto sensible de tu carta ({point}).',
   },
-};
+});
 
 /** Frases sobre pares de planetas na sinastria. */
-export const SYNASTRY_PAIRS: L<Record<string, string>> = {
+export const SYNASTRY_PAIRS = localized<L<Record<string, string>>>('SYNASTRY_PAIRS', {
   pt: {
     'sun-moon': 'Sol e Lua se encontram: um entende naturalmente as necessidades do outro.',
     'venus-mars': 'Vênus e Marte: atração, química e desejo mútuo.',
@@ -194,9 +194,9 @@ export const SYNASTRY_PAIRS: L<Record<string, string>> = {
     'node': 'Un lazo que parece tener propósito y destino.',
     default: 'Una conexión que activa {a} y {b}.',
   },
-};
+});
 
-export const COMPAT_ADVICE: L<{ high: string; mid: string; low: string }> = {
+export const COMPAT_ADVICE = localized<L<{ high: string; mid: string; low: string }>>('COMPAT_ADVICE', {
   pt: {
     high: 'Vocês têm afinidade natural. O convite é não deixar a facilidade virar acomodação: cultivem novidades juntos.',
     mid: 'Há pontos fortes e pontos de atrito. Conversas honestas sobre expectativas fazem toda a diferença.',
@@ -212,4 +212,4 @@ export const COMPAT_ADVICE: L<{ high: string; mid: string; low: string }> = {
     mid: 'Hay puntos fuertes y puntos de fricción. Las conversaciones honestas sobre expectativas marcan la diferencia.',
     low: 'Son bastante diferentes, y eso puede ser una riqueza. Paciencia y curiosidad por la forma del otro convierten el choque en aprendizaje.',
   },
-};
+});

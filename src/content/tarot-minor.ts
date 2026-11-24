@@ -1,32 +1,36 @@
 import type { Suit } from '@/engines/divination';
-import type { L } from './types';
+import { localized, type L } from './types';
 
-export const SUIT_NAMES: L<Record<Suit, string>> = {
+export const SUIT_NAMES = localized<L<Record<Suit, string>>>('SUIT_NAMES', {
   pt: { wands: 'Paus', cups: 'Copas', swords: 'Espadas', pentacles: 'Ouros' },
   en: { wands: 'Wands', cups: 'Cups', swords: 'Swords', pentacles: 'Pentacles' },
   es: { wands: 'Bastos', cups: 'Copas', swords: 'Espadas', pentacles: 'Oros' },
-};
+});
 
-export const SUIT_THEME: L<Record<Suit, string>> = {
+export const SUIT_THEME = localized<L<Record<Suit, string>>>('SUIT_THEME', {
   pt: { wands: 'ação e paixão', cups: 'emoções e afetos', swords: 'mente e decisões', pentacles: 'corpo, trabalho e dinheiro' },
   en: { wands: 'action and passion', cups: 'emotions and affection', swords: 'mind and decisions', pentacles: 'body, work and money' },
   es: { wands: 'acción y pasión', cups: 'emociones y afectos', swords: 'mente y decisiones', pentacles: 'cuerpo, trabajo y dinero' },
-};
+});
 
-const RANKS: L<string[]> = {
+export const RANKS = localized<L<string[]>>('RANKS', {
   pt: ['Ás', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Valete', 'Cavaleiro', 'Rainha', 'Rei'],
   en: ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Page', 'Knight', 'Queen', 'King'],
   es: ['As', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis', 'Siete', 'Ocho', 'Nueve', 'Diez', 'Sota', 'Caballo', 'Reina', 'Rey'],
-};
+});
 
 export function minorName(suit: Suit, rank: number, lang: keyof L) {
   const r = RANKS[lang][rank - 1];
   const s = SUIT_NAMES[lang][suit];
-  return lang === 'en' ? `${r} of ${s}` : `${r} de ${s}`;
+  if (lang === 'en') return `${r} of ${s}`;
+  if (lang === 'de') return `${r} der ${s}`;
+  if (lang === 'it') return `${r} di ${s}`;
+  if (lang === 'fr' && /^[AEIOUÉÈ]/i.test(s)) return `${r} d’${s}`;
+  return `${r} de ${s}`;
 }
 
 /** [de pé, invertida] por carta (1–14). */
-export const MINOR_MEANINGS: Record<Suit, L<[string, string][]>> = {
+export const MINOR_MEANINGS = localized<Record<Suit, L<[string, string][]>>>('MINOR_MEANINGS', {
   wands: {
     pt: [
       ['Uma faísca de inspiração: comece algo novo com entusiasmo.', 'Ideias sem execução ou energia travada; espere o momento certo.'],
@@ -227,4 +231,4 @@ export const MINOR_MEANINGS: Record<Suit, L<[string, string][]>> = {
       ['Éxito material y liderazgo estable.', 'Materialismo o terquedad.'],
     ],
   },
-};
+});

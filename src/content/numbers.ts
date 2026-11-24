@@ -1,8 +1,8 @@
-import type { Entry, L } from './types';
+import { localized, type Entry, type L } from './types';
 
 export type NumberEntry = Entry & { gifts: string; challenges: string; love: string; work: string };
 
-export const NUMBERS: Record<number, L<NumberEntry>> = {
+export const NUMBERS = localized<Record<number, L<NumberEntry>>>('NUMBERS', {
   1: {
     pt: {
       title: 'O Pioneiro',
@@ -423,10 +423,10 @@ export const NUMBERS: Record<number, L<NumberEntry>> = {
       work: 'Rindes en enseñanza, terapias, artes, trabajo social y cualquier misión de cuidado colectivo.',
     },
   },
-};
+});
 
 /** Tema do ano/mês pessoal (1–9). */
-export const PERSONAL_YEAR: Record<number, L<{ title: string; text: string }>> = {
+export const PERSONAL_YEAR = localized<Record<number, L<{ title: string; text: string }>>>('PERSONAL_YEAR', {
   1: {
     pt: { title: 'Ano de recomeços', text: 'Um novo ciclo de 9 anos começa. É tempo de plantar sementes, tomar iniciativas e escolher a direção dos próximos anos. O que você começar agora tende a ganhar força.' },
     en: { title: 'A year of new beginnings', text: 'A new 9-year cycle begins. It’s time to plant seeds, take initiative and choose the direction of the coming years. What you start now tends to gain strength.' },
@@ -472,9 +472,9 @@ export const PERSONAL_YEAR: Record<number, L<{ title: string; text: string }>> =
     en: { title: 'A year of closure', text: 'The 9-year cycle completes. It’s time to finish, forgive and release what no longer serves, making room for next year’s fresh start.' },
     es: { title: 'Año de cierres', text: 'El ciclo de 9 años se completa. Es hora de concluir, perdonar y soltar lo que ya no sirve, abriendo espacio para el nuevo comienzo del próximo año.' },
   },
-};
+});
 
-export const KARMIC_DEBT_TEXT: Record<number, L<string>> = {
+export const KARMIC_DEBT_TEXT = localized<Record<number, L<string>>>('KARMIC_DEBT_TEXT', {
   13: {
     pt: 'Dívida 13: aprender o valor do esforço contínuo. Atalhos tendem a falhar; constância e organização liberam seu caminho.',
     en: 'Debt 13: learning the value of steady effort. Shortcuts tend to fail; consistency and organization clear your path.',
@@ -495,9 +495,9 @@ export const KARMIC_DEBT_TEXT: Record<number, L<string>> = {
     en: 'Debt 19: learning to balance independence and collaboration. Asking for help and considering others make your strength even greater.',
     es: 'Deuda 19: aprender a equilibrar independencia y colaboración. Pedir ayuda y considerar a los demás hace tu fuerza aún mayor.',
   },
-};
+});
 
-export const KARMIC_LESSON_TEXT: Record<number, L<string>> = {
+export const KARMIC_LESSON_TEXT = localized<Record<number, L<string>>>('KARMIC_LESSON_TEXT', {
   1: { pt: 'Desenvolver iniciativa e confiança para agir por conta própria.', en: 'Developing initiative and confidence to act on your own.', es: 'Desarrollar iniciativa y confianza para actuar por cuenta propia.' },
   2: { pt: 'Cultivar paciência, cooperação e atenção aos detalhes.', en: 'Cultivating patience, cooperation and attention to detail.', es: 'Cultivar paciencia, cooperación y atención a los detalles.' },
   3: { pt: 'Soltar a expressão: falar, criar e mostrar o que sente.', en: 'Freeing expression: speaking, creating and showing what you feel.', es: 'Liberar la expresión: hablar, crear y mostrar lo que sientes.' },
@@ -507,10 +507,10 @@ export const KARMIC_LESSON_TEXT: Record<number, L<string>> = {
   7: { pt: 'Confiar na própria intuição e buscar conhecimento profundo.', en: 'Trusting your intuition and seeking deep knowledge.', es: 'Confiar en tu intuición y buscar conocimiento profundo.' },
   8: { pt: 'Lidar com dinheiro, poder e autoridade com equilíbrio.', en: 'Handling money, power and authority with balance.', es: 'Manejar el dinero, el poder y la autoridad con equilibrio.' },
   9: { pt: 'Praticar compaixão, tolerância e desapego.', en: 'Practicing compassion, tolerance and letting go.', es: 'Practicar compasión, tolerancia y desapego.' },
-};
+});
 
 /** Desafios (0–8): o que cada período convida a trabalhar. */
-export const CHALLENGE_TEXT: Record<number, L<string>> = {
+export const CHALLENGE_TEXT = localized<Record<number, L<string>>>('CHALLENGE_TEXT', {
   0: { pt: 'Desafio 0: liberdade de escolha — todos os caminhos estão abertos; o convite é decidir com consciência.', en: 'Challenge 0: freedom of choice — every path is open; the invitation is to decide consciously.', es: 'Desafío 0: libertad de elección — todos los caminos están abiertos; la invitación es decidir con conciencia.' },
   1: { pt: 'Afirmar-se sem agressividade nem submissão.', en: 'Asserting yourself without aggression or submission.', es: 'Afirmarte sin agresividad ni sumisión.' },
   2: { pt: 'Superar a hipersensibilidade e o medo de desagradar.', en: 'Overcoming oversensitivity and fear of displeasing.', es: 'Superar la hipersensibilidad y el miedo a desagradar.' },
@@ -520,4 +520,4 @@ export const CHALLENGE_TEXT: Record<number, L<string>> = {
   6: { pt: 'Cuidar sem controlar e aceitar as imperfeições.', en: 'Caring without controlling and accepting imperfection.', es: 'Cuidar sin controlar y aceptar las imperfecciones.' },
   7: { pt: 'Confiar e se abrir, em vez de se isolar.', en: 'Trusting and opening up instead of isolating.', es: 'Confiar y abrirte, en lugar de aislarte.' },
   8: { pt: 'Equilibrar ambição, dinheiro e valores pessoais.', en: 'Balancing ambition, money and personal values.', es: 'Equilibrar ambición, dinero y valores personales.' },
-};
+});

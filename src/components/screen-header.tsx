@@ -8,7 +8,7 @@ import { AppText } from './app-text';
 import { ProfileIcon } from './icons';
 
 /** Cabeçalho das abas: título à esquerda, acesso ao perfil à direita. */
-export function ScreenHeader({ title, kicker }: { title: string; kicker?: string }) {
+export function ScreenHeader({ title, kicker, hideProfile }: { title: string; kicker?: string; hideProfile?: boolean }) {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
@@ -18,14 +18,16 @@ export function ScreenHeader({ title, kicker }: { title: string; kicker?: string
         {kicker ? <AppText variant="label" gold>{kicker}</AppText> : null}
         <AppText variant="title">{title}</AppText>
       </View>
-      <Pressable
-        onPress={() => router.push('/profile')}
-        hitSlop={12}
-        accessibilityRole="button"
-        accessibilityLabel={t('a11y.openProfile')}
-        style={[styles.profile, { borderColor: colors.border }]}>
-        <ProfileIcon color={colors.gold} size={24} />
-      </Pressable>
+      {hideProfile ? null : (
+        <Pressable
+          onPress={() => router.push('/menu')}
+          hitSlop={12}
+          accessibilityRole="button"
+          accessibilityLabel={t('a11y.openProfile')}
+          style={[styles.profile, { borderColor: colors.border }]}>
+          <ProfileIcon color={colors.gold} size={24} />
+        </Pressable>
+      )}
     </View>
   );
 }

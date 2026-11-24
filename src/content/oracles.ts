@@ -1,8 +1,8 @@
 import type { RuneKey } from '@/engines/divination';
-import type { L } from './types';
+import { localized, type BaseLang, type L } from './types';
 
 type T3 = [string, string, string];
-const toL = ([pt, en, es]: T3): L<string> => ({ pt, en, es });
+const toL = ([pt, en, es]: T3): Record<BaseLang, string> => ({ pt, en, es });
 
 /** Baralho cigano (Lenormand): [nome, significado] por idioma. */
 const LENORMAND_RAW: [T3, T3][] = [
@@ -44,7 +44,7 @@ const LENORMAND_RAW: [T3, T3][] = [
   [['Cruz', 'Cross', 'Cruz'], ['Responsabilidade, fé e aprendizado.', 'Responsibility, faith and learning.', 'Responsabilidad, fe y aprendizaje.']],
 ];
 
-export const LENORMAND: { name: L<string>; meaning: L<string> }[] = LENORMAND_RAW.map(([n, m]) => ({ name: toL(n), meaning: toL(m) }));
+export const LENORMAND = localized<{ name: L<string>; meaning: L<string> }[]>('LENORMAND', LENORMAND_RAW.map(([n, m]) => ({ name: toL(n), meaning: toL(m) })));
 
 /** Runas: [nome, de pé, invertida]. */
 const RUNES_RAW: Record<RuneKey, [T3, T3, T3]> = {
@@ -74,9 +74,11 @@ const RUNES_RAW: Record<RuneKey, [T3, T3, T3]> = {
   othala: [['Othala', 'Othala', 'Othala'], ['Herança, lar e raízes.', 'Heritage, home and roots.', 'Herencia, hogar y raíces.'], ['Apego ao passado; honre e siga.', 'Attachment to the past; honor it and move on.', 'Apego al pasado; hónralo y sigue.']],
 };
 
-export const RUNES_TEXT: Record<RuneKey, { name: L<string>; upright: L<string>; reversed: L<string> }> = Object.fromEntries(
-  Object.entries(RUNES_RAW).map(([k, [n, u, r]]) => [k, { name: toL(n), upright: toL(u), reversed: toL(r) }])
-) as Record<RuneKey, { name: L<string>; upright: L<string>; reversed: L<string> }>;
+type RuneText = { name: L<string>; upright: L<string>; reversed: L<string> };
+export const RUNES_TEXT = localized<Record<RuneKey, RuneText>>(
+  'RUNES_TEXT',
+  Object.fromEntries(Object.entries(RUNES_RAW).map(([k, [n, u, r]]) => [k, { name: toL(n), upright: toL(u), reversed: toL(r) }])) as Record<RuneKey, { name: Record<BaseLang, string>; upright: Record<BaseLang, string>; reversed: Record<BaseLang, string> }>
+);
 
 /** I Ching: [nome, julgamento] por hexagrama (índice = número − 1). */
 const ICHING_RAW: [T3, T3][] = [
@@ -146,4 +148,4 @@ const ICHING_RAW: [T3, T3][] = [
   [['Antes da Conclusão', 'Before Completion', 'Antes de la Consumación'], ['Quase lá: cuidado e paciência no último passo.', 'Almost there: care and patience on the last step.', 'Casi allí: cuidado y paciencia en el último paso.']],
 ];
 
-export const ICHING: { name: L<string>; judgement: L<string> }[] = ICHING_RAW.map(([n, j]) => ({ name: toL(n), judgement: toL(j) }));
+export const ICHING = localized<{ name: L<string>; judgement: L<string> }[]>('ICHING', ICHING_RAW.map(([n, j]) => ({ name: toL(n), judgement: toL(j) })));

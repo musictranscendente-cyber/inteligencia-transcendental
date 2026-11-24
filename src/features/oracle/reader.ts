@@ -6,13 +6,14 @@
 import { ICHING } from '@/content/oracles';
 import { PERSONAL_YEAR } from '@/content/numbers';
 import { cardInfo, yesNo } from '@/content/tarot';
-import type { Lang } from '@/content/types';
+import type { BaseLang, Lang } from '@/content/types';
 import { SYMMETRIC_RUNES, type RuneKey, type Suit } from '@/engines/divination';
 import { cardMeaning, cardName, type Drawn } from './interpret';
+import * as X from './reader-extra';
 import type { DeckKind, SpreadKey } from './spreads';
 
 type Tri<T> = Record<Lang, T>;
-type Verdict = 'yes' | 'maybe' | 'no';
+export type Verdict = 'yes' | 'maybe' | 'no';
 
 // ─── Pergunta ────────────────────────────────────────────────────────────────
 
@@ -26,15 +27,15 @@ const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
  * senão = começo de palavra (ex.: "trabalh" pega trabalho, trabalhar...).
  */
 const TOPIC_WORDS: [Topic, string[]][] = [
-  ['love', ['amor', 'amar.', 'ele.', 'ela.', 'dele.', 'dela.', 'him.', 'her.', 'he.', 'she.', 'ella.', 'voltar pra', 'voltar para', 'reconcili', 'namor', 'relacionamento', 'relacao', 'casament', 'casar', 'crush', 'paquera', 'ficante', 'marido', 'esposa', 'esposo', 'noiv', 'ex.', 'apaixon', 'beij', 'romance', 'trai', 'me ama', 'me quer', 'gosta de mim', 'sente por mim', 'volta pra mim', 'voltar comigo', 'alma gemea', 'love', 'boyfriend', 'girlfriend', 'partner', 'husband', 'wife', 'marry', 'marriage', 'dating', 'crush', 'soulmate', 'novio', 'novia', 'pareja', 'enamor', 'me quiere', 'cheat']],
-  ['work', ['trabalh', 'emprego', 'carreira', 'chefe', 'entrevista', 'vaga', 'promoc', 'negocio', 'empresa', 'projeto', 'cliente', 'demiss', 'contrat', 'job', 'work', 'career', 'boss', 'interview', 'promotion', 'business', 'company', 'project', 'hired', 'fired', 'trabajo', 'empleo', 'carrera', 'jefe', 'ascenso', 'proyecto', 'despid']],
-  ['money', ['dinheiro', 'grana', 'divida', 'financ', 'salario', 'pagar', 'pagamento', 'investi', 'compra', 'vender', 'venda', 'lucro', 'emprestimo', 'heranca', 'loteria', 'money', 'debt', 'salary', 'invest', 'buy', 'sell', 'profit', 'loan', 'lottery', 'dinero', 'deuda', 'invertir', 'comprar', 'ganancia', 'prestamo']],
-  ['health', ['saude', 'doenc', 'doente', 'cura', 'exame', 'cirurgia', 'ansiedade', 'depress', 'tratamento', 'gravid', 'health', 'sick', 'illness', 'heal', 'surgery', 'anxiety', 'pregnan', 'salud', 'enferm', 'cirugia', 'ansiedad', 'embaraz', 'tratamiento']],
-  ['family', ['familia', 'mae.', 'pai.', 'filho', 'filha', 'irma', 'avo.', 'avos.', 'parente', 'sogr', 'family', 'mother', 'father', 'mom.', 'dad.', 'son.', 'daughter', 'sister', 'brother', 'madre', 'padre', 'hijo', 'hija', 'hermana', 'hermano', 'suegr']],
-  ['study', ['estud', 'prova', 'vestibular', 'enem.', 'faculdade', 'curso', 'concurso', 'escola', 'aprovad', 'passar na', 'study', 'exam', 'test.', 'college', 'university', 'school', 'course', 'estudi', 'examen', 'universidad', 'escuela', 'oposicion']],
-  ['travel', ['viag', 'viaj', 'mudar de', 'mudanca', 'morar fora', 'morar em', 'intercambio', 'outro pais', 'travel', 'trip', 'move abroad', 'moving', 'relocat', 'mudanza', 'mudarme', 'vivir en']],
-  ['friends', ['amig', 'amizade', 'friend', 'amistad']],
-  ['spirit', ['espiritual', 'missao', 'proposito', 'alma.', 'deus', 'meditac', 'mediunidade', 'spiritual', 'purpose', 'soul', 'mission', 'god.', 'meditat', 'mision', 'dios']],
+  ['love', ['amour', 'copain', 'copine', 'mari.', 'liebe', 'freundin', 'ehe.', 'heirat', 'amore', 'fidanzat', 'marito', 'moglie', 'amor', 'amar.', 'ele.', 'ela.', 'dele.', 'dela.', 'him.', 'her.', 'he.', 'she.', 'ella.', 'voltar pra', 'voltar para', 'reconcili', 'namor', 'relacionamento', 'relacao', 'casament', 'casar', 'crush', 'paquera', 'ficante', 'marido', 'esposa', 'esposo', 'noiv', 'ex.', 'apaixon', 'beij', 'romance', 'trai', 'me ama', 'me quer', 'gosta de mim', 'sente por mim', 'volta pra mim', 'voltar comigo', 'alma gemea', 'love', 'boyfriend', 'girlfriend', 'partner', 'husband', 'wife', 'marry', 'marriage', 'dating', 'crush', 'soulmate', 'novio', 'novia', 'pareja', 'enamor', 'me quiere', 'cheat']],
+  ['work', ['travail', 'emploi', 'patron', 'entretien', 'arbeit', 'beruf', 'stelle', 'lavoro', 'capo.', 'colloquio', 'trabalh', 'emprego', 'carreira', 'chefe', 'entrevista', 'vaga', 'promoc', 'negocio', 'empresa', 'projeto', 'cliente', 'demiss', 'contrat', 'job', 'work', 'career', 'boss', 'interview', 'promotion', 'business', 'company', 'project', 'hired', 'fired', 'trabajo', 'empleo', 'carrera', 'jefe', 'ascenso', 'proyecto', 'despid']],
+  ['money', ['argent', 'dette', 'salaire', 'geld', 'schulden', 'gehalt', 'soldi', 'denaro', 'debit', 'stipendio', 'dinheiro', 'grana', 'divida', 'financ', 'salario', 'pagar', 'pagamento', 'investi', 'compra', 'vender', 'venda', 'lucro', 'emprestimo', 'heranca', 'loteria', 'money', 'debt', 'salary', 'invest', 'buy', 'sell', 'profit', 'loan', 'lottery', 'dinero', 'deuda', 'invertir', 'comprar', 'ganancia', 'prestamo']],
+  ['health', ['sante', 'malad', 'gesundheit', 'krank', 'salute', 'malat', 'saude', 'doenc', 'doente', 'cura', 'exame', 'cirurgia', 'ansiedade', 'depress', 'tratamento', 'gravid', 'health', 'sick', 'illness', 'heal', 'surgery', 'anxiety', 'pregnan', 'salud', 'enferm', 'cirugia', 'ansiedad', 'embaraz', 'tratamiento']],
+  ['family', ['famille', 'mere.', 'pere.', 'familie', 'mutter', 'vater', 'famiglia', 'figli', 'familia', 'mae.', 'pai.', 'filho', 'filha', 'irma', 'avo.', 'avos.', 'parente', 'sogr', 'family', 'mother', 'father', 'mom.', 'dad.', 'son.', 'daughter', 'sister', 'brother', 'madre', 'padre', 'hijo', 'hija', 'hermana', 'hermano', 'suegr']],
+  ['study', ['etud', 'prufung', 'studium', 'schule', 'studi', 'esame', 'scuola', 'estud', 'prova', 'vestibular', 'enem.', 'faculdade', 'curso', 'concurso', 'escola', 'aprovad', 'passar na', 'study', 'exam', 'test.', 'college', 'university', 'school', 'course', 'estudi', 'examen', 'universidad', 'escuela', 'oposicion']],
+  ['travel', ['voyage', 'demenag', 'reise', 'umzug', 'viaggi', 'trasferi', 'viag', 'viaj', 'mudar de', 'mudanca', 'morar fora', 'morar em', 'intercambio', 'outro pais', 'travel', 'trip', 'move abroad', 'moving', 'relocat', 'mudanza', 'mudarme', 'vivir en']],
+  ['friends', ['amitie', 'amici', 'amicizia', 'amig', 'amizade', 'friend', 'amistad']],
+  ['spirit', ['spirituel', 'spirituell', 'seele', 'spirituale', 'anima.', 'espiritual', 'missao', 'proposito', 'alma.', 'deus', 'meditac', 'mediunidade', 'spiritual', 'purpose', 'soul', 'mission', 'god.', 'meditat', 'mision', 'dios']],
 ];
 
 function hits(text: string, words: string[], entries: string[]) {
@@ -63,10 +64,10 @@ export function analyzeQuestion(question: string, lang: Lang): { text: string; t
   const start = n.replace(/^[^a-z]+/, '');
   const startsWith = (list: string[]) => list.some((w) => start.startsWith(`${w} `) || start === w);
   let kind: QuestionKind = 'yesno';
-  if (startsWith(['quando', 'when', 'cuando']) || /\b(quando|when|cuando)\b/.test(n)) kind = 'when';
-  else if (startsWith(['por que', 'porque', 'pq', 'why', 'por qual motivo'])) kind = 'why';
-  else if (startsWith(['como', 'how', 'o que', 'what', 'que', 'qual', 'quais', 'which', 'cual', 'cuales', 'onde', 'where', 'donde', 'quem', 'who', 'quien'])) kind = 'how';
-  else if (words.includes({ pt: 'ou', en: 'or', es: 'o' }[lang]) && words.length > 3) kind = 'choice';
+  if (startsWith(['quando', 'when', 'cuando', 'quand', 'wann']) || /\b(quando|when|cuando|quand|wann)\b/.test(n)) kind = 'when';
+  else if (startsWith(['por que', 'porque', 'pq', 'why', 'por qual motivo', 'pourquoi', 'warum', 'wieso', 'perche'])) kind = 'why';
+  else if (startsWith(['como', 'how', 'o que', 'what', 'que', 'qual', 'quais', 'which', 'cual', 'cuales', 'onde', 'where', 'donde', 'quem', 'who', 'quien', 'comment', 'quel', 'quelle', 'quoi', 'wie', 'was', 'welche', 'welcher', 'wo', 'wer', 'come', 'cosa', 'che', 'quale', 'dove', 'chi'])) kind = 'how';
+  else if (words.includes({ pt: 'ou', en: 'or', es: 'o', ...{ fr: X.X_WORDS.fr.or, de: X.X_WORDS.de.or, it: X.X_WORDS.it.or } }[lang]) && words.length > 3) kind = 'choice';
   return { text, topic, kind };
 }
 
@@ -90,14 +91,22 @@ const ICHING_POLARITY = [
 
 const YES_NO_SCORE = { yes: 1, maybe: 0, no: -1 } as const;
 const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+/** Em alemão, substantivos começam com maiúscula: o significado não pode ir para minúscula. */
+const lowerIn = (lang: Lang, s: string) => (lang === 'de' ? s : lower(s));
 const upper = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 /** Artigo de uma carta menor (pela posição na corte). */
 function minorArticle(rank: number, lang: Lang) {
   if (lang === 'en') return 'the';
   if (lang === 'pt') return rank === 13 ? 'a' : 'o';
+  if (lang === 'fr') return rank === 1 ? 'l’' : rank === 13 ? 'la' : 'le';
+  if (lang === 'it') return rank === 1 ? 'l’' : rank === 13 ? 'la' : 'il';
+  // Alemão: As, Bube, Ritter, Königin, König; os números são femininos ("die Zehn").
+  if (lang === 'de') return rank === 1 ? 'das' : rank === 11 || rank === 12 || rank === 14 ? 'der' : 'die';
   return rank === 13 || rank === 11 ? 'la' : 'el';
 }
+
+const W = (lang: Lang) => (lang === 'fr' || lang === 'de' || lang === 'it' ? X.X_WORDS[lang] : null);
 
 function view(deck: DeckKind, card: Drawn, lang: Lang): CardView {
   const meaning = cardMeaning(deck, card, lang);
@@ -105,28 +114,34 @@ function view(deck: DeckKind, card: Drawn, lang: Lang): CardView {
   if (deck === 'tarot') {
     const c = cardInfo(String(card.id), lang);
     let mid: string;
-    if (c.major === null) mid = `${minorArticle(c.rank ?? 1, lang)} ${name}`;
+    if (c.major === null) {
+      const art = minorArticle(c.rank ?? 1, lang);
+      mid = art.endsWith('’') ? `${art}${name}` : `${art} ${name}`;
+    }
     // Plural ("Os Enamorados") vira "a carta dos Enamorados", para a frase concordar.
     else if (lang === 'pt' && name.startsWith('Os ')) mid = `a carta d${lower(name)}`;
     else if (lang === 'es' && name.startsWith('Los ')) mid = `la carta de ${lower(name)}`;
+    else if (lang === 'fr' && name.startsWith('Les ')) mid = `la carte des ${name.slice(4)}`;
+    else if (lang === 'it' && name.startsWith('Gli ')) mid = `la carta degli ${name.slice(4)}`;
+    else if (lang === 'de' && name.startsWith('Die ') && name.endsWith('n')) mid = `die Karte der ${name.slice(4)}`;
     else mid = lang === 'en' && !name.startsWith('The ') ? name : lower(name);
-    if (card.reversed) mid += { pt: ' (carta invertida)', en: ' (reversed)', es: ' (carta invertida)' }[lang];
+    if (card.reversed) mid += W(lang)?.reversedCard ?? { pt: ' (carta invertida)', en: ' (reversed)', es: ' (carta invertida)' }[lang as BaseLang];
     return { start: upper(mid), mid, meaning, polarity: YES_NO_SCORE[yesNo(String(card.id), card.reversed)], suit: c.suit, major: c.major !== null, reversed: card.reversed };
   }
   if (deck === 'runes') {
     const key = card.id as RuneKey;
     const flipped = card.reversed && !SYMMETRIC_RUNES.includes(key);
-    let mid = `${{ pt: 'a runa', en: 'the rune', es: 'la runa' }[lang]} ${name}`;
-    if (flipped) mid += { pt: ' (invertida)', en: ' (reversed)', es: ' (invertida)' }[lang];
+    let mid = `${W(lang)?.rune ?? { pt: 'a runa', en: 'the rune', es: 'la runa' }[lang as BaseLang]} ${name}`;
+    if (flipped) mid += W(lang)?.reversedRune ?? { pt: ' (invertida)', en: ' (reversed)', es: ' (invertida)' }[lang as BaseLang];
     return { start: upper(mid), mid, meaning, polarity: flipped ? -1 : RUNE_POLARITY[key], suit: null, major: false, reversed: flipped };
   }
-  const mid = `${{ pt: 'a carta', en: 'the card', es: 'la carta' }[lang]} ${name}`;
+  const mid = `${W(lang)?.card ?? { pt: 'a carta', en: 'the card', es: 'la carta' }[lang as BaseLang]} ${name}`;
   return { start: upper(mid), mid, meaning, polarity: LENORMAND_POLARITY[Number(card.id) - 1], suit: null, major: false, reversed: false };
 }
 
 // ─── Papéis das posições ─────────────────────────────────────────────────────
 
-type Role =
+export type Role =
   | 'answer' | 'past' | 'present' | 'future' | 'you' | 'other' | 'bond' | 'advice' | 'obstacle' | 'potential'
   | 'base' | 'goal' | 'near' | 'environment' | 'hopes' | 'outcome' | 'situation' | 'development' | 'weighs' | 'helps' | 'goes' | 'path';
 
@@ -222,6 +237,7 @@ const ROLE_LINES: Tri<Record<Role, string[]>> = {
     goes: ['¿Y hacia dónde va esto? Salió {c}: {m}'],
     path: ['El camino que se abre viene con {c}: {m}'],
   },
+  ...X.X_ROLE_LINES,
 };
 
 // ─── Textos de abertura, padrões e resposta ──────────────────────────────────
@@ -231,12 +247,14 @@ const OPEN_WITH_Q: Tri<(name: string, q: string) => string> = {
   pt: (n, q) => `${n}, você me perguntou: “${q}”${end(q)}`,
   en: (n, q) => `${n}, you asked me: “${q}”${end(q)}`,
   es: (n, q) => `${n}, me preguntaste: “${q}”${end(q)}`,
+  ...X.X_OPEN_WITH_Q,
 };
 
 const OPEN_NO_Q: Tri<(name: string) => string> = {
   pt: (n) => `${n}, você não escreveu uma pergunta, então as cartas falaram do seu momento como um todo. Leia como um retrato de agora.`,
   en: (n) => `${n}, you didn’t write a question, so the cards spoke about your moment as a whole. Read this as a snapshot of right now.`,
   es: (n) => `${n}, no escribiste una pregunta, así que las cartas hablaron de tu momento en general. Léelo como un retrato de ahora.`,
+  ...X.X_OPEN_NO_Q,
 };
 
 const TOPIC_INTRO: Tri<Record<Topic, string>> = {
@@ -276,6 +294,7 @@ const TOPIC_INTRO: Tri<Record<Topic, string>> = {
     spirit: 'Es una pregunta del alma, y las cartas respondieron en ese nivel.',
     general: 'Veamos juntos lo que salió.',
   },
+  ...X.X_TOPIC_INTRO,
 };
 
 const SUIT_PATTERN: Tri<Record<Suit, (n: number) => string>> = {
@@ -297,18 +316,21 @@ const SUIT_PATTERN: Tri<Record<Suit, (n: number) => string>> = {
     swords: (n) => `Salieron ${n} cartas de Espadas: tu cabeza está trabajando mucho. Cuidado con sufrir por adelantado.`,
     pentacles: (n) => `Salieron ${n} cartas de Oros: el lado práctico (dinero, rutina, cuerpo) está en el centro de esto.`,
   },
+  ...X.X_SUIT_PATTERN,
 };
 
 const MAJORS_PATTERN: Tri<(n: number) => string> = {
   pt: (n) => `Saíram ${n} Arcanos Maiores: não é coisa pequena, é um capítulo importante da sua vida.`,
   en: (n) => `${n} Major Arcana came up: this isn’t a small thing, it’s an important chapter of your life.`,
   es: (n) => `Salieron ${n} Arcanos Mayores: no es algo pequeño, es un capítulo importante de tu vida.`,
+  ...X.X_MAJORS_PATTERN,
 };
 
 const REVERSED_PATTERN: Tri<string> = {
   pt: 'Várias cartas saíram invertidas: tem energia travada. Antes de agir lá fora, vale olhar para dentro.',
   en: 'Several cards came up reversed: there’s blocked energy. Before acting outside, it’s worth looking inside.',
   es: 'Varias cartas salieron invertidas: hay energía trabada. Antes de actuar afuera, conviene mirar hacia adentro.',
+  ...X.X_REVERSED_PATTERN,
 };
 
 const ANSWER: Tri<Record<Verdict, string>> = {
@@ -327,6 +349,7 @@ const ANSWER: Tri<Record<Verdict, string>> = {
     maybe: 'Respondiendo directo: todavía no es un sí cerrado. Hay una posibilidad real, pero algo necesita ajustarse antes, y eso está en tus manos.',
     no: 'Respondiendo directo: tal como están las cosas, las cartas dicen que no, o al menos no ahora. No es un castigo: es un aviso para cambiar el rumbo antes de insistir.',
   },
+  ...X.X_ANSWER,
 };
 
 const SUMMARY: Tri<Record<Verdict, string>> = {
@@ -345,6 +368,7 @@ const SUMMARY: Tri<Record<Verdict, string>> = {
     maybe: 'Juntando todo: es una etapa de ajuste. Viene algo bueno, pero pide atención y paciencia.',
     no: 'Juntando todo: es momento de cuidarte y revisar el camino antes de seguir.',
   },
+  ...X.X_SUMMARY,
 };
 
 const CHOICE: Tri<Record<Verdict, string>> = {
@@ -363,6 +387,7 @@ const CHOICE: Tri<Record<Verdict, string>> = {
     maybe: 'Entre las opciones que planteaste, ninguna es incorrecta. Elige la que puedas sostener con calma, no la que parece más bonita.',
     no: 'Entre las opciones que planteaste, las cartas piden no decidir por impulso. Espera un poco más y observa.',
   },
+  ...X.X_CHOICE,
 };
 
 const TIMING_SUIT: Tri<Record<Suit | 'major', string>> = {
@@ -387,6 +412,7 @@ const TIMING_SUIT: Tri<Record<Suit | 'major', string>> = {
     pentacles: 'Sobre el tiempo: es algo que se construye. Lleva meses y llega poco a poco, pero llega sólido.',
     major: 'Sobre el tiempo: no depende solo del calendario. Sucede cuando hagas el giro interno que esta carta pide.',
   },
+  ...X.X_TIMING_SUIT,
 };
 
 const TIMING_VERDICT: Tri<Record<Verdict, string>> = {
@@ -405,18 +431,21 @@ const TIMING_VERDICT: Tri<Record<Verdict, string>> = {
     maybe: 'Sobre el tiempo: no es inmediato. Dale tiempo al tiempo y sigue haciendo tu parte.',
     no: 'Sobre el tiempo: todavía va a tardar un poco, y quizá sea mejor así.',
   },
+  ...X.X_TIMING_VERDICT,
 };
 
 const HOW: Tri<(c: string) => string> = {
   pt: (c) => `E o que fazer com isso? O conselho mais forte é o que veio com ${c}: comece por aí, com um passo pequeno e concreto ainda esta semana.`,
   en: (c) => `So what do you do with this? The strongest advice is the one that came with ${c}: start there, with a small, concrete step this very week.`,
   es: (c) => `¿Y qué hacer con esto? El consejo más fuerte es el que vino con ${c}: empieza por ahí, con un paso pequeño y concreto esta misma semana.`,
+  ...X.X_HOW,
 };
 
 const WHY: Tri<(c: string) => string> = {
   pt: (c) => `E por que isso está acontecendo? A raiz aparece com ${c}. Olhar para isso com honestidade, sem se culpar, já muda muita coisa.`,
   en: (c) => `And why is this happening? The root shows up with ${c}. Looking at it honestly, without blaming yourself, already changes a lot.`,
   es: (c) => `¿Y por qué está pasando esto? La raíz aparece con ${c}. Mirarlo con honestidad, sin culparte, ya cambia mucho.`,
+  ...X.X_WHY,
 };
 
 /** Frase que costura as cartas: de onde parte, com o que conta, para onde vai. */
@@ -424,6 +453,7 @@ const WEAVE: Tri<(a: string, h: string | null, e: string, ask: boolean) => strin
   pt: (a, h, e, ask) => (ask && h ? `Ou seja: mesmo com ${a} pesando, se você usar ${h} a seu favor, isso caminha para ${e}.` : h ? `Ou seja: isso começa com ${a}, conta com ${h} e caminha para ${e}.` : `Ou seja: isso começa com ${a} e caminha para ${e}.`),
   en: (a, h, e, ask) => (ask && h ? `In other words: even with ${a} weighing on you, if you use ${h} in your favor, this heads toward ${e}.` : h ? `In other words: this starts with ${a}, counts on ${h} and heads toward ${e}.` : `In other words: this starts with ${a} and heads toward ${e}.`),
   es: (a, h, e, ask) => (ask && h ? `Es decir: aunque ${a} pese, si usas ${h} a tu favor, esto camina hacia ${e}.` : h ? `Es decir: esto empieza con ${a}, cuenta con ${h} y camina hacia ${e}.` : `Es decir: esto empieza con ${a} y camina hacia ${e}.`),
+  ...X.X_WEAVE,
 };
 
 const TOPIC_ADVICE: Tri<Record<Topic, Record<Verdict, string>>> = {
@@ -463,18 +493,21 @@ const TOPIC_ADVICE: Tri<Record<Topic, Record<Verdict, string>>> = {
     spirit: { yes: 'En el camino espiritual, confía en tu intuición: está afinada.', maybe: 'En el camino espiritual, el silencio y la práctica diaria traerán la respuesta.', no: 'En el camino espiritual, vuelve a lo básico: descanso, presencia y respiración.' },
     general: { yes: 'Sigue con confianza, un paso a la vez.', maybe: 'Ve con calma y ajusta lo que haga falta en el camino.', no: 'Recógete un poco, cuídate y solo después avanza.' },
   },
+  ...X.X_TOPIC_ADVICE,
 };
 
 const YEAR_LINE: Tri<(n: number, title: string) => string> = {
   pt: (n, t) => `E isso conversa com o seu momento: você está no Ano Pessoal ${n} (${lower(t)}).`,
   en: (n, t) => `And this speaks to your moment: you’re in Personal Year ${n} (${lower(t)}).`,
   es: (n, t) => `Y esto conversa con tu momento: estás en el Año Personal ${n} (${lower(t)}).`,
+  ...X.X_YEAR_LINE,
 };
 
 const CLOSING: Tri<string[]> = {
   pt: ['Leve isso como um conselho de amigo: as cartas mostram o caminho, mas quem anda é você.', 'Use isso como um espelho, não como sentença. A escolha continua sendo sua.'],
   en: ['Take this as a friend’s advice: the cards show the way, but you’re the one who walks it.', 'Use this as a mirror, not a sentence. The choice is still yours.'],
   es: ['Tómalo como un consejo de amigo: las cartas muestran el camino, pero quien camina eres tú.', 'Úsalo como un espejo, no como una sentencia. La elección sigue siendo tuya.'],
+  ...X.X_CLOSING,
 };
 
 // ─── Montagem ────────────────────────────────────────────────────────────────
@@ -487,8 +520,8 @@ function seedOf(parts: (string | number)[]) {
 }
 const pick = <T,>(list: T[], seed: number) => list[seed % list.length];
 
-function fill(tpl: string, c: CardView) {
-  return tpl.replace('{c}', c.mid).replace('{C}', c.start).replace('{m}', lower(c.meaning)).replace('{M}', upper(c.meaning));
+function fill(tpl: string, c: CardView, lang: Lang) {
+  return tpl.replace('{c}', c.mid).replace('{C}', c.start).replace('{m}', lowerIn(lang, c.meaning)).replace('{M}', upper(c.meaning));
 }
 
 function verdictOf(score: number): Verdict {
@@ -520,16 +553,16 @@ export function readSpread({ deck, spread, cards, question, lang, firstName, per
   let roles: Role[];
   if (spread === 'len9') {
     roles = ['past', 'present', 'future', 'past', 'situation', 'future', 'past', 'present', 'future'];
-    out.push(fill(ROLE_LINES[lang].present[0], views[4]));
+    out.push(fill(ROLE_LINES[lang].present[0], views[4], lang));
     const cols: [Role, number[]][] = [['past', [0, 3, 6]], ['development', [1, 7]], ['future', [2, 5, 8]]];
-    const head = { pt: { past: 'No que ficou para trás', development: 'Em volta do agora', future: 'No que vem' }, en: { past: 'In what’s behind you', development: 'Around the present', future: 'In what’s coming' }, es: { past: 'En lo que quedó atrás', development: 'Alrededor del ahora', future: 'En lo que viene' } }[lang] as Record<string, string>;
+    const head = { pt: { past: 'No que ficou para trás', development: 'Em volta do agora', future: 'No que vem' }, en: { past: 'In what’s behind you', development: 'Around the present', future: 'In what’s coming' }, es: { past: 'En lo que quedó atrás', development: 'Alrededor del ahora', future: 'En lo que viene' }, ...X.X_COLUMNS }[lang] as Record<string, string>;
     for (const [role, idx] of cols) {
       const names = idx.map((i) => views[i].mid).join(', ');
       out.push(`${head[role]} (${names}): ${idx.map((i) => views[i].meaning).join(' ')}`);
     }
   } else {
     roles = ROLES[spread];
-    views.forEach((v, i) => out.push(fill(pick(ROLE_LINES[lang][roles[i]], seed + i), v)));
+    views.forEach((v, i) => out.push(fill(pick(ROLE_LINES[lang][roles[i]], seed + i), v, lang)));
   }
 
   // Padrões que uma pessoa notaria olhando a mesa.
@@ -597,28 +630,30 @@ export function readIChingText({ hexagram, transformed, changing, question, lang
   const q = analyzeQuestion(question, lang);
   const h = ICHING[hexagram - 1];
   const out: string[] = [];
+  const xi = lang === 'fr' || lang === 'de' || lang === 'it' ? X.X_ICHING[lang] : null;
+  const judgement = (j: { [k in Lang]: string }) => lowerIn(lang, j[lang]);
   out.push(q.kind === 'none'
-    ? { pt: `${firstName}, você jogou as moedas sem uma pergunta, então o I Ching falou do seu momento como um todo.`, en: `${firstName}, you tossed the coins without a question, so the I Ching spoke about your moment as a whole.`, es: `${firstName}, lanzaste las monedas sin una pregunta, así que el I Ching habló de tu momento en general.` }[lang]
+    ? xi?.noQ(firstName) ?? { pt: `${firstName}, você jogou as moedas sem uma pergunta, então o I Ching falou do seu momento como um todo.`, en: `${firstName}, you tossed the coins without a question, so the I Ching spoke about your moment as a whole.`, es: `${firstName}, lanzaste las monedas sin una pregunta, así que el I Ching habló de tu momento en general.` }[lang as BaseLang]
     : `${OPEN_WITH_Q[lang](firstName, q.text)} ${TOPIC_INTRO[lang][q.topic]}`);
   if (!firstName) out[0] = upper(out[0].replace(/^, /, ''));
-  out.push({
+  out.push(xi?.formed(hexagram, h.name[lang], judgement(h.judgement)) ?? {
     pt: `O hexagrama que se formou foi o ${hexagram}, ${h.name.pt}. A mensagem dele é: ${lower(h.judgement.pt)}`,
     en: `The hexagram that formed was number ${hexagram}, ${h.name.en}. Its message is: ${lower(h.judgement.en)}`,
     es: `El hexagrama que se formó fue el ${hexagram}, ${h.name.es}. Su mensaje es: ${lower(h.judgement.es)}`,
-  }[lang]);
+  }[lang as BaseLang]);
   if (transformed && changing.length) {
     const t = ICHING[transformed - 1];
-    out.push({
+    out.push(xi?.changing(transformed, t.name[lang], judgement(t.judgement)) ?? {
       pt: `Como saíram linhas mutáveis, a situação não está parada: ela está se transformando no hexagrama ${transformed}, ${t.name.pt}. Ou seja, o caminho leva para isto: ${lower(t.judgement.pt)}`,
       en: `Since there were changing lines, the situation isn’t standing still: it’s turning into hexagram ${transformed}, ${t.name.en}. In other words, the path leads here: ${lower(t.judgement.en)}`,
       es: `Como salieron líneas mutables, la situación no está quieta: se está transformando en el hexagrama ${transformed}, ${t.name.es}. Es decir, el camino lleva a esto: ${lower(t.judgement.es)}`,
-    }[lang]);
+    }[lang as BaseLang]);
   } else {
-    out.push({
+    out.push(xi?.stable ?? {
       pt: 'Não saíram linhas mutáveis: a situação está estável, e o conselho vale por inteiro, do jeito que está.',
       en: 'There were no changing lines: the situation is stable, and the advice applies fully, as it is.',
       es: 'No salieron líneas mutables: la situación está estable, y el consejo vale por completo, tal como está.',
-    }[lang]);
+    }[lang as BaseLang]);
   }
   const pol = (n: number) => ICHING_POLARITY[n - 1] ?? 0;
   const verdict = verdictOf(transformed ? (pol(hexagram) + 2 * pol(transformed)) / 3 : pol(hexagram));

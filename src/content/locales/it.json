@@ -131,6 +131,21 @@
   "summary": "Coraggiosa, magnetica e appassionata di sfide.",
   "text": "La Tigre è audace, indipendente e protettiva. Guida con passione, difende le sue convinzioni e vive ogni fase della vita con intensità."
  },
+ "AREA_ADVICE.energy": {
+  "low": "Batteria più bassa. Rispetta le pause, bevi acqua e non confrontarti con il ritmo degli altri.",
+  "mid": "Energia equilibrata. Alterna concentrazione e riposo per arrivare bene a fine giornata.",
+  "high": "Vitalità alta. Usala per allenarti, sbrigare ciò che è in sospeso e affrontare ciò che rimandavi."
+ },
+ "AREA_ADVICE.love": {
+  "low": "Oggi gli affetti sono più sensibili. Preferisci la gentilezza ai rimproveri e lascia le conversazioni difficili a un altro giorno.",
+  "mid": "Clima stabile nelle relazioni. Un semplice gesto di attenzione vale più di grandi dichiarazioni.",
+  "high": "Un cuore aperto e magnetico. Ottimo per appuntamenti, riconciliazioni e dire ciò che senti."
+ },
+ "AREA_ADVICE.work": {
+  "low": "Il lavoro chiede revisione, non audacia. Controlla i dettagli ed evita di firmare o decidere d’impulso.",
+  "mid": "Ritmo produttivo e prevedibile. Buona giornata per portare avanti con costanza le attività di routine.",
+  "high": "Giornata forte per carriera e denaro. Presenta idee, negozia e prendi l’iniziativa."
+ },
  "ASPECTS_TEXT.conjunction": {
   "name": "Congiunzione",
   "symbol": "☌",
@@ -156,6 +171,92 @@
   "symbol": "△",
   "meaning": "scorrono con facilità e si sostengono"
  },
+ "CHAKRAS.0": {
+  "name": "Radice",
+  "sanskrit": "Muladhara",
+  "theme": "sicurezza e radicamento",
+  "text": "Associato al sentirsi con i piedi per terra, all’appartenenza e alla stabilità materiale.",
+  "crystals": [
+   "Ematite",
+   "Tormalina nera",
+   "Diaspro rosso"
+  ]
+ },
+ "CHAKRAS.1": {
+  "name": "Sacrale",
+  "sanskrit": "Svadhisthana",
+  "theme": "piacere e creatività",
+  "text": "Associato alle emozioni, alla gioia di vivere e alla creatività.",
+  "crystals": [
+   "Corniola",
+   "Pietra del sole",
+   "Calcite arancione"
+  ]
+ },
+ "CHAKRAS.2": {
+  "name": "Plesso solare",
+  "sanskrit": "Manipura",
+  "theme": "potere personale e fiducia",
+  "text": "Associato all’autostima, alla forza di volontà e alla capacità di agire.",
+  "crystals": [
+   "Citrino",
+   "Occhio di tigre",
+   "Pirite"
+  ]
+ },
+ "CHAKRAS.3": {
+  "name": "Cuore",
+  "sanskrit": "Anahata",
+  "theme": "amore e compassione",
+  "text": "Associato all’affetto, al perdono e al legame con gli altri.",
+  "crystals": [
+   "Quarzo rosa",
+   "Avventurina verde",
+   "Rodonite"
+  ]
+ },
+ "CHAKRAS.4": {
+  "name": "Gola",
+  "sanskrit": "Vishuddha",
+  "theme": "espressione e verità",
+  "text": "Associato alla comunicazione sincera e all’espressione creativa.",
+  "crystals": [
+   "Acquamarina",
+   "Sodalite",
+   "Turchese"
+  ]
+ },
+ "CHAKRAS.5": {
+  "name": "Terzo occhio",
+  "sanskrit": "Ajna",
+  "theme": "intuizione e visione",
+  "text": "Associato all’intuizione, all’immaginazione e alla chiarezza interiore.",
+  "crystals": [
+   "Ametista",
+   "Lapislazzuli",
+   "Fluorite"
+  ]
+ },
+ "CHAKRAS.6": {
+  "name": "Corona",
+  "sanskrit": "Sahasrara",
+  "theme": "scopo e spiritualità",
+  "text": "Associato al senso della vita e al legame con qualcosa di più grande.",
+  "crystals": [
+   "Cristallo di rocca",
+   "Selenite",
+   "Howlite"
+  ]
+ },
+ "CHALLENGE_TEXT.0": "Sfida 0: libertà di scelta — tutte le strade sono aperte; l’invito è decidere con consapevolezza.",
+ "CHALLENGE_TEXT.1": "Affermarti senza aggressività né sottomissione.",
+ "CHALLENGE_TEXT.2": "Superare l’ipersensibilità e la paura di dispiacere.",
+ "CHALLENGE_TEXT.3": "Esprimerti con concentrazione, senza disperderti né tacere.",
+ "CHALLENGE_TEXT.4": "Trovare disciplina senza cadere nella rigidità.",
+ "CHALLENGE_TEXT.5": "Usare la libertà senza fuggire dagli impegni.",
+ "CHALLENGE_TEXT.6": "Prenderti cura senza controllare e accettare l’imperfezione.",
+ "CHALLENGE_TEXT.7": "Fidarti e aprirti invece di isolarti.",
+ "CHALLENGE_TEXT.8": "Bilanciare ambizione, denaro e valori personali.",
  "CHOIR_NAMES.Anjos": "Angeli",
  "CHOIR_NAMES.Arcanjos": "Arcangeli",
  "CHOIR_NAMES.Dominações": "Dominazioni",
@@ -165,6 +266,137 @@
  "CHOIR_NAMES.Serafins": "Serafini",
  "CHOIR_NAMES.Tronos": "Troni",
  "CHOIR_NAMES.Virtudes": "Virtù",
+ "COMPAT_ADVICE": {
+  "high": "Avete un’affinità naturale. L’invito è non lasciare che la facilità diventi abitudine: continuate a esplorare cose nuove insieme.",
+  "mid": "Ci sono punti di forza e di attrito. Conversazioni sincere sulle aspettative fanno tutta la differenza.",
+  "low": "Siete molto diversi, e questo può essere un dono. Pazienza e curiosità per il modo di essere dell’altro trasformano gli scontri in apprendimento."
+ },
+ "DAY_LINES.1": [
+  {
+   "title": "Inizia prima di sentirti pronto/a",
+   "phrase": "Oggi il coraggio vale più del piano perfetto."
+  },
+  {
+   "title": "Il primo passo è tuo",
+   "phrase": "Una decisione semplice può aprire un intero cammino."
+  },
+  {
+   "title": "Un giorno per firmare con il tuo nome",
+   "phrase": "Mostra la tua idea: è più forte di quanto pensi."
+  }
+ ],
+ "DAY_LINES.2": [
+  {
+   "title": "La forza sta nell’incontro",
+   "phrase": "Ascolta più di quanto parli: la risposta arriva attraverso qualcuno."
+  },
+  {
+   "title": "Anche piano è una strada",
+   "phrase": "Oggi la pazienza è una forma di intelligenza."
+  },
+  {
+   "title": "Un giorno per darsi la mano",
+   "phrase": "Una conversazione sincera può sistemare ciò che la fretta ha complicato."
+  }
+ ],
+ "DAY_LINES.3": [
+  {
+   "title": "La tua voce vuole spazio",
+   "phrase": "Dillo, scrivilo, crealo: oggi l’espressione apre porte."
+  },
+  {
+   "title": "La leggerezza è una strategia",
+   "phrase": "Un sorriso può sbloccare ciò che la serietà non raggiunge."
+  },
+  {
+   "title": "Brilla senza chiedere il permesso",
+   "phrase": "Condividi qualcosa di tuo con il mondo."
+  }
+ ],
+ "DAY_LINES.4": [
+  {
+   "title": "Mattone dopo mattone",
+   "phrase": "Metti in ordine una sola cosa e senti la calma che porta."
+  },
+  {
+   "title": "Oggi servono radici",
+   "phrase": "La costanza batte l’ispirazione passeggera."
+  },
+  {
+   "title": "Fatto è meglio di perfetto",
+   "phrase": "Finisci ciò che è a metà."
+  }
+ ],
+ "DAY_LINES.5": [
+  {
+   "title": "Cambia rotta senza paura",
+   "phrase": "La sorpresa di oggi potrebbe essere un regalo travestito."
+  },
+  {
+   "title": "Apri una nuova finestra",
+   "phrase": "Prova qualcosa di diverso, anche solo la strada di casa."
+  },
+  {
+   "title": "Libertà con una direzione",
+   "phrase": "Di’ sì all’avventura, ma ricorda il tuo perché."
+  }
+ ],
+ "DAY_LINES.6": [
+  {
+   "title": "L’amore sta nei dettagli",
+   "phrase": "Un piccolo gesto di cura oggi conta molto."
+  },
+  {
+   "title": "Prenditi cura di chi si prende cura",
+   "phrase": "Mettiti nella lista delle persone che meritano tenerezza."
+  },
+  {
+   "title": "Un giorno per armonizzare la casa",
+   "phrase": "Bellezza e affetto trasformano qualsiasi spazio."
+  }
+ ],
+ "DAY_LINES.7": [
+  {
+   "title": "Il silenzio ha risposte",
+   "phrase": "Rallenta: la tua intuizione parla piano."
+  },
+  {
+   "title": "Guarda dentro",
+   "phrase": "Oggi capire vale più che fare."
+  },
+  {
+   "title": "Un giorno per andare a fondo",
+   "phrase": "Studia, osserva e fidati di ciò che senti."
+  }
+ ],
+ "DAY_LINES.8": [
+  {
+   "title": "Il tuo potere è in gioco",
+   "phrase": "Decidi con fermezza e prendi il timone."
+  },
+  {
+   "title": "Un giorno per raccogliere",
+   "phrase": "Gli sforzi passati possono diventare risultati adesso."
+  },
+  {
+   "title": "Pensa in grande, agisci con precisione",
+   "phrase": "Strategia e concentrazione trasformano gli obiettivi in vittorie."
+  }
+ ],
+ "DAY_LINES.9": [
+  {
+   "title": "Lascia andare per ricevere",
+   "phrase": "Chiudere qualcosa oggi fa spazio al nuovo."
+  },
+  {
+   "title": "Il perdono è libertà",
+   "phrase": "Lascia andare ciò che pesa: non devi portare tutto."
+  },
+  {
+   "title": "Guarda il quadro intero",
+   "phrase": "La generosità torna moltiplicata."
+  }
+ ],
  "DAY_MASTER_TEXT.earth": "Il tuo Maestro del giorno è la Terra: sei il porto sicuro che sostiene e accoglie.",
  "DAY_MASTER_TEXT.fire": "Il tuo Maestro del giorno è il Fuoco: illumini, scaldi e ispiri ovunque tu vada.",
  "DAY_MASTER_TEXT.metal": "Il tuo Maestro del giorno è il Metallo: hai valori saldi, chiarezza e senso di giustizia.",
@@ -611,6 +843,75 @@
  "ICHING.8.name": "La forza domatrice del piccolo",
  "ICHING.9.judgement": "Procedi con cautela e cortesia, anche vicino al pericolo.",
  "ICHING.9.name": "Il procedere",
+ "KARMIC_DEBT_TEXT.13": "Debito 13: imparare il valore dell’impegno costante. Le scorciatoie tendono a fallire; costanza e organizzazione liberano il tuo cammino.",
+ "KARMIC_DEBT_TEXT.14": "Debito 14: imparare a usare la libertà con misura. Equilibrio nei piaceri e impegno nelle scelte portano stabilità.",
+ "KARMIC_DEBT_TEXT.16": "Debito 16: imparare a ricostruire l’ego con umiltà. I cambiamenti improvvisi ti invitano a lasciare le illusioni e a trovare una base più vera.",
+ "KARMIC_DEBT_TEXT.19": "Debito 19: imparare a bilanciare indipendenza e collaborazione. Chiedere aiuto e considerare gli altri rende la tua forza ancora più grande.",
+ "KARMIC_LESSON_TEXT.1": "Sviluppare iniziativa e fiducia per agire da solo/a.",
+ "KARMIC_LESSON_TEXT.2": "Coltivare pazienza, cooperazione e attenzione ai dettagli.",
+ "KARMIC_LESSON_TEXT.3": "Liberare l’espressione: parlare, creare e mostrare ciò che senti.",
+ "KARMIC_LESSON_TEXT.4": "Costruire disciplina, organizzazione e costanza.",
+ "KARMIC_LESSON_TEXT.5": "Aprirti al cambiamento e alle nuove esperienze senza paura.",
+ "KARMIC_LESSON_TEXT.6": "Assumerti responsabilità affettive e prenderti cura dei legami.",
+ "KARMIC_LESSON_TEXT.7": "Fidarti della tua intuizione e cercare una conoscenza profonda.",
+ "KARMIC_LESSON_TEXT.8": "Gestire denaro, potere e autorità con equilibrio.",
+ "KARMIC_LESSON_TEXT.9": "Praticare compassione, tolleranza e distacco.",
+ "LEGAL.privacy": [
+  {
+   "title": "In breve",
+   "text": "I tuoi dati di nascita restano sul tuo telefono. Non vendiamo dati e non mostriamo pubblicità."
+  },
+  {
+   "title": "Cosa salva l’app",
+   "text": "Il nome, la data, l’ora e la città di nascita che inserisci, le persone che aggiungi in Relazioni, lo storico delle letture e le tue preferenze. Tutto è salvato solo sul tuo dispositivo."
+  },
+  {
+   "title": "Accesso con Google (facoltativo)",
+   "text": "Se accedi con Google, l’app riceve il tuo nome, l’email, la foto e un identificativo dell’account. Questi dati restano sul tuo telefono. L’identificativo dell’account serve solo a collegare l’abbonamento, così funziona anche su un altro dispositivo."
+  },
+  {
+   "title": "Intelligenza artificiale",
+   "text": "Quando usi la Sintesi, «Chiedi all’Oracolo» o i testi di compatibilità con IA, inviamo al nostro server solo risultati calcolati (per esempio «Destino 8, Sole in Capricorno»), la domanda che hai scritto e il tuo nome. Non inviamo mai data, ora o luogo di nascita. Il server usa l’API di Anthropic per scrivere il testo e conserva la risposta in cache fino a 30 giorni, collegata a un identificativo casuale del dispositivo."
+  },
+  {
+   "title": "Abbonamenti",
+   "text": "I pagamenti sono elaborati da Google Play o dall’App Store e gestiti da RevenueCat, che riceve un identificativo dell’acquisto (anonimo, oppure l’identificativo del tuo account Google se hai effettuato l’accesso). Non vediamo mai i dati della tua carta."
+  },
+  {
+   "title": "Notifiche",
+   "text": "Il promemoria giornaliero è programmato sul telefono. Non inviamo notifiche remote e non tracciamo la tua posizione."
+  },
+  {
+   "title": "Eliminare i tuoi dati",
+   "text": "In Menu → Profilo e impostazioni → «Elimina tutti i miei dati», tutto viene cancellato subito dal dispositivo. Per chiedere la cancellazione dei dati conservati sul server (cache dell’IA) o per domande, scrivici all’email di contatto indicata nella pagina dell’app nello store."
+  },
+  {
+   "title": "I tuoi diritti (GDPR e LGPD)",
+   "text": "Puoi chiedere in qualsiasi momento l’accesso, la correzione o la cancellazione dei dati personali tramite l’email di contatto. L’app non è destinata a minori di 13 anni."
+  }
+ ],
+ "LEGAL.terms": [
+  {
+   "title": "Scopo",
+   "text": "Intelligenza Trascendentale offre contenuti di conoscenza di sé e intrattenimento basati su numerologia, tarocchi, astrologia e altre tradizioni simboliche. Le letture non sono previsioni garantite e non sostituiscono consigli medici, psicologici, legali o finanziari."
+  },
+  {
+   "title": "Uso dell’app",
+   "text": "Puoi usare l’app per scopi personali. Non è consentito copiare, rivendere o ridistribuire testi e immagini dell’app, salvo le schede di condivisione pensate per questo."
+  },
+  {
+   "title": "Abbonamento",
+   "text": "Alcune funzioni richiedono un abbonamento. Il prezzo, il periodo e la prova gratuita (se presente) sono mostrati prima dell’acquisto. L’abbonamento si rinnova automaticamente finché non viene annullato nelle impostazioni dello store (Google Play o App Store), almeno 24 ore prima della fine del periodo. I rimborsi seguono le regole dello store."
+  },
+  {
+   "title": "Contenuti con IA",
+   "text": "Alcuni testi sono scritti dall’intelligenza artificiale a partire dai tuoi risultati. Possono contenere imprecisioni e vanno letti come spunto di riflessione, non come verità assoluta."
+  },
+  {
+   "title": "Modifiche",
+   "text": "Possiamo aggiornare l’app e questi termini. Le modifiche importanti saranno comunicate nell’app."
+  }
+ ],
  "LENORMAND.0.meaning": "Notizie in arrivo, movimento e sviluppi rapidi.",
  "LENORMAND.0.name": "Cavaliere",
  "LENORMAND.1.meaning": "Piccola fortuna, un’occasione passeggera; coglila.",
@@ -1439,6 +1740,83 @@
   "name": "Mobile",
   "text": "Tendi ad adattarti, a muoverti tra mondi diversi e a collegarli."
  },
+ "MOON_PHASES": [
+  {
+   "name": "Luna nuova",
+   "tip": "Un buon momento per le intenzioni e gli inizi silenziosi."
+  },
+  {
+   "name": "Luna crescente",
+   "tip": "Fai i primi passi di ciò che hai pianificato."
+  },
+  {
+   "name": "Primo quarto",
+   "tip": "Correggi la rotta e affronta gli ostacoli con decisione."
+  },
+  {
+   "name": "Gibbosa crescente",
+   "tip": "Rifinisci i dettagli: il raccolto è vicino."
+  },
+  {
+   "name": "Luna piena",
+   "tip": "Emozioni a fior di pelle; festeggia e osserva ciò che si è rivelato."
+  },
+  {
+   "name": "Gibbosa calante",
+   "tip": "Condividi ciò che hai imparato e ringrazia."
+  },
+  {
+   "name": "Ultimo quarto",
+   "tip": "È il momento di lasciar andare, ripulire e riorganizzare."
+  },
+  {
+   "name": "Luna balsamica",
+   "tip": "Riposa e prepara il terreno per il prossimo ciclo."
+  }
+ ],
+ "MOON_PHASE_DEEP": [
+  {
+   "text": "La Luna è tra la Terra e il Sole, invisibile nel cielo. È il punto zero del ciclo: energia rivolta all’interno, ideale per fare silenzio, sentire e definire ciò che vuoi coltivare nelle prossime quattro settimane.",
+   "ritual": "Scrivi tre intenzioni al presente, come se fossero già reali."
+  },
+  {
+   "text": "Appare il primo filo di luce. L’intenzione comincia a prendere forma, ma è ancora fragile: ha bisogno di protezione, costanza e piccoli passi quotidiani.",
+   "ritual": "Scegli un’azione di 10 minuti da iniziare oggi."
+  },
+  {
+   "text": "Metà della Luna è illuminata: è la prima prova del ciclo. Compaiono ostacoli che chiedono decisioni e correzioni di rotta. Qui la tensione è motore, non un motivo per arrendersi.",
+   "ritual": "Annota un ostacolo e una decisione che libera la strada."
+  },
+  {
+   "text": "La luce cresce quasi al massimo. È la fase per rifinire, correggere i dettagli e fidarsi del processo. Il raccolto è vicino; la fretta può ostacolare.",
+   "ritual": "Rivedi un progetto e migliora un dettaglio che nessuno vede."
+  },
+  {
+   "text": "La Luna è opposta al Sole, completamente illuminata. Le emozioni si intensificano e ciò che era nascosto viene alla luce. È il culmine del ciclo: tempo di festeggiare, vedere i risultati e riconoscere ciò che deve cambiare.",
+   "ritual": "Ringrazia per un traguardo e osserva cosa ti ha fatto perdere l’equilibrio."
+  },
+  {
+   "text": "La luce comincia a diminuire. È la fase per condividere ciò che hai imparato, insegnare, restituire e ringraziare chi ti ha aiutato lungo il cammino.",
+   "ritual": "Racconta a qualcuno una cosa che hai imparato questo mese."
+  },
+  {
+   "text": "Metà della Luna illuminata, ora calante. Un momento di presa di coscienza: rivedere le abitudini, tagliare gli eccessi e riordinare le priorità prima del prossimo ciclo.",
+   "ritual": "Scegli un’abitudine, un oggetto o un impegno da lasciar andare."
+  },
+  {
+   "text": "L’ultimo filo di luce prima della Luna nuova. Una fase di riposo, resa e guarigione. Corpo e mente chiedono una pausa perché il prossimo inizio arrivi pulito.",
+   "ritual": "Vai a letto prima e fai un piccolo riordino in casa."
+  }
+ ],
+ "NOTIFICATION_LINES": [
+  "Il cielo di oggi ha un messaggio solo per te.",
+  "La tua carta del giorno è coperta e ti aspetta.",
+  "Oggi un numero parla alla tua storia.",
+  "La Luna ha cambiato umore. E tu?",
+  "C’è una nuova energia nella tua giornata. Vieni a vedere.",
+  "Il tuo angelo del giorno è arrivato.",
+  "Una domanda per oggi: cosa lascerai andare?"
+ ],
  "NUMBERS.1": {
   "title": "Il Pioniere",
   "keywords": [
@@ -1619,6 +1997,96 @@
   "love": "In amore sei romantico/a e generoso/a. Hai bisogno di qualcuno che condivida i tuoi valori e ideali.",
   "work": "Rendi al meglio nelle cause sociali, nelle arti, nell’educazione, nella salute, nella spiritualità e nei lavori con uno scopo."
  },
+ "PERSONAL_DAY.1": {
+  "title": "Un giorno di inizi",
+  "text": "Il giorno personale 1 apre un piccolo ciclo. L’energia favorisce l’iniziativa, le decisioni rapide e il prendere in mano ciò che è tuo. Ciò che metti in moto oggi tende a prendere slancio nei giorni successivi.",
+  "favors": "Avviare progetti, presentarti, decidere, provare qualcosa di nuovo.",
+  "avoid": "Aspettare l’approvazione di tutti o rimandare il primo passo."
+ },
+ "PERSONAL_DAY.2": {
+  "title": "Un giorno di collaborazione",
+  "text": "Il giorno personale 2 chiede delicatezza. Le risposte arrivano dall’ascolto, dalla cooperazione e dai dettagli. È un giorno più ricettivo: la forza sta nell’accogliere, nel negoziare e nell’aspettare il momento giusto.",
+  "favors": "Conversazioni sincere, accordi, lavoro in coppia, prendersi cura di qualcuno.",
+  "avoid": "Forzare i risultati, scontri diretti e decisioni affrettate."
+ },
+ "PERSONAL_DAY.3": {
+  "title": "Un giorno di espressione",
+  "text": "Il giorno personale 3 è leggero, creativo e sociale. La tua voce trova spazio: scrivere, parlare, pubblicare, incontrare persone. La gioia funziona come strategia e apre porte che la serietà non apre.",
+  "favors": "Creare, comunicare, vedere amici, condividere un’idea.",
+  "avoid": "Disperdere l’energia su troppi fronti o parlare senza pensare."
+ },
+ "PERSONAL_DAY.4": {
+  "title": "Un giorno di costruzione",
+  "text": "Il giorno personale 4 chiede concentrazione e metodo. È il giorno per mettere ordine: organizzare l’agenda, sbrigare ciò che è in sospeso e fare passi concreti. Piccoli compiti fatti bene oggi diventano una base solida domani.",
+  "favors": "Pianificare, organizzare, prenderti cura del corpo, delle finanze e delle cose pratiche.",
+  "avoid": "Scorciatoie, improvvisazioni rischiose e rigidità con gli altri."
+ },
+ "PERSONAL_DAY.5": {
+  "title": "Un giorno di movimento",
+  "text": "Il giorno personale 5 porta cambiamento, curiosità e imprevisti. La routine chiede una pausa: qualcosa di nuovo vuole entrare. La flessibilità è la tua risorsa migliore, e una sorpresa può diventare un’opportunità.",
+  "favors": "Sperimentare, viaggiare, cambiare ambiente, conoscere persone e idee.",
+  "avoid": "Eccessi, impulsività e promettere ciò che non puoi mantenere."
+ },
+ "PERSONAL_DAY.6": {
+  "title": "Un giorno di affetto",
+  "text": "Il giorno personale 6 ruota attorno all’amore, alla casa e alla responsabilità verso chi conta. È un giorno per prendersi cura e lasciarsi curare, armonizzare gli spazi e risolvere questioni affettive.",
+  "favors": "Famiglia, relazioni, bellezza, casa, gesti di cura.",
+  "avoid": "Voler controllare gli altri o portare il peso di tutti."
+ },
+ "PERSONAL_DAY.7": {
+  "title": "Un giorno di introspezione",
+  "text": "Il giorno personale 7 invita al silenzio. La mente si fa più profonda e l’intuizione più chiara. È un ottimo giorno per studiare, meditare e capire qualcosa dall’interno, non per esporsi o correre.",
+  "favors": "Studio, meditazione, terapia, natura, momenti da solo/a.",
+  "avoid": "Agenda piena, discussioni e decidere secondo la logica di altri."
+ },
+ "PERSONAL_DAY.8": {
+  "title": "Un giorno di realizzazione",
+  "text": "Il giorno personale 8 porta forza per risultati concreti. Denaro, carriera e decisioni importanti sono in primo piano. È il giorno per farti valere con autorità e raccogliere ciò che hai seminato con impegno.",
+  "favors": "Negoziare, riscuotere, investire, guidare, prendere decisioni importanti.",
+  "avoid": "Arroganza, spese impulsive e misurare tutto solo dal risultato."
+ },
+ "PERSONAL_DAY.9": {
+  "title": "Un giorno di chiusura",
+  "text": "Il giorno personale 9 chiude il piccolo ciclo. È il momento di concludere, perdonare, donare e fare spazio. Ciò che ha svolto il suo ruolo può andarsene con gratitudine, perché qualcosa di nuovo arrivi al prossimo giorno 1.",
+  "favors": "Finire compiti, lasciar andare, aiutare qualcuno, ringraziare.",
+  "avoid": "Iniziare grandi progetti o aggrapparti a ciò che è finito."
+ },
+ "PERSONAL_YEAR.1": {
+  "title": "Un anno di nuovi inizi",
+  "text": "Comincia un nuovo ciclo di 9 anni. È il momento di seminare, prendere l’iniziativa e scegliere la direzione dei prossimi anni. Ciò che inizi ora tende a prendere forza."
+ },
+ "PERSONAL_YEAR.2": {
+  "title": "Un anno di collaborazione",
+  "text": "Un anno più lento, di pazienza e cooperazione. I semi dell’anno scorso crescono in silenzio. Relazioni, accordi e ascolto sono in primo piano."
+ },
+ "PERSONAL_YEAR.3": {
+  "title": "Un anno di espressione",
+  "text": "Un anno per farti vedere, creare e divertirti. Comunicazione, vita sociale e creatività sono in alto. Attenzione solo a non disperderti."
+ },
+ "PERSONAL_YEAR.4": {
+  "title": "Un anno di costruzione",
+  "text": "Un anno di lavoro, organizzazione e basi solide. L’impegno di oggi diventa la struttura di domani. Routine e disciplina sono alleate."
+ },
+ "PERSONAL_YEAR.5": {
+  "title": "Un anno di cambiamenti",
+  "text": "Un anno di movimento, novità e libertà. Possono arrivare viaggi, cambiamenti e opportunità inattese. La parola chiave è flessibilità."
+ },
+ "PERSONAL_YEAR.6": {
+  "title": "Un anno del cuore",
+  "text": "Un anno dedicato all’amore, alla famiglia e alle responsabilità affettive. Casa, relazioni e cura hanno la priorità. Un buon momento per portare armonia."
+ },
+ "PERSONAL_YEAR.7": {
+  "title": "Un anno di introspezione",
+  "text": "Un anno per guardarti dentro, studiare e riflettere. Meno azione esterna, più comprensione. Il silenzio e la conoscenza di sé portano risposte."
+ },
+ "PERSONAL_YEAR.8": {
+  "title": "Un anno di raccolto",
+  "text": "Un anno di risultati, riconoscimenti e decisioni importanti. Lavoro e finanze sono in primo piano. Usa la tua forza con equilibrio."
+ },
+ "PERSONAL_YEAR.9": {
+  "title": "Un anno di chiusura",
+  "text": "Il ciclo di 9 anni si completa. È il momento di concludere, perdonare e lasciar andare ciò che non serve più, facendo spazio al nuovo inizio del prossimo anno."
+ },
  "PLANETS_TEXT.asc": {
   "name": "Ascendente",
   "function": "come ti presenti e come vieni percepito/a a prima vista"
@@ -1764,6 +2232,60 @@
  "RUNES_TEXT.wunjo.name": "Wunjo",
  "RUNES_TEXT.wunjo.reversed": "Scoraggiamento passeggero; cerca ciò che ti dà gioia.",
  "RUNES_TEXT.wunjo.upright": "Gioia, armonia e realizzazione.",
+ "SEPTENIOS": [
+  {
+   "title": "Il corpo",
+   "text": "Formazione del corpo e fiducia nel mondo."
+  },
+  {
+   "title": "I sentimenti",
+   "text": "Immaginazione, affetto e scoperta della bellezza."
+  },
+  {
+   "title": "La mente",
+   "text": "Adolescenza: identità, ideali e domande."
+  },
+  {
+   "title": "Le scelte",
+   "text": "Provare strade, amori e professioni."
+  },
+  {
+   "title": "La costruzione",
+   "text": "Impegnarsi nelle scelte e assumersi responsabilità."
+  },
+  {
+   "title": "La consapevolezza",
+   "text": "Una crisi di senso: rivedere valori e scopo."
+  },
+  {
+   "title": "L’autenticità",
+   "text": "Vivere l’essenziale, con più verità."
+  },
+  {
+   "title": "La saggezza",
+   "text": "Raccogliere, condividere e guidare."
+  },
+  {
+   "title": "L’eredità",
+   "text": "Trasmettere l’esperienza e curare ciò che resta."
+  },
+  {
+   "title": "La serenità",
+   "text": "Contemplazione e libertà interiore."
+  },
+  {
+   "title": "L’essenza",
+   "text": "Gratitudine e legame con l’eterno."
+  },
+  {
+   "title": "La pienezza",
+   "text": "Integrare una vita intera."
+  },
+  {
+   "title": "La luce",
+   "text": "Presenza, memoria e benedizione."
+  }
+ ],
  "SIGNS_TEXT.aquarius": {
   "name": "Acquario",
   "keywords": [
@@ -1943,5 +2465,93 @@
   "cups": "emozioni e affetti",
   "swords": "mente e decisioni",
   "pentacles": "corpo, lavoro e denaro"
+ },
+ "SYNASTRY_PAIRS": {
+  "sun-moon": "Sole e Luna si incontrano: uno capisce naturalmente i bisogni dell’altro.",
+  "venus-mars": "Venere e Marte: attrazione, chimica e desiderio reciproco.",
+  "moon-moon": "Lune in sintonia: conforto emotivo e senso di casa.",
+  "mercury-mercury": "Menti in sintonia: conversazione facile e buone idee insieme.",
+  "venus-venus": "Gusti e valori simili rendono piacevole la vita insieme.",
+  "sun-sun": "Essenze che si riconoscono e si rafforzano.",
+  "saturn": "Saturno porta impegno e serietà, e a volte pressione.",
+  "jupiter": "Giove porta generosità, crescita e ottimismo nella relazione.",
+  "mars-mars": "Energie che si attivano a vicenda: dinamiche, a volte competitive.",
+  "node": "Un legame che sembra avere uno scopo, quasi scritto nel destino.",
+  "default": "Una connessione che attiva {a} e {b}."
+ },
+ "TRAITS_TEXT.ambition": {
+  "label": "ambizione",
+  "gift": "Hai visione e forza per raggiungere grandi obiettivi.",
+  "shadow": "Il successo è uno strumento, non la misura del tuo valore."
+ },
+ "TRAITS_TEXT.care": {
+  "label": "cura",
+  "gift": "Accogli, proteggi e fai sentire le persone a casa.",
+  "shadow": "Mettiti nella lista di chi merita cura."
+ },
+ "TRAITS_TEXT.communication": {
+  "label": "comunicazione",
+  "gift": "Parole e idee sono i tuoi grandi strumenti.",
+  "shadow": "Concentrazione: scegli poche idee e portale a termine."
+ },
+ "TRAITS_TEXT.compassion": {
+  "label": "compassione",
+  "gift": "Il tuo cuore è generoso e guarda gli altri con amore.",
+  "shadow": "Dare include anche ricevere; rispetta i tuoi limiti."
+ },
+ "TRAITS_TEXT.creativity": {
+  "label": "creatività",
+  "gift": "Crei, inventi e trasformi le idee in qualcosa di nuovo.",
+  "shadow": "Finisci ciò che inizi perché il tuo talento prenda forma."
+ },
+ "TRAITS_TEXT.freedom": {
+  "label": "libertà",
+  "gift": "Hai bisogno di spazio e porti rinnovamento ovunque vai.",
+  "shadow": "Libertà con una direzione: scegli impegni che ti espandono."
+ },
+ "TRAITS_TEXT.harmony": {
+  "label": "armonia",
+  "gift": "Unisci le persone e trovi il punto di equilibrio.",
+  "shadow": "La vera pace include dire ciò che senti."
+ },
+ "TRAITS_TEXT.introspection": {
+  "label": "introspezione",
+  "gift": "Vedi in profondità e trovi risposte nel silenzio.",
+  "shadow": "Condividi ciò che scopri; non isolarti troppo."
+ },
+ "TRAITS_TEXT.intuition": {
+  "label": "intuizione",
+  "gift": "Sai prima di sapere: il tuo istinto è affilato.",
+  "shadow": "Verifica i fatti prima di decidere."
+ },
+ "TRAITS_TEXT.leadership": {
+  "label": "leadership",
+  "gift": "Tendi a prendere l’iniziativa e a mettere le cose in movimento.",
+  "shadow": "Attenzione all’impazienza e alla voglia di controllare tutto."
+ },
+ "TRAITS_TEXT.sensitivity": {
+  "label": "sensibilità",
+  "gift": "Cogli le sfumature e senti ciò che sentono gli altri.",
+  "shadow": "Proteggi la tua energia: non tutto ciò che senti è tuo."
+ },
+ "TRAITS_TEXT.stability": {
+  "label": "stabilità",
+  "gift": "Costruisci basi solide e trasmetti fiducia.",
+  "shadow": "Anche la flessibilità è forza; fai spazio al nuovo."
+ },
+ "TRANSIT_THEMES": {
+  "jupiter": "espansione, opportunità e ottimismo",
+  "saturn": "maturazione, responsabilità e struttura",
+  "uranus": "cambiamenti inattesi e liberazione",
+  "neptune": "ispirazione, sensibilità e sogni",
+  "pluto": "trasformazione profonda e rinascita",
+  "saturnReturn": "Ritorno di Saturno: un rito di passaggio verso la maturità. È il momento di rivedere le scelte e costruire con più verità.",
+  "jupiterSun": "Giove sul tuo Sole: una fase di crescita, fiducia e buone opportunità.",
+  "mercuryRetro": "Mercurio retrogrado: rivedere, rileggere, ricollegarsi. Evita decisioni affrettate e controlla contratti e messaggi.",
+  "venusRetro": "Venere retrograda: si rivalutano affetti e valori. Vecchi amori e gusti possono tornare a galla.",
+  "marsRetro": "Marte retrogrado: energia rivolta all’interno. Utile per rivedere le strategie prima di agire.",
+  "solarEclipse": "Eclissi solare: un portale di nuovi inizi.",
+  "lunarEclipse": "Eclissi lunare: culmine e rivelazioni emotive.",
+  "sensitive": "Tocca un punto sensibile del tuo tema ({point})."
  }
 }

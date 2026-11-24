@@ -11,5 +11,8 @@ export const CONFIG = {
   /** Client ID do tipo "Aplicativo da Web" no Google Cloud (usado pelo login com Google). */
   googleWebClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID ?? '',
   googleIosClientId: process.env.EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID ?? '',
+  /** E-mail de contato mostrado no Menu (vazio = esconde a opção). */
+  supportEmail: process.env.EXPO_PUBLIC_SUPPORT_EMAIL ?? '',
+  privacyUrl: process.env.EXPO_PUBLIC_PRIVACY_URL ?? 'https://musictranscendente-cyber.github.io/inteligencia-transcendental/privacy.html',
   meditationAppUrl: process.env.EXPO_PUBLIC_MEDITATION_APP_URL ?? '',
 };

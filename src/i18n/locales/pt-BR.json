@@ -767,5 +767,28 @@
     "hint": "Entre com sua conta Google para manter sua assinatura em qualquer celular.",
     "error": "Não foi possível entrar com o Google. Tente de novo.",
     "welcome": "Olá, {{name}}! Agora só faltam seus dados de nascimento."
+  },
+  "menu": {
+    "tab": "Menu",
+    "title": "Menu",
+    "profile": "Perfil e ajustes",
+    "profileHint": "Dados de nascimento, aparência, lembretes",
+    "language": "Idioma",
+    "subscription": "Assinatura",
+    "library": "Biblioteca",
+    "history": "Histórico do oráculo",
+    "wrapped": "Retrospectiva do ano",
+    "account": "Minha conta",
+    "explore": "Explorar",
+    "about": "Sobre",
+    "shareApp": "Indicar o app para alguém",
+    "shareMessage": "Estou usando o {{app}} para me conhecer melhor: numerologia, tarô e astrologia numa só leitura. {{url}}",
+    "rate": "Avaliar na Play Store",
+    "contact": "Fale conosco",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "version": "Versão {{version}}",
+    "updated": "Atualizado em {{date}}",
+    "languageHint": "O app inteiro muda para o idioma escolhido."
   }
 }

@@ -767,5 +767,28 @@
     "hint": "Sign in with your Google account to keep your subscription on any phone.",
     "error": "Could not sign in with Google. Please try again.",
     "welcome": "Hi, {{name}}! Now we just need your birth details."
+  },
+  "menu": {
+    "tab": "Menu",
+    "title": "Menu",
+    "profile": "Profile and settings",
+    "profileHint": "Birth details, appearance, reminders",
+    "language": "Language",
+    "subscription": "Subscription",
+    "library": "Library",
+    "history": "Oracle history",
+    "wrapped": "Year in review",
+    "account": "My account",
+    "explore": "Explore",
+    "about": "About",
+    "shareApp": "Recommend the app",
+    "shareMessage": "I am using {{app}} to know myself better: numerology, tarot and astrology in one reading. {{url}}",
+    "rate": "Rate on Google Play",
+    "contact": "Contact us",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "version": "Version {{version}}",
+    "updated": "Updated on {{date}}",
+    "languageHint": "The whole app switches to the language you choose."
   }
 }

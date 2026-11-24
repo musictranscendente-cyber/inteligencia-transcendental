@@ -167,3 +167,13 @@ export function ChevronIcon(p: IconProps) {
     </Base>
   );
 }
+
+/** Menu: três linhas com uma estrela. */
+export function MenuIcon(p: IconProps) {
+  return (
+    <Base {...p}>
+      <Path d="M4 7h11M4 12h16M4 17h16" />
+      <Path d="M19 4.5c.2 1.3.5 1.6 1.8 1.8-1.3.2-1.6.5-1.8 1.8-.2-1.3-.5-1.6-1.8-1.8 1.3-.2 1.6-.5 1.8-1.8z" />
+    </Base>
+  );
+}

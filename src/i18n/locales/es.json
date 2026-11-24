@@ -767,5 +767,28 @@
     "hint": "Entra con tu cuenta de Google para mantener tu suscripción en cualquier celular.",
     "error": "No se pudo entrar con Google. Inténtalo de nuevo.",
     "welcome": "¡Hola, {{name}}! Ahora solo faltan tus datos de nacimiento."
+  },
+  "menu": {
+    "tab": "Menú",
+    "title": "Menú",
+    "profile": "Perfil y ajustes",
+    "profileHint": "Datos de nacimiento, apariencia, recordatorios",
+    "language": "Idioma",
+    "subscription": "Suscripción",
+    "library": "Biblioteca",
+    "history": "Historial del oráculo",
+    "wrapped": "Resumen del año",
+    "account": "Mi cuenta",
+    "explore": "Explorar",
+    "about": "Acerca de",
+    "shareApp": "Recomendar la app",
+    "shareMessage": "Estoy usando {{app}} para conocerme mejor: numerología, tarot y astrología en una sola lectura. {{url}}",
+    "rate": "Calificar en Google Play",
+    "contact": "Contáctanos",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "version": "Versión {{version}}",
+    "updated": "Actualizado el {{date}}",
+    "languageHint": "Toda la app cambia al idioma que elijas."
   }
 }

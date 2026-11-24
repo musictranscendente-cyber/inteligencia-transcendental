@@ -206,6 +206,233 @@
   "name": "Holz",
   "text": "Wachstum, Kreativität und Ausdehnung. Es bringt Weitblick und Lust auf Anfänge."
  },
+ "HD_AUTHORITIES.egoManifested": {
+  "name": "Ego (manifestiert)",
+  "text": "Entscheide nach dem, was du wirklich willst und halten kannst. Hör darauf, was aus deinem Mund kommt, wenn du darüber sprichst."
+ },
+ "HD_AUTHORITIES.egoProjected": {
+  "name": "Ego (projiziert)",
+  "text": "Wenn du eingeladen wirst, frag dich: Ist das gut für mich? Dein echter Wunsch ist der Kompass."
+ },
+ "HD_AUTHORITIES.emotional": {
+  "name": "Emotional",
+  "text": "Entscheide nicht im Eifer des Moments. Lass die emotionale Welle vorüberziehen und entscheide mit Klarheit: Zeit ist deine Verbündete."
+ },
+ "HD_AUTHORITIES.lunar": {
+  "name": "Lunar",
+  "text": "Lass dir Zeit: Beobachte einen ganzen Mondzyklus lang, wie du dich mit der Entscheidung fühlst."
+ },
+ "HD_AUTHORITIES.mental": {
+  "name": "Umgebung (mental)",
+  "text": "Du hast keine feste innere Autorität: Sprich mit verschiedenen Menschen und achte auf Orte, an denen du dich wohlfühlst."
+ },
+ "HD_AUTHORITIES.sacral": {
+  "name": "Sakral",
+  "text": "Vertrau deiner Bauchantwort: einem begeisterten „Mhm“ oder einem ablehnenden „Hm-hm“, im gegenwärtigen Moment."
+ },
+ "HD_AUTHORITIES.selfProjected": {
+  "name": "Selbst-projiziert",
+  "text": "Sprich laut mit Menschen, denen du vertraust, und hör dir selbst zu: Deine Identität zeigt die richtige Richtung."
+ },
+ "HD_AUTHORITIES.splenic": {
+  "name": "Milz",
+  "text": "Deine Intuition spricht einmal, leise, im Moment. Hör auf dieses erste Signal von Sicherheit oder Warnung."
+ },
+ "HD_CENTERS.ajna": {
+  "name": "Ajna",
+  "theme": "Verstand und Konzepte",
+  "defined": "Deine Denkweise ist beständig und verlässlich.",
+  "open": "Dein Verstand ist flexibel und sieht viele Perspektiven; du musst dir nicht bei allem sicher sein."
+ },
+ "HD_CENTERS.g": {
+  "name": "G (Identität)",
+  "theme": "Identität, Liebe und Richtung",
+  "defined": "Du hast ein stabiles Gefühl dafür, wer du bist und wohin du gehst.",
+  "open": "Deine Identität ist fließend; die richtigen Orte und Menschen zeigen dir deine Richtung."
+ },
+ "HD_CENTERS.head": {
+  "name": "Kopf",
+  "theme": "Inspiration und Fragen",
+  "defined": "Du hast eine beständige Art, dich inspirieren zu lassen und Fragen zu stellen.",
+  "open": "Du lässt dich von den Ideen anderer inspirieren; achte darauf, keine Fragen zu tragen, die nicht deine sind."
+ },
+ "HD_CENTERS.heart": {
+  "name": "Herz (Ego)",
+  "theme": "Willenskraft und Selbstwert",
+  "defined": "Du hast beständige Willenskraft, um Versprechen zu halten.",
+  "open": "Du musst deinen Wert nicht beweisen; versprich nicht mehr, als deine Energie hergibt."
+ },
+ "HD_CENTERS.root": {
+  "name": "Wurzel",
+  "theme": "Druck und Antrieb",
+  "defined": "Du gehst beständig mit Druck um und hast deinen eigenen Rhythmus.",
+  "open": "Du spürst den Druck der Welt verstärkt; du musst nicht alles sofort lösen."
+ },
+ "HD_CENTERS.sacral": {
+  "name": "Sakral",
+  "theme": "Lebenskraft und Antwort",
+  "defined": "Du hast nachhaltige Energie für das, was dich begeistert.",
+  "open": "Deine Energie ist nicht konstant; erkenne, wann es genug ist, und ruh dich aus, bevor du ausbrennst."
+ },
+ "HD_CENTERS.solarPlexus": {
+  "name": "Solarplexus",
+  "theme": "Gefühle und Wellen",
+  "defined": "Du lebst in emotionalen Wellen; Klarheit kommt mit der Zeit.",
+  "open": "Du spürst die Gefühle anderer intensiv; achte darauf, was deins ist und was aus der Umgebung kommt."
+ },
+ "HD_CENTERS.spleen": {
+  "name": "Milz",
+  "theme": "Intuition, Wohlbefinden und Sicherheit",
+  "defined": "Deine Intuition und dein Sicherheitsgefühl sind beständig.",
+  "open": "Du spürst das Wohlbefinden von Umgebungen; halte nicht an dem fest, was dir nicht mehr dient."
+ },
+ "HD_CENTERS.throat": {
+  "name": "Kehle",
+  "theme": "Ausdruck und Manifestation",
+  "defined": "Du hast eine beständige Stimme und Ausdrucksweise.",
+  "open": "Dein Ausdruck ändert sich mit der Umgebung; erzwinge nicht, gehört zu werden, der richtige Moment kommt."
+ },
+ "HD_CROSS_ANGLES.juxtaposition": "Juxtaposition: Deine Bestimmung ist ein fester, sehr spezieller Weg.",
+ "HD_CROSS_ANGLES.left": "Linkswinkel: Deine Bestimmung entfaltet sich durch Begegnungen mit anderen Menschen.",
+ "HD_CROSS_ANGLES.right": "Rechtswinkel: Deine Bestimmung entfaltet sich vor allem auf deinem eigenen Weg.",
+ "HD_DEFINITIONS.none": "Keine Definition",
+ "HD_DEFINITIONS.quadrupleSplit": "Vierfach geteilt: Du brauchst Zeit, um alles zu integrieren.",
+ "HD_DEFINITIONS.single": "Einfache Definition: Du verarbeitest das Leben ganzheitlich und unabhängig.",
+ "HD_DEFINITIONS.split": "Geteilte Definition: Andere Menschen helfen, deine Teile zu verbinden.",
+ "HD_DEFINITIONS.tripleSplit": "Dreifach geteilt: Abwechslungsreiche Umgebungen und viele Menschen tun dir gut.",
+ "HD_GATES": [
+  "",
+  "Selbstausdruck",
+  "Richtung des Selbst",
+  "Ordnung",
+  "Formulierung",
+  "Feste Rhythmen",
+  "Reibung",
+  "Die Rolle des Selbst",
+  "Beitrag",
+  "Fokus",
+  "Verhalten des Selbst",
+  "Ideen",
+  "Vorsicht",
+  "Der Zuhörer",
+  "Kraftvolle Fähigkeiten",
+  "Extreme",
+  "Fähigkeiten",
+  "Meinungen",
+  "Korrektur",
+  "Wollen",
+  "Das Jetzt",
+  "Der Jäger",
+  "Offenheit",
+  "Assimilation",
+  "Rationalisierung",
+  "Geist des Selbst",
+  "Der Egoist",
+  "Fürsorge",
+  "Der Spieler",
+  "Beharrlichkeit",
+  "Anerkennung der Gefühle",
+  "Einfluss",
+  "Kontinuität",
+  "Rückzug",
+  "Kraft",
+  "Wandel",
+  "Krise",
+  "Freundschaft",
+  "Der Kämpfer",
+  "Provokation",
+  "Alleinsein",
+  "Kontraktion",
+  "Wachstum",
+  "Einsicht",
+  "Wachsamkeit",
+  "Der Sammler",
+  "Bestimmung des Selbst",
+  "Erkenntnis",
+  "Tiefe",
+  "Prinzipien",
+  "Werte",
+  "Schock",
+  "Stille",
+  "Anfänge",
+  "Ehrgeiz",
+  "Geist",
+  "Anregung",
+  "Intuitive Klarheit",
+  "Lebenskraft",
+  "Intimität",
+  "Annahme",
+  "Geheimnis",
+  "Detail",
+  "Zweifel",
+  "Verwirrung"
+ ],
+ "HD_LINES": [
+  {
+   "name": "Forscher",
+   "text": "braucht solide Grundlagen und Studium, um sich sicher zu fühlen"
+  },
+  {
+   "name": "Eremit",
+   "text": "hat natürliche Gaben und braucht Zeit allein, bis er gerufen wird"
+  },
+  {
+   "name": "Märtyrer",
+   "text": "lernt durch Versuch und Irrtum und entdeckt, was funktioniert"
+  },
+  {
+   "name": "Opportunist",
+   "text": "wächst durch ein Netz aus Beziehungen und Freunden"
+  },
+  {
+   "name": "Ketzer",
+   "text": "wird als jemand gesehen, der anderen praktische Lösungen bringt"
+  },
+  {
+   "name": "Rollenvorbild",
+   "text": "lebt in drei Phasen und wird zu einem Vorbild an Weisheit"
+  }
+ ],
+ "HD_TYPES.generator": {
+  "name": "Generator",
+  "summary": "Deine Lebenskraft baut die Welt, wenn du liebst, was du tust.",
+  "strategy": "Warten, um zu antworten",
+  "signature": "Zufriedenheit",
+  "notSelf": "Frustration",
+  "text": "Generatoren (etwa 37 %) haben ein definiertes Sakralzentrum: eine nachhaltige Energiequelle für Arbeit, die sie lieben. Wenn sie auf das Leben antworten, statt es zu erzwingen, finden sie Zufriedenheit und Meisterschaft."
+ },
+ "HD_TYPES.manifestingGenerator": {
+  "name": "Manifestierender Generator",
+  "summary": "Multitasking-Energie: Du antwortest schnell und überspringst Schritte.",
+  "strategy": "Warten, um zu antworten, dann informieren",
+  "signature": "Zufriedenheit",
+  "notSelf": "Frustration und Wut",
+  "text": "Manifestierende Generatoren (etwa 33 %) verbinden sakrale Energie mit der Fähigkeit, schnell zu handeln. Sie haben oft viele Interessen und finden Abkürzungen. Erst antworten und dann informieren erspart unnötige Neuanfänge."
+ },
+ "HD_TYPES.manifestor": {
+  "name": "Manifestor",
+  "summary": "Du bist gekommen, um anzustoßen und Wege zu öffnen.",
+  "strategy": "Informieren, bevor du handelst",
+  "signature": "Frieden",
+  "notSelf": "Wut",
+  "text": "Manifestoren (etwa 9 % der Menschen) haben die Energie, Dinge anzustoßen, ohne auf eine Einladung zu warten. Deine Wirkung ist groß; andere vor dem Handeln zu informieren, verringert Widerstand und bringt den Frieden, den du suchst."
+ },
+ "HD_TYPES.projector": {
+  "name": "Projektor",
+  "summary": "Du siehst andere klar und bist gekommen, um zu leiten.",
+  "strategy": "Auf die Einladung warten",
+  "signature": "Erfolg",
+  "notSelf": "Bitterkeit",
+  "text": "Projektoren (etwa 20 %) haben kein definiertes Sakralzentrum und arbeiten am besten, wenn sie die Energie anderer leiten und lenken. Werden sie erkannt und eingeladen, wird ihre Weisheit genutzt, und der Erfolg folgt."
+ },
+ "HD_TYPES.reflector": {
+  "name": "Reflektor",
+  "summary": "Du bist der Spiegel der Gemeinschaft: selten und feinfühlig.",
+  "strategy": "Für große Entscheidungen einen Mondzyklus (28 Tage) warten",
+  "signature": "Überraschung",
+  "notSelf": "Enttäuschung",
+  "text": "Reflektoren (etwa 1 %) haben alle Zentren offen. Sie nehmen ihre Umgebung auf und spiegeln sie und zeigen so, wie es der Gruppe geht. Der richtige Ort und die richtigen Menschen machen für dich den ganzen Unterschied."
+ },
  "HOUSES_TEXT": [
   {
    "name": "1. Haus",

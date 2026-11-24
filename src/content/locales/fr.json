@@ -206,6 +206,233 @@
   "name": "Bois",
   "text": "Croissance, créativité et expansion. Il apporte la vision et l’envie de commencer."
  },
+ "HD_AUTHORITIES.egoManifested": {
+  "name": "Ego manifesté",
+  "text": "Décide selon ce que tu veux vraiment et peux tenir. Écoute ce qui sort de ta bouche quand tu en parles."
+ },
+ "HD_AUTHORITIES.egoProjected": {
+  "name": "Ego projeté",
+  "text": "Quand tu es invité(e), demande-toi : est-ce bon pour moi ? Ton désir véritable est la boussole."
+ },
+ "HD_AUTHORITIES.emotional": {
+  "name": "Émotionnelle",
+  "text": "Ne décide pas sur le coup. Laisse passer la vague émotionnelle et décide avec clarté : le temps est ton allié."
+ },
+ "HD_AUTHORITIES.lunar": {
+  "name": "Lunaire",
+  "text": "Donne-toi du temps : observe ce que tu ressens face à la décision pendant un cycle lunaire complet."
+ },
+ "HD_AUTHORITIES.mental": {
+  "name": "Environnementale (mentale)",
+  "text": "Tu n’as pas d’autorité intérieure fixe : parle avec différentes personnes et observe les lieux où tu te sens bien."
+ },
+ "HD_AUTHORITIES.sacral": {
+  "name": "Sacrale",
+  "text": "Fais confiance à ta réponse viscérale : un « hmm-hmm » enthousiaste ou un « hm-hm » de refus, dans l’instant présent."
+ },
+ "HD_AUTHORITIES.selfProjected": {
+  "name": "Soi projeté",
+  "text": "Parle à voix haute avec des personnes de confiance et écoute-toi : ton identité révèle la bonne direction."
+ },
+ "HD_AUTHORITIES.splenic": {
+  "name": "Splénique",
+  "text": "Ton intuition parle une seule fois, doucement, dans l’instant. Écoute ce premier signal de sécurité ou d’alerte."
+ },
+ "HD_CENTERS.ajna": {
+  "name": "Ajna",
+  "theme": "mental et concepts",
+  "defined": "Ta façon de penser est constante et fiable.",
+  "open": "Ton esprit est souple et voit de nombreuses perspectives ; tu n’as pas besoin d’être sûr(e) de tout."
+ },
+ "HD_CENTERS.g": {
+  "name": "G (Identité)",
+  "theme": "identité, amour et direction",
+  "defined": "Tu as un sens stable de qui tu es et d’où tu vas.",
+  "open": "Ton identité est fluide ; les bons lieux et les bonnes personnes révèlent ta direction."
+ },
+ "HD_CENTERS.head": {
+  "name": "Tête",
+  "theme": "inspiration et questions",
+  "defined": "Tu as une façon constante de t’inspirer et de te poser des questions.",
+  "open": "Tu t’inspires des idées des autres ; veille à ne pas porter des questions qui ne sont pas les tiennes."
+ },
+ "HD_CENTERS.heart": {
+  "name": "Cœur (Ego)",
+  "theme": "volonté et valeur",
+  "defined": "Tu as une volonté constante pour tenir tes promesses.",
+  "open": "Tu n’as pas besoin de prouver ta valeur ; évite de promettre au-delà de ton énergie."
+ },
+ "HD_CENTERS.root": {
+  "name": "Racine",
+  "theme": "pression et élan",
+  "defined": "Tu gères la pression avec constance et tu as ton propre rythme.",
+  "open": "Tu ressens la pression du monde amplifiée ; tu n’as pas besoin de te presser pour tout résoudre."
+ },
+ "HD_CENTERS.sacral": {
+  "name": "Sacral",
+  "theme": "force vitale et réponse",
+  "defined": "Tu as une énergie durable pour ce qui t’enthousiasme.",
+  "open": "Ton énergie n’est pas constante ; sache quand c’est assez et repose-toi avant de t’épuiser."
+ },
+ "HD_CENTERS.solarPlexus": {
+  "name": "Plexus solaire",
+  "theme": "émotions et vagues",
+  "defined": "Tu vis par vagues émotionnelles ; la clarté vient avec le temps.",
+  "open": "Tu ressens intensément les émotions des autres ; observe ce qui est à toi et ce qui vient de l’environnement."
+ },
+ "HD_CENTERS.spleen": {
+  "name": "Rate",
+  "theme": "intuition, bien-être et sécurité",
+  "defined": "Ton intuition et ton sentiment de sécurité sont constants.",
+  "open": "Tu perçois le bien-être des lieux ; veille à ne pas t’accrocher à ce qui ne te sert plus."
+ },
+ "HD_CENTERS.throat": {
+  "name": "Gorge",
+  "theme": "expression et manifestation",
+  "defined": "Tu as une voix et une façon de t’exprimer constantes.",
+  "open": "Ton expression varie selon l’environnement ; ne force pas pour être entendu(e), le bon moment vient."
+ },
+ "HD_CROSS_ANGLES.juxtaposition": "Juxtaposition : ton but est un chemin fixe et très spécifique.",
+ "HD_CROSS_ANGLES.left": "Angle gauche : ton but se déploie à travers les rencontres avec les autres.",
+ "HD_CROSS_ANGLES.right": "Angle droit : ton but se déploie surtout à travers ton propre parcours.",
+ "HD_DEFINITIONS.none": "Sans définition",
+ "HD_DEFINITIONS.quadrupleSplit": "Quadruple division : tu as besoin de temps pour tout intégrer.",
+ "HD_DEFINITIONS.single": "Définition simple : tu vis la vie de façon intégrée et indépendante.",
+ "HD_DEFINITIONS.split": "Définition divisée : d’autres personnes aident à relier tes parties.",
+ "HD_DEFINITIONS.tripleSplit": "Triple division : des environnements variés et beaucoup de monde te font du bien.",
+ "HD_GATES": [
+  "",
+  "Expression de soi",
+  "Direction du soi",
+  "Mise en ordre",
+  "Formulation",
+  "Rythmes fixes",
+  "Friction",
+  "Le rôle du soi",
+  "Contribution",
+  "Concentration",
+  "Comportement du soi",
+  "Idées",
+  "Prudence",
+  "L’écoute",
+  "Compétences de pouvoir",
+  "Extrêmes",
+  "Compétences",
+  "Opinions",
+  "Correction",
+  "Désir",
+  "Le maintenant",
+  "Le chasseur",
+  "Ouverture",
+  "Assimilation",
+  "Rationalisation",
+  "Esprit du soi",
+  "L’égoïste",
+  "Le soin",
+  "Le joueur",
+  "Persévérance",
+  "Reconnaissance des sentiments",
+  "Influence",
+  "Continuité",
+  "Intimité",
+  "Puissance",
+  "Changement",
+  "Crise",
+  "Amitié",
+  "Le combattant",
+  "Provocation",
+  "Solitude",
+  "Contraction",
+  "Croissance",
+  "Perspicacité",
+  "Vigilance",
+  "Le rassembleur",
+  "Détermination du soi",
+  "Réalisation",
+  "Profondeur",
+  "Principes",
+  "Valeurs",
+  "Choc",
+  "Immobilité",
+  "Commencements",
+  "Ambition",
+  "Esprit",
+  "Stimulation",
+  "Clarté intuitive",
+  "Vitalité",
+  "Intimité partagée",
+  "Acceptation",
+  "Mystère",
+  "Détail",
+  "Doute",
+  "Confusion"
+ ],
+ "HD_LINES": [
+  {
+   "name": "Investigateur",
+   "text": "a besoin de bases solides et d’étude pour se sentir en sécurité"
+  },
+  {
+   "name": "Ermite",
+   "text": "a des dons naturels et a besoin de solitude jusqu’à être appelé"
+  },
+  {
+   "name": "Martyr",
+   "text": "apprend par essais et erreurs, en découvrant ce qui fonctionne"
+  },
+  {
+   "name": "Opportuniste",
+   "text": "grandit grâce à un réseau de relations et d’amis"
+  },
+  {
+   "name": "Hérétique",
+   "text": "est vu comme quelqu’un qui apporte des solutions pratiques aux autres"
+  },
+  {
+   "name": "Modèle",
+   "text": "vit en trois phases et devient un exemple de sagesse"
+  }
+ ],
+ "HD_TYPES.generator": {
+  "name": "Générateur",
+  "summary": "Ta force vitale construit le monde quand tu aimes ce que tu fais.",
+  "strategy": "Attendre pour répondre",
+  "signature": "Satisfaction",
+  "notSelf": "Frustration",
+  "text": "Les Générateurs (environ 37 %) ont un centre Sacral défini : une source d’énergie durable pour un travail qu’ils aiment. Quand ils répondent à la vie au lieu de la forcer, ils trouvent satisfaction et maîtrise."
+ },
+ "HD_TYPES.manifestingGenerator": {
+  "name": "Générateur-Manifesteur",
+  "summary": "Une énergie multitâche : tu réponds vite et sautes des étapes.",
+  "strategy": "Attendre pour répondre, puis informer",
+  "signature": "Satisfaction",
+  "notSelf": "Frustration et colère",
+  "text": "Les Générateurs-Manifesteurs (environ 33 %) combinent l’énergie sacrale et la capacité d’agir vite. Ils ont souvent de nombreux intérêts et trouvent des raccourcis. Répondre d’abord et informer ensuite évite les recommencements inutiles."
+ },
+ "HD_TYPES.manifestor": {
+  "name": "Manifesteur",
+  "summary": "Tu es venu(e) pour initier et ouvrir des chemins.",
+  "strategy": "Informer avant d’agir",
+  "signature": "Paix",
+  "notSelf": "Colère",
+  "text": "Les Manifesteurs (environ 9 % des gens) ont l’énergie de lancer les choses sans attendre d’invitation. Ton impact est grand ; informer les gens avant d’agir réduit la résistance et apporte la paix que tu cherches."
+ },
+ "HD_TYPES.projector": {
+  "name": "Projecteur",
+  "summary": "Tu vois les autres avec clarté et tu es venu(e) pour guider.",
+  "strategy": "Attendre l’invitation",
+  "signature": "Succès",
+  "notSelf": "Amertume",
+  "text": "Les Projecteurs (environ 20 %) n’ont pas de Sacral défini et travaillent mieux en guidant et en orientant l’énergie des autres. Quand ils sont reconnus et invités, leur sagesse est utilisée et le succès suit."
+ },
+ "HD_TYPES.reflector": {
+  "name": "Réflecteur",
+  "summary": "Tu es le miroir de la communauté : rare et sensible.",
+  "strategy": "Attendre un cycle lunaire (28 jours) pour les grandes décisions",
+  "signature": "Surprise",
+  "notSelf": "Déception",
+  "text": "Les Réflecteurs (environ 1 %) ont tous leurs centres ouverts. Ils absorbent et reflètent leur environnement, montrant la santé du groupe. Le bon lieu et les bonnes personnes font toute la différence pour toi."
+ },
  "HOUSES_TEXT": [
   {
    "name": "Maison 1",

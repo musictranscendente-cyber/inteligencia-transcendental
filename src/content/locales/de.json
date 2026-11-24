@@ -1,4 +1,45 @@
 {
+ "ASPECTS_TEXT.conjunction": {
+  "name": "Konjunktion",
+  "symbol": "☌",
+  "meaning": "verschmelzen ihre Energien und wirken zusammen"
+ },
+ "ASPECTS_TEXT.opposition": {
+  "name": "Opposition",
+  "symbol": "☍",
+  "meaning": "ziehen in entgegengesetzte Richtungen und verlangen Ausgleich"
+ },
+ "ASPECTS_TEXT.sextile": {
+  "name": "Sextil",
+  "symbol": "⚹",
+  "meaning": "öffnen Chancen, wenn du handelst"
+ },
+ "ASPECTS_TEXT.square": {
+  "name": "Quadrat",
+  "symbol": "□",
+  "meaning": "erzeugen Spannung, die Wachstum antreibt"
+ },
+ "ASPECTS_TEXT.trine": {
+  "name": "Trigon",
+  "symbol": "△",
+  "meaning": "fließen leicht und stützen einander"
+ },
+ "ELEMENTS_TEXT.air": {
+  "name": "Luft",
+  "text": "Ideen, Kommunikation und Verbindungen. Viel Luft bringt geistige Beweglichkeit; wenig verlangt mehr Austausch."
+ },
+ "ELEMENTS_TEXT.earth": {
+  "name": "Erde",
+  "text": "Praxissinn, Beständigkeit und Verwirklichung. Viel Erde bringt Stabilität; wenig verlangt mehr Erdung."
+ },
+ "ELEMENTS_TEXT.fire": {
+  "name": "Feuer",
+  "text": "Begeisterung, Mut und Initiative. Viel Feuer bringt Leidenschaft; wenig verlangt mehr Wagemut."
+ },
+ "ELEMENTS_TEXT.water": {
+  "name": "Wasser",
+  "text": "Gefühl, Intuition und Empathie. Viel Wasser bringt Feingefühl; wenig verlangt, mehr auf das Herz zu hören."
+ },
  "MAJOR_ARCANA.0": {
   "name": "Der Narr",
   "keywords": [
@@ -263,6 +304,18 @@
   "reversed": "Zu viel Rückzug oder Flucht vor der Innenschau. Bring Alleinsein und Gesellschaft ins Gleichgewicht.",
   "personal": "Als persönliches Arkanum zeigt der Eremit eine nachdenkliche, weise und unabhängige Seele. Du findest Antworten auf eigene Faust. Deine Herausforderung ist, dich nicht zu verschließen und dein Licht andere leiten zu lassen."
  },
+ "MODALITIES_TEXT.cardinal": {
+  "name": "Kardinal",
+  "text": "Du neigst dazu, Dinge anzustoßen, zu führen und in Bewegung zu bringen."
+ },
+ "MODALITIES_TEXT.fixed": {
+  "name": "Fix",
+  "text": "Du neigst dazu, Dinge zu halten, zu vertiefen und zu Ende zu bringen."
+ },
+ "MODALITIES_TEXT.mutable": {
+  "name": "Veränderlich",
+  "text": "Du neigst dazu, dich anzupassen, dich zu bewegen und verschiedene Welten zu verbinden."
+ },
  "NUMBERS.1": {
   "title": "Der Pionier",
   "keywords": [
@@ -442,5 +495,225 @@
   "challenges": "Mühe mit dem Loslassen, übermäßige Aufopferung und Melancholie.",
   "love": "In der Liebe bist du romantisch und großzügig. Du brauchst jemanden, der deine Werte und Ideale teilt.",
   "work": "Du blühst auf in sozialen Anliegen, Kunst, Bildung, Gesundheit, Spiritualität und sinnstiftender Arbeit."
- }
+ },
+ "PLANETS_TEXT.asc": {
+  "name": "Aszendent",
+  "function": "wie du auftrittst und auf den ersten Blick wirkst"
+ },
+ "PLANETS_TEXT.jupiter": {
+  "name": "Jupiter",
+  "function": "wo du wächst, Glück hast und Sinn findest"
+ },
+ "PLANETS_TEXT.mars": {
+  "name": "Mars",
+  "function": "deine Energie, dein Verlangen und deine Art zu handeln und zu erobern"
+ },
+ "PLANETS_TEXT.mc": {
+  "name": "Medium Coeli",
+  "function": "deine Berufung, Karriere und öffentliches Bild"
+ },
+ "PLANETS_TEXT.mercury": {
+  "name": "Merkur",
+  "function": "wie du denkst, lernst und kommunizierst"
+ },
+ "PLANETS_TEXT.moon": {
+  "name": "Mond",
+  "function": "deine Gefühle, Bedürfnisse und was dir Sicherheit gibt"
+ },
+ "PLANETS_TEXT.neptune": {
+  "name": "Neptun",
+  "function": "deine Träume, Inspiration und spirituelle Feinfühligkeit"
+ },
+ "PLANETS_TEXT.node": {
+  "name": "Mondknoten",
+  "function": "die Wachstumsrichtung deiner Seele in diesem Leben"
+ },
+ "PLANETS_TEXT.pluto": {
+  "name": "Pluto",
+  "function": "wo du dich tief verwandelst und Kraft findest"
+ },
+ "PLANETS_TEXT.saturn": {
+  "name": "Saturn",
+  "function": "deine Lektionen, Pflichten und was mit der Zeit reift"
+ },
+ "PLANETS_TEXT.sun": {
+  "name": "Sonne",
+  "function": "dein Wesen, deine Lebenskraft und was dich strahlen lässt"
+ },
+ "PLANETS_TEXT.uranus": {
+  "name": "Uranus",
+  "function": "wo du Neues wagst, dich befreist und überraschst"
+ },
+ "PLANETS_TEXT.venus": {
+  "name": "Venus",
+  "function": "wie du liebst, was du schätzt und was du schön findest"
+ },
+ "SIGNS_TEXT.aquarius": {
+  "name": "Wassermann",
+  "keywords": [
+   "Originalität",
+   "Freiheit",
+   "Gemeinschaft"
+  ],
+  "summary": "Die erneuernde Luft: originell, frei und menschenfreundlich.",
+  "text": "Der Wassermann ist das Zeichen der Zukunft, der Freundschaft und der Ideen, die das Kollektiv verändern. Er schätzt Echtheit.",
+  "sun": "Dein Wesen ist originell. Du strahlst, wenn du anders denkst, dich für Anliegen einsetzt und Menschen über Ideale verbindest.",
+  "moon": "Du verarbeitest Gefühle mit etwas Abstand und brauchst Freiheit. Freundschaft ist deine Form von Nähe.",
+  "asc": "Du strahlst Echtheit aus. Man sieht dich als anders, freundlich und ein wenig unberechenbar."
+ },
+ "SIGNS_TEXT.aries": {
+  "name": "Widder",
+  "keywords": [
+   "Mut",
+   "Initiative",
+   "Antrieb"
+  ],
+  "summary": "Das Feuer, das startet: direkt, mutig und Vorreiter.",
+  "text": "Der Widder eröffnet den Tierkreis mit Startenergie. Er ist das Zeichen der Tat, des Mutes und der geradlinigen Echtheit.",
+  "sun": "Dein Wesen ist das eines Pioniers: Du strahlst, wenn du vorangehst, schnell entscheidest und Herausforderungen direkt angehst.",
+  "moon": "Deine Gefühle sind schnell und intensiv. Du fühlst dich wohl, wenn du handeln kannst, und brauchst Raum, um ungefiltert Dampf abzulassen.",
+  "asc": "Du hast einen starken Auftritt: Man sieht dich als direkt, energisch und voller Initiative."
+ },
+ "SIGNS_TEXT.cancer": {
+  "name": "Krebs",
+  "keywords": [
+   "Fürsorge",
+   "Erinnerung",
+   "Feingefühl"
+  ],
+  "summary": "Das umarmende Wasser: feinfühlig, beschützend und liebevoll.",
+  "text": "Der Krebs ist das Zeichen von Zuhause, Familie und emotionalen Wurzeln. Er fühlt tief und sorgt mit Hingabe.",
+  "sun": "Dein Wesen ist fürsorglich. Du strahlst, wenn du sichere Bindungen schaffst und für die sorgst, die du liebst.",
+  "moon": "Der Mond ist hier zu Hause: tiefe Gefühle, starkes emotionales Gedächtnis und ein großes Bedürfnis nach Zugehörigkeit.",
+  "asc": "Du strahlst Freundlichkeit und Fürsorge aus. Man fühlt sich bei dir wohl, auch wenn du dich anfangs schützt."
+ },
+ "SIGNS_TEXT.capricorn": {
+  "name": "Steinbock",
+  "keywords": [
+   "Ehrgeiz",
+   "Verantwortung",
+   "Reife"
+  ],
+  "summary": "Die aufsteigende Erde: diszipliniert, ehrgeizig und ernsthaft.",
+  "text": "Der Steinbock ist das Zeichen der langfristigen Ziele und der Reife. Er erklimmt den Berg Schritt für Schritt.",
+  "sun": "Dein Wesen ist das eines Machers. Du strahlst, wenn du Verantwortung übernimmst und mit der Zeit etwas Solides aufbaust.",
+  "moon": "Du schützt dich durch Selbstbeherrschung. Du fühlst dich sicher mit Struktur und zeigst Liebe, indem du verlässlich bist.",
+  "asc": "Du strahlst Ernsthaftigkeit und Kompetenz aus. Man sieht dich als reif, diskret und entschlossen."
+ },
+ "SIGNS_TEXT.gemini": {
+  "name": "Zwillinge",
+  "keywords": [
+   "Neugier",
+   "Kommunikation",
+   "Vielseitigkeit"
+  ],
+  "summary": "Luft in Bewegung: neugierig, gesprächig und wandelbar.",
+  "text": "Die Zwillinge sind das Zeichen der Ideen, Gespräche und Verbindungen. Sie lernen schnell und leben umgeben von Anregungen.",
+  "sun": "Dein Wesen ist neugierig und kommunikativ. Du strahlst, wenn du Ideen austauschst, lernst und Menschen verbindest.",
+  "moon": "Du verarbeitest Gefühle, indem du redest und nachdenkst. Du brauchst Gespräche, Neues und Leichtigkeit, um dich wohlzufühlen.",
+  "asc": "Du wirkst jugendlich, aufgeweckt und freundlich. Man sieht dich als schnell und leicht ansprechbar."
+ },
+ "SIGNS_TEXT.leo": {
+  "name": "Löwe",
+  "keywords": [
+   "Ausstrahlung",
+   "Großzügigkeit",
+   "Kreativität"
+  ],
+  "summary": "Das leuchtende Feuer: warm, kreativ und großzügig.",
+  "text": "Der Löwe ist das Zeichen des Ausdrucks aus dem Herzen. Er liebt es zu erschaffen, zu führen und Wärme zu verbreiten.",
+  "sun": "Die Sonne ist hier zu Hause: Dein Wesen ist strahlend, kreativ und großzügig. Du bist geboren, um dich auszudrücken.",
+  "moon": "Du fühlst dich wohl, wenn du anerkannt und geliebt wirst. Du brauchst warme Zuneigung und Raum zum Spielen.",
+  "asc": "Du hast eine starke Präsenz. Man sieht dich als selbstbewusst, charismatisch und herzlich."
+ },
+ "SIGNS_TEXT.libra": {
+  "name": "Waage",
+  "keywords": [
+   "Harmonie",
+   "Schönheit",
+   "Beziehungen"
+  ],
+  "summary": "Die ausgleichende Luft: diplomatisch, elegant und gerecht.",
+  "text": "Die Waage ist das Zeichen der Beziehungen, der Ästhetik und der Gerechtigkeit. Sie sucht Gleichgewicht und harmonische Partnerschaften.",
+  "sun": "Dein Wesen ist beziehungsorientiert. Du strahlst, wenn du Brücken baust, Räume harmonisierst und Fairness suchst.",
+  "moon": "Du fühlst dich wohl in Harmonie und guter Gesellschaft. Konflikte zehren an dir; Schönheit stärkt dich.",
+  "asc": "Du strahlst Charme und Freundlichkeit aus. Man sieht dich als angenehm, gesellig und stilvoll."
+ },
+ "SIGNS_TEXT.pisces": {
+  "name": "Fische",
+  "keywords": [
+   "Mitgefühl",
+   "Fantasie",
+   "Spiritualität"
+  ],
+  "summary": "Wasser ohne Ufer: feinfühlig, intuitiv und verträumt.",
+  "text": "Die Fische schließen den Tierkreis mit Empathie und Fantasie. Sie spüren das Ganze und verbinden sich mit dem Unsichtbaren.",
+  "sun": "Dein Wesen ist mitfühlend und kreativ. Du strahlst in der Kunst, in der Fürsorge und in allem, was Feingefühl verlangt.",
+  "moon": "Du nimmst die Gefühle um dich herum auf. Du brauchst Rückzugsmomente und Grenzen, um dich nicht zu verlieren.",
+  "asc": "Du strahlst Sanftheit und Geheimnis aus. Man sieht dich als zart, verträumt und einladend."
+ },
+ "SIGNS_TEXT.sagittarius": {
+  "name": "Schütze",
+  "keywords": [
+   "Freiheit",
+   "Sinn",
+   "Optimismus"
+  ],
+  "summary": "Das erkundende Feuer: optimistisch, frei und philosophisch.",
+  "text": "Der Schütze ist das Zeichen der Sinnsuche, der Reisen und der Weite. Er glaubt an die Zukunft und dürstet nach Horizonten.",
+  "sun": "Dein Wesen ist das eines Entdeckers. Du strahlst, wenn du lernst, reist, lehrst und deine Weltsicht teilst.",
+  "moon": "Du fühlst dich wohl mit Freiheit und Abenteuer. Schwere Routinen ersticken dich; neue Horizonte beleben dich.",
+  "asc": "Du strahlst Begeisterung und Offenheit aus. Man sieht dich als fröhlich, offen und witzig."
+ },
+ "SIGNS_TEXT.scorpio": {
+  "name": "Skorpion",
+  "keywords": [
+   "Intensität",
+   "Verwandlung",
+   "Tiefe"
+  ],
+  "summary": "Das tiefe Wasser: intensiv, anziehend und verwandelnd.",
+  "text": "Der Skorpion ist das Zeichen der Intensität und Verwandlung. Er lehnt Oberflächlichkeit ab und geht allem auf den Grund.",
+  "sun": "Dein Wesen ist intensiv und forschend. Du strahlst, wenn du in die Tiefe gehst und schwierige Situationen verwandelst.",
+  "moon": "Deine Gefühle sind tief und treu. Du brauchst volles Vertrauen, um dich hinzugeben.",
+  "asc": "Du hast eine geheimnisvolle Anziehung. Man sieht dich als zurückhaltend, intensiv und aufmerksam."
+ },
+ "SIGNS_TEXT.taurus": {
+  "name": "Stier",
+  "keywords": [
+   "Stabilität",
+   "Genuss",
+   "Beständigkeit"
+  ],
+  "summary": "Die fruchtbare Erde: ruhig, sinnlich und ausdauernd.",
+  "text": "Der Stier ist das Zeichen der Sicherheit und der einfachen Freuden. Er schätzt, was solide, schön und dauerhaft ist.",
+  "sun": "Dein Wesen sucht Stabilität und Schönheit. Du baust langsam, aber was du baust, hält.",
+  "moon": "Du beruhigst dich mit Komfort, Routine, gutem Essen und körperlicher Nähe. Du brauchst Sicherheit, um dich zu öffnen.",
+  "asc": "Du strahlst Ruhe und Vertrauen aus. Man sieht dich als beständig, elegant und still präsent."
+ },
+ "SIGNS_TEXT.virgo": {
+  "name": "Jungfrau",
+  "keywords": [
+   "Analyse",
+   "Dienst",
+   "Verfeinerung"
+  ],
+  "summary": "Die verfeinernde Erde: aufmerksam, nützlich und praktisch.",
+  "text": "Die Jungfrau ist das Zeichen der Details, der praktischen Fürsorge und der Verbesserung. Sie ist gern nützlich und macht Dinge gut.",
+  "sun": "Dein Wesen will verbessern. Du strahlst, wenn du Probleme löst, ordnest und ganz konkret hilfst.",
+  "moon": "Du beruhigst dich mit Ordnung und Routine. Du zeigst Liebe, indem du dich um die Details im Leben deiner Liebsten kümmerst.",
+  "asc": "Du strahlst Diskretion und Kompetenz aus. Man sieht dich als aufmerksam, höflich und verlässlich."
+ },
+ "SIGN_STYLE.aquarius": "originell, unabhängig und innovativ",
+ "SIGN_STYLE.aries": "direkt, mutig und impulsiv",
+ "SIGN_STYLE.cancer": "feinfühlig, fürsorglich und mit emotionalem Gedächtnis",
+ "SIGN_STYLE.capricorn": "ernsthaft, ehrgeizig und verantwortungsvoll",
+ "SIGN_STYLE.gemini": "neugierig, leicht und voller Ideen",
+ "SIGN_STYLE.leo": "strahlend, großzügig und mit Stil",
+ "SIGN_STYLE.libra": "auf der Suche nach Harmonie, Schönheit und Partnerschaft",
+ "SIGN_STYLE.pisces": "mit Empathie, Fantasie und Intuition",
+ "SIGN_STYLE.sagittarius": "optimistisch, frei und auf Sinnsuche",
+ "SIGN_STYLE.scorpio": "intensiv, tief und strategisch",
+ "SIGN_STYLE.taurus": "ruhig, beständig und mit sinnlichem Genuss",
+ "SIGN_STYLE.virgo": "detailgenau, methodisch und praktisch"
 }

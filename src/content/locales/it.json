@@ -1,4 +1,45 @@
 {
+ "ASPECTS_TEXT.conjunction": {
+  "name": "Congiunzione",
+  "symbol": "☌",
+  "meaning": "fondono le loro energie e agiscono insieme"
+ },
+ "ASPECTS_TEXT.opposition": {
+  "name": "Opposizione",
+  "symbol": "☍",
+  "meaning": "tirano in direzioni opposte e chiedono equilibrio"
+ },
+ "ASPECTS_TEXT.sextile": {
+  "name": "Sestile",
+  "symbol": "⚹",
+  "meaning": "aprono opportunità quando agisci"
+ },
+ "ASPECTS_TEXT.square": {
+  "name": "Quadratura",
+  "symbol": "□",
+  "meaning": "creano una tensione che spinge a crescere"
+ },
+ "ASPECTS_TEXT.trine": {
+  "name": "Trigono",
+  "symbol": "△",
+  "meaning": "scorrono con facilità e si sostengono"
+ },
+ "ELEMENTS_TEXT.air": {
+  "name": "Aria",
+  "text": "Idee, comunicazione e legami. Molta aria porta agilità mentale; poca chiede più dialogo."
+ },
+ "ELEMENTS_TEXT.earth": {
+  "name": "Terra",
+  "text": "Senso pratico, costanza e realizzazione. Molta terra porta stabilità; poca chiede più radicamento."
+ },
+ "ELEMENTS_TEXT.fire": {
+  "name": "Fuoco",
+  "text": "Entusiasmo, coraggio e iniziativa. Molto fuoco porta passione; poco chiede più audacia."
+ },
+ "ELEMENTS_TEXT.water": {
+  "name": "Acqua",
+  "text": "Emozione, intuizione ed empatia. Molta acqua porta sensibilità; poca chiede di ascoltare di più il cuore."
+ },
  "MAJOR_ARCANA.0": {
   "name": "Il Matto",
   "keywords": [
@@ -263,6 +304,18 @@
   "reversed": "Isolamento eccessivo o fuga dall’introspezione. Bilancia solitudine e compagnia.",
   "personal": "Come arcano personale, l’Eremita indica un’anima riflessiva, saggia e indipendente. Trovi le risposte da solo/a. La tua sfida è non chiuderti e lasciare che la tua luce guidi gli altri."
  },
+ "MODALITIES_TEXT.cardinal": {
+  "name": "Cardinale",
+  "text": "Tendi ad avviare, guidare e mettere le cose in moto."
+ },
+ "MODALITIES_TEXT.fixed": {
+  "name": "Fisso",
+  "text": "Tendi a sostenere, approfondire e portare le cose a termine."
+ },
+ "MODALITIES_TEXT.mutable": {
+  "name": "Mobile",
+  "text": "Tendi ad adattarti, a muoverti tra mondi diversi e a collegarli."
+ },
  "NUMBERS.1": {
   "title": "Il Pioniere",
   "keywords": [
@@ -442,5 +495,225 @@
   "challenges": "Difficoltà a lasciar andare, sacrificio eccessivo e malinconia.",
   "love": "In amore sei romantico/a e generoso/a. Hai bisogno di qualcuno che condivida i tuoi valori e ideali.",
   "work": "Rendi al meglio nelle cause sociali, nelle arti, nell’educazione, nella salute, nella spiritualità e nei lavori con uno scopo."
- }
+ },
+ "PLANETS_TEXT.asc": {
+  "name": "Ascendente",
+  "function": "come ti presenti e come vieni percepito/a a prima vista"
+ },
+ "PLANETS_TEXT.jupiter": {
+  "name": "Giove",
+  "function": "dove cresci, hai fortuna e trovi un senso"
+ },
+ "PLANETS_TEXT.mars": {
+  "name": "Marte",
+  "function": "la tua energia, il tuo desiderio e il tuo modo di agire e conquistare"
+ },
+ "PLANETS_TEXT.mc": {
+  "name": "Medio Cielo",
+  "function": "la tua vocazione, la carriera e l’immagine pubblica"
+ },
+ "PLANETS_TEXT.mercury": {
+  "name": "Mercurio",
+  "function": "il tuo modo di pensare, imparare e comunicare"
+ },
+ "PLANETS_TEXT.moon": {
+  "name": "Luna",
+  "function": "le tue emozioni, i tuoi bisogni e ciò che ti dà sicurezza"
+ },
+ "PLANETS_TEXT.neptune": {
+  "name": "Nettuno",
+  "function": "i tuoi sogni, l’ispirazione e la sensibilità spirituale"
+ },
+ "PLANETS_TEXT.node": {
+  "name": "Nodo Nord",
+  "function": "la direzione di crescita della tua anima in questa vita"
+ },
+ "PLANETS_TEXT.pluto": {
+  "name": "Plutone",
+  "function": "dove ti trasformi profondamente e trovi potere"
+ },
+ "PLANETS_TEXT.saturn": {
+  "name": "Saturno",
+  "function": "le tue lezioni, responsabilità e ciò che matura con il tempo"
+ },
+ "PLANETS_TEXT.sun": {
+  "name": "Sole",
+  "function": "la tua essenza, la tua vitalità e ciò che ti fa brillare"
+ },
+ "PLANETS_TEXT.uranus": {
+  "name": "Urano",
+  "function": "dove innovi, ti liberi e sorprendi"
+ },
+ "PLANETS_TEXT.venus": {
+  "name": "Venere",
+  "function": "come ami, cosa apprezzi e cosa trovi bello"
+ },
+ "SIGNS_TEXT.aquarius": {
+  "name": "Acquario",
+  "keywords": [
+   "originalità",
+   "libertà",
+   "comunità"
+  ],
+  "summary": "L’aria che innova: originale, libero e umanitario.",
+  "text": "L’Acquario è il segno del futuro, dell’amicizia e delle idee che cambiano il collettivo. Apprezza l’autenticità.",
+  "sun": "La tua essenza è originale. Brilli quando pensi in modo diverso, difendi cause e unisci le persone attraverso ideali.",
+  "moon": "Elabori le emozioni con un po’ di distanza e hai bisogno di libertà. L’amicizia è la tua forma di intimità.",
+  "asc": "Trasmetti autenticità. Ti vedono diverso/a, amichevole e un po’ imprevedibile."
+ },
+ "SIGNS_TEXT.aries": {
+  "name": "Ariete",
+  "keywords": [
+   "coraggio",
+   "iniziativa",
+   "slancio"
+  ],
+  "summary": "Il fuoco che parte: diretto, coraggioso e pioniere.",
+  "text": "L’Ariete apre lo zodiaco con l’energia della partenza. È il segno dell’azione, del coraggio e dell’autenticità senza giri di parole.",
+  "sun": "La tua essenza è quella di un pioniere: brilli quando prendi l’iniziativa, decidi in fretta e affronti le sfide a viso aperto.",
+  "moon": "Le tue emozioni sono rapide e intense. Stai bene quando puoi agire, e hai bisogno di spazio per sfogarti senza filtri.",
+  "asc": "Arrivi e ti fai notare: ti vedono diretto/a, energico/a e pieno/a di iniziativa."
+ },
+ "SIGNS_TEXT.cancer": {
+  "name": "Cancro",
+  "keywords": [
+   "cura",
+   "memoria",
+   "sensibilità"
+  ],
+  "summary": "L’acqua che abbraccia: sensibile, protettivo e affettuoso.",
+  "text": "Il Cancro è il segno della casa, della famiglia e delle radici affettive. Sente in profondità e si prende cura con dedizione.",
+  "sun": "La tua essenza è accudente. Brilli quando crei legami sicuri e ti prendi cura di chi ami.",
+  "moon": "La Luna qui è a casa: emozioni profonde, forte memoria affettiva e un grande bisogno di appartenenza.",
+  "asc": "Trasmetti gentilezza e cura. Le persone stanno bene vicino a te, anche se all’inizio ti proteggi."
+ },
+ "SIGNS_TEXT.capricorn": {
+  "name": "Capricorno",
+  "keywords": [
+   "ambizione",
+   "responsabilità",
+   "maturità"
+  ],
+  "summary": "La terra che sale: disciplinato, ambizioso e serio.",
+  "text": "Il Capricorno è il segno degli obiettivi a lungo termine e della maturità. Scala la montagna passo dopo passo.",
+  "sun": "La tua essenza è quella di chi realizza. Brilli assumendoti responsabilità e costruendo qualcosa di solido nel tempo.",
+  "moon": "Ti proteggi con l’autocontrollo. Ti senti al sicuro con una struttura e mostri amore essendo affidabile.",
+  "asc": "Trasmetti serietà e competenza. Ti vedono maturo/a, discreto/a e determinato/a."
+ },
+ "SIGNS_TEXT.gemini": {
+  "name": "Gemelli",
+  "keywords": [
+   "curiosità",
+   "comunicazione",
+   "versatilità"
+  ],
+  "summary": "Aria in movimento: curioso, loquace e adattabile.",
+  "text": "I Gemelli sono il segno delle idee, delle conversazioni e dei collegamenti. Imparano in fretta e vivono circondati da stimoli.",
+  "sun": "La tua essenza è curiosa e comunicativa. Brilli scambiando idee, imparando e mettendo in contatto le persone.",
+  "moon": "Elabori le emozioni parlando e pensando. Hai bisogno di conversazione, novità e leggerezza per stare bene.",
+  "asc": "Sembri giovane, sveglio/a e simpatico/a. Ti vedono rapido/a e facile da avvicinare."
+ },
+ "SIGNS_TEXT.leo": {
+  "name": "Leone",
+  "keywords": [
+   "splendore",
+   "generosità",
+   "creatività"
+  ],
+  "summary": "Il fuoco che brilla: caloroso, creativo e generoso.",
+  "text": "Il Leone è il segno dell’espressione del cuore. Ama creare, guidare e diffondere calore.",
+  "sun": "Il Sole qui è a casa: la tua essenza è radiosa, creativa e generosa. Sei nato/a per esprimerti.",
+  "moon": "Stai bene quando sei riconosciuto/a e amato/a. Hai bisogno di affetto caloroso e di spazio per giocare.",
+  "asc": "Hai una presenza che colpisce. Ti vedono sicuro/a, carismatico/a e caloroso/a."
+ },
+ "SIGNS_TEXT.libra": {
+  "name": "Bilancia",
+  "keywords": [
+   "armonia",
+   "bellezza",
+   "relazioni"
+  ],
+  "summary": "L’aria che equilibra: diplomatica, elegante e giusta.",
+  "text": "La Bilancia è il segno delle relazioni, dell’estetica e della giustizia. Cerca equilibrio e collaborazioni armoniose.",
+  "sun": "La tua essenza è relazionale. Brilli costruendo ponti, armonizzando gli spazi e cercando l’equità.",
+  "moon": "Stai bene nell’armonia e in buona compagnia. I conflitti ti logorano; la bellezza ti rigenera.",
+  "asc": "Trasmetti fascino e gentilezza. Ti vedono piacevole, socievole e di buon gusto."
+ },
+ "SIGNS_TEXT.pisces": {
+  "name": "Pesci",
+  "keywords": [
+   "compassione",
+   "immaginazione",
+   "spiritualità"
+  ],
+  "summary": "Acqua senza rive: sensibile, intuitivo e sognatore.",
+  "text": "I Pesci chiudono lo zodiaco con empatia e immaginazione. Sentono il tutto e si connettono con l’invisibile.",
+  "sun": "La tua essenza è compassionevole e creativa. Brilli nell’arte, nella cura e in tutto ciò che chiede sensibilità.",
+  "moon": "Assorbi le emozioni intorno a te. Hai bisogno di momenti di ritiro e di limiti per non perderti.",
+  "asc": "Trasmetti dolcezza e mistero. Ti vedono gentile, sognatore/trice e accogliente."
+ },
+ "SIGNS_TEXT.sagittarius": {
+  "name": "Sagittario",
+  "keywords": [
+   "libertà",
+   "senso",
+   "ottimismo"
+  ],
+  "summary": "Il fuoco che esplora: ottimista, libero e filosofo.",
+  "text": "Il Sagittario è il segno della ricerca di senso, dei viaggi e dell’espansione. Ha fede nel futuro e sete di orizzonti.",
+  "sun": "La tua essenza è quella di un esploratore. Brilli quando impari, viaggi, insegni e condividi la tua visione del mondo.",
+  "moon": "Stai bene con libertà e avventura. Le routine pesanti ti soffocano; i nuovi orizzonti ti risollevano.",
+  "asc": "Trasmetti entusiasmo e franchezza. Ti vedono allegro/a, aperto/a e spiritoso/a."
+ },
+ "SIGNS_TEXT.scorpio": {
+  "name": "Scorpione",
+  "keywords": [
+   "intensità",
+   "trasformazione",
+   "profondità"
+  ],
+  "summary": "L’acqua profonda: intenso, magnetico e trasformatore.",
+  "text": "Lo Scorpione è il segno dell’intensità e della trasformazione. Rifiuta la superficialità e va a fondo in tutto.",
+  "sun": "La tua essenza è intensa e indagatrice. Brilli quando vai in profondità e trasformi situazioni difficili.",
+  "moon": "Le tue emozioni sono profonde e leali. Hai bisogno di fiducia totale per lasciarti andare.",
+  "asc": "Hai un magnetismo misterioso. Ti vedono riservato/a, intenso/a e attento/a osservatore/trice."
+ },
+ "SIGNS_TEXT.taurus": {
+  "name": "Toro",
+  "keywords": [
+   "stabilità",
+   "piacere",
+   "costanza"
+  ],
+  "summary": "La terra fertile: calmo, sensuale e perseverante.",
+  "text": "Il Toro è il segno della sicurezza e dei piaceri semplici. Apprezza ciò che è solido, bello e duraturo.",
+  "sun": "La tua essenza cerca stabilità e bellezza. Costruisci lentamente, ma ciò che costruisci dura.",
+  "moon": "Ti calmi con il comfort, la routine, il buon cibo e l’affetto fisico. Hai bisogno di sicurezza per aprirti.",
+  "asc": "Trasmetti calma e fiducia. Ti vedono stabile, elegante e presente senza far rumore."
+ },
+ "SIGNS_TEXT.virgo": {
+  "name": "Vergine",
+  "keywords": [
+   "analisi",
+   "servizio",
+   "raffinatezza"
+  ],
+  "summary": "La terra che affina: attenta, utile e pratica.",
+  "text": "La Vergine è il segno del dettaglio, della cura concreta e del miglioramento. Le piace essere utile e fare bene le cose.",
+  "sun": "La tua essenza cerca di migliorare. Brilli risolvendo problemi, organizzando e aiutando in modo concreto.",
+  "moon": "Ti calmi con l’ordine e la routine. Mostri amore prendendoti cura dei dettagli nella vita di chi ami.",
+  "asc": "Trasmetti discrezione e competenza. Ti vedono attento/a, educato/a e affidabile."
+ },
+ "SIGN_STYLE.aquarius": "in modo originale, indipendente e innovativo",
+ "SIGN_STYLE.aries": "in modo diretto, coraggioso e impulsivo",
+ "SIGN_STYLE.cancer": "con sensibilità, cura e memoria affettiva",
+ "SIGN_STYLE.capricorn": "con serietà, ambizione e responsabilità",
+ "SIGN_STYLE.gemini": "con curiosità, leggerezza e tante idee",
+ "SIGN_STYLE.leo": "con splendore, generosità e stile",
+ "SIGN_STYLE.libra": "cercando armonia, bellezza e intesa",
+ "SIGN_STYLE.pisces": "con empatia, immaginazione e intuizione",
+ "SIGN_STYLE.sagittarius": "con ottimismo, libertà e ricerca di senso",
+ "SIGN_STYLE.scorpio": "con intensità, profondità e strategia",
+ "SIGN_STYLE.taurus": "con calma, costanza e piacere dei sensi",
+ "SIGN_STYLE.virgo": "con attenzione ai dettagli, metodo e senso pratico"
 }
